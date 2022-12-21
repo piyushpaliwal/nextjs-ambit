@@ -1,6 +1,11 @@
 import { FC } from 'react';
 import { slideInDownAnimate } from 'utils/animation';
 import Typewriter from 'typewriter-effect';
+import Image from 'next/image';
+import Carousel1 from '../../../../public/img/photos/carousel1.jpg'//  /img/photos/carousel1.jpg';
+import Carousel2 from '../../../../public/img/photos/carousel2.jpg';
+import Carousel3 from '../../../../public/img/photos/carousel3.jpg';
+
 // -------- custom component -------- //
 import Carousel from 'components/reuseable/Carousel';
 import NextLink from 'components/reuseable/links/NextLink';
@@ -46,14 +51,17 @@ const Hero: FC = () => {
           <div className="col-lg-5 offset-lg-1">
             <div className="swiper-container shadow-lg">
               <Carousel slidesPerView={1} className="dots-over">
-                <img alt="" className="rounded" src="/img/photos/carousel-1.jpg" srcSet="/img/photos/carousel-1@2x.jpg 2x" />
+                <Image alt="Carousel 1" className="rounded" src={Carousel1} />
+                <Image alt="Carousel 2" className="rounded" src={Carousel2} />
+                <Image alt="Carousel 3" className="rounded" src={Carousel3} />
+                {/* <img alt="" className="rounded" src="/img/photos/carousel-1.jpg" srcSet="/img/photos/carousel-1@2x.jpg 2x" />
                 <img
                     alt=""
                     className="rounded"
                     src="/img/photos/carousel-2.jpg"
                     srcSet="/img/photos/carousel-2@2x.jpg 2x"
                   />
-                <img alt="" className="rounded" src="/img/photos/carousel-3.jpg" srcSet="/img/photos/carousel-3@2x.jpg 2x" />
+                <img alt="" className="rounded" src="/img/photos/carousel-3.jpg" srcSet="/img/photos/carousel-3@2x.jpg 2x" /> */}
               </Carousel>
             </div>
           </div>
