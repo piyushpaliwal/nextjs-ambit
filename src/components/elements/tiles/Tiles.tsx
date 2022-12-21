@@ -1,7 +1,7 @@
 import { FC, Fragment } from 'react';
 
 const Tiles: FC = () => {
-  const images = ['acrousel-1', 'carousel-2', 'carousel-3'];
+  const images = ['carousel-1', 'carousel-2', 'carousel-3'];
 
   return (
     <Fragment>
