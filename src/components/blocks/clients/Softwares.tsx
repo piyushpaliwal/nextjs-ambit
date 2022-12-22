@@ -6,7 +6,7 @@ import { softwareList } from 'data/client';
 const Softwares: FC = () => {
   return (
     <section className="wrapper bg-light">
-      <div className="container pb-15 pb-17">
+      <div className="container pt-16">
         <div className="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0">
           <div className="col-lg-4 mt-lg-2">
             <h2 className="fs-16 text-uppercase text-primary mb-3">Our Software Expertise</h2>
