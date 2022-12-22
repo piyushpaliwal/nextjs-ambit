@@ -39,7 +39,7 @@ const Hero: FC = () => {
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate('1200ms')}>
-                <NextLink title="Explore Possibilities" href="#" className="btn btn-lg btn-white rounded-pill me-2" />
+                <NextLink title="Explore Possibilities" href="/services" className="btn btn-lg btn-white rounded-pill me-2" />
               </span>
 
               <span style={slideInDownAnimate('1500ms')}>

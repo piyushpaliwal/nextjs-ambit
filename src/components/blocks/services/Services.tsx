@@ -6,7 +6,7 @@ import { serviceList } from 'data/service';
 const Services: FC = () => {
   return (
     <Fragment>
-      <div className="row text-center">
+      <div className="row text-center pt-17">
         <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           <h2 className="fs-15 text-uppercase text-primary mb-3">What We Do?</h2>
           <h3 className="display-4 px-xl-10">
