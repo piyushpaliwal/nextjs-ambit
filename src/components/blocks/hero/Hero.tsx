@@ -43,7 +43,12 @@ const Hero: FC = () => {
               </span>
 
               <span style={slideInDownAnimate('1500ms')}>
-                <NextLink title="Get in touch" href="#" className="btn btn-lg btn-outline-white rounded-pill" />
+                <a 
+                href='https://calendly.com/ambit-accounting/15min'
+                className='btn btn-lg btn-outline-white rounded-pill'
+                target='_blank'
+                rel='noreferrer'
+                >Let's Talk</a>
               </span>
             </div>
           </div>
