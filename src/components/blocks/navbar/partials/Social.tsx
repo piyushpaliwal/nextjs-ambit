@@ -19,7 +19,7 @@ const Social = () => {
         </a>
       </nav>
     </li>
-  );
-};
+  )
+}
 
-export default Social;
+export default Social

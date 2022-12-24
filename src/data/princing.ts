@@ -19,6 +19,6 @@ const pricingList = [
     plan: 'Full Time',
     features: ['Dedicated Staff', '8 hours/day', '160 hours/month', 'Value for Money', 'Monthly Billing']
   }
-];
+]
 
-export default { pricingList };
+export default { pricingList }

@@ -1,10 +1,10 @@
-import { FC, Fragment } from 'react';
+import { FC, Fragment } from 'react'
 // -------- custom component -------- //
-import Carousel from 'components/reuseable/Carousel';
-import carouselBreakpoints from 'utils/carouselBreakpoints';
-import { TestimonialCard } from 'components/reuseable/testimonial-cards';
+import Carousel from 'components/reuseable/Carousel'
+import carouselBreakpoints from 'utils/carouselBreakpoints'
+import { TestimonialCard } from 'components/reuseable/testimonial-cards'
 // -------- data -------- //
-import { testimonialList } from 'data/testimonial-list';
+import { testimonialList } from 'data/testimonial-list'
 
 const Testimonial4: FC = () => {
   return (
@@ -24,7 +24,7 @@ const Testimonial4: FC = () => {
         ))}
       </Carousel>
     </Fragment>
-  );
-};
+  )
+}
 
-export default Testimonial4;
+export default Testimonial4

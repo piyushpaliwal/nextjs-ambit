@@ -1,19 +1,19 @@
-import { FC } from 'react';
-import Image from 'next/image';
+import { FC } from 'react'
+import Image from 'next/image'
 
 // =================================================
 type TestimonialCard3Props = {
-  name: string;
-  image?: string;
-  review: string;
-  shadow?: boolean;
-  designation?: string;
-  hideRating?: boolean;
-};
+  name: string
+  image?: string
+  review: string
+  shadow?: boolean
+  designation?: string
+  hideRating?: boolean
+}
 // =================================================
 
 const TestimonialCard3: FC<TestimonialCard3Props> = (props) => {
-  const { name, image, review, designation, hideRating, shadow } = props;
+  const { name, image, review, designation, hideRating, shadow } = props
 
   return (
     <div className={`card ${shadow ? 'shadow-lg' : ''}`}>
@@ -24,13 +24,13 @@ const TestimonialCard3: FC<TestimonialCard3Props> = (props) => {
           <p>“{review}”</p>
 
           <div className="blockquote-details">
-            { image && 
+            {image && (
               <figure className="rounded-circle w-12 overflow-hidden">
                 <Image width={100} height={100} src={image} layout="responsive" alt="team" />
               </figure>
-            }
+            )}
 
-            <div className={image && "info"}>
+            <div className={image && 'info'}>
               <h5 className="mb-0">{name}</h5>
               <p className="mb-0">{designation}</p>
             </div>
@@ -38,7 +38,7 @@ const TestimonialCard3: FC<TestimonialCard3Props> = (props) => {
         </blockquote>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TestimonialCard3;
+export default TestimonialCard3

@@ -1,4 +1,2 @@
-import Testimonial from './Testimonial';
-export {
-  Testimonial
-};
+import Testimonial from './Testimonial'
+export { Testimonial }

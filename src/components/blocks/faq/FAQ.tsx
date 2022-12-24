@@ -1,7 +1,7 @@
-import { FC, Fragment } from 'react';
-import Accordion from 'components/reuseable/accordion';
+import { FC, Fragment } from 'react'
+import Accordion from 'components/reuseable/accordion'
 // -------- data -------- //
-import { faqList } from 'data/faq';
+import { faqList } from 'data/faq'
 
 const FAQ: FC = () => {
   return (
@@ -15,12 +15,12 @@ const FAQ: FC = () => {
                   <Accordion key={item.no} {...item} />
                 ))}
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </Fragment>
-  );
-};
+  )
+}
 
-export default FAQ;
+export default FAQ

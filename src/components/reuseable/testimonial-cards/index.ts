@@ -1,3 +1,3 @@
-import TestimonialCard from './TestimonialCard';
+import TestimonialCard from './TestimonialCard'
 
-export { TestimonialCard };
+export { TestimonialCard }

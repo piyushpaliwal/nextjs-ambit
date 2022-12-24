@@ -4,6 +4,6 @@ const footerNav = [
   { title: 'Life@Ambit', url: '/life' },
   { title: 'Contact', url: '/contact' },
   { title: 'Privacy Policy', url: '/privacy-policy' }
-];
+]
 
-export default footerNav;
+export default footerNav

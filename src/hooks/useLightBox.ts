@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 const useLightBox = () => {
   const lightboxLoad = () => {
-    const GLightbox = require('glightbox');
+    const GLightbox = require('glightbox')
 
     GLightbox({
       loop: false,
@@ -19,14 +19,14 @@ const useLightBox = () => {
           vimeo: { byline: false, portrait: false, title: false, transparent: false }
         }
       }
-    });
-  };
+    })
+  }
 
   useEffect(() => {
-    lightboxLoad();
-  }, []);
+    lightboxLoad()
+  }, [])
 
-  return null;
-};
+  return null
+}
 
-export default useLightBox;
+export default useLightBox

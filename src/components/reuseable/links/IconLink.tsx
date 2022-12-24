@@ -1,7 +1,7 @@
-import { FC, ReactElement } from 'react';
+import { FC, ReactElement } from 'react'
 
 // ==============================================================
-type IconLinkProps = { href: string; icon: ReactElement };
+type IconLinkProps = { href: string; icon: ReactElement }
 // ==============================================================
 
 const IconLink: FC<IconLinkProps> = ({ href, icon }) => {
@@ -9,7 +9,7 @@ const IconLink: FC<IconLinkProps> = ({ href, icon }) => {
     <a href={href} target="_blank" rel="noreferrer">
       {icon}
     </a>
-  );
-};
+  )
+}
 
-export default IconLink;
+export default IconLink

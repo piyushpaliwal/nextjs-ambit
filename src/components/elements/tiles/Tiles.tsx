@@ -1,11 +1,11 @@
-import { FC, Fragment } from 'react';
-import Image from 'next/image';
-import Carousel1 from '../../../../public/img/photos/carousel1.jpg';
-import Carousel2 from '../../../../public/img/photos/carousel2.jpg';
-import Carousel3 from '../../../../public/img/photos/carousel3.jpg';
+import { FC, Fragment } from 'react'
+import Image from 'next/image'
+import Carousel1 from '../../../../public/img/photos/carousel1.jpg'
+import Carousel2 from '../../../../public/img/photos/carousel2.jpg'
+import Carousel3 from '../../../../public/img/photos/carousel3.jpg'
 
 const Tiles: FC = () => {
-  const images = ['carousel1', 'carousel2'];
+  const images = ['carousel1', 'carousel2']
 
   return (
     <Fragment>
@@ -14,8 +14,8 @@ const Tiles: FC = () => {
       <div className="overlap-grid overlap-grid-2">
         {images.map((item, i) => (
           <div className="item" key={item + i}>
-            {i == 0 && <Image className='rounded shadow' src={Carousel1} alt={item} />}
-            {i == 1 && <Image className='rounded shadow' src={Carousel2} alt={item} />}
+            {i == 0 && <Image className="rounded shadow" src={Carousel1} alt={item} />}
+            {i == 1 && <Image className="rounded shadow" src={Carousel2} alt={item} />}
             {/* <figure className="rounded shadow">
               <img src={`/img/photos/${item}.jpg`} srcSet={`/img/photos/${item}@2x.jpg 2x`} alt={item} />
             </figure> */}
@@ -23,7 +23,7 @@ const Tiles: FC = () => {
         ))}
       </div>
     </Fragment>
-  );
-};
+  )
+}
 
-export default Tiles;
+export default Tiles

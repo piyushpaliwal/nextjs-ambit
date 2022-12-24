@@ -1,2 +1,2 @@
-type IconProps = { className?: string };
-export default IconProps;
+type IconProps = { className?: string }
+export default IconProps

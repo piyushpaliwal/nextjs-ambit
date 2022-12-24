@@ -1,17 +1,17 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
 // ==================================================
 type AccordionProps = {
-  no: string;
-  body: string;
-  heading: string;
-  expand: boolean;
-  type?: 'plain' | 'shadow-lg';
-};
+  no: string
+  body: string
+  heading: string
+  expand: boolean
+  type?: 'plain' | 'shadow-lg'
+}
 // ==================================================
 
 const Accordion: FC<AccordionProps> = (props) => {
-  const { no, body, heading, expand, type = '' } = props;
+  const { no, body, heading, expand, type = '' } = props
 
   return (
     <div className={`card ${type} accordion-item`}>
@@ -38,7 +38,7 @@ const Accordion: FC<AccordionProps> = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Accordion;
+export default Accordion
