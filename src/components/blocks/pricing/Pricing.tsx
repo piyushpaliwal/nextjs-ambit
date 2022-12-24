@@ -8,14 +8,14 @@ const Pricing: FC = () => {
     <div>
       <div className="row text-center">
         <div className="col-md-10 col-lg-8 col-xl-9 col-xxl-8 mx-auto">
-          <h2 className="fs-15 text-uppercase text-primary mb-3">Our Pricing</h2>
+          <h2 className="fs-18 text-uppercase text-primary mb-3">Our Pricing</h2>
           <h3 className="display-3 ls-sm mb-10 px-xl-15">
             Providing the best "value for money" service is something we take great pride in.
           </h3>
         </div>
       </div>
 
-      <div className="pricing-wrapper mb-10 mb-md-14">
+      <div className="pricing-wrapper">
         <div className="row gx-0 gy-6 card-deck">
           {data.pricingList.map(({ price, plan, features }) => (
             <div className="col-md-6 col-lg-3" key={plan}>

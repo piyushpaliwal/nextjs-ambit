@@ -32,19 +32,27 @@ const Index: NextPage = () => {
         <Hero />
 
         <section className="wrapper bg-light">
-          <div className="container py-5 py-md-8">
+          <div className="container py-14 py-md-14">
             { /* software expertise */}
             <Softwares />
-
+          </div>
+        </section>
+        <section className="wrapper bg-gray">
+          <div className="container py-14 py-md-14">
             {/* ========== what we do section ========== */}
             <Services />
-
+          </div>
+        </section>
+        <section className="wrapper bg-light">
+          <div className="container py-14 py-md-14">
             { /* Pricing section */}
             <Pricing />
-
             { /* How we work */ }
             <Process />
-
+          </div>
+        </section>
+        <section className="wrapper bg-gray">
+          <div className="container py-14 py-md-14">
             {/* testimonials */}
             <Testimonial />
           </div>

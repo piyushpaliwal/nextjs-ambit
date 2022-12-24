@@ -27,7 +27,7 @@ const PageLayout: FC<PageLayoutProps> = ({ title, children, subTitle }) => {
       </header>
       <main className="content-wrapper">
         {/* ========== page heading ========== */}
-        <section className="wrapper bg-light">
+        <section className="wrapper bg-gray">
           <div className="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
             <div className="row">
               <div className="col-md-9 col-lg-7 col-xl-5 mx-auto">
@@ -37,7 +37,14 @@ const PageLayout: FC<PageLayoutProps> = ({ title, children, subTitle }) => {
             </div>
           </div>
         </section>
+
+        {/* ========== main content ========= */}
         {children}
+        {/* <section className="container">
+          <div className="row">
+            <div className="col-xl-12 order-xl-2">{children}</div>
+          </div>
+        </section> */}
       </main>
       
       {/* ========== footer section ========== */}

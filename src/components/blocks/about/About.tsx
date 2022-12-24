@@ -10,7 +10,7 @@ const About6: FC = () => {
   return (
     <Fragment>
       <section className="wrapper bg-light">
-        <div className="container py-5 py-md-8">
+        <div className="container py-14 py-md-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
             <div className="col-lg-6 position-relative order-lg-2">
               <Tiles />
@@ -47,8 +47,8 @@ const About6: FC = () => {
           </div>
         </div>
       </section>
-      <section className="wrapper bg-light">
-        <div className="container py-5 py-md-8">
+      <section className="wrapper bg-gray">
+        <div className="container py-14 py-md-14">
           <div className="row gx-md-8 gx-xl-12 gy-6 align-items-center">
             <div className="col-md-8 col-lg-6 order-lg-2 mx-auto">
               <div className="img-mask mask-1">

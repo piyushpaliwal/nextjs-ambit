@@ -5,7 +5,11 @@ import { NextPage } from "next";
 const faqPage: NextPage = () => {
     return (
         <PageLayout title="Frequently Asked Questions">
-            <FAQ />
+            <section className="wrapper bg-light">
+                <div className="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+                    <FAQ />
+                </div>
+            </section>
         </PageLayout>
     )
 }
