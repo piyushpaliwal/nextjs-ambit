@@ -1,17 +1,17 @@
-import { FC, Fragment } from 'react';
-import Image from 'next/image';
-import Megaphone from 'icons/lineal/Megaphone';
-import { Tiles } from 'components/elements/tiles';
-import ListColumn from 'components/reuseable/ListColumn';
+import { FC, Fragment } from 'react'
+import Image from 'next/image'
+import Megaphone from 'icons/lineal/Megaphone'
+import { Tiles } from 'components/elements/tiles'
+import ListColumn from 'components/reuseable/ListColumn'
 // -------- data -------- //
-import { aboutList } from 'data/about';
+import { aboutList } from 'data/about'
 
 const About6: FC = () => {
   return (
     <Fragment>
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">
-          <div className="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
+          <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
             <div className="col-lg-6 position-relative order-lg-2">
               <Tiles />
             </div>
@@ -58,7 +58,7 @@ const About6: FC = () => {
 
             <div className="col-lg-6">
               <h2 className="display-5 mb-3">From the Director's desk</h2>
-              <h3 className='display-6 mb-3 text-primary'>Nishant Sharma</h3>
+              <h3 className="display-6 mb-3 text-primary">Nishant Sharma</h3>
               <p>
                 Ambit is a family of professional team members who have taken it to the level and scale which people
                 always dream in a very short span of time. As the Founder & CEO of Ambit, I have a vision of creating a
@@ -74,7 +74,7 @@ const About6: FC = () => {
         </div>
       </section>
     </Fragment>
-  );
-};
+  )
+}
 
-export default About6;
+export default About6

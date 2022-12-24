@@ -1,43 +1,43 @@
-import { FC, useEffect, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react'
 
 const PageProgress: FC = () => {
-  const progressWrapRef = useRef<HTMLDivElement>(null);
-  const progressPathRef = useRef<SVGPathElement>(null);
+  const progressWrapRef = useRef<HTMLDivElement>(null)
+  const progressPathRef = useRef<SVGPathElement>(null)
 
   useEffect(() => {
     if (progressPathRef.current && progressWrapRef.current) {
-      const offset = 50;
-      const progressPath = progressPathRef.current;
-      const progressWrap = progressWrapRef.current;
+      const offset = 50
+      const progressPath = progressPathRef.current
+      const progressWrap = progressWrapRef.current
 
-      const pathLength = progressPath.getTotalLength();
+      const pathLength = progressPath.getTotalLength()
 
-      progressPath.style.transition = progressPath.style.transition = 'none';
-      progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-      progressPath.style.strokeDashoffset = pathLength.toString();
+      progressPath.style.transition = progressPath.style.transition = 'none'
+      progressPath.style.strokeDasharray = pathLength + ' ' + pathLength
+      progressPath.style.strokeDashoffset = pathLength.toString()
 
-      progressPath.getBoundingClientRect();
-      progressPath.style.transition = progressPath.style.transition = 'stroke-dashoffset 10ms linear';
+      progressPath.getBoundingClientRect()
+      progressPath.style.transition = progressPath.style.transition = 'stroke-dashoffset 10ms linear'
       window.addEventListener('scroll', function () {
-        const scroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const progress = pathLength - (scroll * pathLength) / height;
-        progressPath.style.strokeDashoffset = progress.toString();
-        const scrollElementPos = document.body.scrollTop || document.documentElement.scrollTop;
+        const scroll = document.body.scrollTop || document.documentElement.scrollTop
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+        const progress = pathLength - (scroll * pathLength) / height
+        progressPath.style.strokeDashoffset = progress.toString()
+        const scrollElementPos = document.body.scrollTop || document.documentElement.scrollTop
         // added classname
         if (scrollElementPos >= offset) {
-          progressWrap.classList.add('active-progress');
+          progressWrap.classList.add('active-progress')
         } else {
-          progressWrap.classList.remove('active-progress');
+          progressWrap.classList.remove('active-progress')
         }
-      });
+      })
 
       progressWrap.addEventListener('click', function (e) {
-        e.preventDefault();
-        window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-      });
+        e.preventDefault()
+        window.scroll({ top: 0, left: 0, behavior: 'smooth' })
+      })
     }
-  }, []);
+  }, [])
 
   return (
     <div className="progress-wrap" ref={progressWrapRef}>
@@ -45,7 +45,7 @@ const PageProgress: FC = () => {
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" ref={progressPathRef} />
       </svg>
     </div>
-  );
-};
+  )
+}
 
-export default PageProgress;
+export default PageProgress

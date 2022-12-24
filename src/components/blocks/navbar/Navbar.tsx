@@ -1,55 +1,52 @@
-import LinkType from 'types/link';
-import { FC, Fragment, ReactElement, useRef } from 'react';
+import LinkType from 'types/link'
+import { FC, Fragment, ReactElement, useRef } from 'react'
 // -------- custom hook -------- //
-import useSticky from 'hooks/useSticky';
+import useSticky from 'hooks/useSticky'
 // -------- custom component -------- //
-import NextLink from 'components/reuseable/links/NextLink';
-import SocialLinks from 'components/reuseable/SocialLinks';
-import ListItemLink from 'components/reuseable/links/ListItemLink';
-import DropdownToggleLink from 'components/reuseable/links/DropdownToggleLink';
+import NextLink from 'components/reuseable/links/NextLink'
+import SocialLinks from 'components/reuseable/SocialLinks'
+import ListItemLink from 'components/reuseable/links/ListItemLink'
+import DropdownToggleLink from 'components/reuseable/links/DropdownToggleLink'
 // -------- partial header component -------- //
-import Search from './partials/Search';
-import Social from './partials/Social';
-import Language from './partials/Language';
+import Search from './partials/Search'
+import Social from './partials/Social'
+import Language from './partials/Language'
 // -------- data -------- //
-import {
-  home, services, industries, company
-} from 'data/navigation';
+import { home, services, industries, company } from 'data/navigation'
 
 // ===================================================================
 type NavbarProps = {
-  info?: boolean;
-  cart?: boolean;
-  fancy?: boolean;
-  logoAlt?: string;
-  search?: boolean;
-  social?: boolean;
-  language?: boolean;
-  stickyBox?: boolean;
-  navClassName?: string;
-  button?: ReactElement;
-  navOtherClass?: string;
-};
+  info?: boolean
+  cart?: boolean
+  fancy?: boolean
+  logoAlt?: string
+  search?: boolean
+  social?: boolean
+  language?: boolean
+  stickyBox?: boolean
+  navClassName?: string
+  button?: ReactElement
+  navOtherClass?: string
+}
 // ===================================================================
 
 const Navbar: FC<NavbarProps> = (props) => {
-  const { navClassName, info, search, social, language, button, fancy, navOtherClass, stickyBox, logoAlt } =
-    props;
+  const { navClassName, info, search, social, language, button, fancy, navOtherClass, stickyBox, logoAlt } = props
 
-  const sticky = useSticky(350);
-  const navbarRef = useRef<HTMLElement | null>(null);
+  const sticky = useSticky(350)
+  const navbarRef = useRef<HTMLElement | null>(null)
 
   // dynamically render the logo
-  const logo = sticky ? 'logo-dark' : logoAlt ?? 'logo-dark';
+  const logo = sticky ? 'logo-dark' : logoAlt ?? 'logo-dark'
   // dynamically added navbar classname
-  const fixedClassName = 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed';
+  const fixedClassName = 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed'
 
   // render inner nav item links
   const renderLinks = (links: LinkType[]) => {
     return links.map((item) => (
       <ListItemLink href={item.url} title={item.title} linkClassName="dropdown-item" key={item.id} />
-    ));
-  };
+    ))
+  }
 
   // all main header contents
   const headerContent = (
@@ -66,7 +63,7 @@ const Navbar: FC<NavbarProps> = (props) => {
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
-            <ListItemLink href='/' title="Home" liClassName='nav-item' />
+            <ListItemLink href="/" title="Home" liClassName="nav-item" />
             {/* ===================== services nav item ===================== */}
             <li className="nav-item dropdown dropdown-mega">
               <DropdownToggleLink title="Services" className="nav-link dropdown-toggle" />
@@ -123,7 +120,7 @@ const Navbar: FC<NavbarProps> = (props) => {
                 </li>
               </ul>
             </li>
-            <ListItemLink href='/price' title="Price" liClassName='nav-item' />
+            <ListItemLink href="/price" title="Price" liClassName="nav-item" />
             {/* ===================== company nav item ===================== */}
             <li className="nav-item dropdown">
               <DropdownToggleLink title="Company" className="nav-link dropdown-toggle" />
@@ -136,9 +133,9 @@ const Navbar: FC<NavbarProps> = (props) => {
                         <DropdownToggleLink title="Blog Posts" />
                         <ul className="dropdown-menu">{renderLinks(children)}</ul>
                       </li>
-                    );
+                    )
                   }
-                  return <ListItemLink key={id} href={url} title={title} linkClassName="dropdown-item" />;
+                  return <ListItemLink key={id} href={url} title={title} linkClassName="dropdown-item" />
                 })}
               </ul>
             </li>
@@ -198,7 +195,7 @@ const Navbar: FC<NavbarProps> = (props) => {
         </ul>
       </div>
     </Fragment>
-  );
+  )
 
   return (
     <Fragment>
@@ -215,12 +212,12 @@ const Navbar: FC<NavbarProps> = (props) => {
           <div className="container flex-lg-row flex-nowrap align-items-center">{headerContent}</div>
         )}
       </nav>
-      
+
       {/* ============= show search box ============= */}
       {search && <Search />}
     </Fragment>
-  );
-};
+  )
+}
 
 // set deafult Props
 Navbar.defaultProps = {
@@ -231,6 +228,6 @@ Navbar.defaultProps = {
   stickyBox: true,
   navOtherClass: 'navbar-other w-100 d-flex ms-auto',
   navClassName: 'navbar navbar-expand-lg center-nav transparent navbar-light'
-};
+}
 
-export default Navbar;
+export default Navbar

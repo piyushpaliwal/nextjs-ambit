@@ -1,2 +1,2 @@
-import About from './About';
-export { About };
+import About from './About'
+export { About }

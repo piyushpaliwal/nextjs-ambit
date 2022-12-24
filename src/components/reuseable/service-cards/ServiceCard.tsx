@@ -1,19 +1,19 @@
-import { FC, HTMLAttributes } from 'react';
-import IconBox from '../IconBox';
-import NextLink from '../links/NextLink';
+import { FC, HTMLAttributes } from 'react'
+import IconBox from '../IconBox'
+import NextLink from '../links/NextLink'
 
 // ================================================
 type ServiceCardProps = {
-  icon: string;
-  title: string;
-  linkUrl: string;
-  description: string;
-  iconBoxClassNames?: HTMLAttributes<HTMLDivElement>['className'];
-};
+  icon: string
+  title: string
+  linkUrl: string
+  description: string
+  iconBoxClassNames?: HTMLAttributes<HTMLDivElement>['className']
+}
 // ================================================
 
 const ServiceCard: FC<ServiceCardProps> = (props) => {
-  const { title, linkUrl, description, icon, iconBoxClassNames } = props;
+  const { title, linkUrl, description, icon, iconBoxClassNames } = props
 
   return (
     <div className="col-md-6 col-lg-4">
@@ -26,10 +26,10 @@ const ServiceCard: FC<ServiceCardProps> = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 // set deafult Props
-ServiceCard.defaultProps = { iconBoxClassNames: 'icon btn btn-circle btn-lg btn-primary pe-none mb-5' };
+ServiceCard.defaultProps = { iconBoxClassNames: 'icon btn btn-circle btn-lg btn-primary pe-none mb-5' }
 
-export default ServiceCard;
+export default ServiceCard

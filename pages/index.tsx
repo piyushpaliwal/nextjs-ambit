@@ -1,20 +1,19 @@
-import { NextPage } from 'next';
-import { Fragment } from 'react';
+import { NextPage } from 'next'
+import { Fragment } from 'react'
 // -------- custom component -------- //
-import { Hero } from 'components/blocks/hero';
-import { Navbar } from 'components/blocks/navbar';
-import { Softwares } from 'components/blocks/clients';
-import { Footer } from 'components/blocks/footer';
-import { Pricing } from 'components/blocks/pricing';
-import { Testimonial } from 'components/blocks/testimonial';
-import { Services } from 'components/blocks/services';
-import NextLink from 'components/reuseable/links/NextLink';
-import { Process } from 'components/blocks/process';
+import { Hero } from 'components/blocks/hero'
+import { Navbar } from 'components/blocks/navbar'
+import { Softwares } from 'components/blocks/clients'
+import { Footer } from 'components/blocks/footer'
+import { Pricing } from 'components/blocks/pricing'
+import { Testimonial } from 'components/blocks/testimonial'
+import { Services } from 'components/blocks/services'
+import NextLink from 'components/reuseable/links/NextLink'
+import { Process } from 'components/blocks/process'
 
 const Index: NextPage = () => {
   return (
     <Fragment>
-
       {/* ========== header ========== */}
       <header className="wrapper bg-soft-primary">
         <Navbar
@@ -33,7 +32,7 @@ const Index: NextPage = () => {
 
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
-            { /* software expertise */}
+            {/* software expertise */}
             <Softwares />
           </div>
         </section>
@@ -45,9 +44,9 @@ const Index: NextPage = () => {
         </section>
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
-            { /* Pricing section */}
+            {/* Pricing section */}
             <Pricing />
-            { /* How we work */ }
+            {/* How we work */}
             <Process />
           </div>
         </section>
@@ -62,7 +61,7 @@ const Index: NextPage = () => {
       {/* ========== footer section ========== */}
       <Footer />
     </Fragment>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index

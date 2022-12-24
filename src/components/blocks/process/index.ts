@@ -1,5 +1,3 @@
-import Process from './Process';
+import Process from './Process'
 
-export {
-  Process,
-};
+export { Process }

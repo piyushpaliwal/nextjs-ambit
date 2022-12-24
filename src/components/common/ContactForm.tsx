@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
 const ContactForm: FC = () => {
   return (
@@ -84,7 +84,7 @@ const ContactForm: FC = () => {
         </div>
       </div>
     </form>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm

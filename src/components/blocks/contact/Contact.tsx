@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import IconBox from 'components/reuseable/IconBox';
-import TeleMarketer from 'icons/lineal/TeleMarketer';
-import NextLink from 'components/reuseable/links/NextLink';
-import ContactForm from 'components/common/ContactForm';
+import { FC } from 'react'
+import IconBox from 'components/reuseable/IconBox'
+import TeleMarketer from 'icons/lineal/TeleMarketer'
+import NextLink from 'components/reuseable/links/NextLink'
+import ContactForm from 'components/common/ContactForm'
 
 const Contact: FC = () => {
   return (
@@ -78,15 +78,13 @@ const Contact: FC = () => {
         <div className="row pt-14">
           <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
             <h2 className="display-4 mb-3 text-center">Drop Us a Line</h2>
-            <p className="lead text-center mb-10">
-              We will get back to you shortly.
-            </p>
+            <p className="lead text-center mb-10">We will get back to you shortly.</p>
             <ContactForm />
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

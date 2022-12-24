@@ -1,20 +1,20 @@
-import { FC } from 'react';
-import { slideInDownAnimate } from 'utils/animation';
-import Typewriter from 'typewriter-effect';
-import Image from 'next/image';
-import Carousel1 from '../../../../public/img/photos/carousel1.jpg'//  /img/photos/carousel1.jpg';
-import Carousel2 from '../../../../public/img/photos/carousel2.jpg';
-import Carousel3 from '../../../../public/img/photos/carousel3.jpg';
+import { FC } from 'react'
+import { slideInDownAnimate } from 'utils/animation'
+import Typewriter from 'typewriter-effect'
+import Image from 'next/image'
+import Carousel1 from '../../../../public/img/photos/carousel1.jpg' //  /img/photos/carousel1.jpg';
+import Carousel2 from '../../../../public/img/photos/carousel2.jpg'
+import Carousel3 from '../../../../public/img/photos/carousel3.jpg'
 
 // -------- custom component -------- //
-import Carousel from 'components/reuseable/Carousel';
-import NextLink from 'components/reuseable/links/NextLink';
+import Carousel from 'components/reuseable/Carousel'
+import NextLink from 'components/reuseable/links/NextLink'
 // -------- custom hook -------- //
-import useLightBox from 'hooks/useLightBox';
+import useLightBox from 'hooks/useLightBox'
 
 const Hero: FC = () => {
   // use video popup
-  useLightBox();
+  useLightBox()
 
   return (
     <section
@@ -25,12 +25,17 @@ const Hero: FC = () => {
         <div className="row gx-0 gy-12 align-items-center">
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start">
             <h1 className="display-2 mb-5 text-white" style={slideInDownAnimate('600ms')}>
-              Remote <span style={{ color: '#d8b572'}}><Typewriter options={{
-                loop: true,
-                autoStart: true,
-                strings: ['Bookkeeping', 'Accounts Management', 'Tax Return']
-              }} /></span>
-               at Ambit
+              Remote{' '}
+              <span style={{ color: '#d8b572' }}>
+                <Typewriter
+                  options={{
+                    loop: true,
+                    autoStart: true,
+                    strings: ['Bookkeeping', 'Accounts Management', 'Tax Return']
+                  }}
+                />
+              </span>
+              at Ambit
             </h1>
 
             <p className="lead fs-lg lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>
@@ -39,16 +44,22 @@ const Hero: FC = () => {
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate('1200ms')}>
-                <NextLink title="Explore Possibilities" href="/services" className="btn btn-lg btn-white rounded-pill me-2" />
+                <NextLink
+                  title="Explore Possibilities"
+                  href="/services"
+                  className="btn btn-lg btn-white rounded-pill me-2"
+                />
               </span>
 
               <span style={slideInDownAnimate('1500ms')}>
-                <a 
-                href='https://calendly.com/ambit-accounting/15min'
-                className='btn btn-lg btn-outline-white rounded-pill'
-                target='_blank'
-                rel='noreferrer'
-                >Let's Talk</a>
+                <a
+                  href="https://calendly.com/ambit-accounting/15min"
+                  className="btn btn-lg btn-outline-white rounded-pill"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Let's Talk
+                </a>
               </span>
             </div>
           </div>
@@ -73,7 +84,7 @@ const Hero: FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

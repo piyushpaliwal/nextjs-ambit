@@ -1,4 +1,4 @@
-import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
+import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
 
 export default class AmbitWeb extends Document {
   render() {
@@ -13,14 +13,14 @@ export default class AmbitWeb extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
 // ======================================================================
 
 AmbitWeb.getInitialProps = async (ctx: DocumentContext) => {
-  const originalRenderPage = ctx.renderPage;
+  const originalRenderPage = ctx.renderPage
 
   // Run the React rendering logic synchronously
   ctx.renderPage = () =>
@@ -29,10 +29,10 @@ AmbitWeb.getInitialProps = async (ctx: DocumentContext) => {
       enhanceApp: (App) => App,
       // Useful for wrapping in a per-page basis
       enhanceComponent: (Component) => Component
-    });
+    })
 
   // Run the parent `getInitialProps`, it now includes the custom `renderPage`
-  const initialProps = await Document.getInitialProps(ctx);
+  const initialProps = await Document.getInitialProps(ctx)
 
-  return { ...initialProps };
-};
+  return { ...initialProps }
+}

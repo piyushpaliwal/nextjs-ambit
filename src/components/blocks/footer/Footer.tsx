@@ -1,15 +1,14 @@
-import { FC } from 'react';
+import { FC } from 'react'
 // -------- custom component -------- //
-import SocialLinks from 'components/reuseable/SocialLinks';
-import NextLink from 'components/reuseable/links/NextLink';
+import SocialLinks from 'components/reuseable/SocialLinks'
+import NextLink from 'components/reuseable/links/NextLink'
 // -------- data -------- //
-import footerNav from 'data/footer';
+import footerNav from 'data/footer'
 
 const Footer: FC = () => {
   return (
     <footer className="bg-navy text-inverse">
       <div className="container pb-13 pb-md-15">
-
         <div className="row gy-6 gy-lg-0 pt-12">
           <div className="col-md-3 col-lg-3">
             <div className="widget">
@@ -27,14 +26,17 @@ const Footer: FC = () => {
           <div className="col-md-6 col-lg-6">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">India Office (HQ)</h4>
-              <address className="pe-xl-15 pe-xxl-17">D-308, The First, Behind Keshavbaug Party Plot, Vastrapur, Ahmedabad - 380015</address>
+              <address className="pe-xl-15 pe-xxl-17">
+                D-308, The First, Behind Keshavbaug Party Plot, Vastrapur, Ahmedabad - 380015
+              </address>
               <NextLink title="(+91) 982 501 6079" href="tel:+919825016079" />
             </div>
             <div className="widget">
               <h4 className="widget-title text-white mb-3">US Office</h4>
               <address className="pe-xl-15 pe-xxl-17">3133 Little Bear Ln, Buford, GA 30519</address>
               <NextLink title="(+1) 786 866 9559" href="tel:+17868669559" />
-              <br /><NextLink title="info@ambitkpo.com" href="mailto:info@ambitkpo.com" />
+              <br />
+              <NextLink title="info@ambitkpo.com" href="mailto:info@ambitkpo.com" />
             </div>
           </div>
 
@@ -53,7 +55,7 @@ const Footer: FC = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

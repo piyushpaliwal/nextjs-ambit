@@ -1,10 +1,8 @@
-const home = [
-  { id: 1, url: '/', title: 'Home'}
-];
+const home = [{ id: 1, url: '/', title: 'Home' }]
 
 const services = {
   services: [
-    { id: 1, title: 'Bookkeeping & Accounting', url: '/bookkeeping-accounting' },
+    { id: 1, title: 'Bookkeeping & Accounting', url: '/services/accounts-bookkeeping' },
     { id: 2, title: 'Tax Return Preparation', url: '/tax-return-preparation' },
     { id: 3, title: 'Accounts Management', url: '/accounts-management' },
     { id: 4, title: 'Accounts Receivable', url: '/accounts-receivable' },
@@ -28,15 +26,15 @@ const services = {
     { id: 10, title: 'Brinks', url: '/brinks' },
     { id: 11, title: 'Bill.com', url: '/bill-com' },
     { id: 12, title: 'Blindsbook', url: '/blindsbook' },
-    { id: 13, title: 'Surepayroll', url: '/surepayroll' },
+    { id: 13, title: 'Surepayroll', url: '/surepayroll' }
   ],
   location: [
     { id: 1, title: 'US Bookkeeping', url: '/us-bookkeeping' },
     { id: 2, title: 'Uk Bookkeeping', url: '/uk-bookkeeping' },
     { id: 3, title: 'UAE Bookkeeping', url: '/uae-bookkeeping' },
-    { id: 4, title: 'Australia', url: '/australia-bookkeeping' },
+    { id: 4, title: 'Australia', url: '/australia-bookkeeping' }
   ]
-};
+}
 
 const industries = {
   healthcare: [
@@ -51,18 +49,18 @@ const industries = {
     { id: 9, title: 'Hospitals', url: '/hospitals' },
     { id: 10, title: 'Medical Office', url: '/medical-office' },
     { id: 11, title: 'Healing Service', url: '/healing-service' },
-    { id: 12, title: 'Mental Health', url: '/mental-health' },
+    { id: 12, title: 'Mental Health', url: '/mental-health' }
   ],
   retailStores: [
     { id: 1, title: 'Bakery Stores', url: '/bakery-stores' },
     { id: 2, title: 'Fashion Stores', url: '/fashion-stores' },
     { id: 3, title: 'Super Stores', url: '/super-stores' },
-    { id: 4, title: 'Garment Retailers', url: '/garment-retailers' },
+    { id: 4, title: 'Garment Retailers', url: '/garment-retailers' }
   ],
   manufacturing: [
     { id: 1, title: 'Pharmaceutical', url: '/pharmaceutical' },
     { id: 2, title: 'Chemicals', url: '/chemicals' },
-    { id: 3, title: 'Garments', url: '/garments' },
+    { id: 3, title: 'Garments', url: '/garments' }
   ],
   eCommerce: [
     { id: 1, title: 'Fashion Store', url: '/fashion-store' },
@@ -70,7 +68,7 @@ const industries = {
     { id: 3, title: 'Shopify', url: '/Shopify' },
     { id: 4, title: 'Woo Commerce', url: '/woocommerce' },
     { id: 5, title: 'Etsy', url: '/etsy' },
-    { id: 6, title: 'Consumer Goods', url: '/consumer-goods' },
+    { id: 6, title: 'Consumer Goods', url: '/consumer-goods' }
   ],
   professional: [
     { id: 1, title: 'CPA Firms', url: '/cpa-firms' },
@@ -78,13 +76,13 @@ const industries = {
     { id: 3, title: 'Consulting Firms', url: '/consulting-firms' },
     { id: 4, title: 'CFO Services', url: '/cfo-services' },
     { id: 5, title: 'Wealth Management', url: '/wealth-management' },
-    { id: 6, title: 'Attorneys', url: '/attorneys' },
+    { id: 6, title: 'Attorneys', url: '/attorneys' }
   ],
   realEstate: [
     { id: 1, title: 'Construction', url: '/construction' },
     { id: 2, title: 'Rentals', url: '/rentals' },
     { id: 3, title: 'Leasing', url: '/leasing' },
-    { id: 4, title: 'Remodeling', url: '/remodeling' },
+    { id: 4, title: 'Remodeling', url: '/remodeling' }
   ],
   hospitality: [
     { id: 1, title: 'Restaurant', url: '/restaurant' },
@@ -93,7 +91,7 @@ const industries = {
     { id: 4, title: 'Laundry', url: '/laundry' },
     { id: 5, title: 'Bar', url: '/bar' },
     { id: 6, title: 'Restaurant Supplier', url: '/restaurant-supplier' },
-    { id: 7, title: 'Cleaning Company', url: '/cleaning-company' },
+    { id: 7, title: 'Cleaning Company', url: '/cleaning-company' }
   ],
   others: [
     { id: 1, title: 'Logistics', url: '/logistics' },
@@ -113,17 +111,17 @@ const industries = {
     { id: 15, title: 'Media Company', url: '/media-company' },
     { id: 16, title: 'Non Profit Agency', url: '/non-profit-agency' },
     { id: 17, title: 'Security Agency', url: '/security-agency' },
-    { id: 18, title: 'Towing Agency', url: '/towing-agency' },
+    { id: 18, title: 'Towing Agency', url: '/towing-agency' }
   ]
-};
+}
 
 const company = [
-  { id: 1, url: '/about-us', title: 'About Us', children: []},
-  { id: 2, url: '/faq', title: 'FAQ', children: []},
-  { id: 3, url: '/review', title: 'Review', children: []},
-  { id: 4, url: '/we-are-hiring', title: 'We are Hiring!', children: []},
-  { id: 5, url: '/life-at-ambitkpo', title: 'Life@AmbitKPO', children: []},
-  { id: 6, url: '/contact', title: 'Contact'},
+  { id: 1, url: '/about-us', title: 'About Us', children: [] },
+  { id: 2, url: '/faq', title: 'FAQ', children: [] },
+  { id: 3, url: '/review', title: 'Review', children: [] },
+  { id: 4, url: '/we-are-hiring', title: 'We are Hiring!', children: [] },
+  { id: 5, url: '/life-at-ambitkpo', title: 'Life@AmbitKPO', children: [] },
+  { id: 6, url: '/contact', title: 'Contact' }
 ]
 
-export { home, services, industries, company };
+export { home, services, industries, company }

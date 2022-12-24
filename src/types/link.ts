@@ -1,2 +1,2 @@
-type Link = { id: number; title: string; url: string };
-export default Link;
+type Link = { id: number; title: string; url: string }
+export default Link

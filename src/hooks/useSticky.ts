@@ -1,22 +1,22 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react'
 
 const useSticky = (height = 100) => {
-  const [sticky, setSticky] = useState(false);
+  const [sticky, setSticky] = useState(false)
 
   // scroll listener
   const listener = useCallback(() => {
-    if (window.scrollY > height) setSticky(true);
-    else setSticky(false);
-  }, [height]);
+    if (window.scrollY > height) setSticky(true)
+    else setSticky(false)
+  }, [height])
 
   useEffect(() => {
-    if (!window) return;
+    if (!window) return
 
-    window.addEventListener('scroll', listener);
-    return () => window.removeEventListener('scroll', listener);
-  }, [listener]);
+    window.addEventListener('scroll', listener)
+    return () => window.removeEventListener('scroll', listener)
+  }, [listener])
 
-  return sticky;
-};
+  return sticky
+}
 
-export default useSticky;
+export default useSticky

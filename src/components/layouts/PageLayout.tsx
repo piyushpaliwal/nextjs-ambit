@@ -30,7 +30,7 @@ const PageLayout: FC<PageLayoutProps> = ({ title, children, subTitle }) => {
         <section className="wrapper bg-gray">
           <div className="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
             <div className="row">
-              <div className="col-md-9 col-lg-7 col-xl-5 mx-auto">
+              <div className="col-md-9 col-lg-7 col-xl-9 mx-auto">
                 <h1 className="display-1 mb-3">{title}</h1>
                 {subTitle && <p className="lead px-xxl-10">{subTitle}</p>}
               </div>
@@ -40,11 +40,6 @@ const PageLayout: FC<PageLayoutProps> = ({ title, children, subTitle }) => {
 
         {/* ========== main content ========= */}
         {children}
-        {/* <section className="container">
-          <div className="row">
-            <div className="col-xl-12 order-xl-2">{children}</div>
-          </div>
-        </section> */}
       </main>
       
       {/* ========== footer section ========== */}

@@ -18,7 +18,7 @@ const softwareList = [
   '/img/brands/logo-15.png',
   '/img/brands/logo-16.png',
   '/img/brands/logo-20.png',
-  '/img/brands/logo-19.png',
-];
+  '/img/brands/logo-19.png'
+]
 
-export { softwareList };
+export { softwareList }

@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import { FC } from 'react'
 // -------- data -------- //
-import { processList } from 'data/process';
+import { processList } from 'data/process'
 
 const Process: FC = () => {
   return (
@@ -21,7 +21,7 @@ const Process: FC = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Process;
+export default Process

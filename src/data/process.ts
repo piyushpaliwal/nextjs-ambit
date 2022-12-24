@@ -1,8 +1,8 @@
 // -------- icons -------- //
-import Browser from 'icons/lineal/Browser';
-import Rocket from 'icons/lineal/Rocket';
-import Loading from 'icons/lineal/Loading';
-import TeleMarketer from 'icons/lineal/TeleMarketer';
+import Browser from 'icons/lineal/Browser'
+import Rocket from 'icons/lineal/Rocket'
+import Loading from 'icons/lineal/Loading'
+import TeleMarketer from 'icons/lineal/TeleMarketer'
 
 // used in the process-13 block
 export const processList = [
@@ -30,4 +30,4 @@ export const processList = [
     Icon: Rocket,
     description: 'Timely and accurate delivery is everything. Our experts will start delivering as committed'
   }
-];
+]

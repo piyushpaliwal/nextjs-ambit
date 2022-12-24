@@ -1,10 +1,10 @@
-import { FC, useState } from 'react';
+import { FC, useState } from 'react'
 
 // language list
-const supportLanguage = ['En', 'Bn', 'Es', 'De'];
+const supportLanguage = ['En', 'Bn', 'Es', 'De']
 
 const Language: FC = () => {
-  const [language, setLanguage] = useState(supportLanguage[0]);
+  const [language, setLanguage] = useState(supportLanguage[0])
 
   return (
     <li className="nav-item dropdown language-select text-uppercase">
@@ -28,7 +28,7 @@ const Language: FC = () => {
         ))}
       </ul>
     </li>
-  );
-};
+  )
+}
 
-export default Language;
+export default Language

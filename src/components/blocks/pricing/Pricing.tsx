@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import data from 'data/princing';
-import NextLink from 'components/reuseable/links/NextLink';
+import { FC } from 'react'
+import data from 'data/princing'
+import NextLink from 'components/reuseable/links/NextLink'
 
 const Pricing: FC = () => {
   const MOST_POPULAR = 'Fixed Monthly'
@@ -32,14 +32,14 @@ const Pricing: FC = () => {
 
                   <ul className="icon-list bullet-green mt-7 mb-8">
                     {features.map((item, i) => {
-                      const itemArr = item.split(' ');
+                      const itemArr = item.split(' ')
 
                       return (
                         <li key={item + i}>
                           <i className="uil uil-check" />
                           <strong>{itemArr[0]}</strong> {itemArr[1]} {itemArr[2]}
                         </li>
-                      );
+                      )
                     })}
                   </ul>
 
@@ -55,7 +55,7 @@ const Pricing: FC = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Pricing;
+export default Pricing

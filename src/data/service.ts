@@ -61,5 +61,5 @@ export const serviceList = [
     title: 'ERTC',
     icon: 'uil-bill',
     description: `The Employee Retention Tax Credit is a refundable tax credit of 50% of qualified wages paid to employees from 3/12/2020 to 9/30/2021`
-  },
-];
+  }
+]

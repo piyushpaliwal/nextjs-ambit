@@ -1,2 +1,2 @@
-import Tiles from './Tiles';
-export { Tiles };
+import Tiles from './Tiles'
+export { Tiles }

@@ -1,3 +1,3 @@
-import Softwares from './Softwares';
+import Softwares from './Softwares'
 
-export { Softwares };
+export { Softwares }

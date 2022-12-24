@@ -15,5 +15,5 @@ export const testimonialList = [
     review: `There are not enough words to tell you how helpful Nishant and his firm have been in helping me
     with bookkeeping and accounting needs. I have worked with outsourcing firms and have never been
     as satisfied as I am with Nishant Sharrma!`
-  },
-];
+  }
+]

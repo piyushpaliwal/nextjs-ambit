@@ -1,15 +1,15 @@
-import { FC, ReactElement, useState } from 'react';
-import { Autoplay, Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
+import { FC, ReactElement, useState } from 'react'
+import { Autoplay, Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react'
 
 // ==================================================================
 interface CarouselProps extends SwiperProps {
-  pagination?: boolean;
-  navigation?: boolean;
-  spaceBetween?: number;
-  slideClassName?: string;
-  children: ReactElement[];
-  slidesPerView?: number | 'auto';
+  pagination?: boolean
+  navigation?: boolean
+  spaceBetween?: number
+  slideClassName?: string
+  children: ReactElement[]
+  slidesPerView?: number | 'auto'
 }
 // ==================================================================
 
@@ -22,10 +22,10 @@ const Carousel: FC<CarouselProps> = (props) => {
     pagination = true,
     navigation = true,
     ...others
-  } = props;
+  } = props
 
-  const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
-  const [nextEl, setNextEl] = useState<HTMLElement | null>(null);
+  const [prevEl, setPrevEl] = useState<HTMLElement | null>(null)
+  const [nextEl, setNextEl] = useState<HTMLElement | null>(null)
 
   return (
     <Swiper
@@ -54,7 +54,7 @@ const Carousel: FC<CarouselProps> = (props) => {
         </div>
       )}
     </Swiper>
-  );
-};
+  )
+}
 
-export default Carousel;
+export default Carousel

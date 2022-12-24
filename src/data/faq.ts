@@ -38,7 +38,7 @@ export const faqList = [
       expand: false,
       heading: 'What are the timings of work? How do you manage the time difference?',
       body: `Our Staff is available for all time zone 24x7.`
-    },
+    }
   ],
   [
     {
@@ -82,4 +82,4 @@ export const faqList = [
       body: `ISO 27001:2013 is an internationally recognized Information Security Standard published by the International Organization for Standardization. This certification is awarded to the exclusive organizations that comply with the information security guidelines of ISO and strictly abide by it at all times. Ambit is one such organization with this certification.`
     }
   ]
-];
+]
