@@ -22,7 +22,13 @@ const NotFound: NextPage = () => {
           <div className="container pt-12 pt-md-14 pb-14 pb-md-16">
             <div className="row">
               <div className="col-lg-9 col-xl-8 mx-auto">
-                <FigureImage width={800} height={316} src="/img/illustrations/404.png" className="mb-10" />
+                <FigureImage
+                  width={800}
+                  height={316}
+                  src="/img/illustrations/404.png"
+                  alt="404 Image"
+                  className="mb-10"
+                />
               </div>
 
               <div className="col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
