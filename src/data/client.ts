@@ -1,3 +1,10 @@
+const softwareListPayroll = [
+  '/img/brands/logo-9.png',
+  '/img/brands/logo-21.png',
+  '/img/brands/logo-19.png',
+  '/img/brands/logo-8.png'
+]
+
 const softwareList = [
   '/img/brands/logo-8.png',
   '/img/brands/logo-3.png',
@@ -21,4 +28,4 @@ const softwareList = [
   '/img/brands/logo-19.png'
 ]
 
-export { softwareList }
+export { softwareList, softwareListPayroll }

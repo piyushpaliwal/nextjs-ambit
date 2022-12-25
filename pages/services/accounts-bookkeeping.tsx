@@ -36,10 +36,7 @@ const BookkeepingPage: NextPage = () => {
       <section className="wrapper bg-gray">
         <div className="container py-14 py-md-14">
           <div className="row">
-            <div className="col-lg-7 order-lg-2">
-              <Image src="/img/illustrations/i6@2x.png" alt="Custom Team Illustration" width="1600" height="998" />
-            </div>
-            <div className="col-lg-5">
+            <div className="col-lg-8">
               <h2 className="fs-18 text-uppercase text-primary mb-3">Build your own team</h2>
               <h3 className="display-4 mb-9">
                 We allow for customizations, you tell us who you need, and we'll make it happen
@@ -57,7 +54,6 @@ const BookkeepingPage: NextPage = () => {
               </p>
             </div>
           </div>
-
           <div className="row gx-md-8 gy-8 mb-14 mb-md-18">
             {bookkeepingBenefitsList.map((item) => (
               <ServiceCard2
