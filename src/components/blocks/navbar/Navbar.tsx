@@ -65,25 +65,21 @@ const Navbar: FC<NavbarProps> = (props) => {
           <ul className="navbar-nav">
             <ListItemLink href="/" title="Home" liClassName="nav-item" />
             {/* ===================== services nav item ===================== */}
-            <li className="nav-item dropdown dropdown-mega">
+            <li className="nav-item dropdown">
               <DropdownToggleLink title="Services" className="nav-link dropdown-toggle" />
-              <ul className="dropdown-menu mega-menu">
-                <li className="mega-menu-content">
-                  <div className="row gx-0 gx-lg-3">
-                    <div className="col-lg-4">
-                      <h6 className="dropdown-header">Software</h6>
-                      <ul className="list-unstyled cc-2 pb-lg-1">{renderLinks(services.software)}</ul>
 
-                      <h6 className="dropdown-header mt-lg-6">Location</h6>
-                      <ul className="list-unstyled cc-2">{renderLinks(services.location)}</ul>
-                    </div>
-
-                    <div className="col-lg-8">
-                      <h6 className="dropdown-header">Services</h6>
-                      <ul className="list-unstyled cc-2">{renderLinks(services.services)}</ul>
-                    </div>
-                  </div>
-                </li>
+              <ul className="dropdown-menu">
+                {services.map(({ id, url, title, children }) => {
+                  if (!url && children) {
+                    return (
+                      <li className="dropdown dropdown-submenu dropend" key={id}>
+                        <DropdownToggleLink title="Blog Posts" />
+                        <ul className="dropdown-menu">{renderLinks(children)}</ul>
+                      </li>
+                    )
+                  }
+                  return <ListItemLink key={id} href={url} title={title} linkClassName="dropdown-item" />
+                })}
               </ul>
             </li>
             {/* ===================== industry nav item ===================== */}
