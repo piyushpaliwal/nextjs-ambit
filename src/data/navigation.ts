@@ -1,40 +1,13 @@
 const home = [{ id: 1, url: '/', title: 'Home' }]
 
-const services = {
-  services: [
-    { id: 1, title: 'Bookkeeping & Accounting', url: '/services/accounts-bookkeeping' },
-    { id: 2, title: 'Tax Return Preparation', url: '/tax-return-preparation' },
-    { id: 3, title: 'Accounts Management', url: '/accounts-management' },
-    { id: 4, title: 'Accounts Receivable', url: '/accounts-receivable' },
-    { id: 5, title: 'Payroll', url: '/payroll' },
-    { id: 6, title: 'Virtual Assistance', url: '/virtual-assistance' },
-    { id: 7, title: 'Monthly Financial Reporting', url: '/monthly-financial-reporting' },
-    { id: 8, title: 'Invoice Processing', url: '/invoice-processing' },
-    { id: 9, title: 'Employee Retention Tax Credit', url: '/employee-retention-tax-credit' }
-  ],
-  software: [
-    { id: 0, title: 'Quickbooks', url: '/quickbooks' },
-    { id: 1, title: 'Restaurant 365', url: '/restaurant-365' },
-    { id: 2, title: 'Xero', url: '/xero' },
-    { id: 3, title: 'Bind Book', url: '/bind-book' },
-    { id: 4, title: 'Pro Connect', url: '/pro-connect' },
-    { id: 5, title: 'Practice Partner', url: '/practice-partner' },
-    { id: 6, title: 'Lacerte', url: '/lacerte' },
-    { id: 7, title: 'Gusto', url: '/gusto' },
-    { id: 8, title: 'Etsy', url: 'etsy' },
-    { id: 9, title: 'Drake Software', url: '/drake-software' },
-    { id: 10, title: 'Brinks', url: '/brinks' },
-    { id: 11, title: 'Bill.com', url: '/bill-com' },
-    { id: 12, title: 'Blindsbook', url: '/blindsbook' },
-    { id: 13, title: 'Surepayroll', url: '/surepayroll' }
-  ],
-  location: [
-    { id: 1, title: 'US Bookkeeping', url: '/us-bookkeeping' },
-    { id: 2, title: 'Uk Bookkeeping', url: '/uk-bookkeeping' },
-    { id: 3, title: 'UAE Bookkeeping', url: '/uae-bookkeeping' },
-    { id: 4, title: 'Australia', url: '/australia-bookkeeping' }
-  ]
-}
+const services = [
+  { id: 1, url: '/services/accounts-bookkeeping', title: 'Accounts & Bookkeeping', children: [] },
+  { id: 2, url: '/services/payroll', title: 'Payroll', children: [] },
+  { id: 3, url: '/services/accounts-receivable', title: 'Accounts Receivable', children: [] },
+  { id: 4, url: '/services/accounts-payable', title: 'Accounts Payable', children: [] },
+  { id: 5, url: '/services/tax-return', title: 'Tax Return Preparation', children: [] },
+  { id: 6, url: '/services/invoice-processing', title: 'Invoice Processing', children: [] }
+]
 
 const industries = {
   healthcare: [
