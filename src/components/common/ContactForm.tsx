@@ -1,13 +1,91 @@
-import { FC } from 'react'
+import { FC, FormEventHandler } from 'react'
+import React, { useEffect, useState } from 'react'
+import useAxios from 'axios-hooks'
+
+export type ContactFormProps = {
+  firstname: string
+  lastname: string
+  email: string
+  serviceType: string
+  message: string
+  pageUri: string
+}
 
 const ContactForm: FC = () => {
+  const [contactObj, setContactObj] = useState<ContactFormProps>({
+    firstname: '',
+    lastname: '',
+    email: '',
+    serviceType: '',
+    message: '',
+    pageUri: ''
+  })
+
+  useEffect(() => {
+    setContactObj(() => ({
+      ...contactObj,
+      pageUri: window.location.href
+    }))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [contactObj.pageUri])
+
+  const handleInputChange = (
+    e: React.FormEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
+    prop: string
+  ) => {
+    setContactObj({
+      ...contactObj,
+      [prop]: e.currentTarget.value
+    })
+  }
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    refetch()
+  }
+
+  const [{ data, loading, error }, refetch] = useAxios(
+    {
+      url: '/api/contactUs',
+      method: 'POST',
+      data: { contactObj }
+    },
+    {
+      manual: true
+    }
+  )
+
+  if (error) {
+    return (
+      <div className="alert alert-danger alert-icon" role="alert">
+        <i className="uil uil-times-circle" /> Oops, something went wrong; We are embarrassed{' '}
+      </div>
+    )
+  }
+
+  if (data) {
+    return (
+      <div className="alert alert-success alert-icon" role="alert">
+        <i className="uil uil-check-circle" /> Thank You for contacting us, we'll get back to you shortly.
+      </div>
+    )
+  }
+
   return (
-    <form className="contact-form needs-validation" method="post">
+    <form className="contact-form needs-validation" method="post" onSubmit={handleSubmit}>
       <div className="messages"></div>
       <div className="row gx-4">
         <div className="col-md-6">
           <div className="form-floating mb-4">
-            <input required type="text" name="name" id="form_name" placeholder="Jane" className="form-control" />
+            <input
+              required
+              type="text"
+              name="firstname"
+              id="form_name"
+              placeholder="Jane"
+              className="form-control"
+              onChange={(e) => handleInputChange(e, 'firstname')}
+            />
             <label htmlFor="form_name">First Name *</label>
             <div className="valid-feedback"> Looks good! </div>
             <div className="invalid-feedback"> Please enter your first name. </div>
@@ -16,7 +94,15 @@ const ContactForm: FC = () => {
 
         <div className="col-md-6">
           <div className="form-floating mb-4">
-            <input required type="text" name="surname" placeholder="Doe" id="form_lastname" className="form-control" />
+            <input
+              required
+              type="text"
+              name="surname"
+              placeholder="Doe"
+              id="form_lastname"
+              className="form-control"
+              onChange={(e) => handleInputChange(e, 'lastname')}
+            />
             <label htmlFor="form_lastname">Last Name *</label>
             <div className="valid-feedback"> Looks good! </div>
             <div className="invalid-feedback"> Please enter your last name. </div>
@@ -32,6 +118,7 @@ const ContactForm: FC = () => {
               id="form_email"
               className="form-control"
               placeholder="jane.doe@example.com"
+              onChange={(e) => handleInputChange(e, 'email')}
             />
             <label htmlFor="form_email">Email *</label>
             <div className="valid-feedback"> Looks good! </div>
@@ -41,8 +128,15 @@ const ContactForm: FC = () => {
 
         <div className="col-md-6">
           <div className="form-select-wrapper mb-4">
-            <select className="form-select" id="form-select" name="department" required>
-              <option disabled value="">
+            <select
+              className="form-select"
+              id="form-select"
+              name="department"
+              onChange={(e) => handleInputChange(e, 'serviceType')}
+              required
+              defaultValue="Service Type"
+            >
+              <option disabled value="Service Type">
                 Service Type
               </option>
               <option value="Tax Return">Tax Return</option>
@@ -68,6 +162,7 @@ const ContactForm: FC = () => {
               className="form-control"
               placeholder="Your message"
               style={{ height: 150 }}
+              onChange={(e) => handleInputChange(e, 'message')}
             />
 
             <label htmlFor="form_message">Message *</label>
