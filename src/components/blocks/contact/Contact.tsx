@@ -8,6 +8,14 @@ const Contact: FC = () => {
   return (
     <section className="wrapper bg-light angled upper-end lower-end">
       <div className="container pb-14 pb-md-16">
+        {/* ========== contact form section ========== */}
+        <div className="row py-14">
+          <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+            {/* <h2 className="display-4 mb-3 text-center">Drop Us a Line</h2>
+            <p className="lead text-center mb-10">We will get back to you shortly.</p> */}
+            <ContactForm />
+          </div>
+        </div>
         <div className="row gx-md-8 gx-xl-12 gy-10 align-items-center">
           <div className="col-md-8 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1 position-relative">
             <div className="shape bg-dot primary rellax w-17 h-21" style={{ top: '-2rem', left: '-1.4rem' }} />
@@ -72,14 +80,6 @@ const Contact: FC = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-        {/* ========== contact form section ========== */}
-        <div className="row pt-14">
-          <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-            <h2 className="display-4 mb-3 text-center">Drop Us a Line</h2>
-            <p className="lead text-center mb-10">We will get back to you shortly.</p>
-            <ContactForm />
           </div>
         </div>
       </div>
