@@ -6,7 +6,8 @@ const services = [
   { id: 3, url: '/services/accounts-receivable', title: 'Accounts Receivable', children: [] },
   { id: 4, url: '/services/accounts-payable', title: 'Accounts Payable', children: [] },
   { id: 5, url: '/services/tax-return', title: 'Tax Return Preparation', children: [] },
-  { id: 6, url: '/services/invoice-processing', title: 'Invoice Processing', children: [] }
+  { id: 6, url: '/services/invoice-processing', title: 'Invoice Processing', children: [] },
+  { id: 7, url: '/services/virtual-assistance', title: 'Virtual Assistance', children: [] }
 ]
 
 const industries = {
