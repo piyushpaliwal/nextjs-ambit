@@ -7,7 +7,7 @@ import { NextPage } from 'next'
 
 const InvoiceProcessingPage: NextPage = () => {
   return (
-    <PageLayout title="Invoice Processing">
+    <PageLayout title="Invoice Processing" backgroundUrl="/img/photos/bg-invoice-processing.jpg">
       <section className="wrapper bg-light">
         <div className="container py-14">
           <Process1 />

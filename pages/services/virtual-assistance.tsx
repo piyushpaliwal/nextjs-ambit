@@ -6,7 +6,7 @@ import { NextPage } from 'next'
 
 const virtualAssistancePage: NextPage = () => {
   return (
-    <PageLayout title="Virtual Assistance">
+    <PageLayout title="Virtual Assistance" backgroundUrl="/img/photos/bg-virtual-assistant.jpg">
       <section className="wrapper bg-light">
         <div className="container py-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">

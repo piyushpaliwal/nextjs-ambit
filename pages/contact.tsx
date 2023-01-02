@@ -5,7 +5,7 @@ import { FC } from 'react'
 
 const ContactPage: NextPage = () => {
   return (
-    <PageLayout title="Get in touch">
+    <PageLayout title="Get in touch" backgroundUrl="/img/photos/bg-contact.jpg">
       <Contact />
     </PageLayout>
   )

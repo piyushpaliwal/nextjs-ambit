@@ -11,6 +11,7 @@ const BookkeepingPage: NextPage = () => {
     <PageLayout
       title="Accounts & Bookkeeping"
       subTitle="Outsource the whole or a part of your finance function and see how you can create a dramatic improvement in business performance and profitability"
+      backgroundUrl="/img/photos/bg1.jpg"
     >
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">

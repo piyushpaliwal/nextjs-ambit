@@ -18,6 +18,6 @@ export const invoiceProcess = [
     title: 'Invoices Sent',
     className: 'mx-lg-6 mt-6',
     subtitle:
-      'nvoices are imported into an accounts payable system of our own choice, and in a format you are comfortable with. The whole process is extremely streamlined and secure so as to ensure guaranteed delivery before due time.'
+      'Invoices are imported into an accounts payable system of our own choice, and in a format you are comfortable with. The whole process is extremely streamlined and secure so as to ensure guaranteed delivery before due time.'
   }
 ]

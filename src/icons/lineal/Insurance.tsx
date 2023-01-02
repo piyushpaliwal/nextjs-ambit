@@ -1,11 +1,11 @@
-import IconProps from 'types/icon';
+import IconProps from 'types/icon'
 
 const Insurance = ({ className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 441.41 512"
-      className={`svg-inject icon-svg ${className || 'icon-svg-sm text-pink me-5 mt-1'}`}
+      className={`svg-inject icon-svg ${className || 'icon-svg-sm text-pink me-5 mt-1 mb-4'}`}
     >
       <path
         className="lineal-fill"
@@ -24,7 +24,7 @@ const Insurance = ({ className }: IconProps) => {
         d="M327.19,405.92a14.81,14.81,0,0,1-7.22-1.87l-24.85-13.86a14.84,14.84,0,0,1,14.45-25.93L325.24,373l34.06-30.14A14.84,14.84,0,1,1,379,365.09L337,402.2A14.82,14.82,0,0,1,327.19,405.92Z"
       />
     </svg>
-  );
-};
+  )
+}
 
-export default Insurance;
+export default Insurance

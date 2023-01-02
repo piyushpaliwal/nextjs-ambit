@@ -11,6 +11,7 @@ import Carousel from 'components/reuseable/Carousel'
 import NextLink from 'components/reuseable/links/NextLink'
 // -------- custom hook -------- //
 import useLightBox from 'hooks/useLightBox'
+import FigureImage from 'components/reuseable/FigureImage'
 
 const Hero: FC = () => {
   // use video popup
@@ -67,7 +68,7 @@ const Hero: FC = () => {
           <div className="col-lg-5 offset-lg-1">
             <div className="swiper-container shadow-lg">
               <Carousel slidesPerView={1} className="dots-over">
-                <Image alt="Carousel 1" className="rounded" src={Carousel1} />
+                <Image alt="Director" className="rounded" src={Carousel1} />
                 <Image alt="Carousel 2" className="rounded" src={Carousel2} />
                 <Image alt="Carousel 3" className="rounded" src={Carousel3} />
                 {/* <img alt="" className="rounded" src="/img/photos/carousel-1.jpg" srcSet="/img/photos/carousel-1@2x.jpg 2x" />

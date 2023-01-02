@@ -52,7 +52,7 @@ const About6: FC = () => {
           <div className="row gx-md-8 gx-xl-12 gy-6 align-items-center">
             <div className="col-md-8 col-lg-6 order-lg-2 mx-auto">
               <div className="img-mask mask-1">
-                <Image height={750} width={1000} src="/img/photos/nishant-sharma.jpg" alt="Nishant Sharma" />
+                <Image height={564} width={825} src="/img/photos/director.jpg" alt="Nishant Sharma" />
               </div>
             </div>
 
