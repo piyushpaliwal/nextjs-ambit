@@ -5,7 +5,7 @@ import { Services } from 'components/blocks/services'
 
 const ServicesPage: NextPage = () => {
   return (
-    <PageLayout title="Services" subTitle="">
+    <PageLayout title="Services" subTitle="" backgroundUrl="/img/photos/bg-services.jpg">
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">
           <Services />
