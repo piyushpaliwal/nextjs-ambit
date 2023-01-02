@@ -1,4 +1,4 @@
-import IconProps from 'types/icon';
+import IconProps from 'types/icon'
 
 const TeleMarketer = ({ className }: IconProps) => {
   return (
@@ -40,7 +40,7 @@ const TeleMarketer = ({ className }: IconProps) => {
         d="M251.2 195.9h-83.3c-6.5 0-11.7-5.2-11.7-11.7s5.2-11.7 11.7-11.7h83.3c6.5 0 11.7 5.3 11.7 11.7 0 6.5-5.3 11.7-11.7 11.7z"
       />
     </svg>
-  );
-};
+  )
+}
 
-export default TeleMarketer;
+export default TeleMarketer

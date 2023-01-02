@@ -1,11 +1,11 @@
-import IconProps from 'types/icon';
+import IconProps from 'types/icon'
 
 const Savings = ({ className }: IconProps) => {
   return (
     <svg
       viewBox="0 0 512 465.5"
       xmlns="http://www.w3.org/2000/svg"
-      className={`svg-inject icon-svg ${className || 'icon-svg-md text-green mb-3'}`}
+      className={`svg-inject icon-svg ${className || 'icon-svg-md text-green mb-4'}`}
     >
       <path
         className="lineal-stroke"
@@ -26,7 +26,7 @@ const Savings = ({ className }: IconProps) => {
         d="M345.4 224.9c-15.5-.5-28.2-8.5-28.2-16.8 0-4.4 3.9-10.9 8.8-10.9 5.4 0 9.8 7.6 19.4 9.3v-20.9c-11.9-4.5-25.9-10.1-25.9-26.6s12.1-24.3 25.9-26.2v-3.6c0-1.8 2.1-3.5 4.9-3.5 2.5 0 4.9 1.7 4.9 3.5v3.2c8 .3 23.1 2.3 23.1 11.2 0 3.5-2.3 10.6-8 10.6-4.3 0-6.7-4.1-15.1-4.8v18.9c11.8 4.4 25.5 10.5 25.5 27.9 0 16-10.4 25.7-25.5 28.2v3.8c0 1.8-2.5 3.5-4.9 3.5-2.9 0-4.9-1.7-4.9-3.5v-3.3zm1.3-59.7v-15.4c-5.8 1.2-8.3 4.1-8.3 7.2 0 3.8 3.4 6.1 8.3 8.2zm7.2 23.9v17.3c4.4-1 7.9-3.5 7.9-8.1 0-4.3-3.2-7-7.9-9.2z"
       />
     </svg>
-  );
-};
+  )
+}
 
-export default Savings;
+export default Savings

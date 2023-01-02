@@ -1,11 +1,11 @@
-import IconProps from 'types/icon';
+import IconProps from 'types/icon'
 
 const Rocket = ({ className }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 294.2 409.6"
-      className={`svg-inject icon-svg ${className || 'icon-svg-sm text-aqua mb-3'}`}
+      className={`svg-inject icon-svg ${className || 'icon-svg-sm text-aqua mb-5'}`}
     >
       <path
         className="lineal-stroke"
@@ -24,7 +24,7 @@ const Rocket = ({ className }: IconProps) => {
         d="M89.5 321.8h115.2c9-47.9 27.4-149.1 27.4-167 0-63-69.5-123.9-85-131.5-6.7 3.3-26.8 18.4-46.8 43.2-24.6 30.4-38.2 61.8-38.2 88.4 0 17.9 18.4 119.1 27.4 166.9zm134.1 22.8H70.7l-1.8-9.3c-3-15.9-29.5-155.7-29.5-180.6 0-42.2 25-80.9 45.9-106C101.1 29.9 131.8 0 147.1 0c15 0 45.7 29.8 61.5 48.6 21.1 25.1 46.2 63.8 46.2 106.2 0 24.9-26.5 164.7-29.5 180.6l-1.7 9.2z"
       />
     </svg>
-  );
-};
+  )
+}
 
-export default Rocket;
+export default Rocket
