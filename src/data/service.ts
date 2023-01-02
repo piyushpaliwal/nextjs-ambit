@@ -1,14 +1,14 @@
 export const serviceList = [
   {
     id: 1,
-    linkUrl: '#',
+    linkUrl: '/services/accounts-bookkeeping',
     title: 'Bookkeeping',
     icon: 'uil-suitcase',
     description: `We provide the best custom accounting services for all size of businesses with the help of our latest bookkeeping systems`
   },
   {
     id: 2,
-    linkUrl: '#',
+    linkUrl: '/services/accounts-bookkeeping',
     title: 'Accounts Management',
     icon: 'uil-chart-pie',
     description: `Real-time insights for accounting, cash flow, reconconsiliation, budgeting, forecasting, financial & cost analysis`
@@ -36,14 +36,14 @@ export const serviceList = [
   },
   {
     id: 6,
-    linkUrl: '#',
+    linkUrl: 'services/accounts-receivable',
     title: 'Accounts Receivable',
     icon: 'uil-money-stack',
     description: `We can prepare and send invoices, track payments, and provide regular reports to help you stay on top of your billing`
   },
   {
     id: 7,
-    linkUrl: '#',
+    linkUrl: '/services/accounts-payable',
     title: 'Accounts Payable',
     icon: 'uil-money-bill-stack',
     description: `Our team of specialists will efficiently manage your payables daily with reduced invoice discrepancies and disputes`
