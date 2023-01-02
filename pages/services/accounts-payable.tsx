@@ -59,7 +59,7 @@ const AccountsPayablePage: NextPage = () => {
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
             <div className="col-lg-7 order-lg-2">
               <FigureImage
-                src="/img/illustrations/i8@2x.png"
+                src="/img/illustrations/i14@2x.png"
                 alt="Our Expertise Illustration"
                 width={1600}
                 height={1118}

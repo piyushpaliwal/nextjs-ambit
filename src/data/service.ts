@@ -2,16 +2,16 @@ export const serviceList = [
   {
     id: 1,
     linkUrl: '/services/accounts-bookkeeping',
-    title: 'Bookkeeping',
+    title: 'Bookkeeping & Accounts',
     icon: 'uil-suitcase',
     description: `We provide the best custom accounting services for all size of businesses with the help of our latest bookkeeping systems`
   },
   {
     id: 2,
-    linkUrl: '/services/accounts-bookkeeping',
-    title: 'Accounts Management',
+    linkUrl: '/services/invoice-processing',
+    title: 'Invoice Processing',
     icon: 'uil-chart-pie',
-    description: `Real-time insights for accounting, cash flow, reconconsiliation, budgeting, forecasting, financial & cost analysis`
+    description: `Want to process the received invoices accurately? Let us know, and you'll never have to worry about it again`
   },
   {
     id: 3,
