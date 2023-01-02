@@ -82,40 +82,6 @@ const Navbar: FC<NavbarProps> = (props) => {
                 })}
               </ul>
             </li>
-            {/* ===================== industry nav item ===================== */}
-            <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Industry" className="nav-link dropdown-toggle" />
-              <ul className="dropdown-menu mega-menu">
-                <li className="mega-menu-content">
-                  <div className="row gx-0 gx-lg-3">
-                    <div className="col-lg-4">
-                      <h6 className="dropdown-header">Healthcare</h6>
-                      <ul className="list-unstyled cc-2 pb-lg-1">{renderLinks(industries.healthcare)}</ul>
-
-                      <h6 className="dropdown-header mt-lg-6">Retail Stores</h6>
-                      <ul className="list-unstyled cc-2">{renderLinks(industries.retailStores)}</ul>
-
-                      <h6 className="dropdown-header mt-lg-6">Manufacturing</h6>
-                      <ul className="list-unstyled cc-2">{renderLinks(industries.manufacturing)}</ul>
-                    </div>
-                    <div className="col-lg-4">
-                      <h6 className="dropdown-header">E-Commerce</h6>
-                      <ul className="list-unstyled cc-2 pb-lg-1">{renderLinks(industries.eCommerce)}</ul>
-
-                      <h6 className="dropdown-header mt-lg-6">Professional</h6>
-                      <ul className="list-unstyled cc-2">{renderLinks(industries.professional)}</ul>
-
-                      <h6 className="dropdown-header mt-lg-6">Real Estate</h6>
-                      <ul className="list-unstyled cc-2">{renderLinks(industries.realEstate)}</ul>
-                    </div>
-                    <div className="col-lg-4">
-                      <h6 className="dropdown-header">Others</h6>
-                      <ul className="list-unstyled cc-2 pb-lg-1">{renderLinks(industries.others)}</ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
             <ListItemLink href="/price" title="Price" liClassName="nav-item" />
             {/* ===================== company nav item ===================== */}
             <li className="nav-item dropdown">
