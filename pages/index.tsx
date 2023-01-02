@@ -21,7 +21,7 @@ const Index: NextPage = () => {
           logoAlt="logo"
           navOtherClass="navbar-other ms-lg-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
-          button={<NextLink href="#" title="Free Trial" className="btn btn-sm btn-white rounded-pill" />}
+          button={<NextLink href="/contact" title="Free Trial" className="btn btn-sm btn-white rounded-pill" />}
         />
       </header>
 

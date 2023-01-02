@@ -93,9 +93,9 @@ const industries = {
 const company = [
   { id: 1, url: '/about-us', title: 'About Us', children: [] },
   { id: 2, url: '/faq', title: 'FAQ', children: [] },
-  { id: 3, url: '/review', title: 'Review', children: [] },
-  { id: 4, url: '/we-are-hiring', title: 'We are Hiring!', children: [] },
-  { id: 5, url: '/life-at-ambitkpo', title: 'Life@AmbitKPO', children: [] },
+  // { id: 3, url: '/review', title: 'Review', children: [] },
+  // { id: 4, url: '/we-are-hiring', title: 'We are Hiring!', children: [] },
+  // { id: 5, url: '/life-at-ambitkpo', title: 'Life@AmbitKPO', children: [] },
   { id: 6, url: '/contact', title: 'Contact' }
 ]
 
