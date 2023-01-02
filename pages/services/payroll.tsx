@@ -10,6 +10,7 @@ const PayrollPage: NextPage = () => {
     <PageLayout
       title="Payroll Services"
       subTitle="Payroll is one of the most regular compliance which the employers need to fulfil, see how Ambit can assist you."
+      backgroundUrl="/img/photos/bg2.jpg"
     >
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">

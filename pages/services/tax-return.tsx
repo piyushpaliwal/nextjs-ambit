@@ -12,6 +12,7 @@ const TaxReturnPage: NextPage = () => {
     <PageLayout
       title="Tax Return Preparation"
       subTitle="Ambit has a ready team of tax professionals who can assist you to prepare your taxes on software of your choice"
+      backgroundUrl="/img/photos/bg-tax-return.jpg"
     >
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">

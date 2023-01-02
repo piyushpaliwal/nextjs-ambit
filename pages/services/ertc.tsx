@@ -7,7 +7,7 @@ import { NextPage } from 'next'
 
 const ERTCPage: NextPage = () => {
   return (
-    <PageLayout title="ERTC (Employee Retention Tax Credit)">
+    <PageLayout title="ERTC (Employee Retention Tax Credit)" backgroundUrl="/img/photos/bg-ertc.jpg">
       <section className="wrapper bg-light">
         <div className="container py-14">
           <div className="row text-center">

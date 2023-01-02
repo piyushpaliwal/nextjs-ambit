@@ -4,7 +4,7 @@ import { About } from 'components/blocks/about'
 
 const AboutPage: NextPage = () => {
   return (
-    <PageLayout title="About us" subTitle="This is about us">
+    <PageLayout title="This is us!" backgroundUrl="/img/photos/bg-about.jpg">
       <About />
     </PageLayout>
   )

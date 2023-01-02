@@ -8,7 +8,7 @@ import { NextPage } from 'next'
 
 const AccountsPayablePage: NextPage = () => {
   return (
-    <PageLayout title="Accounts Payable">
+    <PageLayout title="Accounts Payable" backgroundUrl="/img/photos/bg-accounts-payable.jpg">
       <section className="wrapper bg-light">
         <div className="container py-14">
           <div className="row gx-md-8 gx-xl-12 gy-10 align-items-center">
