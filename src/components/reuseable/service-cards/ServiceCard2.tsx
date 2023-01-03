@@ -18,7 +18,7 @@ const ServiceCard2: FC<ServiceCard2Props> = (props) => {
   const { title, linkUrl, description, icon, iconBoxClassNames, titleColor, hiddenBtn } = props
 
   return (
-    <div className="col-md-6 col-lg-3">
+    <div className="col-md-4 col-lg-3">
       <IconBox icon={icon} className={iconBoxClassNames} />
       <h4 className={titleColor}>{title}</h4>
       <p className="mb-3">{description}</p>
