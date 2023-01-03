@@ -6,7 +6,7 @@ import ContactForm from 'components/common/ContactForm'
 
 const Contact: FC = () => {
   return (
-    <section className="wrapper bg-light angled upper-end lower-end">
+    <section className="wrapper bg-light">
       <div className="container pb-14 pb-md-16">
         {/* ========== contact form section ========== */}
         <div className="row py-14">
@@ -37,7 +37,7 @@ const Contact: FC = () => {
                 <h5 className="mb-1">India</h5>
                 <address>
                   D-308, The First, Behind Keshavbaug Party Plot <br className="d-none d-md-block" />
-                  Vastrapur, Ahmedabad - 380015 Moonshine St. 14/05
+                  Vastrapur, Ahmedabad - 380015
                 </address>
               </div>
             </div>

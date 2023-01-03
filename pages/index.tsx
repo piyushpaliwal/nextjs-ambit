@@ -54,8 +54,11 @@ const Index: NextPage = () => {
             <Process />
           </div>
         </section>
-        <section className="wrapper bg-light">
-          <div className="container py-14 py-md-14">
+        <section
+          className="wrapper image-wrapper bg-image bg-overlay bg-overlay-300 text-white"
+          style={{ backgroundImage: 'url(/img/photos/bg3.jpg)' }}
+        >
+          <div className="container py-14">
             {/* testimonials */}
             <Testimonial />
           </div>

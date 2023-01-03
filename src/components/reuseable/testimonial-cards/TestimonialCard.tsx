@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import Image from 'next/image'
 
 // =================================================
 type TestimonialCard3Props = {
@@ -13,31 +12,18 @@ type TestimonialCard3Props = {
 // =================================================
 
 const TestimonialCard3: FC<TestimonialCard3Props> = (props) => {
-  const { name, image, review, designation, hideRating, shadow } = props
+  const { name, review, designation } = props
 
   return (
-    <div className={`card ${shadow ? 'shadow-lg' : ''}`}>
-      <div className="card-body">
-        {!hideRating && <span className="ratings five mb-3" />}
-
-        <blockquote className="icon mb-0">
-          <p>“{review}”</p>
-
-          <div className="blockquote-details">
-            {image && (
-              <figure className="rounded-circle w-12 overflow-hidden">
-                <Image width={100} height={100} src={image} layout="responsive" alt="team" />
-              </figure>
-            )}
-
-            <div className={image && 'info'}>
-              <h5 className="mb-0">{name}</h5>
-              <p className="mb-0">{designation}</p>
-            </div>
-          </div>
-        </blockquote>
+    <blockquote className="border-0 fs-lg mb-0">
+      <p>“{review}”</p>
+      <div className="blockquote-details justify-content-center">
+        <div className="info">
+          <h6 className="mb-1 text-white">{name}</h6>
+          <p className="mb-0">{designation}</p>
+        </div>
       </div>
-    </div>
+    </blockquote>
   )
 }
 
