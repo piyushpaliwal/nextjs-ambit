@@ -8,7 +8,7 @@ const PricePage: NextPage = () => {
   const [showForm, setShowForm] = useState(true)
 
   return (
-    <PageLayout title="Ambit Pricing" backgroundUrl="/img/photos/bg2.png">
+    <PageLayout title="Ambit Pricing" backgroundUrl="/img/photos/bg-pricing.jpg">
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">
           <Pricing />
