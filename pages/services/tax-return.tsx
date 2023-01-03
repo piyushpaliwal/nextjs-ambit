@@ -19,7 +19,8 @@ const TaxReturnPage: NextPage = () => {
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
             <div className="col-lg-7 order-lg-2">
               <FigureImage
-                src="/img/illustrations/i8@2x.png"
+                src="/img/illustrations/tax-page-i1.jpg"
+                className="shadow p-2 bg-gray rounded"
                 alt="Our Expertise Illustration"
                 width={1600}
                 height={1118}
@@ -48,6 +49,20 @@ const TaxReturnPage: NextPage = () => {
             <div className="col-lg-8">
               <h2 className="fs-18 text-uppercase text-primary mb-3">Our Services</h2>
               <h3 className="display-4 mb-9">Tax Preparation Solutions for CPAs/Accounting Firm across USA</h3>
+            </div>
+          </div>
+          <div className="row gx-md-8 gy-8 mb-6 mb-md-6">
+            {taxReturnServices.map((item) => (
+              <ServiceCard2
+                {...item}
+                key={item.id}
+                iconBoxClassNames="icon btn btn-block btn-lg btn-soft-primary pe-none mb-6"
+                hiddenBtn
+              />
+            ))}
+          </div>
+          <div className="row">
+            <div className="col-lg-7">
               <p className="mb-3">
                 We support our customer with our methodical and detail-oriented approach specialized staff to process
                 the tax return and well explained work processes and papers irrespective of whether you use Lacerte,
@@ -63,16 +78,14 @@ const TaxReturnPage: NextPage = () => {
                 processes to increase on-the-job efficiency for tax processing.
               </p>
             </div>
-          </div>
-          <div className="row gx-md-8 gy-8 mb-14 mb-md-18">
-            {taxReturnServices.map((item) => (
-              <ServiceCard2
-                {...item}
-                key={item.id}
-                iconBoxClassNames="icon btn btn-block btn-lg btn-soft-primary pe-none mb-6"
-                hiddenBtn
+            <div className="col-lg-5 mt-n10 shadow-sm p-2 bg-white rounded">
+              <FigureImage
+                src="/img/illustrations/meeting.jpg"
+                alt="Our Expertise Illustration"
+                width={1600}
+                height={1118}
               />
-            ))}
+            </div>
           </div>
         </div>
       </section>
