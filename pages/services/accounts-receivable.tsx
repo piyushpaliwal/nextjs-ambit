@@ -59,10 +59,11 @@ const AccountsReceivablePage: NextPage = () => {
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
             <div className="col-lg-7 order-lg-2">
               <FigureImage
-                src="/img/illustrations/i8@2x.png"
+                src="/img/illustrations/accounts-receivable-i1.jpg"
+                className="shadow p-2 bg-white rounded"
                 alt="Our Expertise Illustration"
                 width={1600}
-                height={1118}
+                height={1955}
               />
             </div>
 

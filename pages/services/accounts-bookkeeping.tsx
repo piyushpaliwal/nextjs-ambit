@@ -1,4 +1,5 @@
 import PageLayout from 'components/layouts/PageLayout'
+import FigureImage from 'components/reuseable/FigureImage'
 import ListColumn from 'components/reuseable/ListColumn'
 import { ServiceCard2 } from 'components/reuseable/service-cards'
 import { bookkeepingServiceList } from 'data/misc/bookkeeping'
@@ -17,7 +18,13 @@ const BookkeepingPage: NextPage = () => {
         <div className="container py-14 py-md-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
             <div className="col-lg-7 order-lg-2">
-              <Image src="/img/illustrations/i8@2x.png" alt="Our Expertise Illustration" width="1600" height="1118" />
+              <FigureImage
+                src="/img/illustrations/accounting-i1.jpg"
+                className="shadow p-2 bg-gray rounded"
+                alt="Our Expertise Illustration"
+                width={1920}
+                height={1280}
+              />
             </div>
 
             <div className="col-lg-5">
