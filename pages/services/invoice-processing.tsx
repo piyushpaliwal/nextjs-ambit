@@ -18,10 +18,11 @@ const InvoiceProcessingPage: NextPage = () => {
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
             <div className="col-lg-7 order-lg-2">
               <FigureImage
-                src="/img/illustrations/i1@2x.png"
+                src="/img/illustrations/invoice-processing-i1.jpg"
+                className="shadow p-1 bh-white rounded"
                 alt="Our Expertise Illustration"
-                width={1600}
-                height={1118}
+                width={1555}
+                height={1166}
               />
             </div>
 
