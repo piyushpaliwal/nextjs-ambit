@@ -4,7 +4,7 @@ import { processList } from 'data/process'
 
 const Process: FC = () => {
   return (
-    <div className="row text-center mt-14">
+    <div className="row text-center">
       <div className="col-lg-10 mx-auto">
         <h2 className="fs-18 text-uppercase text-primary mb-3">Our Working Process</h2>
         <h3 className="display-3 text-center px-xl-10 px-xxl-15 mb-10">

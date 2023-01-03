@@ -17,7 +17,7 @@ const Pricing: FC = () => {
 
       <div className="pricing-wrapper">
         <div className="row gx-0 gy-6 card-deck">
-          {data.pricingList.map(({ price, plan, features }) => (
+          {data.pricingList.map(({ price, plan, features, suffix }) => (
             <div className="col-md-6 col-lg-3" key={plan}>
               <div className={`pricing card shadow-none ${plan === MOST_POPULAR ? 'bg-gray' : ''}`}>
                 <div className="card-body">
@@ -26,7 +26,7 @@ const Pricing: FC = () => {
                     <div className="price justify-content-start">
                       <span className="price-currency">$</span>
                       <span className="price-value">{price}</span>
-                      <span className="price-duration">mo</span>
+                      <span className="price-duration">{suffix && `/${suffix}`}</span>
                     </div>
                   </div>
 
