@@ -6,7 +6,9 @@ type SocialLinksProps = { className?: string }
 
 const links = [
   { id: 1, icon: 'uil uil-facebook-f', url: 'https://www.facebook.com/Ambit-KPO-Services-933763786660076/' },
-  { id: 2, icon: 'uil uil-linkedin', url: 'https://www.linkedin.com/company/ambitkpo/' }
+  { id: 2, icon: 'uil uil-linkedin', url: 'https://www.linkedin.com/company/ambitkpo/' },
+  { id: 3, icon: 'uil uil-twitter', url: 'https://twitter.com/AmbitKpo' },
+  { id: 4, icon: 'uil uil-instagram', url: 'https://instagram.com/ambitkpo' }
 ]
 
 const SocialLinks: FC<SocialLinksProps> = ({ className = 'nav social social-white mt-4' }) => {
