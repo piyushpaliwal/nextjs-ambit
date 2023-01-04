@@ -39,8 +39,8 @@ const About6: FC = () => {
               </p>
 
               <p className="mb-6">
-                Some of the values that we have inculcated over <span className="underline-3 style-3">20 decades</span>{' '}
-                of working in the industry include
+                Some of the values that we have inculcated over <span className="underline-3 style-3">20 years</span> of
+                working in the industry include
               </p>
               <ListColumn rowClass="gx-xl-8" list={aboutList} />
             </div>
