@@ -27,7 +27,7 @@ const PageLayout: FC<PageLayoutProps> = ({ title, children, subTitle, background
           logoAlt="logo"
           navOtherClass="navbar-other ms-lg-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
-          button={<NextLink href="#" title="Free Trial" className="btn btn-sm btn-primary rounded-pill" />}
+          button={<NextLink href="/contact" title="Free Trial" className="btn btn-sm btn-primary rounded-pill" />}
         />
       </header>
       <main className="content-wrapper">

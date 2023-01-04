@@ -7,12 +7,12 @@ type Response = {
 }
 
 export default async (req: NextApiRequest, res: NextApiResponse<Response>) => {
-  const { firstname, lastname, email, message, pageUri, serviceType } = <ContactFormProps>req.body.contactObj
+  const { firstname, lastname, email, message, pageUri, serviceType, plan } = <ContactFormProps>req.body.contactObj
 
   try {
     const response = await axios({
       method: 'POST',
-      url: `https://api.hsforms.com/submissions/v3/integration/secure/submit/${process.env.HUBSPOT_PORTAL_ID}/${process.env.HUBSPOT_FORM_GUID}`,
+      url: `https://api.hsforms.com/submissions/v3/integration/secure/submit/${process.env.HUBSPOT_PORTAL_ID}/${process.env.HUBSPOT_FORM_ID}`,
       data: {
         fields: [
           {
@@ -34,6 +34,10 @@ export default async (req: NextApiRequest, res: NextApiResponse<Response>) => {
           {
             name: 'service_type',
             value: serviceType
+          },
+          {
+            name: 'plan',
+            value: plan
           }
         ],
         context: { pageUri: pageUri }
