@@ -10,6 +10,8 @@ import { Testimonial } from 'components/blocks/testimonial'
 import { Services } from 'components/blocks/services'
 import NextLink from 'components/reuseable/links/NextLink'
 import { Process } from 'components/blocks/process'
+import Link from 'next/link'
+// import { Link } from 'react-scroll'
 
 const Index: NextPage = () => {
   return (
@@ -21,7 +23,19 @@ const Index: NextPage = () => {
           logoAlt="logo"
           navOtherClass="navbar-other ms-lg-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
-          button={<NextLink href="/contact" title="Free Trial" className="btn btn-sm btn-white rounded-pill" />}
+          button={
+            <Link
+              href={{
+                pathname: '/contact',
+                query: {
+                  plan: 'Free Trial'
+                }
+              }}
+              title="Free Trial"
+            >
+              <span className="btn btn-sm btn-primary rounded-pill">Free Trial</span>
+            </Link>
+          }
         />
       </header>
 

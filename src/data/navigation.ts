@@ -8,7 +8,8 @@ const services = [
   { id: 5, url: '/services/tax-return', title: 'Tax Return Preparation', children: [] },
   { id: 6, url: '/services/invoice-processing', title: 'Invoice Processing', children: [] },
   { id: 7, url: '/services/virtual-assistance', title: 'Virtual Assistance', children: [] },
-  { id: 8, url: '/services/ertc', title: 'ERTC', children: [] }
+  { id: 8, url: '/services/ertc', title: 'ERTC', children: [] },
+  { id: 9, url: '/services/financial-reporting', title: 'Financial Reporting', children: [] }
 ]
 
 const industries = {
