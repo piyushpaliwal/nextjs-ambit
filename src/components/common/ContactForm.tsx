@@ -1,6 +1,7 @@
 import { FC, FormEventHandler } from 'react'
 import React, { useEffect, useState } from 'react'
 import useAxios from 'axios-hooks'
+import { useRouter } from 'next/router'
 
 export type ContactFormProps = {
   firstname: string
@@ -9,16 +10,19 @@ export type ContactFormProps = {
   serviceType: string
   message: string
   pageUri: string
+  plan: string
 }
 
 const ContactForm: FC = () => {
+  const { query } = useRouter()
   const [contactObj, setContactObj] = useState<ContactFormProps>({
     firstname: '',
     lastname: '',
     email: '',
     serviceType: '',
     message: '',
-    pageUri: ''
+    pageUri: '',
+    plan: query.plan as string
   })
 
   useEffect(() => {
@@ -125,7 +129,6 @@ const ContactForm: FC = () => {
             <div className="invalid-feedback"> Please provide a valid email address. </div>
           </div>
         </div>
-
         <div className="col-md-6">
           <div className="form-select-wrapper mb-4">
             <select
@@ -149,10 +152,32 @@ const ContactForm: FC = () => {
             </select>
 
             <div className="valid-feedback"> Looks good! </div>
+            <div className="invalid-feedback"> Please select a plan.</div>
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className="form-select-wrapper mb-4">
+            <select
+              className="form-select"
+              id="form-select"
+              name="plan"
+              onChange={(e) => handleInputChange(e, 'plan')}
+              required
+              defaultValue={query.plan !== '' ? query.plan : 'Plan'}
+            >
+              <option disabled value="Plan">
+                Plan
+              </option>
+              <option value="Free Trial">Free Trial</option>
+              <option value="Fixed Monthly">Fixed Monthly</option>
+              <option value="Fixed Hours">Fixed Hours</option>
+              <option value="Full Time">Full Time</option>
+            </select>
+
+            <div className="valid-feedback"> Looks good! </div>
             <div className="invalid-feedback"> Please select a service type.</div>
           </div>
         </div>
-
         <div className="col-12">
           <div className="form-floating mb-4">
             <textarea

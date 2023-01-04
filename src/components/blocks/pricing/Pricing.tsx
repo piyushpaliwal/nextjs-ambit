@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import data from 'data/princing'
 import NextLink from 'components/reuseable/links/NextLink'
+import Link from 'next/link'
 
 const Pricing: FC = () => {
   const MOST_POPULAR = 'Fixed Monthly'
@@ -42,12 +43,18 @@ const Pricing: FC = () => {
                       )
                     })}
                   </ul>
-
-                  <NextLink
-                    href="#"
-                    title="Choose Plan"
-                    className={`btn ${plan === MOST_POPULAR ? 'btn-primary' : 'btn-soft-primary'}  rounded`}
-                  />
+                  <Link
+                    href={{
+                      pathname: '/contact',
+                      query: {
+                        plan: plan
+                      }
+                    }}
+                  >
+                    <span className={`btn ${plan === MOST_POPULAR ? 'btn-primary' : 'btn-soft-primary'}  rounded`}>
+                      Choose Plan
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
