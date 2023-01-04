@@ -57,7 +57,7 @@ export const serviceList = [
   },
   {
     id: 8,
-    linkUrl: '#',
+    linkUrl: '/services/financial-reporting',
     title: 'Financial Reporting',
     icon: 'uil-presentation-line',
     description: `We will provide you with Monthly Accurate financial reporting, indicate areas of improvement which is crucial for all organizations`

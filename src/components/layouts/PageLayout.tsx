@@ -2,7 +2,9 @@ import { Footer } from 'components/blocks/footer'
 import { Navbar } from 'components/blocks/navbar'
 import PageProgress from 'components/common/PageProgress'
 import NextLink from 'components/reuseable/links/NextLink'
+import Link from 'next/link'
 import { FC, Fragment, ReactNode } from 'react'
+// import { Link } from 'react-scroll'
 
 type PageLayoutProps = {
   children: ReactNode
@@ -27,7 +29,19 @@ const PageLayout: FC<PageLayoutProps> = ({ title, children, subTitle, background
           logoAlt="logo"
           navOtherClass="navbar-other ms-lg-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
-          button={<NextLink href="/contact" title="Free Trial" className="btn btn-sm btn-primary rounded-pill" />}
+          button={
+            <Link
+              href={{
+                pathname: '/contact',
+                query: {
+                  plan: 'Free Trial'
+                }
+              }}
+              title="Free Trial"
+            >
+              <span className="btn btn-sm btn-primary rounded-pill">Free Trial</span>
+            </Link>
+          }
         />
       </header>
       <main className="content-wrapper">
