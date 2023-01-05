@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import data from 'data/princing'
-import NextLink from 'components/reuseable/links/NextLink'
 import Link from 'next/link'
 
 const Pricing: FC = () => {
@@ -18,7 +17,7 @@ const Pricing: FC = () => {
 
       <div className="pricing-wrapper">
         <div className="row gx-0 gy-6 card-deck">
-          {data.pricingList.map(({ price, plan, features, suffix }) => (
+          {data.pricingList.map(({ price, plan, features, suffix, planSlug }) => (
             <div className="col-md-6 col-lg-3" key={plan}>
               <div className={`pricing card shadow-none ${plan === MOST_POPULAR ? 'bg-gray' : ''}`}>
                 <div className="card-body">
@@ -47,7 +46,7 @@ const Pricing: FC = () => {
                     href={{
                       pathname: '/contact',
                       query: {
-                        plan: plan
+                        plan: planSlug
                       }
                     }}
                   >

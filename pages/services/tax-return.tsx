@@ -39,6 +39,14 @@ const TaxReturnPage: NextPage = () => {
               </p>
 
               <ListColumn list={taxReturnList} />
+              <a
+                href="https://calendly.com/ambit-accounting/15min"
+                className="btn btn-navy rounded-pill mb-0 mt-6"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a Meeting
+              </a>
             </div>
           </div>
         </div>
