@@ -4,7 +4,7 @@ import { NextPage } from 'next'
 
 const PricePage: NextPage = () => {
   return (
-    <PageLayout title="Ambit Pricing" backgroundUrl="/img/photos/bg-pricing.jpg">
+    <PageLayout title="Pricing" backgroundUrl="/img/photos/bg-pricing.jpg">
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">
           <Pricing />

@@ -37,6 +37,14 @@ const BookkeepingPage: NextPage = () => {
               </p>
 
               <ListColumn list={bookkeepingServiceList} />
+              <a
+                href="https://calendly.com/ambit-accounting/15min"
+                className="btn btn-navy rounded-pill mb-0 mt-6"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a Meeting
+              </a>
             </div>
           </div>
         </div>
