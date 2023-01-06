@@ -22,14 +22,14 @@ export const serviceList = [
   },
   {
     id: 3,
-    linkUrl: '#',
+    linkUrl: '/services/payroll',
     title: 'Payroll',
     icon: 'uil-money-insert',
     description: `We can manage your complete payroll function by making use of the latest current payroll technology platforms`
   },
   {
     id: 4,
-    linkUrl: '#',
+    linkUrl: '/services/virtual-assistance',
     title: 'Virtual Assistance',
     icon: 'uil-chat-bubble-user',
     description: `Typical tasks a virtual assistant might perform include scheduling appointments, making phone calls, making travel arrangements`
