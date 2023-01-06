@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ambitkpo.com
+
+# Sitemaps
+Sitemap: https://www.ambitkpo.com/sitemap.xml
