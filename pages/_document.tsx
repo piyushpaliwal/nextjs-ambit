@@ -15,7 +15,7 @@ export default class AmbitWeb extends Document {
           <NextScript />
           <noscript>
             <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-K7C8Q9H"
+              src="https://www.googletagmanager.com/ns.html?id=GTM-NCM2SWG"
               height="0"
               width="0"
               style={{ display: 'none', visibility: 'hidden' }}
