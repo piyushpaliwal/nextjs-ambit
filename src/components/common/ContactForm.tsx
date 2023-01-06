@@ -14,7 +14,8 @@ export type ContactFormProps = {
 }
 
 const ContactForm: FC = () => {
-  const { query } = useRouter()
+  // const { query } = useRouter()
+  const router = useRouter()
   const [contactObj, setContactObj] = useState<ContactFormProps>({
     firstname: '',
     lastname: '',
@@ -22,7 +23,7 @@ const ContactForm: FC = () => {
     serviceType: '',
     message: '',
     pageUri: '',
-    plan: query.plan as string
+    plan: router.query.plan as string
   })
 
   useEffect(() => {
@@ -68,11 +69,7 @@ const ContactForm: FC = () => {
   }
 
   if (data) {
-    return (
-      <div className="alert alert-success alert-icon" role="alert">
-        <i className="uil uil-check-circle" /> Thank You for contacting us, we'll get back to you shortly.
-      </div>
-    )
+    router.push('/thank-you')
   }
 
   return (
@@ -163,7 +160,7 @@ const ContactForm: FC = () => {
               name="plan"
               onChange={(e) => handleInputChange(e, 'plan')}
               required
-              defaultValue={query.plan !== '' ? query.plan : 'Plan'}
+              defaultValue={router.query.plan !== '' ? router.query.plan : 'Plan'}
             >
               <option disabled value="Plan">
                 Plan
