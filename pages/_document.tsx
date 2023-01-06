@@ -1,7 +1,7 @@
 import { NodeNextRequest } from 'next/dist/server/base-http/node'
 import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
 
-const src = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}`
+// const src = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}`
 export default class AmbitWeb extends Document {
   render() {
     return (
@@ -14,7 +14,12 @@ export default class AmbitWeb extends Document {
           <Main />
           <NextScript />
           <noscript>
-            <iframe src={src} height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-K7C8Q9H"
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            ></iframe>
           </noscript>
         </body>
       </Html>
