@@ -23,7 +23,7 @@ const ContactForm: FC = () => {
     serviceType: '',
     message: '',
     pageUri: '',
-    plan: router.query.plan as string
+    plan: (!router.query.plan ? 'Plan' : router.query.plan) as string
   })
 
   useEffect(() => {
@@ -160,7 +160,7 @@ const ContactForm: FC = () => {
               name="plan"
               onChange={(e) => handleInputChange(e, 'plan')}
               required
-              defaultValue={router.query.plan !== '' ? router.query.plan : 'Plan'}
+              defaultValue={!router.query.plan ? 'Plan' : router.query.plan}
             >
               <option disabled value="Plan">
                 Plan
