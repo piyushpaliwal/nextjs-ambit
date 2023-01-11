@@ -4,6 +4,7 @@ import NextLink from 'components/reuseable/links/NextLink'
 import { ServiceCard3 } from 'components/reuseable/service-cards'
 import { payrollServicesList } from 'data/misc/payrollService'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const PayrollPage: NextPage = () => {
   return (
@@ -12,6 +13,16 @@ const PayrollPage: NextPage = () => {
       subTitle="Payroll is one of the most regular compliance which the employers need to fulfil, see how Ambit can assist you."
       backgroundUrl="/img/photos/bg2.jpg"
     >
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Comprehensive Payroll Services for Businesses in the United States</title>
+        <meta
+          name="description"
+          content="Ambit provides businesses with comprehensive payroll services that make it easier to pay staff according to U.S. laws and regulations. To learn more, visit our website today!"
+        />
+      </Head>
+
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">

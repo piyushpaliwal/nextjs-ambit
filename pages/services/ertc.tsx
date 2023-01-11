@@ -4,10 +4,20 @@ import ServiceCard5 from 'components/reuseable/service-cards/ServiceCard5'
 import { ertcBenefitsList } from 'data/misc/ertcBenefitsList'
 import { ertcServiceList } from 'data/misc/ertcServiceList'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const ERTCPage: NextPage = () => {
   return (
     <PageLayout title="ERTC (Employee Retention Tax Credit)" backgroundUrl="/img/photos/bg-ertc.jpg">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Employee Retention Tax Credit</title>
+        <meta
+          name="description"
+          content="Ambit Energy is excited to offer the Employee Retention Tax Credit (ERTC). This tax credit rewards businesses who kept employees during the COVID-19 pandemic, up to $26,000 per employee. Learn more about how you can qualify and apply for the ERTC today!"
+        />
+      </Head>
       <section className="wrapper bg-light">
         <div className="container py-14">
           <div className="row text-center">

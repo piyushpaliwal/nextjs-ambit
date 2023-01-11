@@ -76,7 +76,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bookkeeping & Accounting service - Start free trial for 20 hours</title>
+        <title>Ambit KPO Services | Accounting & Bookkeeping</title>
+        <meta
+          name="description"
+          content="Ambit offers outsourced bookkeeping and accounting services for CPA and accounting firms in the USA. Hire highly qualified and dedicated offshore bookkeepers"
+        />
       </Head>
       <Script id="google-tag-manager" strategy="afterInteractive">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

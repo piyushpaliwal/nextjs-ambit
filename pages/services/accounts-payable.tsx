@@ -5,10 +5,20 @@ import ServiceCard4 from 'components/reuseable/service-cards/ServiceCard4'
 import { accountsPayableProcess } from 'data/misc/accountsPayableProcess'
 import { bookkeepingServiceList } from 'data/misc/bookkeeping'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const AccountsPayablePage: NextPage = () => {
   return (
     <PageLayout title="Accounts Payable" backgroundUrl="/img/photos/bg-accounts-payable.jpg">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accounts Payable Services to Streamline Your Business</title>
+        <meta
+          name="description"
+          content="Looking for a way to streamline your business payments? Look no further than Ambit. Our accounts payable services will help you minimize discrepancies and get your working capital back on track. Contact us today to learn more!"
+        />
+      </Head>
       <section className="wrapper bg-light">
         <div className="container py-14">
           <div className="row gx-md-8 gx-xl-12 gy-10 align-items-center">
