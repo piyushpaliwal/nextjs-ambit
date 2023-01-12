@@ -24,11 +24,9 @@ const Hero: FC = () => {
         <div className="row gx-0 gy-12 align-items-center">
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start">
             <h1 className="display-2 mb-5 text-white" style={slideInDownAnimate('600ms')}>
-              Remote
-              <br />
+              Remote <br />
               <span style={{ color: '#d8b572' }}>Accounting & Bookkeeping</span>
-              <br />
-              at Ambit
+              <br /> at Ambit
             </h1>
 
             <p className="lead fs-lg lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>

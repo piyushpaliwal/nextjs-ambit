@@ -9,7 +9,7 @@ const AboutPage: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ambit - A Professional Accounting Firm Providing Tax and Accounting Services Worldwide</title>
+        <title>About Ambit</title>
         <meta
           name="description"
           content="At Ambit, we are a client-focused professional services firm that provides tax and accounting services to individuals and businesses all over the world. Our goal is to provide our clients with the highest quality of service possible. Visit our website to learn more!"
