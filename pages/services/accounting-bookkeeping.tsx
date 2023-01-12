@@ -10,7 +10,7 @@ import Head from 'next/head'
 const BookkeepingPage: NextPage = () => {
   return (
     <PageLayout
-      title="Accounts & Bookkeeping"
+      title="Accounting & Bookkeeping"
       subTitle="Outsource the whole or a part of your finance function and see how you can create a dramatic improvement in business performance and profitability"
       backgroundUrl="/img/photos/bg1.jpg"
     >
