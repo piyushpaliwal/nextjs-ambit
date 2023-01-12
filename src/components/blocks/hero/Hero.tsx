@@ -26,7 +26,7 @@ const Hero: FC = () => {
         <div className="row gx-0 gy-12 align-items-center">
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start">
             <h1 className="display-2 mb-5 text-white" style={slideInDownAnimate('600ms')}>
-              Remote{' '}
+              Remote <span className="d-none">Accounting & Bookkeeping</span>
               <span style={{ color: '#d8b572' }}>
                 <Typewriter
                   options={{
