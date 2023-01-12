@@ -5,15 +5,24 @@ import { ServiceCard2 } from 'components/reuseable/service-cards'
 import { bookkeepingServiceList } from 'data/misc/bookkeeping'
 import { bookkeepingBenefitsList } from 'data/misc/bookkeepingBenefits'
 import { NextPage } from 'next'
-import Image from 'next/image'
+import Head from 'next/head'
 
 const BookkeepingPage: NextPage = () => {
   return (
     <PageLayout
-      title="Accounts & Bookkeeping"
+      title="Accounting & Bookkeeping"
       subTitle="Outsource the whole or a part of your finance function and see how you can create a dramatic improvement in business performance and profitability"
       backgroundUrl="/img/photos/bg1.jpg"
     >
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Best USA-Based Accounting & Bookkeeping Services Provider</title>
+        <meta
+          name="description"
+          content="Ambit provides professional bookkeeping and accounting services to businesses of all sizes. From data entry to full financial management, we'll take care of everything so you can focus on what you're good at - running your business!"
+        />
+      </Head>
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">

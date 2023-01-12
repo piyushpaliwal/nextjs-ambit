@@ -8,8 +8,8 @@ export const serviceList = [
   },
   {
     id: 1,
-    linkUrl: '/services/accounts-bookkeeping',
-    title: 'Bookkeeping & Accounts',
+    linkUrl: '/services/accounting-bookkeeping',
+    title: 'Accounting & Bookkeeping',
     icon: 'uil-suitcase',
     description: `We provide the best custom accounting services for all size of businesses with the help of our latest bookkeeping systems`
   },

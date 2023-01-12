@@ -1,7 +1,7 @@
 const home = [{ id: 1, url: '/', title: 'Home' }]
 
 const services = [
-  { id: 1, url: '/services/accounts-bookkeeping', title: 'Accounts & Bookkeeping', children: [] },
+  { id: 1, url: '/services/accounting-bookkeeping', title: 'Accounting & Bookkeeping', children: [] },
   { id: 2, url: '/services/payroll', title: 'Payroll', children: [] },
   { id: 3, url: '/services/accounts-receivable', title: 'Accounts Receivable', children: [] },
   { id: 4, url: '/services/accounts-payable', title: 'Accounts Payable', children: [] },

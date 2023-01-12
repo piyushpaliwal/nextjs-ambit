@@ -3,10 +3,20 @@ import FigureImage from 'components/reuseable/FigureImage'
 import ListColumn from 'components/reuseable/ListColumn'
 import { financialReportingList } from 'data/misc/financialReportingList'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const FinancialReportingPage: NextPage = () => {
   return (
     <PageLayout title="Monthly Financial Reporting" backgroundUrl="/img/photos/bg-financial-reporting.jpg">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Monthly Financial Reporting Services</title>
+        <meta
+          name="description"
+          content="Ambit provides monthly or periodic financial reports as well as customized Financial Reports as per the business requirements. Confidentiality of data At Ambit"
+        />
+      </Head>
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">

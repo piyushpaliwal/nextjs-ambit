@@ -6,6 +6,7 @@ import { bookkeepingServiceList } from 'data/misc/bookkeeping'
 import { taxReturnList } from 'data/misc/taxReturnList'
 import { taxReturnServices } from 'data/misc/taxReturnServices'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const TaxReturnPage: NextPage = () => {
   return (
@@ -14,6 +15,15 @@ const TaxReturnPage: NextPage = () => {
       subTitle="Ambit has a ready team of tax professionals who can assist you to prepare your taxes on software of your choice"
       backgroundUrl="/img/photos/bg-tax-return.jpg"
     >
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Professional Tax Return Preparation Services</title>
+        <meta
+          name="description"
+          content="Ambit offers a full range of tax preparation services for businesses and individuals. We have the experience and expertise to help you file your taxes accurately and on time. Contact us today to get started!"
+        />
+      </Head>
       <section className="wrapper bg-light">
         <div className="container py-14 py-md-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">

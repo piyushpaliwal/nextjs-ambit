@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { slideInDownAnimate } from 'utils/animation'
-import Typewriter from 'typewriter-effect'
 import Image from 'next/image'
 import Carousel1 from '../../../../public/img/photos/carousel1.jpg' //  /img/photos/carousel1.jpg';
 import Carousel2 from '../../../../public/img/photos/carousel2.jpg'
@@ -11,7 +10,6 @@ import Carousel from 'components/reuseable/Carousel'
 import NextLink from 'components/reuseable/links/NextLink'
 // -------- custom hook -------- //
 import useLightBox from 'hooks/useLightBox'
-import FigureImage from 'components/reuseable/FigureImage'
 
 const Hero: FC = () => {
   // use video popup
@@ -26,16 +24,10 @@ const Hero: FC = () => {
         <div className="row gx-0 gy-12 align-items-center">
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start">
             <h1 className="display-2 mb-5 text-white" style={slideInDownAnimate('600ms')}>
-              Remote{' '}
-              <span style={{ color: '#d8b572' }}>
-                <Typewriter
-                  options={{
-                    loop: true,
-                    autoStart: true,
-                    strings: ['Bookkeeping', 'Accounts Management', 'Tax Return']
-                  }}
-                />
-              </span>
+              Remote
+              <br />
+              <span style={{ color: '#d8b572' }}>Accounting & Bookkeeping</span>
+              <br />
               at Ambit
             </h1>
 

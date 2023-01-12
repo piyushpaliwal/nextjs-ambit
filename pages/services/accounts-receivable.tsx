@@ -5,10 +5,20 @@ import ServiceCard4 from 'components/reuseable/service-cards/ServiceCard4'
 import { accountsReceivableProcess } from 'data/misc/accountsReceivableProcess copy'
 import { bookkeepingServiceList } from 'data/misc/bookkeeping'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const AccountsReceivablePage: NextPage = () => {
   return (
     <PageLayout title="Accounts Receivable" backgroundUrl="/img/photos/bg-accounts-receivable.jpg">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accounts Receivable Outsourcing Services to Improve Collection Rates</title>
+        <meta
+          name="description"
+          content="Ambit offers accounts receivable outsourcing services that improve collection rates by generating faster payments and minimizing customer support communications. For more information, visit our website today!"
+        />
+      </Head>
       <section className="wrapper bg-light">
         <div className="container py-14">
           <div className="row gx-md-8 gx-xl-12 gy-10 align-items-center">

@@ -3,10 +3,20 @@ import FigureImage from 'components/reuseable/FigureImage'
 import ListColumn from 'components/reuseable/ListColumn'
 import { virtualAssistantList } from 'data/misc/virtualAssistantList'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const virtualAssistancePage: NextPage = () => {
   return (
     <PageLayout title="Virtual Assistance" backgroundUrl="/img/photos/bg-virtual-assistant.jpg">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Professional Virtual Assistants to Take Care of Your Tasks | Ambit</title>
+        <meta
+          name="description"
+          content="With Ambit, you can get professional virtual assistants to take care of all the tedious tasks for you or your business. From bookkeeping to social media management, we can do it all! Visit our website today to learn more."
+        />
+      </Head>
       <section className="wrapper bg-light">
         <div className="container py-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">

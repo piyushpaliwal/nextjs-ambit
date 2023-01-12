@@ -5,6 +5,7 @@ import { Navbar } from 'components/blocks/navbar'
 import { Footer } from 'components/blocks/footer'
 import FigureImage from 'components/reuseable/FigureImage'
 import NextLink from 'components/reuseable/links/NextLink'
+import Link from 'next/link'
 
 const NotFound: NextPage = () => {
   return (
@@ -12,8 +13,23 @@ const NotFound: NextPage = () => {
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
         <Navbar
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
+          stickyBox={false}
+          logoAlt="logo-dark"
+          navOtherClass="navbar-other ms-lg-4"
+          navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-light"
+          button={
+            <Link
+              href={{
+                pathname: '/contact',
+                query: {
+                  plan: 'Free Trial'
+                }
+              }}
+              title="Free Trial"
+            >
+              <span className="btn btn-sm btn-primary rounded-pill">Free Trial</span>
+            </Link>
+          }
         />
       </header>
 
@@ -25,7 +41,7 @@ const NotFound: NextPage = () => {
                 <FigureImage
                   width={800}
                   height={316}
-                  src="/img/illustrations/404.png"
+                  src="/img/illustrations/404@2x.png"
                   alt="404 Image"
                   className="mb-10"
                 />

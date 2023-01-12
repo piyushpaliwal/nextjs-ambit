@@ -2,10 +2,20 @@ import { FAQ } from 'components/blocks/faq'
 import PageLayout from 'components/layouts/PageLayout'
 import NextLink from 'components/reuseable/links/NextLink'
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 const faqPage: NextPage = () => {
   return (
     <PageLayout title="Frequently Asked Questions" backgroundUrl="/img/photos/bg-faq.jpg">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frequently Asked Questions | Ambit</title>
+        <meta
+          name="description"
+          content="Wondering about our data security or services? Check out our FAQ section for all the answers to your questions. Still have questions? Book a meeting now!"
+        />
+      </Head>
       <section className="wrapper bg-light">
         <div className="container py-14 text-center">
           <FAQ />
