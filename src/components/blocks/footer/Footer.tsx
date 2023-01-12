@@ -7,7 +7,7 @@ import footerNav from 'data/footer'
 
 const Footer: FC = () => {
   return (
-    <footer className="bg-navy text-inverse">
+    <footer className="text-inverse" style={{ backgroundColor: '#131a40' }}>
       <div className="container pb-13 pb-md-15">
         <div className="row gy-6 gy-lg-0 pt-12">
           <div className="col-md-3 col-lg-3">
