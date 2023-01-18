@@ -97,7 +97,8 @@ const company = [
   // { id: 3, url: '/review', title: 'Review', children: [] },
   // { id: 4, url: '/we-are-hiring', title: 'We are Hiring!', children: [] },
   // { id: 5, url: '/life-at-ambitkpo', title: 'Life@AmbitKPO', children: [] },
-  { id: 6, url: '/contact', title: 'Contact' }
+  { id: 6, url: '/contact', title: 'Contact' },
+  { id: 7, url: '/privacy-policy', title: 'Privacy Policy', children: [] }
 ]
 
 export { home, services, industries, company }
