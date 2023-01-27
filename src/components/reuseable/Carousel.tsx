@@ -49,8 +49,14 @@ const Carousel: FC<CarouselProps> = (props) => {
             role="button"
             ref={(node) => setPrevEl(node)}
             className="swiper-button swiper-button-prev swiper-button-disabled"
+            aria-label="Previous"
           />
-          <div role="button" ref={(node) => setNextEl(node)} className="swiper-button swiper-button-next" />
+          <div
+            role="button"
+            ref={(node) => setNextEl(node)}
+            className="swiper-button swiper-button-next"
+            aria-label="Next"
+          />
         </div>
       )}
     </Swiper>

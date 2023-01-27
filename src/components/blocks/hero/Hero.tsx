@@ -58,17 +58,9 @@ const Hero: FC = () => {
           <div className="col-lg-5 offset-lg-1">
             <div className="swiper-container shadow-lg">
               <Carousel slidesPerView={1} className="dots-over">
-                <Image alt="Director" className="rounded" src={Carousel1} />
+                <Image alt="Carousel 1" className="rounded" src={Carousel1} />
                 <Image alt="Carousel 2" className="rounded" src={Carousel2} />
                 <Image alt="Carousel 3" className="rounded" src={Carousel3} />
-                {/* <img alt="" className="rounded" src="/img/photos/carousel-1.jpg" srcSet="/img/photos/carousel-1@2x.jpg 2x" />
-                <img
-                    alt=""
-                    className="rounded"
-                    src="/img/photos/carousel-2.jpg"
-                    srcSet="/img/photos/carousel-2@2x.jpg 2x"
-                  />
-                <img alt="" className="rounded" src="/img/photos/carousel-3.jpg" srcSet="/img/photos/carousel-3@2x.jpg 2x" /> */}
               </Carousel>
             </div>
           </div>
