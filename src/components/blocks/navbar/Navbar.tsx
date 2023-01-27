@@ -4,6 +4,7 @@ import { FC, Fragment, ReactElement, useRef } from 'react'
 import useSticky from 'hooks/useSticky'
 // -------- custom component -------- //
 import NextLink from 'components/reuseable/links/NextLink'
+import Image from 'next/image'
 import SocialLinks from 'components/reuseable/SocialLinks'
 import ListItemLink from 'components/reuseable/links/ListItemLink'
 import DropdownToggleLink from 'components/reuseable/links/DropdownToggleLink'
@@ -52,7 +53,8 @@ const Navbar: FC<NavbarProps> = (props) => {
   const headerContent = (
     <Fragment>
       <div className="navbar-brand w-100">
-        <NextLink href="/" title={<img alt="logo" src={`/img/${logo}.png`} height="50" />} />
+        {/* <NextLink href="/" title={<img alt="logo" src={`/img/${logo}.png`} height="50" />} /> */}
+        <NextLink href="/" title={<Image src={`/img/${logo}.png`} alt="Ambit logo" width={130} height={50} />} />
       </div>
 
       <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
