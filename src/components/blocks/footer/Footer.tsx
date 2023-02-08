@@ -30,12 +30,7 @@ const Footer: FC = () => {
                 D-308, The First, Behind Keshavbaug Party Plot, Vastrapur, Ahmedabad - 380015
               </address>
               <NextLink title="(+91) 982 501 6079" href="tel:+919825016079" />
-            </div>
-            <div className="widget">
-              <h4 className="widget-title text-white mb-3">US Office</h4>
-              <address className="pe-xl-15 pe-xxl-17">3133 Little Bear Ln, Buford, GA 30519</address>
-              <NextLink title="(+1) 786 866 9559" href="tel:+17868669559" />
-              <br />
+              <br className="d-none d-md-block" />
               <NextLink title="info@ambitkpo.com" href="mailto:info@ambitkpo.com" />
             </div>
           </div>
