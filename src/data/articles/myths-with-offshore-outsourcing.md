@@ -15,7 +15,6 @@ Anyone who thinks against outsourcing F&A function with this concern has to stan
 
 ## Main aim is to cut costs
 
-![Something {500x200}{left}](./bg-about.jpg)
 If a business outsources F&A with the only aim of cutting costs in mind, it is not up for taking the right advantage of this strategy. One cannot deny the cost benefit achieved from this move, however the decision involves taking a serious look into the strategic benefits achieved for an expansion oriented business by having a much more competitive and efficient team at hand, compared to an in-house one.
 
 ## Offshore service providers lack relevant knowledge
