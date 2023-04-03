@@ -11,9 +11,9 @@ interface IProps {
   articles: ArticleMeta[]
 }
 
-const ArticlesPage: NextPage<IProps> = ({ articles }) => {
+const BlogsPage: NextPage<IProps> = ({ articles }) => {
   return (
-    <BlogLayout title="Articles" backgroundUrl="">
+    <BlogLayout title="Blogs" backgroundUrl="">
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,4 +58,4 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-export default ArticlesPage
+export default BlogsPage
