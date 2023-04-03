@@ -11,6 +11,8 @@ const Contact: FC = () => {
         {/* ========== contact form section ========== */}
         <div className="row py-14">
           <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+            {/* <h2 className="display-4 mb-3 text-center">Drop Us a Line</h2>
+            <p className="lead text-center mb-10">We will get back to you shortly.</p> */}
             <ContactForm />
           </div>
         </div>
@@ -39,6 +41,15 @@ const Contact: FC = () => {
                 </address>
               </div>
             </div>
+            <div className="d-flex flex-row">
+              <div>
+                <IconBox className="icon text-primary fs-28 me-6 mt-n1" icon="uil-location-pin-alt" />
+              </div>
+              <div>
+                <h5 className="mb-1">US</h5>
+                <address>3133 Little Bear Ln, Buford, GA 30519</address>
+              </div>
+            </div>
 
             <div className="d-flex flex-row">
               <div>
@@ -48,7 +59,9 @@ const Contact: FC = () => {
               <div>
                 <h5 className="mb-1">Phone</h5>
                 <p>
-                  <NextLink title="(+91) 982 501 6079" href="tel:+919825016079" />
+                  <NextLink title="(+91) 982 501 6079" href="tel:+919825016079" /> (India){' '}
+                  <br className="d-none d-md-block" />
+                  <NextLink title="(+1) 786 866 9559" href="tel:+17868669559" /> (US)
                 </p>
               </div>
             </div>
