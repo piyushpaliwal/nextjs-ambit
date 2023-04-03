@@ -7,6 +7,7 @@ interface ArticleMeta {
   thumbnail: string
   tags?: string[]
   category: string
+  date: string
 }
 
 interface ArticleInfo {

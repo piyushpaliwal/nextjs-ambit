@@ -12,28 +12,16 @@ interface IProps {
 const Markdown: FC<IProps> = ({ content }) => {
   const components: Partial<NormalComponents & SpecialComponents> = {
     img: function ({ node, ...props }) {
-      debugger
-      const fileName = node.properties.src.replace('./', '')
-      const metaString = node.properties.alt
-      const alt = metaString?.replace(/ *\{[^)]*\} */g, '')
-      const metaWidth = metaString.match(/{([^}]+)x/)
-      const metaHeight = metaString.match(/x([^}]+)}/)
+      const fileName = (node?.properties?.src as string)?.replace('./', '')
+      const metaString = node?.properties?.alt
+      const alt = (metaString as string)?.replace(/ *\{[^)]*\} */g, '')
+      const metaWidth = (metaString as string)?.match(/{([^}]+)x/)
+      const metaHeight = (metaString as string)?.match(/x([^}]+)}/)
       const width = metaWidth ? metaWidth[1] : '768'
       const height = metaHeight ? metaHeight[1] : '432'
-      const isPriority = metaString?.toLowerCase().match('{priority}')
       const src = `/img/photos/${fileName}`
 
-      return (
-        <Image
-          layout="responsive"
-          src={src}
-          width={width}
-          height={height}
-          className="postImg"
-          alt={alt}
-          priority={isPriority}
-        />
-      )
+      return <Image layout="responsive" src={src} width={width} height={height} className="postImg" alt={alt} />
     }
   }
   return (
