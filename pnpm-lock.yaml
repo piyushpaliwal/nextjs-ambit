@@ -67,6 +67,9 @@ dependencies:
   react-syntax-highlighter:
     specifier: ^15.5.0
     version: 15.5.0(react@18.2.0)
+  react-toc:
+    specifier: ^3.1.0
+    version: 3.1.0(react-dom@18.2.0)(react@18.2.0)
   scrollcue:
     specifier: ^2.0.0
     version: 2.0.0
@@ -2800,6 +2803,17 @@ packages:
       prismjs: 1.29.0
       react: 18.2.0
       refractor: 3.6.0
+    dev: false
+
+  /react-toc@3.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-JPvMScVqu8NuguplaM74lerkXVh4ASnnF6vrjUoHS0fTxOsNrLJEagwdfTXopY3iBMAuOFx9pOwuRYi8UfL4wQ==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react@18.2.0:

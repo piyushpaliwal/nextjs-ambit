@@ -13,6 +13,14 @@ interface ArticleMeta {
 interface ArticleInfo {
   meta: ArticleMeta
   content: string
+  toc: TocProps[]
 }
 
-export type { ArticleInfo, ArticleMeta }
+interface TocProps {
+  title: string
+  anchor: string
+  id: number
+  level: number
+}
+
+export type { ArticleInfo, ArticleMeta, TocProps }

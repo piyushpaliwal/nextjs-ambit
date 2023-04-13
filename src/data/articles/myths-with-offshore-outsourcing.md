@@ -2,9 +2,11 @@
 title: Common Myths with Offshore Outsourcing
 description: As the wave of outsourcing has taken centre stage amongst various business strategies of value addition to business, it’s important to debunk some of the myths that are holding back others to jump on to the outsourcing wagon as yet.
 category: outsourcing
+thumbnail: /img/articles/myths-with-offshore-outsourcing.svg
 date: 3/23/2023
 ---
 
+![Myths with offshore outsourcing](/img/articles/myths-with-offshore-outsourcing.svg)
 As the wave of outsourcing has taken centre stage amongst various business strategies of value addition to business, it’s important to debunk some of the myths that are holding back others to jump on to the outsourcing wagon as yet.
 
 Some of them are mentioned here:
@@ -15,10 +17,12 @@ Anyone who thinks against outsourcing F&A function with this concern has to stan
 
 ## Main aim is to cut costs
 
+![Cost Cutting](/img/articles/cost-cutting.svg)
 If a business outsources F&A with the only aim of cutting costs in mind, it is not up for taking the right advantage of this strategy. One cannot deny the cost benefit achieved from this move, however the decision involves taking a serious look into the strategic benefits achieved for an expansion oriented business by having a much more competitive and efficient team at hand, compared to an in-house one.
 
 ## Offshore service providers lack relevant knowledge
 
+![Service Providers lack relevant knowledge](/img/articles/offshore-service-providers-lack-relevant-knowledge.svg)
 This one is far from the truth. In fact, one is totally missing the point of taking advantage of a globalised flat world. Outsourcing has at its core, the main benefit of specialised, experienced and competitive talent. In any case, if the concern is their knowledge of one’s industry or business model/ strategy, the outsourcing company should take into consideration training of the service provider team for their tasks as well as the company’s culture, so as to ensure that both the company and the service provider team are on the same page as far as strategy and goals are concerned.
 
 ## It’s only the ‘Big player’s game’
@@ -47,6 +51,7 @@ If organizations enter negotiations for long-term outsourcing contracts under th
 
 ### Outsourcing is primarily a Procurement exercise
 
+![Sourcing Procurement](/img/articles/sourcing-procurement.svg)
 While outsourcing, the strategy of ‘best price wins’, which is inherent to other procurement activities, cannot be applied. In reality, outsourcing of F&S is vital to corporate strategy, and therefore issues of capability, culture, expertise, and agility are more important to long-term success than price.
 
 ### Business environment will be in Steady state
@@ -55,5 +60,6 @@ The most common outsourcing arrangements seen today envision a steady state—th
 
 ### Outsourcing is independent of business strategy
 
+![Outsourcing Business Process](/img/articles/outsourcing-business-process.svg)
 Value addition in business due to outsourcing is a function of whether the sourcing decision is in sync with the business strategy. If the nature of the outsourcing relationship formed is entirely incompatible with expected business results there turns out to be a huge disconnect between senior executives, the board, and operational managers, leading to a major failure.
 Hence, although there are real risks involved in outsourcing, if one finds the right outsourcing provider for your company and ensures the right measures are taken before outsourcing, it is not such a big challenge to achieve these returns.

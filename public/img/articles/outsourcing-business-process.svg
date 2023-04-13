@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-5 {
+        stroke: #fff;
+      }
+
+      .cls-6 {
+        fill: #fbab18;
+      }
+
+      .cls-3 {
+        stroke: blue;
+      }
+
+      .cls-3, .cls-5 {
+        stroke-width: 4px;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-10 {
+        fill: #40c1da;
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-7);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-14 {
+        fill: #6e4d9e;
+      }
+
+      .cls-15 {
+        font-family: Ebrima-Bold, Ebrima;
+        font-size: 46.27px;
+        font-weight: 700;
+      }
+
+      .cls-15, .cls-16, .cls-17 {
+        fill: #fff;
+      }
+
+      .cls-18 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-19 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-20 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-16 {
+        font-size: 21.69px;
+      }
+
+      .cls-16, .cls-17 {
+        font-family: Ebrima, Ebrima;
+      }
+
+      .cls-21 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-22 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-23 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-17 {
+        font-size: 25.55px;
+      }
+
+      .cls-24 {
+        fill: #e85552;
+      }
+
+      .cls-25 {
+        fill: #5dbb54;
+      }
+
+      .cls-26 {
+        fill: #231f20;
+      }
+
+      .cls-27 {
+        fill: url(#linear-gradient-4);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-4" y="15.55" width="1080" height="1048.91"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-4" x="56.29" y="109.66" width="991.81" height="693.23"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="322.66" y1="577.76" x2="757.34" y2="577.76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d4b77d"/>
+      <stop offset="1" stop-color="#2500fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="456.84" y1="178.48" x2="627.48" y2="178.48" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath-2">
+      <rect class="cls-4" y="15.55" width="1080" height="1048.91"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="167.4" y1="295.19" x2="338.04" y2="295.19" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath-3">
+      <rect class="cls-4" y="15.55" width="1080" height="1048.91"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="43.98" y1="581.96" x2="214.62" y2="581.96" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath-4">
+      <rect class="cls-4" y="15.55" width="1080" height="1048.91"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect class="cls-4" y="15.55" width="1080" height="1048.91"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-5" x1="741.74" y1="295.19" x2="912.38" y2="295.19" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath-6">
+      <rect class="cls-4" y="15.55" width="1080" height="1048.91"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-6" x1="865.15" y1="581.96" x2="1035.79" y2="581.96" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath-7">
+      <rect class="cls-4" y="15.55" width="1080" height="1048.91"/>
+    </clipPath>
+  </defs>
+  <g class="cls-19">
+    <g class="cls-12">
+      <path class="cls-26" d="m769.65,591.81c0,116.58-97.31,211.08-217.34,211.08s-217.34-94.51-217.34-211.08,97.31-211.09,217.34-211.09,217.34,94.51,217.34,211.09"/>
+      <path class="cls-26" d="m639.79,192.53c0,45.76-38.2,82.86-85.32,82.86s-85.32-37.1-85.32-82.86,38.2-82.86,85.32-82.86,85.32,37.1,85.32,82.86"/>
+      <path class="cls-26" d="m350.35,309.24c0,45.76-38.2,82.86-85.32,82.86s-85.32-37.1-85.32-82.86,38.2-82.86,85.32-82.86,85.32,37.1,85.32,82.86"/>
+      <path class="cls-26" d="m226.93,596.01c0,45.76-38.2,82.86-85.32,82.86s-85.32-37.1-85.32-82.86,38.2-82.86,85.32-82.86,85.32,37.1,85.32,82.86"/>
+      <path class="cls-26" d="m754.04,309.24c0,45.76,38.2,82.86,85.32,82.86s85.32-37.1,85.32-82.86-38.2-82.86-85.32-82.86-85.32,37.1-85.32,82.86"/>
+      <path class="cls-26" d="m877.46,596.01c0,45.76,38.2,82.86,85.32,82.86s85.32-37.1,85.32-82.86-38.2-82.86-85.32-82.86-85.32,37.1-85.32,82.86"/>
+    </g>
+    <path class="cls-23" d="m757.34,577.76c0,116.58-97.31,211.09-217.34,211.09s-217.34-94.51-217.34-211.09,97.31-211.09,217.34-211.09,217.34,94.51,217.34,211.09"/>
+    <ellipse class="cls-2" cx="540" cy="577.76" rx="204.36" ry="198.48"/>
+    <line class="cls-5" x1="540" y1="310.68" x2="540" y2="256.7"/>
+    <path class="cls-3" d="m0,581.96h260.67c0-149.83,125.06-271.28,279.33-271.28s279.33,121.46,279.33,271.28h260.67"/>
+    <path class="cls-1" d="m627.48,178.48c0,45.76-38.2,82.86-85.32,82.86s-85.32-37.1-85.32-82.86,38.2-82.86,85.32-82.86,85.32,37.1,85.32,82.86"/>
+    <ellipse class="cls-5" cx="542.16" cy="178.48" rx="85.32" ry="82.86"/>
+  </g>
+  <g class="cls-8">
+    <line class="cls-2" x1="485.59" y1="178.48" x2="598.13" y2="178.48"/>
+    <path class="cls-21" d="m338.04,295.19c0,45.76-38.2,82.86-85.32,82.86s-85.32-37.1-85.32-82.86,38.2-82.86,85.32-82.86,85.32,37.1,85.32,82.86"/>
+    <ellipse class="cls-5" cx="252.72" cy="295.19" rx="85.32" ry="82.86"/>
+  </g>
+  <g class="cls-20">
+    <line class="cls-2" x1="196.15" y1="295.19" x2="308.69" y2="295.19"/>
+    <path class="cls-27" d="m214.62,581.96c0,45.76-38.2,82.86-85.32,82.86s-85.32-37.1-85.32-82.86,38.2-82.86,85.32-82.86,85.32,37.1,85.32,82.86"/>
+    <ellipse class="cls-5" cx="129.3" cy="581.96" rx="85.32" ry="82.86"/>
+  </g>
+  <g class="cls-13">
+    <line class="cls-2" x1="72.73" y1="581.96" x2="185.28" y2="581.96"/>
+    <path class="cls-25" d="m555.9,310.68c0,8.53-7.12,15.44-15.9,15.44s-15.9-6.91-15.9-15.44,7.12-15.44,15.9-15.44,15.9,6.91,15.9,15.44"/>
+    <path class="cls-10" d="m276.57,581.96c0,8.53-7.12,15.44-15.9,15.44s-15.9-6.91-15.9-15.44,7.12-15.44,15.9-15.44,15.9,6.91,15.9,15.44"/>
+  </g>
+  <g class="cls-22">
+    <line class="cls-5" x1="308.4" y1="355.22" x2="343.42" y2="389.24"/>
+    <path class="cls-6" d="m358.14,388.09c0,8.53-7.12,15.44-15.9,15.44s-15.9-6.91-15.9-15.44,7.12-15.44,15.9-15.44,15.9,6.91,15.9,15.44"/>
+    <path class="cls-18" d="m741.74,295.19c0,45.76,38.2,82.86,85.32,82.86s85.32-37.1,85.32-82.86-38.2-82.86-85.32-82.86-85.32,37.1-85.32,82.86"/>
+    <ellipse class="cls-5" cx="827.06" cy="295.19" rx="85.32" ry="82.86"/>
+  </g>
+  <g class="cls-9">
+    <line class="cls-2" x1="883.63" y1="295.19" x2="771.09" y2="295.19"/>
+    <path class="cls-7" d="m865.15,581.96c0,45.76,38.2,82.86,85.32,82.86s85.32-37.1,85.32-82.86-38.2-82.86-85.32-82.86-85.32,37.1-85.32,82.86"/>
+    <ellipse class="cls-5" cx="950.47" cy="581.96" rx="85.32" ry="82.86"/>
+  </g>
+  <g class="cls-11">
+    <line class="cls-2" x1="1007.05" y1="581.96" x2="894.5" y2="581.96"/>
+    <path class="cls-14" d="m803.21,581.96c0,8.53,7.12,15.44,15.9,15.44s15.9-6.91,15.9-15.44-7.12-15.44-15.9-15.44-15.9,6.91-15.9,15.44"/>
+    <line class="cls-5" x1="771.38" y1="355.22" x2="736.35" y2="389.24"/>
+    <path class="cls-24" d="m721.64,388.09c0,8.53,7.12,15.44,15.9,15.44s15.9-6.91,15.9-15.44-7.12-15.44-15.9-15.44-15.9,6.91-15.9,15.44"/>
+  </g>
+  <text class="cls-15" transform="translate(404.21 549.58) scale(1.03 1)"><tspan x="0" y="0">Outsoucing </tspan><tspan x="-49.13" y="55.52">Business Process</tspan></text>
+  <text class="cls-17" transform="translate(104.56 575.09) scale(1.03 1)"><tspan x="0" y="0">Call</tspan><tspan x="-38.5" y="37.76">Answering</tspan></text>
+  <text class="cls-17" transform="translate(197.8 282.71) scale(1.03 1)"><tspan x="0" y="0">Customer</tspan><tspan x="9.21" y="37.76">Support</tspan></text>
+  <text class="cls-16" transform="translate(476.43 166.34) scale(1.03 1)"><tspan x="0" y="0">Telemarketing</tspan><tspan x="34.46" y="37.76">Service</tspan></text>
+  <text class="cls-17" transform="translate(784.08 288.47) scale(1.03 1)"><tspan x="0" y="0">IT Help </tspan><tspan x="16.04" y="37.76">Desk</tspan></text>
+  <text class="cls-17" transform="translate(890.75 575.09) scale(1.03 1)"><tspan x="0" y="0">Third Party</tspan><tspan x="-2.7" y="37.76">Verification</tspan></text>
+</svg>

@@ -2,12 +2,15 @@ import Markdown from 'components/blog/Markdown'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import { ParsedUrlQuery } from 'querystring'
-import { ArticleInfo } from 'types/article'
+import { ArticleInfo, TocProps } from 'types/article'
 import fs from 'fs'
 import matter from 'gray-matter'
 import BlogLayout from 'components/layouts/BlogLayout'
 import { ArticleJsonLd } from 'next-seo'
 import { getAbsoluteUrl } from 'utils/path'
+import NextLink from 'components/reuseable/links/NextLink'
+import { getToc } from 'utils/getToc'
+import SocialLinks from 'components/reuseable/SocialLinks'
 
 interface IProps {
   article: ArticleInfo
@@ -19,7 +22,7 @@ interface Params extends ParsedUrlQuery {
 }
 
 const ArticlePage: NextPage<IProps> = ({ article, absoluteUrl }) => {
-  const { content, meta } = article
+  const { content, meta, toc } = article
   return (
     <>
       <ArticleJsonLd
@@ -48,10 +51,10 @@ const ArticlePage: NextPage<IProps> = ({ article, absoluteUrl }) => {
           <meta name="description" content={meta.description} />
         </Head>
         <section className="wrapper bg-light">
-          <div className="container py-14">
-            <div className="row">
-              <div className="col-lg-10 mx-auto">
-                <div className="blog single mt-n20">
+          <div className="container py-14 py-md-16">
+            <div className="row gx-lg-8 gx-xl-12">
+              <div className="col-lg-8">
+                <div className="blog single">
                   <div className="card">
                     {/* <FigureImage
                     width={960}
@@ -72,6 +75,26 @@ const ArticlePage: NextPage<IProps> = ({ article, absoluteUrl }) => {
                   </div>
                 </div>
               </div>
+              <aside className="col-lg-4 sidebar mt-8 mt-lg-6">
+                <div className="widget mt-lg-4">
+                  <h4 className="widget-title mb-3">Table of Contents</h4>
+                  <ul className="unordered-list bullet-primary text-reset">
+                    {toc.map(
+                      ({ title, anchor, id, level }) =>
+                        level === 1 && (
+                          <li key={anchor}>
+                            <NextLink title={title} href={anchor} />
+                          </li>
+                        )
+                    )}
+                  </ul>
+                  <SocialLinks className="nav social my-6" />
+                  <h4 className="widget-title mb-3">Let's Connect</h4>
+                  <p>
+                    <NextLink title="Try Ambit" href="/contact" /> and see the difference!
+                  </p>
+                </div>
+              </aside>
             </div>
           </div>
         </section>
@@ -81,16 +104,18 @@ const ArticlePage: NextPage<IProps> = ({ article, absoluteUrl }) => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ ...context }) => {
+  debugger
   const { slug } = context.params as Params
-
   const content = fs.readFileSync(`src/data/articles/${slug}.md`).toString()
   const info = matter(content)
+  const toc = getToc(content)
   const article = {
     meta: {
       ...info.data,
       slug
     },
-    content: info.content
+    content: info.content,
+    toc: toc
   }
 
   const origin = getAbsoluteUrl()
