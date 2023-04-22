@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: undefined
+Host: https://ambitkpo.com
 
 # Sitemaps
-Sitemap: undefined/sitemap.xml
+Sitemap: https://ambitkpo.com/sitemap.xml
