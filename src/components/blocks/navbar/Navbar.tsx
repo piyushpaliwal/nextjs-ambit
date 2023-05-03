@@ -72,10 +72,10 @@ const Navbar: FC<NavbarProps> = (props) => {
 
               <ul className="dropdown-menu">
                 {services.map(({ id, url, title, children }) => {
-                  if (!url && children) {
+                  if (children.length > 0) {
                     return (
                       <li className="dropdown dropdown-submenu dropend" key={id}>
-                        <DropdownToggleLink title="Blog Posts" />
+                        <DropdownToggleLink title={title} href={url} />
                         <ul className="dropdown-menu">{renderLinks(children)}</ul>
                       </li>
                     )

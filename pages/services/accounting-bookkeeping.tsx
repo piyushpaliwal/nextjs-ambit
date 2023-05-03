@@ -1,13 +1,8 @@
 import HeroInnerPages from 'components/blocks/hero/HeroInnerPages'
 import { Navbar } from 'components/blocks/navbar'
 import { Services } from 'components/blocks/services'
-import PageLayout from 'components/layouts/PageLayout'
 import FigureImage from 'components/reuseable/FigureImage'
-import ListColumn from 'components/reuseable/ListColumn'
 import NextLink from 'components/reuseable/links/NextLink'
-import { ServiceCard2 } from 'components/reuseable/service-cards'
-import { bookkeepingServiceList } from 'data/misc/bookkeeping'
-import { bookkeepingBenefitsList } from 'data/misc/bookkeepingBenefits'
 import Analytics from 'icons/lineal/Analytics'
 import Savings from 'icons/lineal/Savings'
 import Target from 'icons/lineal/Target'
@@ -73,7 +68,11 @@ const BookkeepingPage: NextPage = () => {
                   No matter your business situation or how far behind you are, Ambit's Catch-Up Bookkeeping offers a
                   specialized team of experts to help you get caught up.
                 </p>
-                <NextLink href="#" title="Learn More" className="btn btn-primary rounded mb-0 text-nowrap" />
+                <NextLink
+                  href="/services/catch-up-bookkeeping"
+                  title="Learn More"
+                  className="btn btn-primary rounded mb-0 text-nowrap"
+                />
               </div>
             </div>
           </div>
