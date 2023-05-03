@@ -75,7 +75,7 @@ const Navbar: FC<NavbarProps> = (props) => {
                   if (children.length > 0) {
                     return (
                       <li className="dropdown dropdown-submenu dropend" key={id}>
-                        <DropdownToggleLink title={title} href={url} />
+                        <DropdownToggleLink title={title} />
                         <ul className="dropdown-menu">{renderLinks(children)}</ul>
                       </li>
                     )
