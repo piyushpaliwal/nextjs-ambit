@@ -19,12 +19,11 @@ const services = [
     url: '#',
     title: 'Tax',
     children: [
-      { id: 51, url: '/services/tax-service', title: 'Tax Service' },
-      { id: 52, url: '/services/tax-return', title: 'Tax Return Preparation' }
+      { id: 51, url: '/services/tax-service', title: 'Tax Planning & Advisory' },
+      { id: 52, url: '/services/tax-return', title: 'Tax Return Preparation' },
+      { id: 53, url: '/services/ertc', title: 'ERTC' }
     ]
   },
-  { id: 7, url: '/services/virtual-assistance', title: 'Virtual Assistance', children: [] },
-  { id: 8, url: '/services/ertc', title: 'ERTC', children: [] },
   { id: 9, url: '/services/financial-reporting', title: 'Financial Reporting', children: [] }
 ]
 

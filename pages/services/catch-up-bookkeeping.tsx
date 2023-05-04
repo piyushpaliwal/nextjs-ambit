@@ -64,7 +64,7 @@ const CatchupBookkeeping: NextPage = () => {
           <div className="container pt-18 pb-16">
             <div className="row gx-0 gy-12 align-items-center">
               <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start">
-                <h1 className="display-2 mb-5 text-white" style={slideInDownAnimate('600ms')}>
+                <h1 className="display-3 mb-5 text-white" style={slideInDownAnimate('600ms')}>
                   Don't let your finances play catch-up with you. Let Catch Up Bookkeeping keep them in line!
                 </h1>
 

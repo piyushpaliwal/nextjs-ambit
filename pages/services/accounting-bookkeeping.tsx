@@ -11,7 +11,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import i1 from '../../public/img/photos/one-on-one-expert.svg'
 import AccordionList from 'components/common/AccordionList'
-import { softwareList } from 'data/client'
+import { condensedSoftwareList } from 'data/client'
 import Footer from 'components/blocks/footer/Footer'
 
 const BookkeepingPage: NextPage = () => {
@@ -171,7 +171,7 @@ const BookkeepingPage: NextPage = () => {
               </div>
               <div className="col-lg-8">
                 <div className="row row-cols-2 row-cols-md-4 gx-0 gx-md-8 gx-xl-12 gy-12">
-                  {softwareList.map((item) => (
+                  {condensedSoftwareList.map((item) => (
                     <div className="col" key={item}>
                       <FigureImage
                         width={450}
