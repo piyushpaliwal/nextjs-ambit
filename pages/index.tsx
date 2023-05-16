@@ -56,13 +56,12 @@ const Index: NextPage = () => {
             <Services />
           </div>
         </section>
-        <section className="wrapper bg-light">
+        {/* <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
-            {/* Pricing section */}
             <Pricing />
           </div>
-        </section>
-        <section className="wrapper bg-gray">
+        </section> */}
+        <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
             {/* How we work */}
             <Process />
