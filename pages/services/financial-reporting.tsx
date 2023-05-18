@@ -10,7 +10,7 @@ import i2 from '../../public/img/photos/data-visualisation.svg'
 import i3 from '../../public/img/photos/benefits-for-you.svg'
 import i4 from '../../public/img/photos/three-way-forecasting.svg'
 import i5 from '../../public/img/photos/seamless-integration.svg'
-import i6 from '../../public/img/photos/seamless-integration.svg'
+import i6 from '../../public/img/photos/software-integration.svg'
 import Footer from 'components/blocks/footer/Footer'
 import { slideInDownAnimate } from 'utils/animation'
 import Image from 'next/image'
@@ -160,7 +160,7 @@ const FinancialReporting: NextPage = () => {
           <div className="container py-14 py-md-14">
             <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div className="col-lg-5 order-lg-2">
-                <FigureImage className="w-auto" src={i5} alt="Seamless Integration" width={700} height={700} />
+                <FigureImage className="w-auto" src={i6} alt="Seamless Integration" width={700} height={700} />
               </div>
               <div className="col-lg-7">
                 <h2 className="fs-16 text-uppercase text-primary mb-3">Seamless Integration</h2>
@@ -178,10 +178,10 @@ const FinancialReporting: NextPage = () => {
           <div className="container">
             <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div className="col-lg-5">
-                <FigureImage className="w-auto" src={i2} alt="Visualization" width={700} height={700} />
+                <FigureImage className="w-auto" src={i5} alt="Visualization" width={700} height={700} />
               </div>
               <div className="col-lg-7">
-                <h3 className="display-4 mb-7">Engaging Reports</h3>
+                <h3 className="display-4 mb-7">Why Choose Ambit's Financial Reporting</h3>
                 <FinancialReportingAccordin3 />
               </div>
             </div>

@@ -13,7 +13,7 @@ import Search from './partials/Search'
 import Social from './partials/Social'
 import Language from './partials/Language'
 // -------- data -------- //
-import { home, services, industries, company } from 'data/navigation'
+import { home, services, company } from 'data/navigation'
 
 // ===================================================================
 type NavbarProps = {
@@ -85,7 +85,7 @@ const Navbar: FC<NavbarProps> = (props) => {
               </ul>
             </li>
             <ListItemLink href="/price" title="Price" liClassName="nav-item" />
-            <ListItemLink href="/blogs" title="Blog Posts" liClassName="nav-item" />
+            <ListItemLink href="/blogs" title="Blog" liClassName="nav-item" />
             {/* ===================== company nav item ===================== */}
             <li className="nav-item dropdown">
               <DropdownToggleLink title="Company" className="nav-link dropdown-toggle" />
@@ -95,7 +95,7 @@ const Navbar: FC<NavbarProps> = (props) => {
                   if (!url && children) {
                     return (
                       <li className="dropdown dropdown-submenu dropend" key={id}>
-                        <DropdownToggleLink title="Blog Posts" />
+                        <DropdownToggleLink title="Blog" />
                         <ul className="dropdown-menu">{renderLinks(children)}</ul>
                       </li>
                     )

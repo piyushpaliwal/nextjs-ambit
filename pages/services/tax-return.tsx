@@ -1,5 +1,6 @@
 import PageLayout from 'components/layouts/PageLayout'
 import FigureImage from 'components/reuseable/FigureImage'
+import Image from 'next/image'
 import ListColumn from 'components/reuseable/ListColumn'
 import { ServiceCard2 } from 'components/reuseable/service-cards'
 import { bookkeepingServiceList } from 'data/misc/bookkeeping'
@@ -28,13 +29,19 @@ const TaxReturnPage: NextPage = () => {
         <div className="container py-14 py-md-14">
           <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
             <div className="col-lg-7 order-lg-2">
-              <FigureImage
+              <Image
+                src="/img/illustrations/tax-page-i1.jpg"
+                alt="Our Expertise Illustration"
+                width={800}
+                height={533}
+              />
+              {/* <FigureImage
                 src="/img/illustrations/tax-page-i1.jpg"
                 className="shadow p-2 bg-gray rounded"
                 alt="Our Expertise Illustration"
-                width={1600}
-                height={1118}
-              />
+                width={800}
+                height={533}
+              /> */}
             </div>
 
             <div className="col-lg-5">

@@ -31,7 +31,7 @@ const pricingList2 = [
     features: [
       'Upto 6 Bank/Credit card accounts',
       'Cash or Accrual',
-      'Sales Reconsiliation',
+      'Sales Reconciliation',
       'Monthly client meetings'
     ],
     suffix: 'mo'
@@ -45,7 +45,7 @@ const pricingList2 = [
     popular: false,
     plan: 'Customized',
     features: [
-      'Upto 6 Bank/Credit card accounts',
+      'Unlimited Bank/Credit card accounts',
       'Weekly Review Meeting',
       'Dedicated Bookkeeping Team',
       'Customized Reports'
