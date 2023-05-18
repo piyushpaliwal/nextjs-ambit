@@ -1,9 +1,7 @@
 import { Navbar } from 'components/blocks/navbar'
-import NextLink from 'components/reuseable/links/NextLink'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import { slideInDownAnimate } from 'utils/animation'
 import { Footer } from 'components/blocks/footer'
 import i1 from '../public/img/photos/catch-up-bookkeeping-pricing.svg'
@@ -41,10 +39,10 @@ const PricePage: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>The Best USA-Based Accounting & Bookkeeping Services Provider</title>
+        <title>Bookkeeping Pricing Packages & Plans | Ambit Tax & Accounting</title>
         <meta
           name="description"
-          content="Ambit provides professional bookkeeping and accounting services to businesses of all sizes. From data entry to full financial management, we'll take care of everything so you can focus on what you're good at - running your business!"
+          content="Ambit's financial solutions are built for your growing business. Discover the right finance, accounting, and tax services for your business."
         />
       </Head>
       <header className="wrapper bg-soft-primary">

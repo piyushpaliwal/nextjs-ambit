@@ -1,6 +1,5 @@
 import PageLayout from 'components/layouts/PageLayout'
 import FigureImage from 'components/reuseable/FigureImage'
-import ListColumn from 'components/reuseable/ListColumn'
 import { virtualAssistantList } from 'data/misc/virtualAssistantList'
 import { NextPage } from 'next'
 import Head from 'next/head'

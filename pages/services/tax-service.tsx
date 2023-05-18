@@ -26,7 +26,7 @@ const TaxService: NextPage = () => {
         <title>The Best USA-Based Accounting & Bookkeeping Services Provider</title>
         <meta
           name="description"
-          content="Ambit provides professional bookkeeping and accounting services to businesses of all sizes. From data entry to full financial management, we'll take care of everything so you can focus on what you're good at - running your business!"
+          content="The right tax services at crucial times for your businesses. Get tax prep, year-round advisory and your tax filing done on time with Ambit."
         />
       </Head>
       <header className="wrapper bg-soft-primary">

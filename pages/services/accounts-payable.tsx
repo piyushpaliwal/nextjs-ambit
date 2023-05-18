@@ -13,10 +13,10 @@ const AccountsPayablePage: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Accounts Payable Services to Streamline Your Business</title>
+        <title>Accounts Payable Services | Ambit Tax & Accounting</title>
         <meta
           name="description"
-          content="Looking for a way to streamline your business payments? Look no further than Ambit. Our accounts payable services will help you minimize discrepancies and get your working capital back on track. Contact us today to learn more!"
+          content="Manage payments, minimize discrepancies, and enhance your working capital with Accounts Payable Services offered by Ambit."
         />
       </Head>
       <section className="wrapper bg-light">

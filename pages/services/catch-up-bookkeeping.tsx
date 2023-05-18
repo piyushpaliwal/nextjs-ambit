@@ -2,15 +2,12 @@ import { Navbar } from 'components/blocks/navbar'
 import FigureImage from 'components/reuseable/FigureImage'
 import NextLink from 'components/reuseable/links/NextLink'
 import Analytics from 'icons/lineal/Analytics'
-import Savings from 'icons/lineal/Savings'
-import Target from 'icons/lineal/Target'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import i1 from '../../public/img/photos/catch-up-bookkeeping-banner.svg'
 import i2 from '../../public/img/photos/accurate-books-done-quick.svg'
 import i3 from '../../public/img/photos/one-tidy-year-end-financial-package.svg'
-import { softwareList } from 'data/client'
 import Footer from 'components/blocks/footer/Footer'
 import { slideInDownAnimate } from 'utils/animation'
 import Image from 'next/image'
@@ -26,10 +23,10 @@ const CatchupBookkeeping: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>The Best USA-Based Accounting & Bookkeeping Services Provider</title>
+        <title>Catch Up Bookkeeping and Tax Services For Small Business | Ambit</title>
         <meta
           name="description"
-          content="Ambit provides professional bookkeeping and accounting services to businesses of all sizes. From data entry to full financial management, we'll take care of everything so you can focus on what you're good at - running your business!"
+          content="Our catch up bookkeeping service will bring your financial up to date, giving you peace of mind to make decisions based on real numbers."
         />
       </Head>
       <header className="wrapper bg-soft-primary">

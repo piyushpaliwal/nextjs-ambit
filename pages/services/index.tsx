@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 import PageLayout from 'components/layouts/PageLayout'
-import { About } from 'components/blocks/about'
 import { Services } from 'components/blocks/services'
 import Head from 'next/head'
 

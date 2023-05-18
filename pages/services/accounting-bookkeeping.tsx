@@ -20,10 +20,10 @@ const BookkeepingPage: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>The Best USA-Based Accounting & Bookkeeping Services Provider</title>
+        <title>Ambit Tax & Bookkeeping | Accounting & Bookkeeping</title>
         <meta
           name="description"
-          content="Ambit provides professional bookkeeping and accounting services to businesses of all sizes. From data entry to full financial management, we'll take care of everything so you can focus on what you're good at - running your business!"
+          content="One team for all your accounting needs. Ambit handles your bookkeeping, taxes, forecasting and more. See why thousands of businesses trust Ambit."
         />
       </Head>
       <header className="wrapper bg-soft-primary">
@@ -193,7 +193,7 @@ const BookkeepingPage: NextPage = () => {
             <div className="row">
               <div className="col-md-9 col-lg-7 col-xl-7 mx-auto text-center">
                 <h2 className="display-4 mb-3">
-                  Join thousands of small business owners who trust Ambit with their books
+                  Join hundreds of small business owners who trust Ambit with their books
                 </h2>
                 <p className="lead fs-lg mb-6">
                   Spend time doing what you love to do. Run your business. Go on a date. Get more sleep. Have some fun!

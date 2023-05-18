@@ -3,7 +3,6 @@ import FigureImage from 'components/reuseable/FigureImage'
 import Image from 'next/image'
 import ListColumn from 'components/reuseable/ListColumn'
 import { ServiceCard2 } from 'components/reuseable/service-cards'
-import { bookkeepingServiceList } from 'data/misc/bookkeeping'
 import { taxReturnList } from 'data/misc/taxReturnList'
 import { taxReturnServices } from 'data/misc/taxReturnServices'
 import { NextPage } from 'next'
@@ -19,10 +18,10 @@ const TaxReturnPage: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Professional Tax Return Preparation Services</title>
+        <title>Tax Preparation for Businesses | Ambit Tax & Accounting</title>
         <meta
           name="description"
-          content="Ambit offers a full range of tax preparation services for businesses and individuals. We have the experience and expertise to help you file your taxes accurately and on time. Contact us today to get started!"
+          content="Full tax prep service, a dedicated tax professional, and a streamlined online process. Your Ambit team works seamlessly behind the scenes to get all your filings done on time."
         />
       </Head>
       <section className="wrapper bg-light">

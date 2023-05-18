@@ -1,7 +1,6 @@
 import { Navbar } from 'components/blocks/navbar'
 import FigureImage from 'components/reuseable/FigureImage'
 import NextLink from 'components/reuseable/links/NextLink'
-import Analytics from 'icons/lineal/Analytics'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -14,9 +13,6 @@ import i6 from '../../public/img/photos/software-integration.svg'
 import Footer from 'components/blocks/footer/Footer'
 import { slideInDownAnimate } from 'utils/animation'
 import Image from 'next/image'
-import Check from 'icons/lineal/Check'
-import SmartphoneTwo from 'icons/lineal/SmartphoneTwo'
-import Shield from 'icons/lineal/Shield'
 import FinancialReportingAccordin from 'components/common/FinancialReportingAccordin'
 import FinancialReportingAccordin2 from 'components/common/FinancialReportingAccordin2'
 import FinancialReportingAccordin1 from 'components/common/FinancialReportingAccordin1'
@@ -28,10 +24,10 @@ const FinancialReporting: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>The Best USA-Based Accounting & Bookkeeping Services Provider</title>
+        <title>Financial Reporting | All-in-One Reporting & Forecasting</title>
         <meta
           name="description"
-          content="Ambit provides professional bookkeeping and accounting services to businesses of all sizes. From data entry to full financial management, we'll take care of everything so you can focus on what you're good at - running your business!"
+          content="The comprehensive solution for all your reporting and cash flow forecasting needs. Fast, flexible, and visual insights for your businesses."
         />
       </Head>
       <header className="wrapper bg-soft-primary">
