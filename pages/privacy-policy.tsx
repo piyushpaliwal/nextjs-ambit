@@ -1,8 +1,6 @@
 import PageLayout from 'components/layouts/PageLayout'
-import { linkList } from 'data/misc/termsList'
 import { NextPage } from 'next'
 import { FC } from 'react'
-import { Element, Link as ScrollLink } from 'react-scroll'
 
 const PrivacyPolicyPage: NextPage = () => {
   return (

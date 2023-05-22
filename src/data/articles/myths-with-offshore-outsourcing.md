@@ -1,5 +1,5 @@
 ---
-title: Common Myths with Offshore Outsourcing
+title: Myths with Offshore Outsourcing
 description: As the wave of outsourcing has taken centre stage amongst various business strategies of value addition to business, it’s important to debunk some of the myths that are holding back others to jump on to the outsourcing wagon as yet.
 category: outsourcing
 thumbnail: /img/articles/myths-with-offshore-outsourcing.svg

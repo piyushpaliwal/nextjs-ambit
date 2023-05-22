@@ -13,10 +13,10 @@ const AccountsReceivablePage: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Accounts Receivable Outsourcing Services to Improve Collection Rates</title>
+        <title>Efficient Accounts Receivable Outsourcing | Ambit Tax & Accounting</title>
         <meta
           name="description"
-          content="Ambit offers accounts receivable outsourcing services that improve collection rates by generating faster payments and minimizing customer support communications. For more information, visit our website today!"
+          content="Track customer payments, identify and follow up on pending disbursements, and improve cash flow with Accounts Receivable Services by Ambit."
         />
       </Head>
       <section className="wrapper bg-light">

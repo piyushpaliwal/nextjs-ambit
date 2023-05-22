@@ -1,7 +1,6 @@
 import BlogCard from 'components/blog/Card'
 import { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
-import { Fragment } from 'react'
 import { ArticleMeta } from 'types/article'
 import fs from 'fs'
 import matter from 'gray-matter'
@@ -17,8 +16,11 @@ const BlogsPage: NextPage<IProps> = ({ articles }) => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Articles</title>
-        <meta name="description" content="Some insights from the team at Ambit KPO Services" />
+        <title>Blog | Ambit Tax & Accounting</title>
+        <meta
+          name="description"
+          content="Accounting, bookkeeping, and tax tips to help you understand your small business finances."
+        />
       </Head>
       <section className="wrapper bg-light">
         <div className="container py-14">

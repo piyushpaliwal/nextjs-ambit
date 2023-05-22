@@ -1,2 +1,3 @@
 import Hero from './Hero'
-export { Hero }
+import HeroInnerPages from './HeroInnerPages'
+export { Hero, HeroInnerPages }

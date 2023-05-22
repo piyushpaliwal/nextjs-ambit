@@ -5,17 +5,26 @@ import { Hero } from 'components/blocks/hero'
 import { Navbar } from 'components/blocks/navbar'
 import { Softwares } from 'components/blocks/clients'
 import { Footer } from 'components/blocks/footer'
-import { Pricing } from 'components/blocks/pricing'
 import { Testimonial } from 'components/blocks/testimonial'
 import { Services } from 'components/blocks/services'
-import NextLink from 'components/reuseable/links/NextLink'
 import { Process } from 'components/blocks/process'
 import Link from 'next/link'
+import Services1 from 'components/blocks/services/Services1'
+import Head from 'next/head'
 // import { Link } from 'react-scroll'
 
 const Index: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online Bookkeeping and Accounting Services | Ambit Tax & Accounting</title>
+        <meta
+          name="description"
+          content="Let Ambit handle all of your online bookkeeping and accounting needs including weekly bookkeeping, month-end financials, tax prep, and more."
+        />
+      </Head>
       {/* ========== header ========== */}
       <header className="wrapper bg-soft-primary">
         <Navbar
@@ -52,19 +61,24 @@ const Index: NextPage = () => {
         </section>
         <section className="wrapper bg-gray">
           <div className="container py-14 py-md-14">
-            {/* ========== what we do section ========== */}
+            {/* ========== How we work ========== */}
             <Services />
           </div>
         </section>
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
-            {/* Pricing section */}
-            <Pricing />
+            {/* ========== Services ========== */}
+            <Services1 />
           </div>
         </section>
+        {/* <section className="wrapper bg-light">
+          <div className="container py-14 py-md-14">
+            <Pricing />
+          </div>
+        </section> */}
         <section className="wrapper bg-gray">
           <div className="container py-14 py-md-14">
-            {/* How we work */}
+            {/* working process */}
             <Process />
           </div>
         </section>

@@ -2,7 +2,6 @@ import { Contact } from 'components/blocks/contact'
 import PageLayout from 'components/layouts/PageLayout'
 import { NextPage } from 'next'
 import Head from 'next/head'
-import { FC } from 'react'
 
 const ContactPage: NextPage = () => {
   return (

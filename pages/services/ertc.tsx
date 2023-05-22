@@ -1,5 +1,4 @@
 import PageLayout from 'components/layouts/PageLayout'
-import FigureImage from 'components/reuseable/FigureImage'
 import ServiceCard5 from 'components/reuseable/service-cards/ServiceCard5'
 import { ertcBenefitsList } from 'data/misc/ertcBenefitsList'
 import { ertcServiceList } from 'data/misc/ertcServiceList'

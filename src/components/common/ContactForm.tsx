@@ -38,10 +38,19 @@ const ContactForm: FC = () => {
     e: React.FormEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
     prop: string
   ) => {
-    setContactObj({
-      ...contactObj,
-      [prop]: e.currentTarget.value
-    })
+    if (prop === 'message') {
+      setContactObj({
+        ...contactObj,
+        [prop]: `${router.query.activeYearly === 'true' ? 'Yearly Selected.' : 'Monthly Selected.'} Message: ${
+          e.currentTarget.value
+        }`
+      })
+    } else {
+      setContactObj({
+        ...contactObj,
+        [prop]: e.currentTarget.value
+      })
+    }
   }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -165,10 +174,9 @@ const ContactForm: FC = () => {
               <option disabled value="Plan">
                 Plan
               </option>
-              <option value="Free Trial">Free Trial</option>
-              <option value="Fixed Monthly">Fixed Monthly</option>
-              <option value="Fixed Hours">Fixed Hours</option>
-              <option value="Full Time">Full Time</option>
+              <option value="Core">Core</option>
+              <option value="Growth">Growth</option>
+              <option value="Customized">Customized</option>
             </select>
 
             <div className="valid-feedback"> Looks good! </div>

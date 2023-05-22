@@ -12,10 +12,10 @@ const InvoiceProcessingPage: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Get Your Invoices Processed Quickly and Efficiently with Ambit</title>
+        <title>Invoices Processing Services | Invoice Processing Outsourcing</title>
         <meta
           name="description"
-          content="Speed up the invoicing process for your business with Ambit's invoice processing services. Our team will take care of everything, from tracking to approvals and payment dispersal, so you can focus on what you do best. Contact us today to get started!"
+          content="Track and process your invoices accurately for timely approvals and prompt payment dispersal with Invoice Processing Services offered by Ambit"
         />
       </Head>
       <section className="wrapper bg-light">

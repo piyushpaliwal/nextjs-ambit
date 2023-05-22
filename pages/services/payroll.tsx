@@ -1,6 +1,5 @@
 import SoftwaresPayroll from 'components/blocks/clients/SoftwaresPayroll'
 import PageLayout from 'components/layouts/PageLayout'
-import NextLink from 'components/reuseable/links/NextLink'
 import { ServiceCard3 } from 'components/reuseable/service-cards'
 import { payrollServicesList } from 'data/misc/payrollService'
 import { NextPage } from 'next'
@@ -16,10 +15,10 @@ const PayrollPage: NextPage = () => {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Comprehensive Payroll Services for Businesses in the United States</title>
+        <title>Top Payroll Outsourcing Services | Best Payroll Outsourcing Companies</title>
         <meta
           name="description"
-          content="Ambit provides businesses with comprehensive payroll services that make it easier to pay staff according to U.S. laws and regulations. To learn more, visit our website today!"
+          content="Outsource payroll services for small businesses in the USA. Ambit Tax & Accounting simplifies payroll processing with expert assistance."
         />
       </Head>
 
