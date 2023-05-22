@@ -1,8 +1,8 @@
 backend:
-  name: github
-  repo: piyushpaliwal/nextjs-ambit
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-  site_domain: 'https://vermillion-gingersnap-9f4345.netlify.app'
+  identity_url: 'https://vermillion-gingersnap-9f4345.netlify.app/.netlify/identity'
+  gateway_url: 'https://vermillion-gingersnap-9f4345.netlify.app/.netlify/git'
 media_folder: 'public/img/articles'
 public_folder: '/img/articles'
 publish_mode: editorial_workflow
