@@ -1,12 +1,13 @@
 ---
 title: Myths with Offshore Outsourcing
-description: As the wave of outsourcing has taken centre stage amongst various business strategies of value addition to business, it’s important to debunk some of the myths that are holding back others to jump on to the outsourcing wagon as yet.
+description: As the wave of outsourcing has taken centre stage amongst various
+  business strategies of value addition to business, it’s important to debunk
+  some of the myths that are holding back others to jump on to the outsourcing
+  wagon as yet.
+date: 3/23/2023
 category: outsourcing
 thumbnail: /img/articles/myths-with-offshore-outsourcing.svg
-date: 3/23/2023
 ---
-
-![Myths with offshore outsourcing](/img/articles/myths-with-offshore-outsourcing.svg)
 As the wave of outsourcing has taken centre stage amongst various business strategies of value addition to business, it’s important to debunk some of the myths that are holding back others to jump on to the outsourcing wagon as yet.
 
 Some of them are mentioned here:
@@ -63,3 +64,5 @@ The most common outsourcing arrangements seen today envision a steady state—th
 ![Outsourcing Business Process](/img/articles/outsourcing-business-process.svg)
 Value addition in business due to outsourcing is a function of whether the sourcing decision is in sync with the business strategy. If the nature of the outsourcing relationship formed is entirely incompatible with expected business results there turns out to be a huge disconnect between senior executives, the board, and operational managers, leading to a major failure.
 Hence, although there are real risks involved in outsourcing, if one finds the right outsourcing provider for your company and ensures the right measures are taken before outsourcing, it is not such a big challenge to achieve these returns.
+
+E﻿dited
