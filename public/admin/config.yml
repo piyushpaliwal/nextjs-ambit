@@ -2,6 +2,7 @@ backend:
   name: github
   repo: piyushpaliwal/nextjs-ambit
   branch: main # Branch to update (optional; defaults to master)
+  site_domain: 'https://vermillion-gingersnap-9f4345.netlify.app'
 media_folder: 'public/img/articles'
 public_folder: '/img/articles'
 publish_mode: editorial_workflow
