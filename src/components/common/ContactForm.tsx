@@ -174,6 +174,9 @@ const ContactForm: FC = () => {
               <option disabled value="Plan">
                 Plan
               </option>
+              <option value="Free Trial">Free Trial</option>
+              <option value="Catch-up Bookkeeping">Catch-up Bookkeeping</option>
+              <option value="Tax Preparation">Tax Preparation</option>
               <option value="Core">Core</option>
               <option value="Growth">Growth</option>
               <option value="Customized">Customized</option>

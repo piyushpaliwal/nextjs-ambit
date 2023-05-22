@@ -8,12 +8,12 @@ import Link from 'next/link'
 import i1 from '../../public/img/photos/tax-service-banner.svg'
 import i2 from '../../public/img/photos/income-tax-filing-deadlines.svg'
 import i3 from '../../public/img/photos/form-1040.svg'
+import i4 from '../../public/img/photos/sole-proprietors-and-c-corporations.svg'
 import Footer from 'components/blocks/footer/Footer'
 import { slideInDownAnimate } from 'utils/animation'
 import Image from 'next/image'
 import Check from 'icons/lineal/Check'
 import SmartphoneTwo from 'icons/lineal/SmartphoneTwo'
-import AccordionList2 from 'components/common/AccordionList2'
 import TaxAccordin1 from 'components/common/TaxAccordin1'
 import TaxAccordin2 from 'components/common/TaxAccordin2'
 
@@ -185,7 +185,7 @@ const TaxService: NextPage = () => {
           <div className="container py-14 py-md-14">
             <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div className="col-lg-5">
-                <FigureImage className="w-auto" src={i2} alt="Accurate books done quick" width={700} height={700} />
+                <FigureImage className="w-auto" src={i4} alt="Accurate books done quick" width={700} height={700} />
               </div>
               <div className="col-lg-7">
                 <h3 className="display-4 mb-7">Income Tax filing deadlines</h3>
