@@ -37,7 +37,7 @@ const Hero: FC = () => {
               <span style={slideInDownAnimate('1200ms')}>
                 <NextLink
                   title="Explore Possibilities"
-                  href="/services"
+                  href="/services/accounting-bookkeeping"
                   className="btn btn-lg btn-white rounded-pill me-2"
                 />
               </span>
