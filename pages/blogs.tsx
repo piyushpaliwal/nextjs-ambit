@@ -55,7 +55,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      articles: articles
+      articles: JSON.parse(JSON.stringify(articles))
     }
   }
 }
