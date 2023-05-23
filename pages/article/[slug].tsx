@@ -29,7 +29,7 @@ const ArticlePage: NextPage<IProps> = ({ article, absoluteUrl }) => {
         useAppDir={false}
         url={`${absoluteUrl}/article/${meta.slug}`}
         title="Article headline"
-        images={[`${absoluteUrl}/img/${meta.thumbnail}`]}
+        images={[`${absoluteUrl}${meta.thumbnail}`]}
         datePublished={meta.date}
         dateModified={meta.date}
         authorName={[
@@ -121,7 +121,7 @@ export const getStaticProps: GetStaticProps = async ({ ...context }) => {
   const origin = getAbsoluteUrl()
   return {
     props: {
-      article: article,
+      article: JSON.parse(JSON.stringify(article)),
       absoluteUrl: origin
     }
   }

@@ -3,10 +3,11 @@ title: The Ultimate Guide to Interior Design Bookkeeping
 description: Are you an interior designer struggling with bookkeeping? This
   ultimate guide has everything you need to know to keep your finances organized
   and your business thriving.
-date: 2023-05-23T08:48:22.207Z
+date: 2023-05-23
 category: Bookkeeping
 thumbnail: /img/articles/project-cover-image-3.jpg.jpg
 ---
+
 As an interior designer, you have a creative eye for design, but managing your finances may not come as naturally. Keeping track of your income, expenses, and taxes is crucial for the success of your business. This ultimate guide will provide you with all the information you need to keep your bookkeeping organized and your business thriving.
 
 ## Understand the Basics of Bookkeeping
