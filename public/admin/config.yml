@@ -1,8 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main # Branch to update (optional; defaults to master)
-  identity_url: 'https://vermillion-gingersnap-9f4345.netlify.app/.netlify/identity'
-  gateway_url: 'https://vermillion-gingersnap-9f4345.netlify.app/.netlify/git'
+  site_domain: vermillion-gingersnap-9f4345.netlify.app
 media_folder: 'public/img/articles'
 public_folder: '/img/articles'
 publish_mode: editorial_workflow
