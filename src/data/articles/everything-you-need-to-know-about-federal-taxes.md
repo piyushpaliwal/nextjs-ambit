@@ -51,8 +51,6 @@ Tax brackets were created by the IRS to implement America’s “progressive” 
 
 ### Earned Income Credit
 
-![Earned-Income-Tax-Credit](/img/articles/earned-income-tax-credit.png "Earned-Income-Tax-Credit")
-
 The Earned Income Tax Credit (EITC) helps low- to moderate-income workers and families get a tax break. If you qualify, you can use the credit to reduce the taxes you owe – and maybe increase your refund.
 
 ### Child Tax Credit
