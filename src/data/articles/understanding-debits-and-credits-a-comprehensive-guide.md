@@ -1,7 +1,7 @@
 ---
 title: Understanding Debits and Credits A Comprehensive Guide
-description: n this guide, we’ll go over the basics of bookkeeping—what accounts
-  are debits and credits and how to record them in your books.
+description: In this guide, we’ll go over the basics of bookkeeping—what
+  accounts are debits and credits and how to record them in your books.
 date: 2023-06-13T05:56:00.287Z
 category: Bookkeeping
 thumbnail: /img/articles/debit-and-credit.svg
