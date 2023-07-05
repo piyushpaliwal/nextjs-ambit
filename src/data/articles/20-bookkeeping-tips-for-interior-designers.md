@@ -5,7 +5,7 @@ description: Struggling with interior design bookkeeping? Our tips and tricks
   business. Learn more here.
 date: 2023-06-22T10:29:52.892Z
 category: Bookkeeping
-thumbnail: /img/articles/20-tips-for-interior-design-bookkeeping.svg
+thumbnail: /img/articles/15-tips-for-interior-design-bookkeeping.svg
 ---
 # Interior Design Bookkeeping Made Easy: Tips and Tricks
 
