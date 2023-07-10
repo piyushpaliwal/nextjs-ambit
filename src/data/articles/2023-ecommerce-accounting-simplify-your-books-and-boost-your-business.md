@@ -24,10 +24,6 @@ Tables of contents:
 * Ecommerce accounting best practices
 * Ecommerce accounting FAQ
 
-Take the stress out of sales tax with Shopify Tax
-
-With Shopify Tax, you can oversee your current sales tax obligations from Shopify admin, collect the right amount at checkout with product and location-specific accuracy, and let Shopify automatically apply rate and regulatory changes whenever they happen.
-
 ## What is ecommerce accounting?
 
 Ecommerce accounting involves the systematic recording, organization, and management of all financial data and transactions specifically related to the operation of an ecommerce company. It is a specialized subset of small business accounting designed to address the unique requirements of ecommerce providers.
