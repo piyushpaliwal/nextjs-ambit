@@ -15,7 +15,7 @@ As an interior designer, you have a passion for creating beautiful spaces and br
 
 This is a very broad question, Below are most important things you need to know about [interior design bookkeeping](https://www.ambitkpo.com/article/e-commerce-bookkeeping-a-comprehensive-guide) for your [interior design business](https://www.designmanager.com/) , it's important to keep track of expense, revenue, and client invoices. It's also important to understand tax laws and regulations related to running an interior design business.
 
-## 1. **Why Is the Accounting for Designing Firms Challenging?**
+## 1.Why Is the Accounting for Designing Firms Challenging?
 
 [Bookkeeping](https://www.ambitkpo.com/article/ambit-tax-accounting-bookkeeping-services) plays a vital role in the success of any business, and interior design is no exception. By maintaining accurate and up-to-date financial records, you can gain insights into your business's financial health, make informed decisions, and ensure compliance with tax regulations. Let's explore some essential bookkeeping tips that will benefit interior designers in managing their finances effectively.
 
