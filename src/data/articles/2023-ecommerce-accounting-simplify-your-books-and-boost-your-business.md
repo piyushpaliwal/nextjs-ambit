@@ -147,7 +147,7 @@ Features include:
 
  Source: Xero 
 
-[Xero](https://www.xero.com/us/small-businesses/ecommerce/) provides cloud-based accounting software for small and medium-sized businesses. It offers a host of money management features including unlimited users, [double-entry bookkeeping](/blog/double-entry-bookkeeping) , and budgeting support. You can also customize your dashboard to review all your ecommerce metrics at once.
+[Xero](https://www.xero.com/us/small-businesses/ecommerce/) provides cloud-based accounting software for small and medium-sized businesses. It offers a host of money management features including unlimited users, [double-entry bookkeeping](https://www.investopedia.com/terms/d/double-entry.asp), and budgeting support. You can also customize your dashboard to review all your ecommerce metrics at once.
 
 Features include:
 
