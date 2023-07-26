@@ -50,11 +50,22 @@ $value in $theme-colors {
   $border: shift-color($value, $alert-border-scale);
   $color: shift-color($value, $alert-color-scale);
   .alert-#{$state} {
-    @include alert-variant($background, $border, $color);
+    --#{$prefix}alert-color: #{$color};
+    --#{$prefix}alert-bg: #{$background};
+    --#{$prefix}alert-border-color: #{$border};
+    --#{$prefix}alert-link-color: #{shade-color($color, 20%)};
+
+    @if $enable-gradients {
+      background-image: var(--#{$prefix}gradient);
+    }
+
+    .alert-link {
+      color: var(--#{$prefix}alert-link-color);
+    }
   }
 }
 .alert[class*="bg-"] {
-  padding: 0.8rem 0; 
+  padding: 0.8rem 0;
   .alert-inner {
     padding-right: 3rem;
   }
