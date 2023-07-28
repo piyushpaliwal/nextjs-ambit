@@ -1,5 +1,5 @@
 ---
-title: MASTERING ECOMMERCE SALES TAX - BOOK KEEPING PERSPECTIVE
+title: MASTERING ECOMMERCE SALES TAX - BOOKKEEPING PERSPECTIVE
 description: Discover expert tips for mastering ecommerce sales tax &
   bookkeeping to optimize your business financials.
 date: 2023-07-28T10:49:04.038Z
