@@ -18,7 +18,7 @@ Ecommerce has revolutionized the way businesses operate, enabling them to reach 
 
 #### Importance of Proper Accounting for Ecommerce Businesses
 
-[Bookkeeping for E-commerce 101: Why is it important? What Are The Right Softwares?](<<iframe width="560" height="315" src="https://www.youtube.com/embed/vSvVw0oWRvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>)
+[Bookkeeping for E-commerce 101: Why is it important? What Are The Right Softwares?](<(<<iframe width="560" height="315" src="https://www.youtube.com/embed/vSvVw0oWRvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>)>)
 
 Effective accounting practices are the backbone of a successful ecommerce business. Proper accounting helps in:
 
