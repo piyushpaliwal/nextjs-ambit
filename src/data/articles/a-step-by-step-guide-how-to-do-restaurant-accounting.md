@@ -8,22 +8,6 @@ thumbnail: /img/articles/a-step-by-step-understanding-restaurant-accounting.png
 ---
 Are you an Accountant or a US CPA looking to conquer the challenges of [restaurant accounting](https://www.freshbooks.com/hub/accounting/accounting-restaurants)? Look no further! In this step-by-step guide, we will walk you through the process of efficiently managing the financials of a restaurant. Say goodbye to complicated jargon and confusing terms – we'll keep it simple and straightforward. Whether you're new to the restaurant industry or seeking to optimize your accounting process, this guide is tailored to suit your needs.
 
-**Table of Contents:**
-
-| Sr. | T﻿opic                                   |
-| --- | ---------------------------------------- |
-| 1   | Understanding Restaurant Accounting      |
-| 2   | Setting Up Accounting Software           |
-| 3   | Chart of Accounts for Restaurants        |
-| 4   | Tracking Sales and Revenue               |
-| 5   | Managing Expenses                        |
-| 6   | Payroll and Employee Management          |
-| 7   | Inventory Management                     |
-| 8   | Tax Compliance and Reporting             |
-| 9   | Analyzing Financial Statements           |
-| 10  | Budgeting and Forecasting                |
-| 11  | Tips for Efficient Restaurant Accounting |
-
 ## 1. Understanding Restaurant Accounting
 
 ![Understanding Restaurant Accounting](/img/articles/understanding-restaurant-accounting.png "Understanding Restaurant Accounting")
