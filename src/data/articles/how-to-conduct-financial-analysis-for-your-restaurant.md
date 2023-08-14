@@ -5,7 +5,7 @@ description: Learn how to conduct comprehensive financial analysis for your
   optimize your restaurant's financial performance. Take control of your
   restaurant's finances with expert financial analysis.
 date: 2023-08-14T12:01:58.878Z
-category: Financials
+category: Restaurant Accounting
 thumbnail: /img/articles/how-to-conduct-financial-analysis-for-your-restaurant.svg
 ---
 Are you a restaurant owner looking to navigate the financial landscape of your business with confidence? Welcome to this comprehensive guide on conducting a thorough financial analysis for your restaurant. 
