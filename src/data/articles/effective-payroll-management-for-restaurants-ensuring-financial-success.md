@@ -6,7 +6,7 @@ description: Discover essential strategies for effective restaurant payroll
   made easy!
 date: 2023-08-14T11:24:29.599Z
 category: Payroll Management
-thumbnail: /img/articles/a-step-by-step-understanding-restaurant-accounting.png
+thumbnail: /img/articles/effective-payroll-management-for-restaurants-ensuring-financial-success.png
 ---
 ## 1. Effective Payroll Management for Restaurants
 
