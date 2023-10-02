@@ -1,8 +1,7 @@
 ---
 title: 15 Bookkeeping Tips for Interior Designers
-description: Struggling with interior design bookkeeping? Our tips and tricks
-  will help you master the art of managing your finances and growing your
-  business. Learn more here.
+description: Excel in interior design bookkeeping with our tips and tricks.
+  Manage finances and grow your business effortlessly.
 date: 2023-06-22T10:29:52.892Z
 category: Bookkeeping
 thumbnail: /img/articles/15-tips-for-interior-design-bookkeeping.svg
