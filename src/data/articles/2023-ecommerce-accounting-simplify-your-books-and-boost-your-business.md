@@ -1,8 +1,7 @@
 ---
 title: "2023 Ecommerce Accounting: Simplify Your Books and Boost Your Business"
-description: Get a grip on ecommerce accounting in 2023! Our beginner's guide
-  provides valuable insights and practical tips to help you stay on top of your
-  finances. Start growing your online business with confidence.
+description: Master e-commerce accounting in 2023 with our beginner's guide.
+  Grow your online business confidently.
 date: 2023-07-10T07:18:17.308Z
 category: Accounting
 thumbnail: /img/articles/ecommerce-accounting-a-beginner-guide-for-2023.png
