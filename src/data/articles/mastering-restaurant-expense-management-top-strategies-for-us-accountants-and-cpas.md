@@ -1,6 +1,5 @@
 ---
-title: "Mastering Restaurant Expense Management: Top Strategies for US
-  Accountants and CPAs"
+title: Restaurant Expense Management Strategies
 description: Optimize restaurant finances with expert strategies for accountants
   and CPAs. Boost profitability effortlessly with restaurant expense management.
 date: 2023-08-21T06:41:10.603Z
