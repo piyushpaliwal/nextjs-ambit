@@ -1,9 +1,8 @@
 ---
-title: "Data Security in E-commerce Bookkeeping: Protecting Your Financial
-  Information"
-description: This blog explores the importance of data security in e-commerce
-  bookkeeping, providing insight into the potential risks and offering practical
-  strategies to safeguard your financial information
+title: "E-commerce Bookkeeping Data Security: Safeguarding Your Finances"
+description: >
+  Safeguard e-commerce bookkeeping data with insights and strategies. Protect
+  your financial information effectively.
 date: 2023-07-19T07:22:54.542Z
 category: Bookkeeping
 thumbnail: /img/articles/data-security-in-e-commerce-bookkeeping-protecting-your-financial-information.svg
