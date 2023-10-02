@@ -1,9 +1,8 @@
 ---
-title: Demystifying Restaurant Tax Reporting A Guide for CPA, Accountants, and
-  Small Business Owners
-description: Explore the intricacies of restaurant tax reporting in this
-  comprehensive guide. Learn the essentials for accurate reporting and
-  compliance. Discover valuable tips for navigating restaurant tax challenges.
+title: "Demystifying Restaurant Tax Reporting: A Guide for CPA and Accountants"
+description: Navigate restaurant tax reporting intricacies with our
+  comprehensive guide. Ensure accurate reporting and compliance with valuable
+  tips.
 date: 2023-08-09T06:13:22.657Z
 category: TAX
 thumbnail: /img/articles/demystifying-restaurant-tax-reporting.png
