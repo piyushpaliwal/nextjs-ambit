@@ -1,8 +1,7 @@
 ---
 title: Everything You Need to Know About Federal Taxes
-description: Unlock the mysteries of US federal taxes with our comprehensive
-  guide. Discover essential information and gain a deeper understanding of the
-  complexities surrounding tax laws, forms, deductions, and more
+description: Demystify U.S. federal taxes with our comprehensive guide. Gain
+  insights into tax laws, forms, deductions, and more.
 date: 2023-05-24T11:17:55.662Z
 category: Tax Preparation
 thumbnail: /img/articles/federal-tax-return.svg
