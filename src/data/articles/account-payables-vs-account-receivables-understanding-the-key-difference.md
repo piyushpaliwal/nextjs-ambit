@@ -33,7 +33,7 @@ This means the company owes money to its supplier or creditor for the goods or s
 
 ![Companies have accounts receivable (AR) for goods and services they have given but have not been paid for](/img/articles/companies-have-accounts-receivable-ar-for-goods-and-services-they-have-given-but-have-not-been-paid-for.png "Companies have accounts receivable (AR) for goods and services they have given but have not been paid for")
 
-[Accounts receivable (AR) ](ambitkpo.com/services/accounts-receivable)represents the money that a company is entitled to receive for goods or services it has provided but for which it has yet to be paid. These amounts are listed on the company's balance sheet as current assets. Essentially, when a company sells a product or service on credit, it creates an account receivable. This indicates that the customer owes money to the company.
+[Accounts receivable (AR)](https://www.ambitkpo.com/services/accounts-receivable) represents the money that a company is entitled to receive for goods or services it has provided but for which it has yet to be paid. These amounts are listed on the company's balance sheet as current assets. Essentially, when a company sells a product or service on credit, it creates an account receivable. This indicates that the customer owes money to the company.
 
 The term "accounts receivable" signifies the right of a company to receive payment because it has furnished a product or service. Typically, the terms of accounts receivable require payments to be made within a short period, ranging from a few days to a fiscal or calendar year.
 
