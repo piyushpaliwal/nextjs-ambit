@@ -7,6 +7,8 @@ date: 2023-11-06T12:07:44.568Z
 category: Accounts Payable
 thumbnail: /img/articles/avoid-common-mistakes-in-accounts-payable-management.png
 ---
+# Accounts Payable Pitfalls
+
 [Managing accounts payable](https://www.ambitkpo.com/article/account-payable-a-comprehensive-guide-for-beginners) is a bit like walking a financial tightrope. One misstep can lead to a cascade of problems affecting your business's financial health. The focus of today's discussion? Common pitfalls in [accounts payable ](https://www.ambitkpo.com/services/accounts-payable)that you'll want to steer clear of. 
 
 These are mistakes that can cost you both money and valuable time. So, let's roll up our sleeves and get into it.
@@ -41,7 +43,7 @@ Vendor relationships are a two-way street, and timely payments can make a signif
 
 ● Always read the payment terms of each invoice carefully. Many vendors specify early payment discounts in these sections.
 
-● Use a digital calendar or [accounts payable software](https://www.capterra.com/accounts-payable-software/) that allows you to set reminders for early payment deadlines.
+● Use a digital calendar or [accounts payable software](https://tipalti.com/selecting-the-best-accounts-payable-software/) that allows you to set reminders for early payment deadlines.
 
 ## Inconsistent Record-Keeping
 
