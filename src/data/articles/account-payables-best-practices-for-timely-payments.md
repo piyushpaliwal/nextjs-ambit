@@ -7,6 +7,8 @@ date: 2023-11-09T11:29:59.114Z
 category: Accounts Payable
 thumbnail: /img/articles/understand-account-payables-best-practices-for-timely-payments.png
 ---
+# Best Practices For AP
+
 Let’s talk about something that's not just about numbers but also about relationships—[Accounts Payable (AP)](https://www.ambitkpo.com/services/accounts-payable). You might think AP is all about doling out cash, but it's also a gateway to building long-lasting relationships with your vendors. 
 
 When payments are timely, and communication is open, you're not just settling a bill, you're paving the road for smoother business dealings in the future. So, how do you make sure you're on the ball with both?
