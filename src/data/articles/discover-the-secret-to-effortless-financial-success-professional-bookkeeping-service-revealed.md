@@ -24,9 +24,7 @@ Letâ€™s delve into how these services could be just the game changer you need fo
 
 ![Services Offered by Professional Bookkeeping Service](/img/articles/services-offered-by-professional-bookkeeping-service.jpg "Services Offered by Professional Bookkeeping Service")
 
-Professional Bookkeeping Services, well-versed in QuickBooks usage and internal controls, cater to businesses' financial needs with monthly bookkeeping services, ongoing training for efficient utilization of QuickBooks, and meticulous attention to vital internal processes.
-
-[![Watch the video](https://img.youtube.com/vi/UoxSleQSjXY/default.jpg)](https://youtu.be/UoxSleQSjXY)
+Professional Bookkeeping Services, well-versed in QuickBooks usage and internal controls, cater to businesses' financial needs with monthly bookkeeping services, ongoing training for efficient utilization of QuickBooks, and meticulous attention to vital internal processes
 
 ### Monthly Bookkeeping Services
 
@@ -75,7 +73,6 @@ They save both time and money using our services! Plus, you get to learn how weÂ
 ## Benefits of Outsourcing Bookkeeping Services
 
 By outsourcing bookkeeping services, small businesses can enjoy cost-effective solutions, save valuable time, and benefit from expert accuracy that significantly streamlines their financial management tasks.
-[![Watch the video](https://img.youtube.com/vi/8kFDO8CVMlU/default.jpg)](https://youtu.be/8kFDO8CVMlU)
 
 ### Cost-effective
 
