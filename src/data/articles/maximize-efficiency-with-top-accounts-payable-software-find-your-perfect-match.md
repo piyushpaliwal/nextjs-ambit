@@ -1,6 +1,5 @@
 ---
-title: "Maximize Efficiency with Top Accounts Payable Software: Find Your
-  Perfect Match"
+title: "Accounts Payable Software: Discover Your Ideal Solution"
 description: Discover how the right accounts payable software can transform your
   business finances. Save time, reduce errors, and make smarter decisions with
   our top 15 software picks.
