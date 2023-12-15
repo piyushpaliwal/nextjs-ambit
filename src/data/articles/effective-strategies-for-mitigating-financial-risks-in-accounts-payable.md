@@ -61,7 +61,7 @@ An accounts payable (AP) risk assessment is a systematic process aimed at identi
 
 ## Why is managing risk in Accounts Payable important?
 
-![Managing risk in accounts payable is crucial for the long-term success of an organization](https://lh7-us.googleusercontent.com/kVW0jMpOLEmNqQcB-EtpLzGv4YbjrGGXHlj7mDZEWSw3ek3RLo_7hSAfZkoN7P9m8N7yK48K1t384_Qlxd0y1mLOWTHDcLNzw6CMGLOUuu27jm-XD2n2FKf334E0h3I7uV5z7mMho19ttAZPJmB1bAw "Managing risk in accounts payable is crucial for the long-term success of an organization")
+![Managing risk in accounts payable is crucial for the long-term success of an organization](/img/articles/why-is-managing-risk-in-accounts-payable-important.jpg "Managing risk in accounts payable is crucial for the long-term success of an organization")
 
 Managing risk in accounts payable is crucial for several reasons, all of which contribute to the overall health and success of an organization. Here's why it's so important:
 
@@ -74,7 +74,7 @@ Managing risk in accounts payable is crucial for several reasons, all of which c
 
 ## Accounts Payable Risks You Should Watch Out For
 
-![Knowing risks like Fraud and Duplicate payments](https://lh7-us.googleusercontent.com/s_3jKoaM22L31Hud4He-skjOFS7BQ0n2ySy4DP3EWttc_-wYNT7eaSBByXBuBWfXD4dkWfjJ3x-lH5R5Cirnue8ZPBAomO8R9dMy10h639JbNMVZA9DguxBawm7nh_YDPF4wAhquIk8RNXet0soUr30 "Knowing risks like Fraud and Duplicate payments")
+![Knowing risks like Fraud and Duplicate payments](/img/articles/accounts-payable-risks-you-should-watch-out-for.jpg "Knowing risks like Fraud and Duplicate payments")
 
 In managing accounts payable, being aware of the major risks is crucial for effective risk mitigation. Here are some of the most significant accounts payable risks that organizations should be vigilant about:
 
@@ -126,7 +126,7 @@ The first step in making a strong accounts payable risk management plan is to be
 
 ## Best Practices to Mitigate Accounts Payable Risks
 
-![Best Ways to Mitigate Accounts Payable Risks](https://lh7-us.googleusercontent.com/5gH-7qbLt4xORwQweU-5RuVMu-kR7MEwBnjfgKz7QoW1w4cD39gHonIkfGXLI9KR-1Q8_Aq4pVpHDsSQlhFvmevTYrIuuuTDwRwt0JSAT5zu7A1-TdzubIs39x1nBlVdJhYWmxe9z1_GJYu5tr_s0dg "Best Ways to Mitigate Accounts Payable Risks")
+![Best Ways to Mitigate Accounts Payable Risks](/img/articles/best-ways-to-mitigate-accounts-payable-risks.jpg "Best Ways to Mitigate Accounts Payable Risks")
 
 To effectively manage and mitigate the risks associated with accounts payable, organizations can adopt several best practices. These practices not only help in reducing the likelihood of fraud and errors but also enhance the overall efficiency and compliance of the AP process.
 
