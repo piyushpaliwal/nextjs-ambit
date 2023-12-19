@@ -1,5 +1,5 @@
 ---
-title: SELECTING AN ACCOUNTING OUTSOURCING PARTNER FOR YOUR BUSINESS
+title: Selecting An Accounting Outsourcing Partner For Your Business
 description: Find out the essential criteria for selecting the best partner to
   outsource your accounting tasks and streamline your operations.
 date: 2023-06-20T07:13:19.339Z
