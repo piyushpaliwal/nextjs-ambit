@@ -6,34 +6,6 @@ date: 2023-12-07T09:24:00.787Z
 category: Accounts Payable
 thumbnail: /img/articles/important-to-use-accounts-payable-metrics-for-tracking-performance.png
 ---
-### **Table of Contents**
-
-1. Introduction to Accounts Payable Metrics
-2. Defining Accounts Payable Metrics
-3. Purposes and Uses of Accounts Payable Metrics
-4. Importance of Tracking Performance with AP Metrics
-5. Top 10 AP Metrics for 2023
-
-●      Total Number of Invoices Received
-
-●      Total Number of Invoices Processed
-
-●      Average Cost per Invoice
-
-●      Average Time Taken to Process an Invoice
-
-●      Error Rate in Invoice Processing
-
-●      Discounts Captured from Early Payments
-
-●      Proportion of Electronic Versus Paper Invoices
-
-●      Days Payable Outstanding (DPO)
-
-●      Diversity in Payment Methods
-
-●      Analysis of Spend per Vendor
-
 Mastering accounts payable metrics is important for staying ahead in the fast-paced business world. Imagine a streamlined financial environment where processing invoices very quickly is normal, where mistakes are almost unheard of, and where strong relationships with vendors are what make things work. These metrics are the stars that will help you find operational success. Your AP department can go from being a cost centre to a value creator with accurate tracking and deep analysis of key performance factors. Discover how AP metrics can change things and set sail for a future of unbeatable financial efficiency and strategic relationships.
 
 ## What are Accounts Payable Metrics?
