@@ -45,12 +45,19 @@ const BlogsPage: NextPage<IProps> = ({ articles }) => {
 export const getStaticProps: GetStaticProps = async () => {
   const files = fs.readdirSync('src/data/articles')
 
-  let articles = files.map((file) => {
+  let articles: ArticleMeta[] = files.map((file) => {
     const data = fs.readFileSync(`src/data/articles/${file}`).toString()
     return {
       ...matter(data).data,
       slug: file.split('.')[0]
-    }
+    } as ArticleMeta
+  })
+
+  articles.sort((a, b) => {
+    // sort by date descending
+    if (a.date > b.date) return -1
+    else if (a.date < b.date) return 1
+    else return 0
   })
 
   return {
