@@ -5,7 +5,7 @@ description: Learn how early payment discounts can benefit your business and
   supplier relationships.
 date: 2023-11-29T12:02:25.701Z
 category: Accounts Payable
-thumbnail: /img/articles/early-payment-discounts-in-accounts-payable.png
+thumbnail: /img/articles/optimizing-discounts-and-early-payment-terms-in-account-payable.png
 ---
 Paying bills is a major concern for any business, so let's talk about it. There is a more efficient way to do this that will help your company save money. Early payment discounts are what they're called. Here, you might receive a small discount by paying your bills a little early. 
 
@@ -13,7 +13,7 @@ Being ahead of the game is like getting a little reward. Plus, everyone loves a 
 
 ## What are Early Payment Discounts in Accounts Payable?
 
-![Early Payment Discounts in Accounts Payable](/img/articles/early-payment-discounts-in-accounts-payable.png "Early Payment Discounts in Accounts Payable")
+![Early Payment Discounts in Accounts Payable](/img/articles/optimizing-discounts-and-early-payment-terms-in-account-payable.png "Early Payment Discounts in Accounts Payable")
 
 Sellers give Early Payment Discounts (EPDs) to customers who pay their bills before the due date. EPDs are basically a cash reward. A small percentage of the invoice amount is generally given as a discount. This is good for both parties. It's a smart move for businesses to speed up cash flow and lower days sales outstanding (DSO), which is a key measure in financial analysis. For buyers, it means they can save money, which can be a very appealing offer.
 
@@ -24,11 +24,7 @@ Discounts for paying your bills early are like a small thank you from the busine
 It's important to know the differences between the different types of early payment discounts before you pick one.
 
 1. **Static Discount:** This is what most places give as a deal. It's like a store's quick sale. It's a simple deal: if you pay your bill really quickly, like within 10 days, they take a small amount off, maybe 2% or so.
-
-
 2. **[Dynamic Discount](https://tipalti.com/dynamic-discounting/):** This one works like a game: the faster you pay, the more you save. You could save 5% if you pay the bill the next day. Maybe it will go down to 4% in a few days. It's all about how fast you are.
-
-
 3. **Quantity Discount:** This one's for people who buy a lot. People will give you a deal if you buy a lot of things from them. Let's say you spend more than $10,000, and they might give you a 2% discount. If you spend more than $25,000, that discount might go up to 5%.
 
 ## Early Payment Discount Example
