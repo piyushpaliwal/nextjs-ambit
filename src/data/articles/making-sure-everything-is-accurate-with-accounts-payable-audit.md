@@ -4,13 +4,13 @@ description: Discover the importance of AP audits for error detection, fraud
   prevention, and financial accountability.
 date: 2023-11-29T11:49:11.407Z
 category: Accounts Payable
-thumbnail: /img/articles/step-by-step-strategy-for-accounts-payable-audit.png
+thumbnail: /img/articles/making-sure-everything-is-accurate-with-accounts-payable-audit.png
 ---
 When you're running a business, it's super important to keep an eye on the money you owe to others. That's where an accounts payable (AP) audit comes in. It's like a financial check-up that makes sure you're paying the right amounts and not falling for any costly mistakes or fraud. Where businesses operate in a highly competitive and regulated environment, ensuring the accuracy of financial records is not just good practice, it's essential for survival.
 
 ## What is an Accounts Payable Audit?
 
-![Accounts Payable Audit](/img/articles/accounts-payable-audit.png "Accounts Payable Audit")
+![Accounts Payable Audit](/img/articles/what-is-an-accounts-payable-audit.png "Accounts Payable Audit")
 
 It's a deep dive into a company's bills and payments to confirm everything is on the up and up. Auditors carefully examine records to make sure the reported expenses match the actual money going out. This is crucial because sometimes businesses might report less spending than there actually is, which can lead to big problems like financial inaccuracies or even fraud.
 
@@ -90,7 +90,7 @@ When doing an AP audit, auditors check for:
 
 ## Step-by-step process of an accounts payable audit
 
-![Step-by-Step Strategy for Accounts Payable Audit](/img/articles/step-by-step-strategy-for-accounts-payable-audit.png "Step-by-Step Strategy for Accounts Payable Audit")
+![Step-by-Step Strategy for Accounts Payable Audit](/img/articles/making-sure-everything-is-accurate-with-accounts-payable-audit.png "Step-by-Step Strategy for Accounts Payable Audit")
 
 Here's a detailed guide on how to conduct an accounts payable audit:
 
@@ -160,7 +160,7 @@ This framework serves as a general guideline for an accounts payable audit. The 
 
 ## The Benefits of Accounts Payable Audit Automation
 
-![Safeguarding your Business with Accounts Payable Audit](/img/articles/safeguarding-your-business-with-accounts-payable-audit.png "Safeguarding your Business with Accounts Payable Audit")
+![Safeguarding your Business with Accounts Payable Audit](/img/articles/the-benefits-of-accounts-payable-audit-automation.png "Safeguarding your Business with Accounts Payable Audit")
 
 ● Saves Money and Time: No more manual data entry means less time and money spent.
 
