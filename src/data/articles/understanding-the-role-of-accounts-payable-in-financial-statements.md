@@ -5,37 +5,13 @@ description: Learn how AP impacts balance sheets, income statements, cash flow,
   obligations and financial health.
 date: 2023-12-15T11:24:16.774Z
 category: Accounts Payable
-thumbnail: /img/articles/accounts-payable-on-a-balance-sheet.png
+thumbnail: /img/articles/understanding-the-role-of-accounts-payable-in-financial-statements.png
 ---
-### Table of Contents
-
-1. Introduction
-2. What is Accounts Payable on a Balance Sheet?
-3. The Impact of Accounts Payable on Financial Statements
-
-● Impact on the Balance Sheet
-
-● Impact on the Income Statement
-
-● Impact on the Cash Flow Statement
-
-4. Key Financial Ratios and Accounts Payable
-
-● Average Payment Period (APP)
-
-● Payables Turnover Ratio
-
-● Days Payable Outstanding (DPO)
-
-5. Accounts Payable on the Balance Sheet
-6. Conclusion
-7. FAQs
-
 Accounts payable (AP) is an essential element of a company's financial statements, crucial for understanding its financial health. AP represents the money a company owes for goods or services it received but hasn't paid for yet. This liability is a key indicator of a company's short-term financial obligations and is recorded as a current liability on the balance sheet. By looking at AP, people can understand how well a company is handling its money and debts.
 
 ## What is Accounts Payable on a Balance Sheet?
 
-![Accounts Payable on a Balance Sheet](/img/articles/accounts-payable-on-a-balance-sheet.png "Accounts Payable on a Balance Sheet")
+![Accounts Payable on a Balance Sheet](/img/articles/understanding-the-role-of-accounts-payable-in-financial-statements.png "Accounts Payable on a Balance Sheet")
 
 Accounts payable (AP) is a current liability on a company's balance sheet. It shows the short-term debts the company owes to suppliers for things like inventory or services, which it got on credit but hasn't paid for yet. On the balance sheet, you'll find AP listed under "current liabilities" because it's money the company expects to pay within a year.
 
@@ -67,7 +43,7 @@ AP significantly affects the cash flow statement, particularly under operating a
 
 ## Key Financial Ratios and AP
 
-![Key Financial Ratios](/img/articles/key-financial-ratios.png "Key Financial Ratios")
+![Key Financial Ratios](/img/articles/key-financial-ratios-.png "Key Financial Ratios")
 
 Understanding AP also involves looking at certain financial ratios:
 
