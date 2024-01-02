@@ -5,13 +5,13 @@ description: Dive into our in-depth article about mastering Accounts Payable
   and fraud prevention.
 date: 2023-12-15T11:35:38.515Z
 category: Accounts Payable
-thumbnail: /img/articles/importance-of-mastering-accounts-payable-fundamentals.png
+thumbnail: /img/articles/account-payable-training-empowering-your-team-for-success.png
 ---
 Accounts Payable (AP) is super important in the world of business. It's all about making sure a company pays its bills on time and correctly. People working in AP are key to keeping everything running smoothly. They handle paying invoices, making sure payments are right, and keeping financial records straight. Good AP management keeps vendor relationships strong and helps the company's credit. In this article, we will learn the important module of accounts payable training.
 
 ## Importance of mastering Accounts Payable fundamentals
 
-![Invest in your team's accounts payable knowledge for better accuracy, efficiency, and fraud prevention](/img/articles/importance-of-mastering-accounts-payable-fundamentals.png "Invest in your team's accounts payable knowledge for better accuracy, efficiency, and fraud prevention")
+![Invest in your team's accounts payable knowledge for better accuracy, efficiency, and fraud prevention](/img/articles/account-payable-training-empowering-your-team-for-success.png "Invest in your team's accounts payable knowledge for better accuracy, efficiency, and fraud prevention")
 
 It's really important for AP pros to know the basics well. They need to understand the whole process of paying invoices, recognize different types of invoices and payment terms, and know the right accounting principles. They should also be familiar with various ways of making payments, like online or by check, and know the best practices and risks for each.
 
@@ -35,7 +35,7 @@ Controls are rules that help protect the company's money and make sure AP is don
 
 ## Master Vendor File
 
-![Master Vendor File](/img/articles/stay-organized-and-prevent-fraud-with-a-comprehensive-master-vendor-file.png "Master Vendor File")
+![Master Vendor File](/img/articles/master-vendor-file.png "Master Vendor File")
 
 Master Vendor File (MVF) is like a big address book for all the vendors a company works with. It's really important because it helps keep everything organized and prevents mistakes or fraud. Here's what you find in the Vendor Master File:
 
