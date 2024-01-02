@@ -5,7 +5,7 @@ description: Discover how AP contributes to financial efficiency and supports
   planning, and collaboration with other departments.
 date: 2023-12-18T10:27:29.216Z
 category: Accounts Payable
-thumbnail: /img/articles/advantages-of-budgetary-control.png
+thumbnail: /img/articles/accounts-payable-in-cost-control-and-budgeting.png
 ---
 ### Table of Content
 
@@ -35,7 +35,7 @@ The accounts payable team is vital in any organization. They take care of all th
 
 ## Budget Control Process
 
-![Budget Control Process](/img/articles/advantages-of-budgetary-control.png "Budget Control Process")
+![Budget Control Process](/img/articles/budget-control-process.png "Budget Control Process")
 
 Budget control is a team effort that involves AP, purchasing, and finance departments. It starts with setting clear goals for each part of the company or project and getting everyone involved in planning the budget. Regularly checking on the budget and making changes when necessary is also crucial.
 
@@ -61,7 +61,7 @@ Lastly, AP manages daily tasks while also helping the company plan for the futur
 
 Budgetary control is a key part of managing a company's finances. It helps organizations plan, watch, and control their spending. People in charge of managing parts of the budget, known as budget holders, have an important role in this. They need to follow a detailed approach to make sure they are responsible with finances and meet the company's goals.
 
-![Budgetary Control Steps for Budget Holders](/img/articles/budget-control-process.png "Budgetary Control Steps for Budget Holders")
+![Budgetary Control Steps for Budget Holders](/img/articles/advantages-of-budgetary-control.png "Budgetary Control Steps for Budget Holders")
 
 ### Establishing actual budgetary positions
 
@@ -83,7 +83,7 @@ Learn more: [Master Account Payables Tracking and Reporting for Financial Analys
 
 ## Advantages of Budgetary Control
 
-![Advantages of Budgetary Control](/img/articles/budgetary-control-steps-for-budget-holders.png "Advantages of Budgetary Control")
+![Advantages of Budgetary Control](/img/articles/advantages-of-budgetary-control.png "Advantages of Budgetary Control")
 
 Budgetary control is a key part of managing money in a business. It helps businesses plan, watch, and handle their spending. This makes sure they use their money well and in line with their big goals. When businesses use budgetary control, they gain many benefits that help them stay stable financially, do well in their operations, and make good decisions.
 
