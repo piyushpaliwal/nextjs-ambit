@@ -4,8 +4,10 @@ description: Find out what the most important Key Performance Indicators are for
   keeping track of and improving your finances.
 date: 2023-12-07T09:24:00.787Z
 category: Accounts Payable
-thumbnail: /img/articles/important-to-use-accounts-payable-metrics-for-tracking-performance.png
+thumbnail: /img/articles/10-critical-ap-metrics-for-measuring-performance-and-boosting-efficiency-in-2023.png
 ---
+# Mastering Accounts Payable Metrics
+
 Mastering accounts payable metrics is important for staying ahead in the fast-paced business world. Imagine a streamlined financial environment where processing invoices very quickly is normal, where mistakes are almost unheard of, and where strong relationships with vendors are what make things work. These metrics are the stars that will help you find operational success. Your AP department can go from being a cost centre to a value creator with accurate tracking and deep analysis of key performance factors. Discover how AP metrics can change things and set sail for a future of unbeatable financial efficiency and strategic relationships.
 
 ## What are Accounts Payable Metrics?
