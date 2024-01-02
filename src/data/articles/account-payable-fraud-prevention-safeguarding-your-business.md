@@ -4,13 +4,13 @@ description: Learn about different types of AP fraud, their impact, and
   effective prevention tips to protect your company's finances and reputation.
 date: 2023-12-12T07:28:28.606Z
 category: Accounts Payable
-thumbnail: /img/articles/guard-your-finances-against-fraudulent-schemes.png
+thumbnail: /img/articles/account-payable-fraud-prevention-safeguarding-your-business.png
 ---
 Businesses of all kinds are at risk of accounts payable (AP) fraud. It can lead to big losses in money, damage to your image, and problems with your business. Accounts payable fraud is always possible, but there are many things companies can do to make it less likely. This article will talk about the most common types of Accounts Payable fraud, how they hurt companies, and how to spot and stop them. It will also tell you how to protect your company from AP scams.
 
 # What are Accounts Payable Fraud?
 
-![Accounts Payable Fraud](/img/articles/guard-your-finances-against-fraudulent-schemes.png "Accounts Payable Fraud")
+![Accounts Payable Fraud](/img/articles/account-payable-fraud-prevention-safeguarding-your-business.png "Accounts Payable Fraud")
 
 Accounts payable fraud is when a business sends money to its customers or sellers without permission or telling the truth. Anyone, inside or outside the company, can do it in a lot of different ways.
 
@@ -30,7 +30,7 @@ Accounts payable fraud is when a business sends money to its customers or seller
 
 ## Types of Accounts Payable Fraud
 
-![Recognize and prevent common AP fraud tactics](/img/articles/recognize-and-prevent-common-ap-fraud-tactics.png "Recognize and prevent common AP fraud tactics")
+![Recognize and prevent common AP fraud tactics](/img/articles/types-of-ap-fraud.png "Recognize and prevent common AP fraud tactics")
 
 Let's talk about the different kinds of AP fraud that businesses often face:
 
@@ -137,7 +137,7 @@ It's also important to keep your team and customers in the loop about what's hap
 
 ## 10 Accounts Payable Fraud Prevention Tips
 
-![10 Accounts Payable Fraud Prevention Tips](/img/articles/protect-your-business-with-these-effective-safeguards.png "10 Accounts Payable Fraud Prevention Tips")
+![10 Accounts Payable Fraud Prevention Tips](/img/articles/10-ap-fraud-prevention-tips.png "10 Accounts Payable Fraud Prevention Tips")
 
 Fraud in the area of accounts payable can cost businesses a lot of money and hurt their image. Strong internal controls are important for businesses to help stop and find account payables theft at all times.
 
