@@ -5,7 +5,7 @@ description: "Learn the key differences between account payables and accounts
   flow, financial health, and operations. "
 date: 2023-10-27T07:08:13.214Z
 category: Accounts Payables
-thumbnail: /img/articles/key-differences-between-account-payables-and-account-receivables.png
+thumbnail: /img/articles/account-payable-vs-account-receivables-understanding-the-key-difference.png
 ---
 Account payables and account receivables are two crucial financial terms that businesses encounter daily. While they may sound similar, they represent opposite ends of business transactions. While AR stands for the money that a company owes its clients, [AP](https://www.ambitkpo.com/services/accounts-payable) stands for the money that a company owes its suppliers. 
 
@@ -13,7 +13,7 @@ This article delves into the specifics of each term, providing a clear understan
 
 ## What are Account Payables?
 
-![Accounts payable are a company's unpaid short-term debts to creditors or suppliers](/img/articles/accounts-payable-are-a-company-s-unpaid-short-term-debts-to-creditors-or-suppliers.jpg "Accounts payable are a company's unpaid short-term debts to creditors or suppliers")
+![Accounts payable are a company's unpaid short-term debts to creditors or suppliers](/img/articles/what-are-accounts-payable.png "Accounts payable are a company's unpaid short-term debts to creditors or suppliers")
 
 [Accounts payable (A](https://www.ambitkpo.com/services/accounts-payable)P), commonly referred to as "payables," signify a company's short-term financial obligations to its creditors or suppliers that remain unpaid. These obligations appear on the company's balance sheet as a **current liability**. In essence, when a company purchases goods or services on credit, it creates an account payable.
 
@@ -31,7 +31,7 @@ This means the company owes money to its supplier or creditor for the goods or s
 
 ## What are Account Receivables?
 
-![Companies have accounts receivable (AR) for goods and services they have given but have not been paid for](/img/articles/companies-have-accounts-receivable-ar-for-goods-and-services-they-have-given-but-have-not-been-paid-for.png "Companies have accounts receivable (AR) for goods and services they have given but have not been paid for")
+![Companies have accounts receivable (AR) for goods and services they have given but have not been paid for](/img/articles/what-are-account-receivables.png "Companies have accounts receivable (AR) for goods and services they have given but have not been paid for")
 
 [Accounts receivable (AR)](https://www.ambitkpo.com/services/accounts-receivable) represents the money that a company is entitled to receive for goods or services it has provided but for which it has yet to be paid. These amounts are listed on the company's balance sheet as current assets. Essentially, when a company sells a product or service on credit, it creates an account receivable. This indicates that the customer owes money to the company.
 
@@ -51,7 +51,7 @@ Accounts receivable can manifest in various forms, depending on the nature of th
 
 ## Key Differences between Account Payables and Account Receivables
 
-![Key Differences between Account Payables and Account Receivables](/img/articles/key-differences-between-account-payables-and-account-receivables.png "Key Differences between Account Payables and Account Receivables")
+![Key Differences between Account Payables and Account Receivables](/img/articles/account-payable-vs-account-receivables-understanding-the-key-difference.png "Key Differences between Account Payables and Account Receivables")
 
 ### **Nature of Transaction**
 
