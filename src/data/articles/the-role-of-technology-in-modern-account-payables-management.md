@@ -7,24 +7,6 @@ date: 2023-12-14T10:09:11.192Z
 category: Accounts Payable
 thumbnail: /img/articles/boost-efficiency-and-accuracy-with-account-payable-automation.jpg
 ---
-### Table of Contents
-
-●      Introduction to Modern Accounts Payable Technologies
-
-●      What are Accounts Payable Modern Technologies?
-
-●      Traditional vs Modern AP Technology
-
-●      The Importance of Following Modern Trends in AP
-
-●      Advantages of Modern AP Technologies
-
-●      Disadvantages of Modern AP Technologies
-
-●      Implementing Accounts Payable with Modern Technologies
-
-●      Conclusion
-
 # Accounts Payable Modern Technologies
 
 The Accounts Payable (AP) department is an important part of any business because it keeps the books balanced and makes sure everything runs smoothly. In the past, AP methods relied heavily on entering data by hand and using paper-based workflows. Even though this method is well-known, it has become a hindrance in this age of fast digital change. It wastes time and money, causes mistakes, and often causes delays, extra costs, and possible compliance problems. A new wave of modern accounts payable technologies has come out to solve these problems in ways that are very different from the old ones.
