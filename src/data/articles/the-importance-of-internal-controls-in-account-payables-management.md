@@ -5,7 +5,7 @@ description: Explore the crucial role of internal controls in accounts payable.
   operations, ensuring accuracy, compliance, and efficiency.
 date: 2023-12-18T11:14:41.658Z
 category: Accounts Payable
-thumbnail: /img/articles/account-payables-internal-controls.png
+thumbnail: /img/articles/the-importance-of-internal-controls-in-account-payables-management.png
 ---
 ### Table of contents
 
@@ -33,7 +33,7 @@ Internal controls in accounts payable (AP) serve as critical safety functions wi
 
 ## What are Account Payables Internal Controls
 
-![Account Payables Internal Controls](/img/articles/account-payables-internal-controls.png "Account Payables Internal Controls")
+![Account Payables Internal Controls](/img/articles/internal-controls-in-accounts-payable-types-and-implementation.png "Account Payables Internal Controls")
 
 Accounts payable internal controls encompass standardized operating procedures aimed at mitigating the risk of human error, preventing fraud, reducing improper payments, and ensuring compliance with regulations. These controls are generally divided into three main subcategories: obligation to pay controls, data entry controls, and payment entry controls. Each category corresponds to key steps in the payment process, which include validating incoming invoices, ensuring accurate internal record-keeping, and correctly disbursing funds. The framework of these controls is vital for streamlining operations, mitigating risks, and organizing the workflow within the accounts payable department​​​​​​​​.
 
