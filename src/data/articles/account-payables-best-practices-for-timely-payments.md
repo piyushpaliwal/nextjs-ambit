@@ -5,7 +5,7 @@ description: Learn efficient accounts payable management. Dive into strategies
   and more.
 date: 2023-11-09T11:29:59.114Z
 category: Accounts Payable
-thumbnail: /img/articles/understand-account-payables-best-practices-for-timely-payments.png
+thumbnail: /img/articles/account-payable-best-practices-for-timely-payments.png
 ---
 # Best Practices For AP
 
@@ -39,7 +39,7 @@ They're more inclined to offer you perks like flexible terms and even discounts 
 
 ## Vendor Relationships
 
-![Building and Maintaining Relationships with Vendors](/img/articles/building-and-maintaining-relationships-with-vendors.png "Building and Maintaining Relationships with Vendors")
+![Building and Maintaining Relationships with Vendors](/img/articles/maintain-strong-relationships-with-vendors-for-timely-payments.png "Building and Maintaining Relationships with Vendors")
 
 #### Importance in Accounts Payable
 
