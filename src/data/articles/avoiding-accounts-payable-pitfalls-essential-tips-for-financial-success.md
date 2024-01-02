@@ -5,7 +5,7 @@ description: Discover common mistakes in accounts payable management and learn
   with these expert insights.
 date: 2023-11-06T12:07:44.568Z
 category: Accounts Payable
-thumbnail: /img/articles/avoid-common-mistakes-in-accounts-payable-management.png
+thumbnail: /img/articles/avoiding-account-payable-pitfalls-essential-tips-for-financal-success.png
 ---
 # Accounts Payable Pitfalls
 
@@ -63,7 +63,7 @@ In accounts payable, documentation is your best friend. Inconsistent or shoddy r
 
 ## Neglecting Vendor Relationships
 
-![Relationship with Vendors matters the most](/img/articles/relationship-with-vendors-matters-the-most.png "Relationship with Vendors matters the most")
+![Relationship with Vendors matters the most](/img/articles/neglecting-vendor-relationships.png "Relationship with Vendors matters the most")
 
 In business, relationships matter, and none more so than the ones you have with your vendors. You might think of accounts payable as a numbers game, but there's a human element to it, too.
 
