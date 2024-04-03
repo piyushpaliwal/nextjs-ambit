@@ -69,8 +69,8 @@ Sales tax in the United States can be traced back to theGreat Depression era whe
 
 ![Key Milestones in Sales Tax Legislation](/img/articles/key-milestones-in-sales-tax-legislation.png "Key Milestones in Sales Tax Legislation")
 
-* **Streamlined Sales Tax Project (SSTP):**Launched in the early 2000s, the SSTP aimed to simplify and standardize salestax administration across states. Participating states agreed to adopt uniformrules and procedures to facilitate compliance for businesses operating inmultiple jurisdictions.
-* **South Dakota v. Wayfair, Inc. (2018):**This Supreme Court ruling fundamentally changed the landscape of online salestax collection. The decision enabled states to require out-of-state sellers tocollect and remit sales tax, levelling the playing field betweenbrick-and-mortar retailers and online merchants.
+* **Streamlined Sales Tax Project (SSTP):** Launched in the early 2000s, the SSTP aimed to simplify and standardize salestax administration across states. Participating states agreed to adopt uniformrules and procedures to facilitate compliance for businesses operating inmultiple jurisdictions.
+* **South Dakota v. Wayfair, Inc. (2018):** This Supreme Court ruling fundamentally changed the landscape of online salestax collection. The decision enabled states to require out-of-state sellers tocollect and remit sales tax, levelling the playing field betweenbrick-and-mortar retailers and online merchants.
 * **State-Level Reforms:** In recent years,many states have undertaken reforms to modernize their sales tax systems. Thesereforms include updating tax codes, expanding tax bases, and exploringalternative approaches like value-added taxes (VAT) or gross receipts taxes.
 
 In summary, the history of sales tax in the USA reflects adynamic interplay of economic, political, and technological factors. From itshumble beginnings during the Great Depression to the complexities of moderne-commerce, sales tax legislation has evolved significantly to meet thechanging needs of society and the economy.
@@ -85,7 +85,7 @@ Here's an overview of the current landscape:
 
 ### Overview of Current Sales Tax Rates
 
-Sales tax rates vary significantly across states andlocalities. At the state level, rates typically range from less than **1%**to over **10%**. In addition to state sales tax, many local governmentsimpose their own sales taxes, further increasing the total tax burden forconsumers.
+Sales tax rates vary significantly across states andlocalities. At the state level, rates typically range from less than **1%** to over **10%**. In addition to state sales tax, many local governmentsimpose their own sales taxes, further increasing the total tax burden forconsumers.
 
 The total sales tax rate applied to a purchase is often acombination of state, county, city, and special district taxes, resulting in adiverse array of rates depending on the buyer's location.
 
