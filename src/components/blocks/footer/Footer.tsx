@@ -35,6 +35,7 @@ const Footer: FC = () => {
               <h4 className="widget-title text-white mb-3">US Office</h4>
               <address className="pe-xl-15 pe-xxl-17">3133 Little Bear Ln, Buford, GA 30519</address>
               <NextLink title="(+1) 678 804 7749" href="tel:+16788047749" />
+              <NextLink title="(+1) 706 403 8982" href="tel:+17064038982" />
               <br />
               <NextLink title="info@ambitkpo.com" href="mailto:info@ambitkpo.com" />
             </div>
