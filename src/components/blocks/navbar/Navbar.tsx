@@ -111,7 +111,8 @@ const Navbar: FC<NavbarProps> = (props) => {
             <div>
               <NextLink title="info@ambitkpo.com" className="link-inverse" href="mailto:info@ambitkpo.com" />
               <br />
-              <NextLink href="tel:+17868669559" title="(+1) 786 866 9559" />
+              <NextLink href="tel:+16788047749" title="(+1) 678 804 7749" />
+              <NextLink href="tel:+17064038982" title="(+1) 706 403 8982" />
               <br />
               <NextLink href="tel:+919825016079" title="(+91) 982 501 6079" />
               <br />
