@@ -34,11 +34,11 @@ const ArticlePage: NextPage<IProps> = ({ article, absoluteUrl }) => {
         dateModified={meta.date}
         authorName={[
           {
-            name: 'Ambit Services',
+            name: 'Ambit',
             url: `${absoluteUrl}`
           }
         ]}
-        publisherName="Ambit Services"
+        publisherName="Ambit"
         publisherLogo={`${absoluteUrl}/img/logo-dark.png`}
         description={meta.description}
         isAccessibleForFree={true}

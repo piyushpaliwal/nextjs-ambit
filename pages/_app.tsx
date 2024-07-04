@@ -76,7 +76,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ambit Services | Accounting & Bookkeeping</title>
+        <title>Ambit | Accounting & Bookkeeping</title>
         <meta
           name="description"
           content="Ambit offers outsourced bookkeeping and accounting services for CPA and accounting firms in the USA. Hire highly qualified and dedicated offshore bookkeepers"
