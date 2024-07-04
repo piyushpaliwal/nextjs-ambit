@@ -12,10 +12,10 @@ const Footer: FC = () => {
         <div className="row gy-6 gy-lg-0 pt-12">
           <div className="col-md-3 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo.png" alt="Ambit KPO" height="50" />
+              <img className="mb-4" src="/img/logo.png" alt="Ambit" height="50" />
 
               <p className="mb-4">
-                © 2022 Ambit KPO. <br className="d-none d-lg-block" />
+                © 2022 Ambit. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 

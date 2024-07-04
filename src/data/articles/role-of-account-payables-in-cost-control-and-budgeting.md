@@ -153,7 +153,7 @@ Accounts Payable (AP) is crucial for managing money and planning budgets in busi
 6. Collaboration between departments is key in budget control.
 7. AP's practices align with long-term financial and strategic goals.
 
-Learn more about mastering cost management and budgeting in accounts payable with [Ambit KPO](https://www.ambitkpo.com/). Elevate your financial strategies today!
+Learn more about mastering cost management and budgeting in accounts payable with [Ambit](https://www.ambitkpo.com/). Elevate your financial strategies today!
 
 ## FAQ’s
 
