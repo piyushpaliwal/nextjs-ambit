@@ -62,6 +62,8 @@ const Contact: FC = () => {
                   <NextLink title="(+91) 982 501 6079" href="tel:+919825016079" /> (India){' '}
                   <br className="d-none d-md-block" />
                   <NextLink title="(+1) 678 804 7749" href="tel:+16788047749" /> (US)
+                  <br />
+                  <NextLink title="(+1) 706 403 8982" href="tel:+17064038982" /> (US)
                 </p>
               </div>
             </div>
