@@ -4,7 +4,7 @@ const services = [
   {
     id: 1,
     url: '#',
-    title: 'Bookkeeping',
+    title: 'Accounting',
     children: [
       { id: 111, title: 'Accounting & Bookkeeping', url: '/services/accounting-bookkeeping' },
       { id: 112, title: 'Catch-up Bookkeeping', url: '/services/catch-up-bookkeeping' },
@@ -21,10 +21,10 @@ const services = [
     children: [
       { id: 51, url: '/services/tax-service', title: 'Tax Planning & Advisory' },
       { id: 52, url: '/services/tax-return', title: 'Tax Return Preparation' },
-      { id: 53, url: '/services/ertc', title: 'ERTC' }
     ]
   },
-  { id: 9, url: '/services/financial-reporting', title: 'Financial Reporting', children: [] }
+  { id: 9, url: '/services/financial-reporting', title: 'Financial Reporting', children: [] },
+  { id: 10, url: '/services/dedicated-staffing', title: 'Dedicated Staffing', children: [] }
 ]
 
 const company = [

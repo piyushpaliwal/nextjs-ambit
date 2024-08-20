@@ -33,17 +33,13 @@ const Index: NextPage = () => {
           navOtherClass="navbar-other ms-lg-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
           button={
-            <Link
-              href={{
-                pathname: '/contact',
-                query: {
-                  plan: 'Free Trial'
-                }
-              }}
-              title="Free Trial"
+            <a
+              href="https://calendly.com/ambit-accounting/15min?month=2024-08"
+              title="Schedule a Meeting"
+              className="btn btn-sm btn-primary rounded-pill"
             >
-              <span className="btn btn-sm btn-primary rounded-pill">Free Trial</span>
-            </Link>
+              Schedule a Meeting
+            </a>
           }
         />
       </header>
@@ -55,8 +51,8 @@ const Index: NextPage = () => {
 
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
-            {/* software expertise */}
-            <Softwares />
+            {/* ========== Services ========== */}
+            <Services1 />
           </div>
         </section>
         <section className="wrapper bg-gray">
@@ -67,8 +63,8 @@ const Index: NextPage = () => {
         </section>
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
-            {/* ========== Services ========== */}
-            <Services1 />
+            {/* software expertise */}
+            <Softwares />
           </div>
         </section>
         {/* <section className="wrapper bg-light">

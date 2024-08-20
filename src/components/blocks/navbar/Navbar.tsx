@@ -54,7 +54,7 @@ const Navbar: FC<NavbarProps> = (props) => {
     <Fragment>
       <div className="navbar-brand w-100">
         {/* <NextLink href="/" title={<img alt="logo" src={`/img/${logo}.png`} height="50" />} /> */}
-        <NextLink href="/" title={<Image src={`/img/${logo}.png`} alt="Ambit logo" width={130} height={50} />} />
+        <NextLink href="/" title={<Image src={`/img/${logo}.png`} alt="Ambit logo" width={120} height={50} />} />
       </div>
 
       <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -86,6 +86,13 @@ const Navbar: FC<NavbarProps> = (props) => {
             </li>
             <ListItemLink href="/price" title="Price" liClassName="nav-item" />
             <ListItemLink href="/blogs" title="Blog" liClassName="nav-item" />
+            {/* ===================== socials nav item ===================== */}
+            <li className="nav-item dropdown">
+              <DropdownToggleLink title="Socials" className="nav-link dropdown-toggle" />
+              <div className="dropdown-menu">
+                <SocialLinks className="nav social mt-0 d-flex justify-content-between mx-4" />
+              </div>
+            </li>
             {/* ===================== company nav item ===================== */}
             <li className="nav-item dropdown">
               <DropdownToggleLink title="Company" className="nav-link dropdown-toggle" />
