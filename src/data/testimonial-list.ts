@@ -8,8 +8,10 @@ export const testimonialList = [
     review: `Ambit KPO Services adapted to our processes with ease, delivering monthly financials quickly and communicating effectively through various channels. Their commitment to building a long-term relationship, even under less-than-ideal terms, truly impressed me.`
   },
   {
-    name: 'Michael Shlachtman, Florida',
-    review: `Ambit Tax & Accounting has consistently met our needs with professionalism. They deliver on time and within budget while maintaining excellent communication through virtual meetings and messaging.`
+    name: 'CPA Firm in Georgia',
+    review: `There are not enough words to tell you how helpful Nishant and his firm have been in helping me
+    with bookkeeping and accounting needs. I have worked with outsourcing firms and have never been
+    as satisfied as I am with Nishant Sharrma!`
   },
   {
     name: 'Rafael Emiliani',
@@ -27,9 +29,7 @@ export const testimonialList = [
     Would recommend`
   },
   {
-    name: 'CPA Firm in Georgia',
-    review: `There are not enough words to tell you how helpful Nishant and his firm have been in helping me
-    with bookkeeping and accounting needs. I have worked with outsourcing firms and have never been
-    as satisfied as I am with Nishant Sharrma!`
-  }
+    name: 'Michael Shlachtman, Florida',
+    review: `Ambit Tax & Accounting has consistently met our needs with professionalism. They deliver on time and within budget while maintaining excellent communication through virtual meetings and messaging.`
+  }  
 ]

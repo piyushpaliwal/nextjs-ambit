@@ -28,13 +28,13 @@ const Index: NextPage = () => {
       {/* ========== header ========== */}
       <header className="wrapper bg-soft-primary">
         <Navbar
-          stickyBox={false}
           logoAlt="logo"
-          navOtherClass="navbar-other ms-lg-4"
+          navOtherClass="navbar-other ms-auto w-100 d-none d-lg-flex justify-content-end align-items-center gap-4"
+          bgClass="bg-ambit bg-opacity-75"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
           button={
             <a
-              href="https://calendly.com/ambit-accounting/15min?month=2024-08"
+              href="https://calendly.com/ambit-accounting/15min"
               title="Schedule a Meeting"
               className="btn btn-sm btn-primary rounded-pill"
             >
@@ -79,8 +79,8 @@ const Index: NextPage = () => {
           </div>
         </section>
         <section
-          className="wrapper image-wrapper bg-image bg-overlay bg-overlay-300 text-white"
-          style={{ backgroundImage: 'url(/img/photos/bg3.jpg)' }}
+          className="wrapper image-wrapper bg-image bg-overlay"
+          style={{ backgroundImage: 'url(/img/photos/bg-testimonial.jpg)' }}
         >
           <div className="container py-14">
             {/* testimonials */}

@@ -30,7 +30,6 @@ const services = [
 const company = [
   { id: 1, url: '/about-us', title: 'About Us', children: [] },
   { id: 2, url: '/faq', title: 'FAQ', children: [] },
-  { id: 6, url: '/contact', title: 'Contact' },
   { id: 7, url: '/privacy-policy', title: 'Privacy Policy', children: [] }
 ]
 
