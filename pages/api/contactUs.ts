@@ -16,8 +16,8 @@ export default async (req: NextApiRequest, res: NextApiResponse<Response>) => {
       return res.status(400).json({ success: false });
     }
     const { data, error } = await resend.emails.send({
-      from: `New Inquiry ${process.env.SITE_DOMAIN}`,
-      to: process.env.CONTACT_FORM_EMAIL as string,
+      from: `New Inquiry ${process.env.FROM_ADDRESS}`,
+      to: process.env.TO_ADDRESS as string,
       subject: "New Contact Request!",
       react: ContactEmail(contactObj),
     });
