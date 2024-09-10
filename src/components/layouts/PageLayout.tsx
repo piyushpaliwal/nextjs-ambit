@@ -25,15 +25,16 @@ const PageLayout: FC<PageLayoutProps> = ({ title, children, subTitle, background
       {/* ========== header ========== */}
       <header className="wrapper bg-soft-primary">
         <Navbar
+          stickyBox={false}
           logoAlt="logo"
-          navOtherClass="navbar-other ms-auto w-100 d-none d-lg-flex justify-content-end align-items-center gap-4"
-          bgClass="bg-white bg-opacity-25 card"
+          navOtherClass="navbar-other ms-xl-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
+          social
           button={
             <a
               href="https://calendly.com/ambit-accounting/15min"
               title="Schedule a Meeting"
-              className="btn btn-sm btn-primary rounded-pill"
+              className="btn btn-sm btn-primary rounded-pill fs-sm px-2 py-1"
             >
               Schedule a Meeting
             </a>

@@ -24,10 +24,10 @@ export const ContactEmail = (formData: ContactFormProps) => {
               New Contact Request from {firstname} {lastname}
             </Heading>
             <Text className="text-gray-700 text-[16px] leading-[28px] mb-[24px]">
-              Hello Ambit Team,
+              Hello,
             </Text>
             <Text className="text-gray-700 text-[16px] leading-[28px] mb-[24px]">
-              We have received a new contact request with the following details:
+              {firstname} {lastname} has submitted an inquiry on the website:
             </Text>
             <Section className="bg-gray-100 p-[20px] rounded mb-[30px]">
               <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
@@ -50,10 +50,7 @@ export const ContactEmail = (formData: ContactFormProps) => {
               </Text>
             </Section>
             <Text className="text-gray-700 text-[16px] leading-[28px] mb-[24px]">
-              Please follow up with this contact as soon as possible.
-            </Text>
-            <Text className="text-gray-700 text-[16px] leading-[28px] mb-[24px]">
-              Thank you, <br /> The Ambit Team
+              Thank you
             </Text>
             <Section className="text-center mt-[40px]">
               <Text className="text-gray-500 text-[12px]">
