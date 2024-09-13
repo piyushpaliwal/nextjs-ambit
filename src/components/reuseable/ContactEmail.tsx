@@ -12,7 +12,7 @@ import {
 import type { ContactFormProps } from 'components/common/ContactForm';
 
 export const ContactEmail = (formData: ContactFormProps) => {
-  const { firstname, lastname, email, message, serviceType, plan } = formData;
+  const { firstname, lastname, email, message, serviceType, dedicatedStaff } = formData;
   return (
     <Html>
       <Head />
@@ -46,7 +46,7 @@ export const ContactEmail = (formData: ContactFormProps) => {
                 <strong>Service Type:</strong> {serviceType}
               </Text>
               <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
-                <strong>Plan:</strong> {plan}
+                <strong>Dedicated Offshore Staff:</strong> {dedicatedStaff}
               </Text>
             </Section>
             <Text className="text-gray-700 text-[16px] leading-[28px] mb-[24px]">
