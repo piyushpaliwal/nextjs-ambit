@@ -10,7 +10,7 @@ export type ContactFormProps = {
   serviceType: string
   message: string
   pageUri: string
-  plan: string
+  dedicatedStaff: string
 }
 
 const ContactForm: FC = () => {
@@ -23,7 +23,7 @@ const ContactForm: FC = () => {
     serviceType: '',
     message: '',
     pageUri: '',
-    plan: (!router.query.plan ? 'Plan' : router.query.plan) as string
+    dedicatedStaff: ''
   })
 
   useEffect(() => {
@@ -158,7 +158,7 @@ const ContactForm: FC = () => {
             </select>
 
             <div className="valid-feedback"> Looks good! </div>
-            <div className="invalid-feedback"> Please select a plan.</div>
+            <div className="invalid-feedback"> Please select a service type.</div>
           </div>
         </div>
         <div className="col-md-6">
@@ -166,24 +166,22 @@ const ContactForm: FC = () => {
             <select
               className="form-select"
               id="form-select"
-              name="plan"
-              onChange={(e) => handleInputChange(e, 'plan')}
+              name="dedicatedStaff"
+              onChange={(e) => handleInputChange(e, 'dedicatedStaff')}
               required
-              defaultValue={!router.query.plan ? 'Plan' : router.query.plan}
+              defaultValue="Dedicated Offshore Staff"
             >
-              <option disabled value="Plan">
-                Plan
+              <option disabled value="Dedicated Offshore Staff">
+                Dedicated Offshore Staff
               </option>
-              <option value="Free Trial">Free Trial</option>
-              <option value="Catch-up Bookkeeping">Catch-up Bookkeeping</option>
-              <option value="Tax Preparation">Tax Preparation</option>
-              <option value="Core">Core</option>
-              <option value="Growth">Growth</option>
-              <option value="Customized">Customized</option>
+              <option value="Bookkeeper">Bookkeeper</option>
+              <option value="Accountant">Accountant</option>
+              <option value="Tax Specialist">Tax Specialist</option>
+              <option value="Virtual Assistant">Virtual Assistant</option>
             </select>
 
             <div className="valid-feedback"> Looks good! </div>
-            <div className="invalid-feedback"> Please select a service type.</div>
+            <div className="invalid-feedback"> Please select a dedicated offshore staff</div>
           </div>
         </div>
         <div className="col-12">
