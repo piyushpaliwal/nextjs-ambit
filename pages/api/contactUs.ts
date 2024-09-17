@@ -1,25 +1,56 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
+import axios from 'axios'
 import type { ContactFormProps } from 'components/common/ContactForm'
-import { Resend } from "resend";
-import ContactEmail from 'components/reuseable/ContactEmail';
 
 type Response = {
   success: boolean
 }
 
 export default async (req: NextApiRequest, res: NextApiResponse<Response>) => {
-    const contactObj: ContactFormProps = req.body.contactObj;
-    if (!contactObj) {
-      return res.status(400).json({ success: false });
-    }
-    const { data, error } = await new Resend(process.env.RESEND_API_KEY).emails.send({
-      from: `Website Submission <${process.env.FROM_ADDRESS}>`,
-      to: process.env.TO_ADDRESS as string,
-      subject: `New Inquiry from ${contactObj.firstname} ${contactObj.lastname}`,
-      react: ContactEmail(contactObj),
-    });
-    if (error) {
-      return res.status(500).json({ success: false });
-    }
-    res.status(200).json({ success: true });
-};
+  const { firstname, lastname, email, message, pageUri, serviceType, plan } = <ContactFormProps>req.body.contactObj
+
+  try {
+    const response = await axios({
+      method: 'POST',
+      url: `https://api.hsforms.com/submissions/v3/integration/secure/submit/${process.env.HUBSPOT_PORTAL_ID}/${process.env.HUBSPOT_FORM_ID}`,
+      data: {
+        fields: [
+          {
+            name: 'firstname',
+            value: firstname
+          },
+          {
+            name: 'lastname',
+            value: lastname
+          },
+          {
+            name: 'email',
+            value: email
+          },
+          {
+            name: 'message',
+            value: message
+          },
+          {
+            name: 'service_type',
+            value: serviceType
+          },
+          {
+            name: 'plan',
+            value: plan
+          }
+        ],
+        context: { pageUri: pageUri }
+      },
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${process.env.HUBSPOT_ACCESS_TOKEN}`,
+        'Accept-Encoding': 'gzip,deflate,compress'
+      }
+    })
+  } catch (error) {
+    return res.status(500).json({ success: false })
+  }
+
+  res.status(200).json({ success: true })
+}
