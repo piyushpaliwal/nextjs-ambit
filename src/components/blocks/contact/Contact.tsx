@@ -37,8 +37,8 @@ const Contact: FC = () => {
                 <h5 className="mb-1">Ambit - US Office</h5>
                 <address>🏢  3133 Little Bear Ln, Buford, GA 30519</address>
                 <div className='d-flex flex-column mt-n3'>
-                  <span>📞 Call Us: (+1) 706 403 8982</span>
-                  <span>📞 Alternate: (+1) 678 804 7749</span>
+                  <NextLink title="📞 Call Us: (+1) 706 403 8982" href="tel:+17064038982" />
+                  <NextLink title="📞 Alternate: (+1) 678 804 7749" href="tel:+16788047749" />
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ const Contact: FC = () => {
                   Vastrapur, Ahmedabad - 380015
                 </address>
                 <div className='d-flex flex-column mt-n3'>
-                  <span>📞 Call Us: (+91) 982 501 6079</span>
+                  <NextLink title="📞 Call Us: (+91) 982 501 6079" href="tel:+919825016079" />
                 </div>
               </div>
             </div>
