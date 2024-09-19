@@ -2,6 +2,8 @@ import { FC, FormEventHandler } from 'react'
 import React, { useEffect, useState } from 'react'
 import useAxios from 'axios-hooks'
 import { useRouter } from 'next/router'
+import getCaptchaToken from 'utils/getCaptchaToken'
+import contactUsAction from 'utils/contactUsAction'
 
 export type ContactFormProps = {
   firstname: string
@@ -25,6 +27,7 @@ const ContactForm: FC = () => {
     pageUri: '',
     dedicatedStaff: ''
   })
+  const [captchaError, setCaptchaError] = useState<string | null>(null);
 
   useEffect(() => {
     setContactObj(() => ({
@@ -53,9 +56,19 @@ const ContactForm: FC = () => {
     }
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    refetch()
+    const token = await getCaptchaToken();
+    if (!token) {
+      setCaptchaError("Captcha verification failed. Please try again.");
+      return;
+    }
+    const res = await contactUsAction(token);
+    if (res.success) {
+      refetch();
+    } else{
+      setCaptchaError(res.message);
+    }
   }
 
   const [{ data, loading, error }, refetch] = useAxios(
@@ -69,10 +82,10 @@ const ContactForm: FC = () => {
     }
   )
 
-  if (error) {
+  if (error || captchaError) {
     return (
       <div className="alert alert-danger alert-icon" role="alert">
-        <i className="uil uil-times-circle" /> Oops, something went wrong; We are embarrassed{' '}
+        <i className="uil uil-times-circle" /> {captchaError || "Oops, something went wrong; We are embarrassed{' '}"} 
       </div>
     )
   }
