@@ -255,7 +255,7 @@ Using tech in AP makes things faster, more accurate, and safer:
 
 Training in Accounts Payable is really important for any business. It helps your team handle money matters better, like paying bills the right way and keeping track of spending. When your team knows all about Accounts Payable, they can stop mistakes and fraud, which keeps your business safe. Also, being good at Accounts Payable makes sure your company stays friends with the people you buy stuff from and helps your business's credit. So, learning all about Accounts Payable is a big deal for doing well in business.
 
-Transform your team's Accounts Payable skills with our expert training programs. [Contact Ambit KPO today](https://www.ambitkpo.com/contact) to unlock the full potential of your financial operations and drive your business towards success!
+Transform your team's Accounts Payable skills with our expert training programs. [Contact Ambit today](https://www.ambitkpo.com/contact) to unlock the full potential of your financial operations and drive your business towards success!
 
 ### Key Takeaways on Accounts Payable Training
 
