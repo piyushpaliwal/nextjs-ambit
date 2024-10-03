@@ -65,7 +65,7 @@ const Navbar: FC<NavbarProps> = (props) => {
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
-            <ListItemLink href="/" title="Home" liClassName="nav-item" />
+            <ListItemLink href="/" title="Home" liClassName="nav-item  fs-6" />
             {/* ===================== services nav item ===================== */}
             <li className="nav-item dropdown">
               <DropdownToggleLink title="Services" className="nav-link dropdown-toggle" />
@@ -104,6 +104,7 @@ const Navbar: FC<NavbarProps> = (props) => {
                 })}
               </ul>
             </li>
+            <ListItemLink href="/contact" title="Contact" liClassName="nav-item" />
           </ul>
 
           {/* ============= show contact info in the small device sidebar ============= */}
@@ -147,11 +148,11 @@ const Navbar: FC<NavbarProps> = (props) => {
             </li>
           )}
 
+          {/* ============= social icons link ============= */}
+          {social && <li className='nav-item'><SocialLinks className='nav social social-muted justify-content-end text-end flex-nowrap d-none d-lg-block' /></li>}
+
           {/* ============= contact button ============= */}
           {button && <li className="nav-item d-none d-md-block">{button}</li>}
-
-          {/* ============= social icons link ============= */}
-          {social && <Social />}
 
           {/* ============= humburger button for small device ============= */}
           <li className="nav-item d-lg-none">

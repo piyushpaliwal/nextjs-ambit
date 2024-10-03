@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 const AboutPage: NextPage = () => {
   return (
-    <PageLayout title="This is us!" backgroundUrl="/img/photos/bg-about.jpg">
+    <PageLayout title="" backgroundUrl="/img/photos/bg-about.jpg">
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

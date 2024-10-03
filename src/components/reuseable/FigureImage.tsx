@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { DetailedHTMLProps, FC, HTMLAttributes } from 'react'
 
 // ====================================================
 interface FigureImageProps extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  src: string
+  src: string | StaticImageData
   width: number
   height: number
   className?: string

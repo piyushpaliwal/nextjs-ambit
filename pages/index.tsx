@@ -30,20 +30,17 @@ const Index: NextPage = () => {
         <Navbar
           stickyBox={false}
           logoAlt="logo"
-          navOtherClass="navbar-other ms-lg-4"
+          navOtherClass="navbar-other ms-xl-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
+          social
           button={
-            <Link
-              href={{
-                pathname: '/contact',
-                query: {
-                  plan: 'Free Trial'
-                }
-              }}
-              title="Free Trial"
+            <a
+              href="https://calendly.com/ambit-accounting/15min"
+              title="Schedule a Meeting"
+              className="btn btn-sm btn-primary rounded-pill fs-sm px-2 py-1"
             >
-              <span className="btn btn-sm btn-primary rounded-pill">Free Trial</span>
-            </Link>
+              Schedule a Meeting
+            </a>
           }
         />
       </header>
@@ -55,8 +52,8 @@ const Index: NextPage = () => {
 
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
-            {/* software expertise */}
-            <Softwares />
+            {/* ========== Services ========== */}
+            <Services1 />
           </div>
         </section>
         <section className="wrapper bg-gray">
@@ -67,8 +64,8 @@ const Index: NextPage = () => {
         </section>
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">
-            {/* ========== Services ========== */}
-            <Services1 />
+            {/* software expertise */}
+            <Softwares />
           </div>
         </section>
         {/* <section className="wrapper bg-light">
@@ -83,8 +80,8 @@ const Index: NextPage = () => {
           </div>
         </section>
         <section
-          className="wrapper image-wrapper bg-image bg-overlay bg-overlay-300 text-white"
-          style={{ backgroundImage: 'url(/img/photos/bg3.jpg)' }}
+          className="wrapper image-wrapper bg-image bg-overlay"
+          style={{ backgroundImage: 'url(/img/photos/bg-testimonial.jpg)' }}
         >
           <div className="container py-14">
             {/* testimonials */}

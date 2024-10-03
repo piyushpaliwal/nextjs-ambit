@@ -34,56 +34,46 @@ const Contact: FC = () => {
           <div className="col-lg-6">
             <TeleMarketer className="icon-svg-md mb-4" />
 
-            <h2 className="display-4 mb-8">Our Presense</h2>
-            <div className="d-flex flex-row">
+            <h2 className="display-4 mb-8">Connect with Us</h2>
+            <div className="d-flex flex-row mb-5">
               <div>
                 <IconBox className="icon text-primary fs-28 me-6 mt-n1" icon="uil-location-pin-alt" />
               </div>
               <div>
-                <h5 className="mb-1">US</h5>
-                <address>3133 Little Bear Ln, Buford, GA 30519</address>
-              </div>              
+                <h5 className="mb-1">Ambit - US Office</h5>
+                <address>🏢  3133 Little Bear Ln, Buford, GA 30519</address>
+                <div className='d-flex flex-column mt-n3'>
+                  <NextLink title="📞 Call Us: (+1) 706 403 8982" href="tel:+17064038982" />
+                  <NextLink title="📞 Alternate: (+1) 678 804 7749" href="tel:+16788047749" />
+                </div>
+              </div>
             </div>
-            <div className="d-flex flex-row">
+            <div className="d-flex flex-row mb-5">
               <div>
                 <IconBox className="icon text-primary fs-28 me-6 mt-n1" icon="uil-location-pin-alt" />
               </div>
               <div>
-                <h5 className="mb-1">India</h5>
+                <h5 className="mb-1">Ambit - India Office</h5>
                 <address>
-                  D-308, The First, Behind Keshavbaug Party Plot <br className="d-none d-md-block" />
+                  🌟 D-308, The First, Behind Keshavbaug Party Plot <br className="d-none d-md-block" />
                   Vastrapur, Ahmedabad - 380015
                 </address>
+                <div className='d-flex flex-column mt-n3'>
+                  <NextLink title="📞 Call Us: (+91) 982 501 6079" href="tel:+919825016079" />
+                </div>
               </div>
             </div>
 
-            <div className="d-flex flex-row">
-              <div>
-                <IconBox className="icon text-primary fs-28 me-6 mt-n1" icon="uil-phone-volume" />
-              </div>
-
-              <div>
-                <h5 className="mb-1">Phone</h5>
-                <p>
-                  <NextLink title="(+1) 678 804 7749" href="tel:+16788047749" /> (US)
-                  <br className="d-none d-md-block" />
-                  <NextLink title="(+1) 706 403 8982" href="tel:+17064038982" /> (US)
-                  <br />
-                  <NextLink title="(+91) 982 501 6079" href="tel:+919825016079" /> (India){' '}
-                </p>
-              </div>
-            </div>
-
-            <div className="d-flex flex-row">
+            <div className="d-flex flex-row mb-5">
               <div>
                 <IconBox className="icon text-primary fs-28 me-6 mt-n1" icon="uil-envelope" />
               </div>
 
               <div>
-                <h5 className="mb-1">E-mail</h5>
+                <h5 className="mb-1">Reach Out via Email</h5>
                 <p className="mb-0">
                   <a href="mailto:info@ambitkpo.com" className="link-body">
-                    info@ambitkpo.com
+                    📧 info@ambitkpo.com
                   </a>
                 </p>
               </div>

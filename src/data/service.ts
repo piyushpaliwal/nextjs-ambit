@@ -1,12 +1,5 @@
 export const serviceList = [
   {
-    id: 9,
-    linkUrl: '/services/ertc',
-    title: 'ERTC',
-    icon: 'uil-bill',
-    description: `The Employee Retention Tax Credit is a refundable tax credit of qualified wages paid to employees from eligible employers for 2020 and 2021`
-  },
-  {
     id: 1,
     linkUrl: '/services/accounting-bookkeeping',
     title: 'Accounting & Bookkeeping',

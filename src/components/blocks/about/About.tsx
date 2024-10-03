@@ -22,27 +22,28 @@ const About6: FC = () => {
               <h2 className="display-4 mb-3">Who Are We?</h2>
 
               <p className="lead fs-lg">
-                We are an experienced team of accounting professionals, we offer businesses a full range of accounting
-                services, from bookkeeping to part-time CFO and accounting systems integration.
+                At Ambit, we're a leading outsourcing firm with over 20 years of experience in accounting. We offer a full suite of services including bookkeeping, accounting, tax planning, tax preparation, and financial reporting. Trusted by over 350 clients worldwide, we boast a 96% client retention rate, reflecting our commitment to exceptional service.
               </p>
 
               <p className="mb-6">
-                Business owners are increasingly asking themselves which services they should be delivering themselves
-                and which are better off done by an outsourcing partner.
+                Navigating the balance between in-house and outsourced tasks can be tough. At Ambit, we make it easy. Our team seamlessly integrates with your operations to enhance accounting processes, manage peak-period overflow, and deliver top-quality results.
               </p>
 
               <p className="mb-6">
-                Our experts can augment your existing team, work with you to streamline and optimize accounting
-                processes, and help manage accounting work overflow during peak periods. You have 24/7 access to
-                accurate, timely financial data and reporting, which positions your business with the agility to react
-                quickly to changes, positively impacting decision-making.
+                Our flexible offshore staffing solutions let you hire skilled bookkeepers, accountants, tax preparers, and virtual assistants starting at just $10 per hour. Enjoy the freedom of no long-term contracts and test candidates before you commit—no cost or obligation involved.
               </p>
 
               <p className="mb-6">
-                Some of the values that we have inculcated over <span className="underline-3 style-3">20 years</span> of
-                working in the industry include
+                With 24/7 access to accurate and timely financial data, we help you make quick, informed decisions that drive business success.
               </p>
-              <ListColumn rowClass="gx-xl-8" list={aboutList} />
+
+              <p className="mb-6">
+                Our core values include:
+              </p>
+              <ListColumn rowClass="gx-xl-8 mb-6" list={aboutList} />
+              <p className="mb-6 fst-italic fw-semibold">
+                At Ambit, we’re not just an accounting service provider—we’re your trusted partner for financial clarity and business growth.
+              </p>
             </div>
           </div>
         </div>
@@ -57,17 +58,13 @@ const About6: FC = () => {
             </div>
 
             <div className="col-lg-6">
-              <h2 className="display-5 mb-3">From the Director's desk</h2>
+              <h2 className="display-5 mb-3">From Founder & CEO's Outlook</h2>
               <h3 className="display-6 mb-3 text-primary">Nishant Sharma</h3>
               <p>
-                Ambit is a family of professional team members who have taken it to the level and scale which people
-                always dream in a very short span of time. As the Founder & CEO of Ambit, I have a vision of creating a
-                world class services firm with focus on creating value in everything we do for our clients and
-                delivering WOW experiences.
+                At Ambit, we're not just a team—we’re a family that’s rapidly set new standards in the accounting industry. As the Founder & CEO, my vision is to build a top-tier firm dedicated to delivering outstanding value and creating remarkable experiences for our clients.
               </p>
               <p>
-                Our Work Culture and our Team is the Core Foundation on which we are growing rapidly and Ambit will
-                create waves in the market in the years to come.
+                Our dynamic work culture and dedicated team are at the heart of our growth. We’re committed to making a significant impact on the accounting industry and setting new benchmarks for excellence. Join us on this journey as Ambit continues to shape the future of the industry.
               </p>
             </div>
           </div>

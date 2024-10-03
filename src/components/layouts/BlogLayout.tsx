@@ -27,20 +27,17 @@ const BlogLayout: FC<PageLayoutProps> = ({ title, children, subTitle, background
         <Navbar
           stickyBox={false}
           logoAlt="logo-dark-1"
-          navOtherClass="navbar-other ms-lg-4"
+          navOtherClass="navbar-other ms-xl-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-light"
+          social
           button={
-            <Link
-              href={{
-                pathname: '/contact',
-                query: {
-                  plan: 'Free Trial'
-                }
-              }}
-              title="Free Trial"
+            <a
+              href="https://calendly.com/ambit-accounting/15min"
+              title="Schedule a Meeting"
+              className="btn btn-sm btn-primary rounded-pill fs-sm px-2 py-1"
             >
-              <span className="btn btn-sm btn-primary rounded-pill">Free Trial</span>
-            </Link>
+              Schedule a Meeting
+            </a>
           }
         />
       </header>
