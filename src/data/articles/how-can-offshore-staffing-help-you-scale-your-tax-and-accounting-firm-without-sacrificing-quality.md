@@ -23,7 +23,7 @@ One of the biggest benefits of offshoring is having a staff working in different
 
 One of the main reasons why many accounting firms in the US choose offshore staffing is the significant cost savings. In countries like India, labour costs are usually much lower compared to hiring locally in the US. However, cost-effective does not mean getting lower quality of work in fact, many offshore professionals have extensive experience working with U.S. accounting standards and practices. In fact, many offshore staff hold highly regarded qualifications such as EA (Enrolled Agent) or CPA (Certified Public Accountant), making them just as capable as your local hires. They are skilled in handling tasks like tax preparation, bookkeeping, and financial reporting.
 
-![](/img/articles/media-6-.jpg)
+![Infographic illustrating the key benefits of offshore staffing for accounting firms, including access to top talent, cost-effective solutions, efficient operations, seamless team integration, scalability, and maintaining quality control.](/img/articles/media-6-.jpg "Key Benefits of Offshore Staffing for Accounting Firms")
 
 ### 4. Seamless Integration
 
