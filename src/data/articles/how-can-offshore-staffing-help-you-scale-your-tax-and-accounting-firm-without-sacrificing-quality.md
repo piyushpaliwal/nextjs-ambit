@@ -3,7 +3,7 @@ title: How can Offshore Staffing Help You Scale Your Tax and Accounting Firm
   Without Sacrificing Quality?
 description: Looking to grow your tax and accounting firm without compromising
   on quality? Learn how offshore staffing can give you access to skilled
-  professionals, cut costs, and keep your operations running smoothly—while
+  professionals, cut costs, and keep your operations running smoothly - while
   still delivering the top-notch service your clients expect.
 date: 2024-10-04T07:28:07.998Z
 category: Offshore Staffing
