@@ -11,6 +11,24 @@
 // Theme variables
 @import './variables';
 
+$utilities: (
+  'width': (
+    property: width,
+    class: w,
+    responsive: true,
+    values: (
+      25: 25%,
+      33: 33%,
+      50: 50%,
+      66: 66%,
+      75: 75%,
+      90: 90%,
+      100: 100%,
+      auto: auto,
+    ),
+  )
+);
+
 // Bootstrap configuration
 @import '../../../node_modules/bootstrap/scss/variables';
 @import '../../../node_modules/bootstrap/scss/variables-dark';
