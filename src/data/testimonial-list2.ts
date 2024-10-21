@@ -1,4 +1,4 @@
-export const newTestimonialList = [
+export const testimonialList2 = [
   {
     name: 'Jill Rubin',
     designation:'President, LBNS',
