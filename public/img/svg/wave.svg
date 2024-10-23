@@ -1,0 +1,15 @@
+
+
+<svg width="1199" height="44" viewBox="0 0 1199 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="animatedGradient">
+      <stop offset="0%" stop-color="#d8b572" />
+      <stop offset="40%" stop-color="#f0e68c" />
+      <stop offset="60%" stop-color="#f0e68c" />
+      <stop offset="100%" stop-color="#d8b572" />
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="2s" repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+  
+  <path d="M-27 42.7826C66.3125 20.9382 287.327 -16.1974 424.884 10.0159C596.83 42.7826 726.839 53.3147 837.451 31.6653C925.94 14.3458 1175.93 16.0622 1228 19.0853" stroke="url(#animatedGradient)" stroke-width="3"/>
+</svg>

@@ -10,6 +10,7 @@ import Image from 'next/image'
 import Carousel1 from '../public/img/photos/carousel1.jpg'
 import Carousel2 from '../public/img/photos/carousel2.jpg'
 import Carousel3 from '../public/img/photos/carousel3.jpg'
+import Wave from '../public/img/svg/wave.svg'
 import Carousel from 'components/reuseable/Carousel'
 import NextLink from 'components/reuseable/links/NextLink'
 import useSticky from 'hooks/useSticky'
@@ -133,7 +134,7 @@ const Index: NextPage = () => {
                 <h1 className="display-2 mt-5 mb-5 text-white w-xl-90" style={slideInDownAnimate('600ms')}>
                   Build Your Ideal Accounting Team with Our Outsource and Offshore Staffing Solutions
                 </h1>
-                <p className="lead fs- lh-sm mb-7 pe-xl-10 w-lg-75" style={slideInDownAnimate('900ms')}>
+                <p className="lead fs- lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>
                   Enhance your firm’s capacity and efficiency with skilled professionals trained in U.S. accounting standards. 
                 </p>
                 <p className="lead fs-16 lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>
@@ -197,65 +198,79 @@ const Index: NextPage = () => {
             <Fragment>
               <div className="row text-center">
                 <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                  <h3 className="display-4">Hire From Our Comprehensive Outsourcing and Dedicated Offshore Staffing Solutions</h3>
+                  <h3 className="display-4">Hire From Our Comprehensive 
+                  <span className="text-primary"> Outsourcing </span>
+                  and Dedicated Offshore 
+                  <span className="text-primary"> Staffing </span>
+                  Solutions</h3>
                 </div>
               </div>
-
-              <div className="row gx-lg-0 gy-10 align-items-center mt-10 mb-12 mb-lg-15">
-                <div className="col-10 col-xl-4">
-                  <h2 className="display-4 mb-3">Outsource Accounting and Tax Services</h2>
-                  <div className='mt-4 mb-8'>
-                      <a
-                        href="https://calendly.com/ambit-accounting/15min"
-                        title="Schedule a Meeting"
-                        className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
-                        >
-                        Hire Now
-                      </a>
-                    </div>
-                </div>
-                <div className="col-lg-11 col-xl-7 offset-lg-1">
-                  <div className="row gx-md-5 gy-5 align-items-center counter-wrapper">
-                  {serviceList.map((item) => (
-                    <div key={item.id} className={`col-sm-6 col-md-4 col-lg-3 col-xl-4 d-flex flex-column text-center justify-content-center align-items-center`}>
-                      <div className="card h-20 w-20">
-                        <div className={`card-body d-flex flex-column text-center justify-content-center align-items-center px-2 gap-1 ${item.className} `}>
-                          <Image src={item.icon} width={50} height={50} alt='book1' />
-                          <h4>{item.title}</h4>
-                        </div>
-                      </div>
-                    </div>
-                    ))}
+              <div className="row mt-12 mb-6 mb-lg-10">
+                <div className="col-lg-8 col-xl-7 col-xxl-6">
+                  <h3 className="display-4 mb-6">
+                    Outsource 
+                    <span className="underline-3 style-3 primary"> Accounting </span>
+                    and Tax Services
+                  </h3>
+                  <div className='mb-5'>
+                    <a
+                      href="https://calendly.com/ambit-accounting/15min"
+                      title="Schedule a Meeting"
+                      className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
+                      >
+                      Hire Now
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className="row gx-lg-0 gy-10 align-items-center mb-15 mb-lg-18">
-                <div className="col-10 col-xl-4 col-xxl-3">
-                  <h2 className="display-4 mb-3">Dedicated Offshore Staffing Soutions</h2>
-                  <div className='mt-4 mb-8'>
-                      <a
-                        href="https://calendly.com/ambit-accounting/15min"
-                        title="Schedule a Meeting"
-                        className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
-                        >
-                        Hire Now
-                      </a>
-                    </div>
-                </div>
-                <div className="col-lg-11 col-xl-7 col-xxl-8 offset-lg-1">
-                  <div className="row gx-md-5 gy-5 align-items-center counter-wrapper">
-                  {staffList.map((item) => (
-                      <div key={item.id} className={`col-sm-6 col-md-4 col-lg-3 col-xl-4 col-xxl-3 d-flex flex-column text-center justify-content-center align-items-center`}>
-                      <div className="card h-20 w-20">
-                        <div className={`card-body d-flex flex-column text-center justify-content-center align-items-center px-2 gap-1 ${item.className} `}>
-                          <Image src={item.icon} width={50} height={50} alt='book1' />
-                          <h4>{item.title}</h4>
+              <div className="row gx-md-8 gy-8 text-center mb-8 mb-md-11">
+                {serviceList.map((item) => (
+                  <div key={item.id} className="col-md-6 col-lg-3">
+                    <div className="card shadow-lg">
+                      <div className="card-body">
+                        <div className="icon btn btn-block btn-lg btn-soft-primary mb-6 p-2 w-13 h-13">
+                          <Image src={item.icon} width={50} height={50} alt='icon' />
                         </div>
+                        <h4>{item.title}</h4>
                       </div>
                     </div>
-                    ))}
+                  </div>
+                ))}
+              </div>
+              <div className='d-none d-md-block'>
+                <FigureImage width={100} height={10} src={Wave} alt="wave" className='w-100 h-12' />
+              </div>              
+              <div className="row mt-14 mb-6 mb-lg-10">
+                <div className="col-lg-8 col-xl-7 col-xxl-6">
+                  <h3 className="display-4 mb-6">
+                    Dedicated Offshore 
+                    <span className="underline-3 style-3 primary"> Staffing </span>
+                    Soutions
+                  </h3>
+                  <div className='mb-5'>
+                    <a
+                      href="https://calendly.com/ambit-accounting/15min"
+                      title="Schedule a Meeting"
+                      className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
+                      >
+                      Hire Now
+                    </a>
                   </div>
                 </div>
+              </div>
+              <div className="row gx-md-8 gy-8 text-center mb-8 mb-md-10">
+                {staffList.map((item) => (
+                  <div key={item.id} className="col-md-6 col-lg-3">
+                    <div className="card shadow-lg">
+                      <div className="card-body">
+                        <div className="icon btn btn-block btn-lg btn-soft-primary mb-6 p-2 w-13 h-13">
+                          <Image src={item.icon} width={50} height={50} alt='icon' />
+                        </div>
+                        <h4>{item.title}</h4>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </Fragment>
           </div>
@@ -301,7 +316,7 @@ const Index: NextPage = () => {
                 </div>
                 <div className="col-lg-5 my-0 py-0">
                   <FigureImage
-                    className="w-md-75 w-lg-auto w-xl-75"
+                    className="w-auto"
                     src='/img/photos/accurate-books-done-quick.svg'
                     alt="Why Ambit"
                     width={500}
@@ -384,13 +399,7 @@ const Index: NextPage = () => {
                     </a>
                   </div>
                   <div className='row justify-content-end'>
-                    <FigureImage
-                      className="w-md-75 w-lg-50"
-                      src='/img/consult-ambit.png'
-                      alt="Catch-up Bookkeeping Pricing"
-                      width={900}
-                      height={500}
-                    />
+                    <Image width="900" height="500" src='/img/consult-ambit.png' alt="consult ambit" />
                   </div>
                 </div>
               </div>
