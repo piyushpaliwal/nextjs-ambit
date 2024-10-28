@@ -2,6 +2,8 @@ import { FC, FormEventHandler } from 'react'
 import React, { useEffect, useState } from 'react'
 import useAxios from 'axios-hooks'
 import { useRouter } from 'next/router'
+import initToken from 'utils/initializeToken'
+import axios from 'axios'
 
 export type ContactFormProps = {
   firstname: string
@@ -53,9 +55,16 @@ const ContactForm: FC = () => {
     }
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    refetch()
+    const token = await initToken();
+    if (!token) {
+      return;
+    }
+    const { data } = await axios.post('/api/verifyToken', { token });
+    if (data.success) {
+      refetch();
+    }
   }
 
   const [{ data, loading, error }, refetch] = useAxios(
