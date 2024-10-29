@@ -15,10 +15,10 @@ import Carousel from 'components/reuseable/Carousel'
 import NextLink from 'components/reuseable/links/NextLink'
 import useSticky from 'hooks/useSticky'
 import SocialLinks from 'components/reuseable/SocialLinks'
-import { processOutsourcingList } from 'data/process-outsourcing'
-import { processStaffingList } from 'data/process-staffing'
+import { processOutsourcingList } from 'data/process-outsourcing2'
+import { processStaffingList } from 'data/process-staffing2'
 import { serviceList, staffList } from 'data/service2'
-import ListColumn from "components/reuseable/ListColumn";
+import ListColumn from "components/reuseable/ListColumn"
 import carouselBreakpoints from 'utils/carouselBreakpoints'
 import { TestimonialCard } from 'components/reuseable/testimonial-cards'
 import { testimonialList2 } from 'data/testimonial-list2'
@@ -399,22 +399,33 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
                     </div>
                   </div>
                 </Fragment>
-                <div className='row mt-16 mb-2 text-start'>
-                  <h2 className="fs-18 text-primary mb-3">Ambit Tax and Accounting</h2>
-                  <h2 className="display-3 mb-3 w-75">Your One Stop Accounting <br/> and Tax Solution!</h2>
-                  <div className='mt-4 mb-8'>
-                    <a
-                      href="https://calendly.com/ambit-accounting/15min"
-                      title="Schedule a Meeting"
-                      className="btn btn-sm btn-primary rounded-pill fs-lg px-3 py-1 w-auto"
-                      >
-                      <span className='pe-2'>Request a Quote</span>
-                      <span><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.6651 5.8952L6.7151 1.9452C6.53294 1.7566 6.43215 1.504 6.43443 1.2418C6.4367 0.979602 6.54187 0.728789 6.72728 0.543381C6.91269 0.357973 7.1635 0.252805 7.4257 0.250526C7.6879 0.248248 7.9405 0.349042 8.1291 0.5312L13.7861 6.1882C13.8793 6.28085 13.9532 6.39102 14.0037 6.51235C14.0542 6.63368 14.0801 6.76379 14.0801 6.8952C14.0801 7.02661 14.0542 7.15672 14.0037 7.27806C13.9532 7.39939 13.8793 7.50955 13.7861 7.6022L8.1291 13.2592C8.03685 13.3547 7.92651 13.4309 7.8045 13.4833C7.6825 13.5357 7.55128 13.5633 7.4185 13.5645C7.28572 13.5656 7.15404 13.5403 7.03115 13.49C6.90825 13.4398 6.7966 13.3655 6.70271 13.2716C6.60881 13.1777 6.53456 13.0661 6.48428 12.9432C6.434 12.8203 6.4087 12.6886 6.40985 12.5558C6.411 12.423 6.43859 12.2918 6.491 12.1698C6.54341 12.0478 6.61959 11.9375 6.7151 11.8452L10.6651 7.8952H1.0791C0.813886 7.8952 0.559532 7.78984 0.371995 7.60231C0.184459 7.41477 0.0791016 7.16042 0.0791016 6.8952C0.0791016 6.62999 0.184459 6.37563 0.371995 6.18809C0.559532 6.00056 0.813886 5.8952 1.0791 5.8952H10.6651Z" fill="white"/></svg></span>
-                    </a>
+                <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mt-16 mb-2 align-items-center">
+                  <div className="col-lg-5 mt-lg-n10 text-start">
+                    <h2 className="fs-18 text-primary mb-3">Ambit Tax and Accounting</h2>
+                    <h2 className="display-3 mb-3 w-75">Your One Stop Accounting <br/> and Tax Solution!</h2>
+                    <div className='mt-4 mb-8'>
+                      <a
+                        href="https://calendly.com/ambit-accounting/15min"
+                        title="Schedule a Meeting"
+                        className="btn btn-sm btn-primary rounded-pill fs-lg px-3 py-1 w-auto"
+                        >
+                        <span className='pe-2'>Request a Quote</span>
+                        <span><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.6651 5.8952L6.7151 1.9452C6.53294 1.7566 6.43215 1.504 6.43443 1.2418C6.4367 0.979602 6.54187 0.728789 6.72728 0.543381C6.91269 0.357973 7.1635 0.252805 7.4257 0.250526C7.6879 0.248248 7.9405 0.349042 8.1291 0.5312L13.7861 6.1882C13.8793 6.28085 13.9532 6.39102 14.0037 6.51235C14.0542 6.63368 14.0801 6.76379 14.0801 6.8952C14.0801 7.02661 14.0542 7.15672 14.0037 7.27806C13.9532 7.39939 13.8793 7.50955 13.7861 7.6022L8.1291 13.2592C8.03685 13.3547 7.92651 13.4309 7.8045 13.4833C7.6825 13.5357 7.55128 13.5633 7.4185 13.5645C7.28572 13.5656 7.15404 13.5403 7.03115 13.49C6.90825 13.4398 6.7966 13.3655 6.70271 13.2716C6.60881 13.1777 6.53456 13.0661 6.48428 12.9432C6.434 12.8203 6.4087 12.6886 6.40985 12.5558C6.411 12.423 6.43859 12.2918 6.491 12.1698C6.54341 12.0478 6.61959 11.9375 6.7151 11.8452L10.6651 7.8952H1.0791C0.813886 7.8952 0.559532 7.78984 0.371995 7.60231C0.184459 7.41477 0.0791016 7.16042 0.0791016 6.8952C0.0791016 6.62999 0.184459 6.37563 0.371995 6.18809C0.559532 6.00056 0.813886 5.8952 1.0791 5.8952H10.6651Z" fill="white"/></svg></span>
+                      </a>
+                    </div>
                   </div>
-                  <div className='row justify-content-end ms-3'>
-                    <Image width="600" height="310" src='/img/consult-ambit.png' alt="consult ambit" />
+                  <div
+                    className="col-md-8 offset-md-2 col-lg-6 offset-lg-1 position-relative"
+                    style={zoomInAnimate("0ms")}>
+                    <FigureImage
+                      className="w-auto"
+                      src='/img/consult-ambit.png'
+                      alt="consult ambit"
+                      width={600}
+                      height={310}
+                    />
                   </div>
+
                 </div>
               </div>
             </Fragment>

@@ -1,41 +1,40 @@
 // -------- icons -------- //
+import Email from 'icons/lineal/Email'
 import List from 'icons/lineal/List'
 import IdCard from 'icons/lineal/IdCard'
+import Medal from 'icons/lineal/Medal'
 import Puzzle from 'icons/lineal/Puzzle'
-import TeleMarketer from 'icons/lineal/TeleMarketer'
-import CloudComputingTwo from 'icons/lineal/CloudComputingTwo'
-import Check from 'icons/lineal/Check'
 
 // used in the process block
 export const processStaffingList = [
   {
     id: 1,
-    title: 'Signing of Agreement',
-    Icon: Check
+    Icon: Email,
+    title: 'Share Your Needs',
+    description: 'Provide us with your detailed job description.'
   },
   {
     id: 2,
-    title: 'Candidate Interview/ Test',
-    Icon: IdCard
+    Icon: IdCard,
+    title: 'Receive Resumes',
+    description: ' We’ll send you resumes of carefully selected candidates.'
   },
   {
     id: 3,
-    title: 'Onboarding Call',
-    Icon: TeleMarketer
+    Icon: List,
+    title: 'Shortlist & Interview',
+    description: 'You review, shortlist, interview, and test candidates.'
   },
   {
     id: 4,
-    title: 'Remote set-up of Computers',
-    Icon: CloudComputingTwo
+    title: 'Hire & Integrate',
+    Icon: Medal,
+    description: 'Select the best fit and integrate them into your team seamlessly.'
   },
   {
     id: 5,
-    title: 'Work Allotment',
-    Icon: List
-  },
-  {
-    id: 5,
-    title: 'Work Submission',
-    Icon: Puzzle
+    title: 'Team Integration',
+    Icon: Puzzle,
+    description: 'Enjoy a smooth transition with your new offshore team member working as an integral part of your organization.'
   }
 ]
