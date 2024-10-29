@@ -5,7 +5,7 @@ import FigureImage from 'components/reuseable/FigureImage'
 import { softwareList } from 'data/client'
 import { faqList } from 'data/home-page-faq'
 import Accordion from 'components/reuseable/accordion'
-import { slideInDownAnimate } from 'utils/animation'
+import { slideInDownAnimate, zoomInAnimate } from 'utils/animation'
 import Image from 'next/image'
 import Carousel1 from '../public/img/photos/carousel1.jpg'
 import Carousel2 from '../public/img/photos/carousel2.jpg'
@@ -32,18 +32,17 @@ const Index: NextPage = () => {
   const ProcessSection: FC<{
     title: string
     subtitle: string
-    processList: { id: number; title: string; description: string; Icon: FC<{ className?: string }> }[]
+    processList: { id: number; title: string; Icon: FC<{ className?: string }> }[]
   }> = ({ title, subtitle, processList }) => (
     <div className="mb-10">
       <h3 className="display-3 text-center text-primary mb-3">{title}</h3>
       <p className="fs-15 text-navy text-center mb-5">{subtitle}</p>
       <div className="row gx-md-5 gx-lg-8 gx-xl-4 gy-5 gap-1 text-center justify-content-center process-wrapper text-center flex-wrap">
-        {processList.map(({ id, title, description, Icon }) => (
-          <div className="col-9 col-md-4 col-lg-3 col-xxl-2 card min-w-25" key={id}>
-            <div className="card-body px-3 pt-5 pb-2">
-              <Icon className="icon-svg-sm solid-duo text-purple-pink mb-4" />
-              <h4 className="fs-21">{title}</h4>
-              <p className="fs-13">{description}</p>
+        {processList.map(({ id, title, Icon }) => (
+          <div className="w-19 h-19 card" key={id}>
+            <div className="card-body px-0 px-xl-2 pt-6 d-flex flex-column justify-content-start align-items-center">
+              <Icon className="icon-svg-xs solid-duo text-purple-pink mb-4" />
+              <h4 className="fs-16">{title}</h4>
             </div>
           </div>
         ))}
@@ -55,6 +54,14 @@ const Index: NextPage = () => {
     ["Thorough Vetting Process", "Flexible Hiring", "No Long-Term Contracts", "Robust Security Measures"],
     ["24/7 Support", "Data Accuracy", "Advanced Software", "Reporting"]
   ];
+
+  const carouselBreakpoint = {
+    0: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1024: { slidesPerView: 4 },
+    1200: { slidesPerView: 5 }
+  }
+  
 
   return (
     <Fragment>
@@ -153,7 +160,7 @@ const Index: NextPage = () => {
           </div>
         </section>
         <section className="wrapper bg-light">
-          <div className="container py-14 py-md-14">
+          <div className="container py-14">
             <Fragment>
               <div className="row gy-10 gy-sm-13 gx-lg-3 align-items-center">
                 <div className="col-lg-5">
@@ -194,7 +201,7 @@ const Index: NextPage = () => {
           </div>
         </section>
         <section className="wrapper bg-gray">
-          <div className="container py-14 py-md-14">
+          <div className="container py-12">
             <Fragment>
               <div className="row text-center">
                 <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
@@ -205,78 +212,75 @@ const Index: NextPage = () => {
                   Solutions</h3>
                 </div>
               </div>
-              <div className="row mt-12 mb-6 mb-lg-10">
-                <div className="col-lg-8 col-xl-7 col-xxl-6">
-                  <h3 className="display-4 mb-6">
+
+              <div className="row gx-lg-0 gy-10 align-items-center mt-10 mb-10">
+                <div className="col-10 col-xl-4">
+                <h3 className="display-4 mb-6">
                     Outsource 
                     <span className="underline-3 style-3 primary"> Accounting </span>
                     and Tax Services
                   </h3>
-                  <div className='mb-5'>
-                    <a
-                      href="https://calendly.com/ambit-accounting/15min"
-                      title="Schedule a Meeting"
-                      className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
-                      >
-                      Hire Now
-                    </a>
+                  <div className='mt-4 mb-8'>
+                      <a
+                        href="https://calendly.com/ambit-accounting/15min"
+                        title="Schedule a Meeting"
+                        className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
+                        >
+                        Hire Now
+                      </a>
+                    </div>
+                </div>
+                <div className="col-lg-11 col-xl-7 offset-lg-1">
+                  <div className="row d-flex gap-5 gx-md-5 gx-lg-8 gx-xl-4 gy-5 text-center justify-content-center text-center flex-wrap">
+                  {serviceList.map((item) => (
+                      <div key={item.id} className={`h-20 w-20 border rounded border-2 ${item.className}`}>
+                        <div className={`h-100 w-100 d-flex flex-column text-center justify-content-center align-items-center py-auto px-1 gap-2`}>
+                          <Image src={item.icon} width={50} height={50} alt='icon' />
+                          <h4 className='fs-17'>{item.title}</h4>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
-              <div className="row gx-md-8 gy-8 text-center mb-8 mb-md-11">
-                {serviceList.map((item) => (
-                  <div key={item.id} className="col-md-6 col-lg-3">
-                    <div className="card shadow-lg">
-                      <div className="card-body">
-                        <div className="icon btn btn-block btn-lg btn-soft-primary mb-6 p-2 w-13 h-13">
-                          <Image src={item.icon} width={50} height={50} alt='icon' />
-                        </div>
-                        <h4>{item.title}</h4>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
               <div className='d-none d-md-block'>
                 <FigureImage width={100} height={10} src={Wave} alt="wave" className='w-100 h-12' />
-              </div>              
-              <div className="row mt-14 mb-6 mb-lg-10">
-                <div className="col-lg-8 col-xl-7 col-xxl-6">
-                  <h3 className="display-4 mb-6">
+              </div> 
+              <div className="row gx-lg-0 gy-10 align-items-center mt-10 mb-6">
+                <div className="col-10 col-xl-4 col-xxl-3">
+                <h3 className="display-4 mb-6">
                     Dedicated Offshore 
                     <span className="underline-3 style-3 primary"> Staffing </span>
                     Soutions
                   </h3>
-                  <div className='mb-5'>
-                    <a
-                      href="https://calendly.com/ambit-accounting/15min"
-                      title="Schedule a Meeting"
-                      className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
-                      >
-                      Hire Now
-                    </a>
+                  <div className='mt-4 mb-8'>
+                      <a
+                        href="https://calendly.com/ambit-accounting/15min"
+                        title="Schedule a Meeting"
+                        className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
+                        >
+                        Hire Now
+                      </a>
+                    </div>
+                </div>
+                <div className="col-lg-11 col-xl-7 col-xxl-8 offset-lg-1">
+                  <div className="row d-flex gap-5 row gx-md-5 gx-lg-8 gx-xl-4 gy-5 text-center justify-content-center text-center flex-wrap">
+                  {staffList.map((item) => (
+                      <div key={item.id} className={`h-18 w-18 border rounded border-2 ${item.className}`}>
+                        <div className={`h-100 w-100 d-flex flex-column text-center justify-content-center align-items-center py-auto px-2 gap-2`}>
+                          <Image src={item.icon} width={50} height={50} alt='icon' />
+                          <h4 className='fs-17'>{item.title}</h4>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              </div>
-              <div className="row gx-md-8 gy-8 text-center mb-8 mb-md-10">
-                {staffList.map((item) => (
-                  <div key={item.id} className="col-md-6 col-lg-3">
-                    <div className="card shadow-lg">
-                      <div className="card-body">
-                        <div className="icon btn btn-block btn-lg btn-soft-primary mb-6 p-2 w-13 h-13">
-                          <Image src={item.icon} width={50} height={50} alt='icon' />
-                        </div>
-                        <h4>{item.title}</h4>
-                      </div>
-                    </div>
-                  </div>
-                ))}
               </div>
             </Fragment>
           </div>
         </section>
         <section className="wrapper bg-light">
-          <div className="container py-14 py-md-14">
+          <div className="container pt-14 pb-10">
             <div className="row text-center">
               <div className="col-lg-12 mx-auto">
                 <h2 className="fs-18 text-uppercase text-primary mb-3">Our Working Process</h2>
@@ -298,10 +302,10 @@ const Index: NextPage = () => {
           </div>
         </section>
         <section className="wrapper bg-gray">
-          <div className="container pt-14 pb-8">
+          <div className="container pt-11 pt-xl-14 pb-1">
             <Fragment>
-              <div className="row gx-lg-8 gx-xl-12 gy-10 mt-3 mb-16 align-items-center px-10">
-                <div className="col-lg-7 my-0 py-0 mt-4">
+              <div className="row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7 mb-md-10 mb-lg-13 align-items-center">
+                <div className="col-lg-5 mt-xl-n10 text-start">
                   <h3 className="display-4 mb-5">Why Ambit?</h3>
                   <ListColumn list={list} classname="col-12 col-md-6 fs-18" />
                   <div className='mt-8 mb-12'>
@@ -314,32 +318,42 @@ const Index: NextPage = () => {
                     </a>
                   </div>
                 </div>
-                <div className="col-lg-5 my-0 py-0">
+                <div
+                  className="offset-md-1 position-relative col-lg-5 my-0 py-0"
+                  style={zoomInAnimate("0ms")}>
+                  <div className="shape bg-dot primary rellax w-17 h-19" style={{ top: "-1.7rem", left: "-1.5rem" }} />
+                  <div
+                    className="shape rounded bg-soft-primary rellax d-md-block"
+                    style={{ width: "85%", height: "90%", right: "-0.8rem", bottom: "-1.8rem" }}
+                  />
+
                   <FigureImage
-                    className="w-auto"
-                    src='/img/photos/accurate-books-done-quick.svg'
+                    className="w-auto rounded"
+                    src='/img/photos/carousel-3@2x.jpg'
                     alt="Why Ambit"
                     width={500}
                     height={500}
                   />
-                </div>      
+                </div>    
               </div>
             </Fragment>
           </div>
         </section>
         <section className="wrapper bg-light">
-          <div className="container py-14 py-md-14">
+          <div className="container py-12">
             <div className="col gx-lg-8 gx-xl-12 gy-10 gy-lg-0 text-center">
               <div className="mt-lg-2">
                 <h2 className="display-4 text-uppercase text-primary mb-3">Our Software Expertise</h2>
               </div>
-              <div className="row">
-                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5 gx-0 gx-md-10 gx-xl-15 gy-8">
-                  {softwareList.map((item) => (
-                    <div className="col" key={item}>
-                      <FigureImage width={270} height={193} src={item} className="px-3 px-md-0 px-xxl-2" alt="Software" />
-                    </div>
-                  ))}
+              <div className="row justify-content-center">
+                <div className="row gy-8">
+                  <Carousel grabCursor spaceBetween={0} navigation={false} breakpoints={carouselBreakpoint}>
+                    {softwareList.map((item) => (
+                      <div className="mx-4" key={item}>
+                        <FigureImage width={270} height={193} src={item} alt="Software" />
+                      </div>
+                    ))}
+                  </Carousel>
                 </div>
               </div>
             </div>
@@ -363,7 +377,7 @@ const Index: NextPage = () => {
           </div>
         </section>        
         <section className="wrapper bg-gray">
-          <div className="container py-14 py-md-14">
+          <div className="container py-12">
             <Fragment>
               <div className="row text-center">
                 <div className="col-lg-12 mx-auto my-5">
@@ -398,8 +412,8 @@ const Index: NextPage = () => {
                       <span><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.6651 5.8952L6.7151 1.9452C6.53294 1.7566 6.43215 1.504 6.43443 1.2418C6.4367 0.979602 6.54187 0.728789 6.72728 0.543381C6.91269 0.357973 7.1635 0.252805 7.4257 0.250526C7.6879 0.248248 7.9405 0.349042 8.1291 0.5312L13.7861 6.1882C13.8793 6.28085 13.9532 6.39102 14.0037 6.51235C14.0542 6.63368 14.0801 6.76379 14.0801 6.8952C14.0801 7.02661 14.0542 7.15672 14.0037 7.27806C13.9532 7.39939 13.8793 7.50955 13.7861 7.6022L8.1291 13.2592C8.03685 13.3547 7.92651 13.4309 7.8045 13.4833C7.6825 13.5357 7.55128 13.5633 7.4185 13.5645C7.28572 13.5656 7.15404 13.5403 7.03115 13.49C6.90825 13.4398 6.7966 13.3655 6.70271 13.2716C6.60881 13.1777 6.53456 13.0661 6.48428 12.9432C6.434 12.8203 6.4087 12.6886 6.40985 12.5558C6.411 12.423 6.43859 12.2918 6.491 12.1698C6.54341 12.0478 6.61959 11.9375 6.7151 11.8452L10.6651 7.8952H1.0791C0.813886 7.8952 0.559532 7.78984 0.371995 7.60231C0.184459 7.41477 0.0791016 7.16042 0.0791016 6.8952C0.0791016 6.62999 0.184459 6.37563 0.371995 6.18809C0.559532 6.00056 0.813886 5.8952 1.0791 5.8952H10.6651Z" fill="white"/></svg></span>
                     </a>
                   </div>
-                  <div className='row justify-content-end'>
-                    <Image width="900" height="500" src='/img/consult-ambit.png' alt="consult ambit" />
+                  <div className='row justify-content-end ms-3'>
+                    <Image width="600" height="310" src='/img/consult-ambit.png' alt="consult ambit" />
                   </div>
                 </div>
               </div>

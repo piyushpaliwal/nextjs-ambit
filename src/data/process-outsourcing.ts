@@ -1,40 +1,41 @@
 // -------- icons -------- //
 import Browser from 'icons/lineal/Browser'
-import Rocket from 'icons/lineal/Rocket'
 import CheckList from 'icons/lineal/CheckList'
 import Loading from 'icons/lineal/Loading'
 import TeleMarketer from 'icons/lineal/TeleMarketer'
+import User from 'icons/lineal/User'
+import Check from 'icons/lineal/Check'
 
 // used in the process block
 export const processOutsourcingList = [
   {
     id: 1,
-    Icon: TeleMarketer,
-    title: 'Consult with Us',
-    description: 'Meet with your dedicated account manager to discuss your needs.'
+    title: 'Signing of Agreement',
+    Icon: Check
   },
   {
     id: 2,
-    Icon: Browser,
-    title: 'Onboarding',
-    description: 'We’ll onboard you and set up the necessary processes.'
+    title: 'Onboarding Call',
+    Icon: TeleMarketer
   },
   {
     id: 3,
-    Icon: CheckList,
-    title: 'Task Allocations',
-    description: 'Tasks are assigned and managed according to your specifications.'
+    title: 'Remote set-up of Computers',
+    Icon: Browser
   },
   {
     id: 4,
-    title: 'Task Execution',
-    Icon: Loading,
-    description: 'Our team completes, reviews, and ensures accuracy in your financial services, including bookkeeping, payroll, tax preparation, and more.'
+    title: 'Assigning the work',
+    Icon: CheckList
   },
   {
     id: 5,
-    title: 'Timely Delivery',
-    Icon: Rocket,
-    description: 'Receive precise and timely delivery of your outsourced financial tasks, letting you focus on your core business.'
+    title: 'Manager Assigning Work to Team Members',
+    Icon: Loading
+  },
+  {
+    id: 6,
+    title: 'Review of work & Submitting it to you',
+    Icon: User
   }
 ]
