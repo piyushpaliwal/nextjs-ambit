@@ -24,7 +24,7 @@ import { TestimonialCard } from 'components/reuseable/testimonial-cards'
 import { testimonialList2 } from 'data/testimonial-list2'
 
 
-const Index: NextPage = () => {
+const RemoteAccountingTaxSolutions: NextPage = () => {
   const sticky = useSticky(350)
   const navbarRef = useRef<HTMLElement | null>(null)
   const logo = sticky ? 'logo-dark' : 'logo'
@@ -425,4 +425,4 @@ const Index: NextPage = () => {
   )
 }
 
-export default Index
+export default RemoteAccountingTaxSolutions
