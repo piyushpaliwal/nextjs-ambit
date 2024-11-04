@@ -24,7 +24,8 @@ const services = [
     ]
   },
   { id: 9, url: '/services/financial-reporting', title: 'Financial Reporting', children: [] },
-  { id: 10, url: '/services/dedicated-staffing', title: 'Dedicated Staffing', children: [] }
+  { id: 10, url: '/services/dedicated-staffing', title: 'Dedicated Staffing', children: [] },
+  { id: 11, url: '/services/remote-accounting-tax-solutions', title: 'Remote Staffing', children: [] }
 ]
 
 const company = [
