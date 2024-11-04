@@ -28,7 +28,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
   const sticky = useSticky(350)
   const navbarRef = useRef<HTMLElement | null>(null)
   const logo = sticky ? 'logo-dark' : 'logo'
-
+  
   const ProcessSection: FC<{
     title: string
     subtitle: string
@@ -347,7 +347,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
               </div>
               <div className="row justify-content-center">
                 <div className="row gy-8">
-                  <Carousel grabCursor spaceBetween={0} navigation={false} breakpoints={carouselBreakpoint}>
+                  <Carousel grabCursor spaceBetween={0} navigation={false} breakpoints={carouselBreakpoint} autoplay={{delay: Number(process.env.NEXT_PUBLIC_SOFTWARES_CAROUSEL_SWIPE_DURATION), disableOnInteraction: false}}>
                     {softwareList.map((item) => (
                       <div className="mx-4" key={item}>
                         <FigureImage width={270} height={193} src={item} alt="Software" />
