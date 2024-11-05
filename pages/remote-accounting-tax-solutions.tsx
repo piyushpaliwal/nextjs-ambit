@@ -13,8 +13,6 @@ import Carousel3 from '../public/img/photos/carousel3.jpg'
 import Wave from '../public/img/svg/wave.svg'
 import Carousel from 'components/reuseable/Carousel'
 import NextLink from 'components/reuseable/links/NextLink'
-import useSticky from 'hooks/useSticky'
-import SocialLinks from 'components/reuseable/SocialLinks'
 import { processOutsourcingList } from 'data/process-outsourcing2'
 import { processStaffingList } from 'data/process-staffing2'
 import { serviceList, staffList } from 'data/service2'
@@ -22,12 +20,10 @@ import ListColumn from "components/reuseable/ListColumn"
 import carouselBreakpoints from 'utils/carouselBreakpoints'
 import { TestimonialCard } from 'components/reuseable/testimonial-cards'
 import { testimonialList2 } from 'data/testimonial-list2'
+import { Navbar } from 'components/blocks/navbar'
 
 
 const RemoteAccountingTaxSolutions: NextPage = () => {
-  const sticky = useSticky(350)
-  const navbarRef = useRef<HTMLElement | null>(null)
-  const logo = sticky ? 'logo-dark' : 'logo'
 
   const ProcessSection: FC<{
     title: string
@@ -75,41 +71,22 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
         />
       </Head>
       <header className="wrapper bg-soft-primary">
-        <Fragment>
-          <nav ref={navbarRef} className={sticky ? 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed' : 'navbar navbar-expand-lg classic transparent position-absolute navbar-dark'}>
-          <div className="container flex-lg-row flex-nowrap align-items-center">
-            <Fragment>
-              <div className="navbar-brand w-100 mt-1">
-                <NextLink href="/" title={<Image src={`/img/${logo}.png`} alt="Ambit logo" width={130} height={50} />} />
-              </div>
-              <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-                <div className="offcanvas-header d-lg-none">
-                  <h3 className="text-white fs-30 mb-0">Ambit KPO</h3>
-                  <button type="button" aria-label="Close" data-bs-dismiss="offcanvas" className="btn-close btn-close-white" />
-                </div>
-                <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100 mt-6">
-                  <div className=" d-lg-none">
-                    <div>
-                      <SocialLinks />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='navbar-other ms-xl-4'>
-                <ul className="navbar-nav flex-row align-items-center ms-auto">
-                  <li className='nav-item'><SocialLinks className='nav social social-muted justify-content-end text-end flex-nowrap d-none d-lg-block' /></li>
-                  <li className="nav-item d-none d-md-block"><a href="https://calendly.com/ambit-accounting/15min" title="Schedule a Meeting" className="btn btn-sm btn-primary rounded-pill fs-sm px-2 py-1" > Schedule a Meeting</a></li>
-                  <li className="nav-item d-lg-none">
-                    <button data-bs-toggle="offcanvas" data-bs-target="#offcanvas-nav" className="hamburger offcanvas-nav-btn">
-                      <span />
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </Fragment>
-          </div>
-          </nav>
-        </Fragment>
+        <Navbar
+          stickyBox={false}
+          logoAlt="logo"
+          navOtherClass="navbar-other ms-xl-4"
+          navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
+          social
+          button={
+            <a
+              href="https://calendly.com/ambit-accounting/15min"
+              title="Schedule a Meeting"
+              className="btn btn-sm btn-primary rounded-pill fs-sm px-2 py-1"
+            >
+              Schedule a Meeting
+            </a>
+          }
+        />
       </header>
       <main className="content-wrapper">
         <section
@@ -347,7 +324,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
               </div>
               <div className="row justify-content-center">
                 <div className="row gy-8">
-                  <Carousel grabCursor spaceBetween={0} navigation={false} breakpoints={carouselBreakpoint}>
+                  <Carousel grabCursor spaceBetween={0} navigation={false} breakpoints={carouselBreakpoint} autoplay={{delay: Number(process.env.NEXT_PUBLIC_SOFTWARES_CAROUSEL_SWIPE_DURATION), disableOnInteraction: false}}>
                     {softwareList.map((item) => (
                       <div className="mx-4" key={item}>
                         <FigureImage width={270} height={193} src={item} alt="Software" />

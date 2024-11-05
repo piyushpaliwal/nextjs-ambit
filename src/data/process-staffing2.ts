@@ -32,7 +32,7 @@ export const processStaffingList = [
     Icon: List
   },
   {
-    id: 5,
+    id: 6,
     title: 'Work Submission',
     Icon: Puzzle
   }

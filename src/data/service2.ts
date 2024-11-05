@@ -58,13 +58,13 @@ export const staffList = [
   },
   {
     id: 4,
-    title: 'Tax Prepares',
+    title: 'Tax Preparers',
     icon: '/img/icons/svg/icon10.svg',
     className: 'bg-light'
   },
   {
     id: 5,
-    title: 'Tax Prepares & Reviewer',
+    title: 'Tax Preparers & Reviewer',
     icon: '/img/icons/svg/icon11.svg',
     className: 'bg-gray'
   },
