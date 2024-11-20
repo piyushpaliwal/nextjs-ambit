@@ -228,7 +228,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
                 <h3 className="display-4 mb-6">
                     Dedicated Offshore 
                     <span className="underline-3 style-3 primary"> Staffing </span>
-                    Soutions
+                    Solutions
                   </h3>
                   <div className='mt-4 mb-8'>
                       <a
