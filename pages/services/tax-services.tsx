@@ -43,7 +43,7 @@ const TaxServices: NextPage = () => {
       reverse: false,
     },
   ]
-  
+
   return (
     <Fragment>
       <header className="wrapper bg-soft-primary">
@@ -76,11 +76,11 @@ const TaxServices: NextPage = () => {
               help you simplify, save, and stay compliant year-round
             </p>
             <span style={slideInDownAnimate('200ms')}>
-              <NextLink
-                title="Get Started"
-                href="https://calendly.com/ambit-accounting/15min"
+              <button
                 className="btn btn-lg btn-primary me-2"
-              />
+                data-bs-toggle="modal"
+                data-bs-target="#contact-form-popup"
+              >Get Started</button>
             </span>
           </div>
         </section>
