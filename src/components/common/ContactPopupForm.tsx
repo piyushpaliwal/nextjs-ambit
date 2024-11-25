@@ -40,8 +40,6 @@ const ContactPopupForm: FC = () => {
       ...contactObj,
       [prop]: e.currentTarget.value
     })
-    console.log(contactObj);
-    
   }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
