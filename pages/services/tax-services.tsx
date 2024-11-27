@@ -49,9 +49,9 @@ const TaxServices: NextPage = () => {
       <header className="wrapper bg-soft-primary">
         <Navbar
           stickyBox={false}
-          logoAlt="logo-dark-1"
+          logoAlt="logo"
           navOtherClass="navbar-other ms-xl-4"
-          navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-light"
+          navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
           social
           button={
             <a
@@ -71,7 +71,7 @@ const TaxServices: NextPage = () => {
           className="wrapper py-16 bg-light">
           <div className='col-lg-10 col-xl-9 col-xxl-7 mx-auto text-center'>
             <h1 className="display-1 fs-64 mb-5">Get Started Today.</h1>
-            <p className="lead fs-24 mb-8 px-8 px-lg-0">
+            <p className="lead fs-22 mb-8 px-8 px-lg-0">
               Streamline your tax needs with expert services tailored to you. Contact us today to learn how we can
               help you simplify, save, and stay compliant year-round
             </p>

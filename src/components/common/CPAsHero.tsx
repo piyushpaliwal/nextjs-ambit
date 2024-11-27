@@ -9,12 +9,12 @@ type CPAsHeroProps = {
 const CPAsHero: FC<CPAsHeroProps> = ({ title, description }) => {
   return (
     <section
-      className="wrapper image-wrapper bg-image bg-cover bg-overlay bg-overlay-light-500 pt-10"
-      style={{ backgroundImage: "url(/img/photos/cpa-hero.png)" }}>
+      className="wrapper image-wrapper bg-image bg-cover bg-overlay text-white pt-10"
+      style={{ backgroundImage: "url(/img/photos/bg-cpa-hero.jpg)" }}>
       <div className="container py-16 py-md-18 text-center position-relative">
         <div className="row">
           <div className="col-lg-9 col-xxl-8 mx-auto">
-            <h1 className="display-1 fs-52 px-md-10 px-lg-0 px-xl-8 mb-5">
+            <h1 className="display-1 fs-52 px-md-10 px-lg-0 px-xl-8 mb-5 text-white">
               {title}
             </h1>
             <p className="lead fs-24 px-md-10 px-lg-0 mx-lg-n10 mx-xl-0 mb-8">{description}</p>
