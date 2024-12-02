@@ -68,6 +68,23 @@ const About6: FC = () => {
               </p>
             </div>
           </div>
+          <div className="row gx-md-8 gx-xl-12 gy-6 align-items-center pt-12">
+            <div className="col-md-8 col-lg-6 order-lg-2 mx-auto">
+              <div className="img-mask mask-1">
+                <Image height={564} width={825} src="/img/photos/greg.png" alt="Greg Johnson CPA" />
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <h3 className="display-6 mb-3 text-primary">Greg Johnson CPA</h3>
+              <p>
+                Greg Johnson, Co-Founder and CPA at Ambit Tax & Accounting LLP and founding partner of Dental Profits Institute, has worked with over 250 dental practices across the U.S., Canada, Europe, and Australia.
+              </p>
+              <p>
+                With expertise in financial analysis, tax strategy, and business growth, Greg's vision at Ambit is to provide comprehensive solutions from offshore staffing to tax planning that help business owners optimize financial operations and drive growth.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </Fragment>
