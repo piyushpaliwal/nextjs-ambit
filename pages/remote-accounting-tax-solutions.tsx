@@ -21,6 +21,7 @@ import carouselBreakpoints from 'utils/carouselBreakpoints'
 import { TestimonialCard } from 'components/reuseable/testimonial-cards'
 import { testimonialList2 } from 'data/testimonial-list2'
 import { Navbar } from 'components/blocks/navbar'
+import ContactPopup from 'components/common/ContactPopup'
 
 
 const RemoteAccountingTaxSolutions: NextPage = () => {
@@ -57,7 +58,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
     1024: { slidesPerView: 4 },
     1200: { slidesPerView: 5 }
   }
-  
+
 
   return (
     <Fragment>
@@ -98,11 +99,11 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
               <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start">
                 <div className="d-flex justify-content-center justify-content-lg-start mt-8">
                   <span style={slideInDownAnimate('1200ms')}>
-                    <NextLink
-                      title="Discover More"
-                      href="/services/accounting-bookkeeping"
+                    <button
                       className="btn btn-white rounded-4 me-2"
-                    />
+                      data-bs-toggle="modal"
+                      data-bs-target="#contact-form-popup"
+                    >Request a Quote</button>
                   </span>
                   <span style={slideInDownAnimate('1500ms')}>
                     <a
@@ -119,10 +120,10 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
                   Build Your Ideal Accounting Team with Our Outsource and Offshore Staffing Solutions
                 </h1>
                 <p className="lead fs- lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>
-                  Enhance your firm’s capacity and efficiency with skilled professionals trained in U.S. accounting standards. 
+                  Enhance your firm’s capacity and efficiency with skilled professionals trained in U.S. accounting standards.
                 </p>
                 <p className="lead fs-16 lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>
-                </p>                
+                </p>
               </div>
               <div className="col-lg-5 offset-lg-1">
                 <div className="swiper-container shadow-lg">
@@ -144,7 +145,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
                   <h1 className="display-2 mt-5 mb-5" style={slideInDownAnimate('600ms')}>
                     Focus on Growth While We Manage Your Accounting Staffing Solutions
                   </h1>
-                  <h2 className="fs-16 mb-3 w-xxl-75">Choose from over 
+                  <h2 className="fs-16 mb-3 w-xxl-75">Choose from over
                     <span className="text-primary"> 430+ </span>
                     experienced staff members, available on-demand through flexible outsourcing or dedicated offshore staffing solutions.
                   </h2>
@@ -153,8 +154,8 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
                       href="https://calendly.com/ambit-accounting/15min"
                       title="Schedule a Meeting"
                       className="btn btn-sm btn-primary rounded-pill fs-lg px-3 py-1 w-auto"
-                      >
-                        Inquire Now
+                    >
+                      Inquire Now
                     </a>
                   </div>
                 </div>
@@ -182,34 +183,34 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
             <Fragment>
               <div className="row text-center">
                 <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                  <h3 className="display-4">Hire From Our Comprehensive 
-                  <span className="text-primary"> Outsourcing </span>
-                  and Dedicated Offshore 
-                  <span className="text-primary"> Staffing </span>
-                  Solutions</h3>
+                  <h3 className="display-4">Hire From Our Comprehensive
+                    <span className="text-primary"> Outsourcing </span>
+                    and Dedicated Offshore
+                    <span className="text-primary"> Staffing </span>
+                    Solutions</h3>
                 </div>
               </div>
 
               <div className="row gx-lg-0 gy-10 align-items-center mt-10 mb-10">
                 <div className="col-10 col-xl-4">
-                <h3 className="display-4 mb-6">
-                    Outsource 
+                  <h3 className="display-4 mb-6">
+                    Outsource
                     <span className="underline-3 style-3 primary"> Accounting </span>
                     and Tax Services
                   </h3>
                   <div className='mt-4 mb-8'>
-                      <a
-                        href="https://calendly.com/ambit-accounting/15min"
-                        title="Schedule a Meeting"
-                        className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
-                        >
-                        Hire Now
-                      </a>
-                    </div>
+                    <a
+                      href="https://calendly.com/ambit-accounting/15min"
+                      title="Schedule a Meeting"
+                      className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
+                    >
+                      Hire Now
+                    </a>
+                  </div>
                 </div>
                 <div className="col-lg-11 col-xl-7 offset-lg-1">
                   <div className="row d-flex gap-5 gx-md-5 gx-lg-8 gx-xl-4 gy-5 text-center justify-content-center text-center flex-wrap">
-                  {serviceList.map((item) => (
+                    {serviceList.map((item) => (
                       <div key={item.id} className={`h-20 w-20 border rounded border-2 ${item.className}`}>
                         <div className={`h-100 w-100 d-flex flex-column text-center justify-content-center align-items-center py-auto px-1 gap-2`}>
                           <Image src={item.icon} width={50} height={50} alt='icon' />
@@ -222,27 +223,27 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
               </div>
               <div className='d-none d-md-block'>
                 <FigureImage width={100} height={10} src={Wave} alt="wave" className='w-100 h-12' />
-              </div> 
+              </div>
               <div className="row gx-lg-0 gy-10 align-items-center mt-10 mb-6">
                 <div className="col-10 col-xl-4 col-xxl-3">
-                <h3 className="display-4 mb-6">
-                    Dedicated Offshore 
+                  <h3 className="display-4 mb-6">
+                    Dedicated Offshore
                     <span className="underline-3 style-3 primary"> Staffing </span>
                     Solutions
                   </h3>
                   <div className='mt-4 mb-8'>
-                      <a
-                        href="https://calendly.com/ambit-accounting/15min"
-                        title="Schedule a Meeting"
-                        className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
-                        >
-                        Hire Now
-                      </a>
-                    </div>
+                    <a
+                      href="https://calendly.com/ambit-accounting/15min"
+                      title="Schedule a Meeting"
+                      className="btn btn-sm btn-primary rounded-4 fs-lg px-3 py-1 w-auto"
+                    >
+                      Hire Now
+                    </a>
+                  </div>
                 </div>
                 <div className="col-lg-11 col-xl-7 col-xxl-8 offset-lg-1">
                   <div className="row d-flex gap-5 row gx-md-5 gx-lg-8 gx-xl-4 gy-5 text-center justify-content-center text-center flex-wrap">
-                  {staffList.map((item) => (
+                    {staffList.map((item) => (
                       <div key={item.id} className={`h-18 w-18 border rounded border-2 ${item.className}`}>
                         <div className={`h-100 w-100 d-flex flex-column text-center justify-content-center align-items-center py-auto px-2 gap-2`}>
                           <Image src={item.icon} width={50} height={50} alt='icon' />
@@ -290,7 +291,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
                       href="https://calendly.com/ambit-accounting/15min"
                       title="Schedule a Meeting"
                       className="btn btn-sm btn-primary rounded-pill fs-lg px-3 py-1 w-auto"
-                      >
+                    >
                       Get Started
                     </a>
                   </div>
@@ -311,7 +312,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
                     width={500}
                     height={500}
                   />
-                </div>    
+                </div>
               </div>
             </Fragment>
           </div>
@@ -346,13 +347,13 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
               <div className="swiper-container dots-closer dots-light dots-light-75">
                 <Carousel grabCursor spaceBetween={0} navigation={false} breakpoints={carouselBreakpoints}>
                   {testimonialList2.map((item, i) => (
-                      <TestimonialCard {...item} key={i} />
+                    <TestimonialCard {...item} key={i} />
                   ))}
                 </Carousel>
               </div>
             </Fragment>
           </div>
-        </section>        
+        </section>
         <section className="wrapper bg-gray">
           <div className="container py-12">
             <Fragment>
@@ -385,7 +386,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
                         href="https://calendly.com/ambit-accounting/15min"
                         title="Schedule a Meeting"
                         className="btn btn-sm btn-primary rounded-pill fs-lg px-3 py-1 w-auto"
-                        >
+                      >
                         <span className='pe-2'>Request a Quote</span>
                         <span><svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.6651 5.8952L6.7151 1.9452C6.53294 1.7566 6.43215 1.504 6.43443 1.2418C6.4367 0.979602 6.54187 0.728789 6.72728 0.543381C6.91269 0.357973 7.1635 0.252805 7.4257 0.250526C7.6879 0.248248 7.9405 0.349042 8.1291 0.5312L13.7861 6.1882C13.8793 6.28085 13.9532 6.39102 14.0037 6.51235C14.0542 6.63368 14.0801 6.76379 14.0801 6.8952C14.0801 7.02661 14.0542 7.15672 14.0037 7.27806C13.9532 7.39939 13.8793 7.50955 13.7861 7.6022L8.1291 13.2592C8.03685 13.3547 7.92651 13.4309 7.8045 13.4833C7.6825 13.5357 7.55128 13.5633 7.4185 13.5645C7.28572 13.5656 7.15404 13.5403 7.03115 13.49C6.90825 13.4398 6.7966 13.3655 6.70271 13.2716C6.60881 13.1777 6.53456 13.0661 6.48428 12.9432C6.434 12.8203 6.4087 12.6886 6.40985 12.5558C6.411 12.423 6.43859 12.2918 6.491 12.1698C6.54341 12.0478 6.61959 11.9375 6.7151 11.8452L10.6651 7.8952H1.0791C0.813886 7.8952 0.559532 7.78984 0.371995 7.60231C0.184459 7.41477 0.0791016 7.16042 0.0791016 6.8952C0.0791016 6.62999 0.184459 6.37563 0.371995 6.18809C0.559532 6.00056 0.813886 5.8952 1.0791 5.8952H10.6651Z" fill="white"/></svg></span>
                       </a>
@@ -408,6 +409,7 @@ const RemoteAccountingTaxSolutions: NextPage = () => {
             </Fragment>
           </div>
         </section>
+        <ContactPopup />
       </main>
     </Fragment>
   )

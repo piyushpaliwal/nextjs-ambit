@@ -24,7 +24,7 @@ const Hero: FC = () => {
         <div className="row gx-0 gy-12 align-items-center">
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-6 content text-center text-lg-start">
             <h1 className="display-2 mb-5 text-white" style={slideInDownAnimate('600ms')}>
-            Welcome to <br />
+              Welcome to <br />
               <span style={{ color: '#d8b572' }}>Ambit!</span>
               <br /> <span className='fs-25'>Your One-Stop Solution for All Accounting Needs!</span>
             </h1>
@@ -47,14 +47,13 @@ const Hero: FC = () => {
               </span>
 
               <span style={slideInDownAnimate('1500ms')}>
-                <a
-                  href="https://calendly.com/ambit-accounting/15min"
+                <button
                   className="btn btn-lg btn-outline-white rounded-pill"
-                  target="_blank"
-                  rel="noreferrer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contact-form-popup"
                 >
                   Let's Talk
-                </a>
+                </button>
               </span>
             </div>
           </div>

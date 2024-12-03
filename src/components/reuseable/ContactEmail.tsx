@@ -9,10 +9,10 @@ import {
   Text,
   Tailwind,
 } from "@react-email/components";
-import type { ContactFormProps } from 'components/common/ContactForm';
+import ContactFormProps from "types/contact-form";
 
 export const ContactEmail = (formData: ContactFormProps) => {
-  const { firstname, lastname, email, message, serviceType, dedicatedStaff } = formData;
+  const { firstname, lastname, email, message, serviceType, dedicatedStaff, phone, location } = formData;
   return (
     <Html>
       <Head />
@@ -39,15 +39,29 @@ export const ContactEmail = (formData: ContactFormProps) => {
               <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
                 <strong>Email:</strong> {email}
               </Text>
+              {phone &&
+              <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
+                <strong>Phone:</strong> {phone}
+              </Text>
+              }
+              {location &&
+              <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
+                <strong>Location:</strong> {location}
+              </Text>
+              }
               <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
                 <strong>Message:</strong> {message}
               </Text>
-              <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
-                <strong>Service Type:</strong> {serviceType}
-              </Text>
-              <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
-                <strong>Dedicated Offshore Staff:</strong> {dedicatedStaff}
-              </Text>
+              {serviceType &&
+                <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
+                  <strong>Service Type:</strong> {serviceType}
+                </Text>
+              }
+              {dedicatedStaff &&
+                <Text className="text-gray-800 text-[16px] leading-[28px] mb-[10px]">
+                  <strong>Dedicated Offshore Staff:</strong> {dedicatedStaff}
+                </Text>
+              }
             </Section>
             <Text className="text-gray-700 text-[16px] leading-[28px] mb-[24px]">
               Thank you

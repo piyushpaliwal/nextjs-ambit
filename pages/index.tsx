@@ -11,6 +11,7 @@ import { Process } from 'components/blocks/process'
 import Link from 'next/link'
 import Services1 from 'components/blocks/services/Services1'
 import Head from 'next/head'
+import ContactPopup from 'components/common/ContactPopup'
 // import { Link } from 'react-scroll'
 
 const Index: NextPage = () => {
@@ -49,6 +50,7 @@ const Index: NextPage = () => {
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
         <Hero />
+        <ContactPopup />
 
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">

@@ -44,9 +44,17 @@ const Navbar: FC<NavbarProps> = (props) => {
 
   // render inner nav item links
   const renderLinks = (links: LinkType[]) => {
-    return links.map((item) => (
-      <ListItemLink href={item.url} title={item.title} linkClassName="dropdown-item" key={item.id} />
-    ))
+    return links.map((item) => {
+      if (item.children && item.children.length > 0) {
+        return (
+          <li className="dropdown dropdown-submenu dropend" key={item.id}>
+            <DropdownToggleLink title={item.title} />
+            <ul className="dropdown-menu">{renderLinks(item.children)}</ul>
+          </li>
+        )
+      }
+      return <ListItemLink href={item.url} title={item.title} linkClassName="dropdown-item" key={item.id} />
+    })
   }
 
   // all main header contents

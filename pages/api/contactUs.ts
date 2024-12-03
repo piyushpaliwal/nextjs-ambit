@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import type { ContactFormProps } from 'components/common/ContactForm'
+import ContactFormProps from 'types/contact-form'
 import { Resend } from "resend";
 import ContactEmail from 'components/reuseable/ContactEmail';
 
