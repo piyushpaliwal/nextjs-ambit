@@ -8,7 +8,7 @@ const business = [
   "Preparation of Forms 1120, 1120S, and 1065.",
   "Payroll and sales tax compliance.",
   "Strategic planning for capital gains and business-specific deductions.",
-  "Support for 1031 exchanges and other complex transactions."
+  "Support for complex transactions."
 ]
 const taxPlanning = [
   "Strategic advice for tax-efficient investments.",
