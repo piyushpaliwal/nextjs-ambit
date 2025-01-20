@@ -44,7 +44,7 @@ const Contact: FC = () => {
                 <address>🏢  3133 Little Bear Ln, Buford, GA 30519</address>
                 <div className='d-flex flex-column mt-n3'>
                   <NextLink title="📞 Call Us: (+1) 706 403 8982" href="tel:+17064038982" />
-                  <NextLink title="📞 Alternate: (+1) 678 804 7749" href="tel:+16788047749" />
+                  <NextLink title="📞 Alternate: (+1) 706 894 9160" href="tel:+17068949160" />
                 </div>
               </div>
             </div>
