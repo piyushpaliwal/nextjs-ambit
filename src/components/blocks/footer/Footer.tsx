@@ -6,16 +6,17 @@ import NextLink from 'components/reuseable/links/NextLink'
 import footerNav from 'data/footer'
 
 const Footer: FC = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="text-inverse" style={{ backgroundColor: '#131a40' }}>
       <div className="container pb-13 pb-md-15">
         <div className="row gy-6 gy-lg-0 pt-12">
           <div className="col-md-3 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo.png" alt="Ambit KPO" height="50" />
+              <img className="mb-4" src="/img/logo.png" alt="Ambit" height="50" />
 
               <p className="mb-4">
-                © 2022 Ambit KPO. <br className="d-none d-lg-block" />
+                © {currentYear} Ambit. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
