@@ -6,7 +6,7 @@ import { NavbarProps } from '../navbar/Navbar'
 export type HeaderProps = {
   title: string
   description: string
-  keywords: string
+  keywords?: string
 } & NavbarProps
 
 const Header: FC<HeaderProps> = ({ title, description, keywords, ...props }) => {
@@ -17,7 +17,7 @@ const Header: FC<HeaderProps> = ({ title, description, keywords, ...props }) => 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="keywords" content={keywords} />
+        {keywords && <meta name="keywords" content={keywords} />}
       </Head>
       <header className="wrapper bg-soft-primary">
         <Navbar
