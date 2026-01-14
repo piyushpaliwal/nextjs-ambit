@@ -17,6 +17,7 @@ import 'swiper/css/thumbs'
 // custom scrollcue css
 import 'plugins/scrollcue/scrollCue.css'
 import Script from 'next/script'
+import { appWithTranslation } from 'next-i18next'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter()
@@ -122,4 +123,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)

@@ -5,12 +5,12 @@ import IconProps from 'types/icon'
 export type AmbitService = {
   id: number
   title: string
-  description: string
+  description?: string
   Icon: FC<IconProps>
   why?: string
 }
 
-type ServiceCallOutProps = {
+export type ServiceCallOutProps = {
   title?: string
   description?: string
   ambitServiceSet?: AmbitService[]
@@ -32,7 +32,7 @@ const ServiceCallOut: FC<ServiceCallOutProps> = ({ ambitServiceSet, title, descr
               <div key={id} className="col-md-4 mb-4">
                 <Icon className="icon-svg-sm text-primary mb-4 w-100" />
                 <h4 className="mb-1">{title}</h4>
-                <p className="mb-0">{description}</p>
+                {description && <p className="mb-0">{description}</p>}
                 {why && (
                   <p>
                     <span className="fst-italic">Why it matters:</span> {why}

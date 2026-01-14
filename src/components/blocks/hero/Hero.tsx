@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, Fragment } from 'react'
 import { slideInDownAnimate } from 'utils/animation'
 import Image from 'next/image'
 import Carousel1 from '../../../../public/img/photos/carousel1.jpg' //  /img/photos/carousel1.jpg';
@@ -10,10 +10,18 @@ import Carousel from 'components/reuseable/Carousel'
 import NextLink from 'components/reuseable/links/NextLink'
 // -------- custom hook -------- //
 import useLightBox from 'hooks/useLightBox'
+import { splitPara } from 'utils/helpers'
 
-const Hero: FC = () => {
+export type HeroProps = {
+  subtitle?: string
+  description?: string
+}
+
+const Hero: FC<HeroProps> = (props) => {
   // use video popup
   useLightBox()
+
+  const paragraphs = splitPara(props.description || '')
 
   return (
     <section
@@ -26,16 +34,17 @@ const Hero: FC = () => {
             <h1 className="display-2 mb-5 text-white" style={slideInDownAnimate('600ms')}>
               Welcome to <br />
               <span style={{ color: '#d8b572' }}>Ambit!</span>
-              <br /> <span className='fs-25'>Your One-Stop Solution for All Accounting Needs!</span>
+              <br /> <span className="fs-25">{props.subtitle}</span>
             </h1>
-
             <p className="lead fs-sm lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>
-              Join 280+ clients across the country who trust in us for top-notch, budget-friendly outsource accounting, bookkeeping, tax planning, and tax preparation services.
-              <br />
-              Choose from full-time, part-time, or on-demand staff, and test candidates before committing—at no cost to you.
+              {paragraphs.map((text, index) => (
+                <Fragment key={index}>
+                  {text}
+                  {index < paragraphs.length - 1 && <br />}
+                </Fragment>
+              ))}
             </p>
-            <p className="lead fs-16 lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>
-            </p>
+            <p className="lead fs-16 lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}></p>
 
             <div className="d-flex justify-content-center justify-content-lg-start">
               <span style={slideInDownAnimate('1200ms')}>

@@ -1,7 +1,7 @@
 import { FC, HTMLAttributes } from 'react'
 
 // ==============================================================
-type ProcessList1Props = {
+export type ProcessList1Props = {
   no: string
   title: string
   subtitle: string

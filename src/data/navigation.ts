@@ -1,6 +1,11 @@
-const home = [{ id: 1, url: '/', title: 'Home' }]
+import { NavItem, NavRecord } from 'components/blocks/navbar/Navbar'
 
-const services = [
+const home: NavItem = { id: 1, url: '/', title: 'Home' }
+const price: NavItem = { id: 1, url: '/price', title: 'Price' }
+const blog: NavItem = { id: 1, url: '/blogs', title: 'Blog' }
+const contact: NavItem = { id: 1, url: '/contact', title: 'Contact' }
+
+const services: NavItem[] = [
   {
     id: 1,
     url: '#',
@@ -48,10 +53,10 @@ const services = [
   }
 ]
 
-const company = [
+const company: NavItem[] = [
   { id: 1, url: '/about-us', title: 'About Us', children: [] },
   { id: 2, url: '/faq', title: 'FAQ', children: [] },
   { id: 3, url: '/privacy-policy', title: 'Privacy Policy', children: [] }
 ]
 
-export { home, services, company }
+export const navigationItemList: NavRecord = { home, services, price, blog, company, contact }

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FC } from 'react'
 
-type CtaProps = {
+export type CtaProps = {
   title?: string
   description?: string
 }
