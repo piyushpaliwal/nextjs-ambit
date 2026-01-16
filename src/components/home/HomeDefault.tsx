@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import { Fragment } from 'react'
 // -------- custom component -------- //
 import { Hero } from 'components/blocks/hero'
@@ -9,11 +9,11 @@ import { Services } from 'components/blocks/services'
 import { Process } from 'components/blocks/process'
 import Services1 from 'components/blocks/services/Services1'
 import ContactPopup from 'components/common/ContactPopup'
-import { HeroProps } from 'components/blocks/hero/Hero'
-import { ProcessProps } from 'components/blocks/process/Process'
+import type { HeroProps } from 'components/blocks/hero/Hero'
+import type { ProcessProps } from 'components/blocks/process/Process'
 import { processOutsourcingList } from 'data/process-outsourcing'
 import { processStaffingList } from 'data/process-staffing'
-import Header, { HeaderProps } from 'components/blocks/header/Header'
+import Header, { type HeaderProps } from 'components/blocks/header/Header'
 
 const heroProps: HeroProps = {
   subtitle: 'Your One-Stop Solution for All Accounting Needs!',
@@ -26,11 +26,13 @@ const processProps: ProcessProps = {
   subtitle: 'Simple, and Smooth 4 pointer delivery process',
   processSectionList: [
     {
+      key: 1,
       title: 'Outsourcing Services',
       subtitle: 'Streamline Your Operations: Outsource with Ease',
       processList: processOutsourcingList
     },
     {
+      key: 2,
       title: 'Dedicated Offshore Staffing',
       subtitle: 'Find Your Perfect Match: Offshore Staffing',
       processList: processStaffingList

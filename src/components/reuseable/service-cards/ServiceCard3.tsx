@@ -1,11 +1,11 @@
-import { FC, ReactElement } from 'react'
+import type { FC, ReactElement } from 'react'
 
 // ==================================================================================
 type ServiceCardProps = {
   title: string
-  cardColor: string
+  cardColor?: string
   Icon: ReactElement
-  columnClass: string
+  columnClass?: string
   description: string
 }
 // ==================================================================================

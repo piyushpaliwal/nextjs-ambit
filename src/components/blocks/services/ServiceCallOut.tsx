@@ -1,6 +1,5 @@
-import { ServiceCard3 } from 'components/reuseable/service-cards'
-import { FC } from 'react'
-import IconProps from 'types/icon'
+import type { FC } from 'react'
+import type IconProps from 'types/icon'
 
 export type AmbitService = {
   id: number
@@ -14,11 +13,17 @@ export type ServiceCallOutProps = {
   title?: string
   description?: string
   ambitServiceSet?: AmbitService[]
+  bgColor?: string
 }
 
-const ServiceCallOut: FC<ServiceCallOutProps> = ({ ambitServiceSet, title, description }: ServiceCallOutProps) => {
+const ServiceCallOut: FC<ServiceCallOutProps> = ({
+  ambitServiceSet,
+  title,
+  description,
+  bgColor = 'bg-light'
+}: ServiceCallOutProps) => {
   return (
-    <section className="wrapper bg-light">
+    <section className={`wrapper ${bgColor}`}>
       <div className="container py-14 py-md-14">
         <div className="row text-center">
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mb-10">

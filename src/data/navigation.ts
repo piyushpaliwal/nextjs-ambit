@@ -1,4 +1,4 @@
-import { NavItem, NavRecord } from 'components/blocks/navbar/Navbar'
+import type { NavItem, NavRecord } from 'components/blocks/navbar/Navbar'
 
 const home: NavItem = { id: 1, url: '/', title: 'Home' }
 const price: NavItem = { id: 1, url: '/price', title: 'Price' }
