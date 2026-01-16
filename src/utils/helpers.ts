@@ -1,5 +1,6 @@
-import { NavItem } from 'components/blocks/navbar/Navbar'
+import type { NavItem } from 'components/blocks/navbar/Navbar'
 import { navigationItemList } from 'data/navigation'
+import type { LocaleEnum } from 'types/locale'
 
 export const splitPara = (text: string): string[] => {
   if (!text) return []
@@ -10,7 +11,7 @@ export const splitPara = (text: string): string[] => {
     .filter((p) => p.length > 0)
 }
 
-const deepLocaleFilter = (item: NavItem, locale: string): NavItem | null => {
+const deepLocaleFilter = (item: NavItem, locale: LocaleEnum): NavItem | null => {
   if (!item || (item.allowedLocales && !item.allowedLocales.includes(locale))) {
     return null
   }
@@ -28,7 +29,7 @@ const deepLocaleFilter = (item: NavItem, locale: string): NavItem | null => {
 
 export const filterNavByLocale = (
   navSet: Record<string, NavItem | NavItem[]>,
-  locale: string = 'en'
+  locale: LocaleEnum = LocaleEnum.Global
 ): Record<string, NavItem | NavItem[]> => {
   if (!navSet) return {}
   const result: Record<string, NavItem | NavItem[]> = {}
@@ -68,11 +69,11 @@ const findNavItemByUrl = (item: NavItem | NavItem[], url: string): NavItem | nul
   return null
 }
 
-export const isPageAllowedInLocale = (url: string, locale: string): boolean => {
+export const isPageAllowedInLocale = (url: string, locale: LocaleEnum): boolean => {
   const flatNavItemList = Object.values(navigationItemList).flat()
   const navItem = findNavItemByUrl(flatNavItemList, url)
 
-  if (navItem && navItem.allowedLocales && navItem.allowedLocales.length > 0) {
+  if (navItem?.allowedLocales && navItem.allowedLocales?.length > 0) {
     return navItem.allowedLocales.includes(locale)
   }
 

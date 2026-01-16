@@ -1,5 +1,5 @@
-import LinkType from 'types/link'
-import { FC, Fragment, ReactElement, useRef } from 'react'
+import type LinkType from 'types/link'
+import { type FC, Fragment, type ReactElement, useRef } from 'react'
 // -------- custom hook -------- //
 import useSticky from 'hooks/useSticky'
 // -------- custom component -------- //
@@ -10,12 +10,12 @@ import ListItemLink from 'components/reuseable/links/ListItemLink'
 import DropdownToggleLink from 'components/reuseable/links/DropdownToggleLink'
 // -------- partial header component -------- //
 import Search from './partials/Search'
-import Social from './partials/Social'
 import Language from './partials/Language'
 // -------- data -------- //
 import { navigationItemList } from 'data/navigation'
 import { filterNavByLocale } from 'utils/helpers'
 import { useRouter } from 'next/router'
+import type { LocaleEnum } from 'types/locale'
 
 // ===================================================================
 export type NavbarProps = {
@@ -36,7 +36,7 @@ export type NavItem = {
   id: number
   title: string
   url: string
-  allowedLocales?: string[]
+  allowedLocales?: LocaleEnum[]
   children?: NavItem[]
 }
 
@@ -50,10 +50,10 @@ const Navbar: FC<NavbarProps> = (props) => {
 
   const sticky = useSticky(350)
   const navbarRef = useRef<HTMLElement | null>(null)
-  const navList = filterNavByLocale(navigationItemList, locale)
+  const navList = filterNavByLocale(navigationItemList, locale as LocaleEnum)
 
   // dynamically render the logo
-  const logo = sticky ? 'logo-dark' : logoAlt ?? 'logo-dark'
+  const logo = sticky ? 'logo-dark' : (logoAlt ?? 'logo-dark')
   // dynamically added navbar classname
   const fixedClassName = 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed'
 
@@ -128,6 +128,7 @@ const Navbar: FC<NavbarProps> = (props) => {
                   />
                 )
               }
+              return null
             })}
           </ul>
           {/* ============= show contact info in the small device sidebar ============= */}
