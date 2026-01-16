@@ -1,6 +1,6 @@
 import type { NavItem } from 'components/blocks/navbar/Navbar'
 import { navigationItemList } from 'data/navigation'
-import type { LocaleEnum } from 'types/locale'
+import { LocaleEnum } from 'types/locale'
 
 export const splitPara = (text: string): string[] => {
   if (!text) return []
