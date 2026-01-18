@@ -1,4 +1,4 @@
-import { FC, Fragment } from 'react'
+import { type FC, Fragment } from 'react'
 import { slideInDownAnimate } from 'utils/animation'
 import Image from 'next/image'
 import Carousel1 from '../../../../public/img/photos/carousel1.jpg' //  /img/photos/carousel1.jpg';

@@ -1,3 +1,3 @@
 import Hero from './Hero'
-import HeroInnerPages from './HeroInnerPages'
-export { Hero, HeroInnerPages }
+import HeroInnerPages, { type HeroInnerPagesProps } from './HeroInnerPages'
+export { Hero, HeroInnerPages, type HeroInnerPagesProps }

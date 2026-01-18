@@ -1,13 +1,11 @@
 import ListColumn from 'components/reuseable/ListColumn'
-export interface About8Props {
+import type { WithImg } from 'types/common'
+export type About8Props = {
   title: string
   subtitle?: string
   description?: string
   aboutList?: string[][]
-  imgSrc?: string
-  imgAlt?: string
-  imgSrcSet?: string[]
-}
+} & WithImg
 
 export default function About8(props: About8Props) {
   return (

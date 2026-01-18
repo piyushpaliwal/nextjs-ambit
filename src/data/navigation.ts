@@ -69,24 +69,14 @@ const services: NavItem[] = [
     title: 'Execution',
     allowedLocales: [LocaleEnum.US],
     children: [
-      { id: 41, url: '/services/register-business', title: 'Register a Business' },
+      { id: 41, url: '/services/formation-and-setup', title: 'Company Formation & Business Setup' },
       { id: 42, url: '/services/accounting-bookkeeping', title: 'Accounting & Bookkeeping' },
       { id: 43, url: '/services/tax-advisory', title: 'Tax Advisory & Compliance' },
-      {
-        id: 44,
-        url: '/services/specialized-tax-services',
-        title: 'Specialized Tax Services',
-        children: [
-          { id: 441, url: '/services/r-and-d-tax-credits', title: 'R&D Tax Credits' },
-          { id: 442, url: '/services/state-incentives', title: 'State Incentives' },
-          { id: 443, url: '/services/multi-state-nexus', title: 'Multi-State Nexus' },
-          { id: 444, url: '/services/audit-support', title: 'Audit Support' }
-        ]
-      },
-      { id: 45, url: '/services/payroll-employment-tax', title: 'Payroll & Employment Tax' },
-      { id: 46, url: '/services/monthly-retainer-services', title: 'Monthly Retainer Services' },
-      { id: 47, url: '/services/remote-staffing-outsourcing', title: 'Remote Staffing & Outsourcing' },
-      { id: 48, url: '/services/systems-integration-technology', title: 'Systems Integration & Technology' },
+      { id: 44, url: '/services/specialized-tax', title: 'Specialized Tax Services' },
+      { id: 45, url: '/services/payroll', title: 'Payroll & Employment Tax' },
+      { id: 46, url: '/services/monthly-retainer', title: 'Monthly Retainer Services' },
+      { id: 47, url: '/services/remote-staffing', title: 'Remote Staffing & Outsourcing' },
+      { id: 48, url: '/services/systems-integration-tech-support', title: 'Systems Integration & Technology Support' },
       { id: 49, url: '/services/international-cross-border-advisory', title: 'International / Cross-Border Advisory' }
     ]
   }

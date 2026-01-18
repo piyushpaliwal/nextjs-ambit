@@ -245,3 +245,37 @@ export const hospitalityAccountingFaqSet: Faq2Item[] = [
     body: 'Share your business details, existing accounting setup, and requirements. We’ll conduct a quick assessment and onboard you within a few days.'
   }
 ]
+
+// Business Structure Advisory
+export const businessStructureAdvisoryFaqSet: Faq2Item[] = [
+  {
+    no: 'One',
+    expand: false,
+    heading: 'What business structures does Ambit advise on?',
+    body: 'We provide advisory for Sole Proprietorship, LLC, S Corporation, and C Corporation structures.'
+  },
+  {
+    no: 'Two',
+    expand: false,
+    heading: 'Does Ambit help with compliance for multi-state operations?',
+    body: 'Yes, we ensure your business structure aligns with federal and state regulations, including multi-state and international operations.'
+  },
+  {
+    no: 'Three',
+    expand: false,
+    heading: 'Can Ambit review my existing business structure?',
+    body: 'Absolutely. We conduct periodic structure reviews to ensure compliance, tax efficiency, and scalability.'
+  },
+  {
+    no: 'Four',
+    expand: false,
+    heading: 'Do you provide guidance for startups and international companies?',
+    body: 'Yes. We advise founders, startups, owner-managed businesses, and foreign-owned entities operating in the US'
+  },
+  {
+    no: 'Five',
+    expand: false,
+    heading: 'How do I request a business structure assessment?',
+    body: 'You can contact us directly via our consultation request form. Our team will provide a structured, compliance-focused assessment.'
+  }
+]
