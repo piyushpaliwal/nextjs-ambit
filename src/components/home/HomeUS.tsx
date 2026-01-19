@@ -1,11 +1,17 @@
 import type { NextPage } from 'next'
-import { Fragment } from 'react'
+import type { FC } from 'react'
 // -------- custom component -------- //
 import { Hero } from 'components/blocks/hero'
 import { Footer } from 'components/blocks/footer'
 import { Process } from 'components/blocks/process'
 import ContactPopup from 'components/common/ContactPopup'
 import Header from 'components/blocks/header/Header'
+import { About8 } from 'components/blocks/about'
+import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
+import { FAQ2 } from 'components/blocks/faq'
+import Cta from 'components/common/cta'
+import Services11 from 'components/blocks/services/Services11'
+// ------ data ------
 import {
   coreServiceProps,
   ctaProps,
@@ -16,20 +22,22 @@ import {
   supportProps,
   usHomeFaqSet,
   whyStayWithUsProps,
-  whyUsProps
+  whyUsProps,
+  governanceSet
 } from 'data/home-US'
-import { About8 } from 'components/blocks/about'
-import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
-import { FAQ2 } from 'components/blocks/faq'
-import Cta from 'components/common/cta'
-import Analytics from 'icons/lineal/Analytics'
-import Target from 'icons/solid-mono/Target'
-import Savings from 'icons/lineal/Savings'
-import Services11 from 'components/blocks/services/Services11'
+
+import type IconProps from 'types/icon'
+
+export type GovernanceProperty = {
+  id: number
+  Icon?: FC<IconProps>
+  title?: string
+  offeringSet?: string[]
+}
 
 const HomeUS: NextPage = () => {
   return (
-    <Fragment>
+    <>
       <Header {...headerProps} />
       {/* ========== main content ========== */}
       <main className="content-wrapper">
@@ -70,54 +78,29 @@ const HomeUS: NextPage = () => {
                 <h2 className="display-4">Governance, Data Security & Compliance</h2>
               </div>
             </div>
-            <div className="row gx-lg-8 gx-xl-12 gy-8 mt-9">
-              <div className="col-md-6 col-lg-4">
-                <div className="d-flex flex-row">
-                  <div>
-                    <Target className="icon-svg-sm text-primary me-4" />
+            {governanceSet && (
+              <div className="row gx-lg-8 gx-xl-12 gy-8 mt-9">
+                {governanceSet.map(({ id, title, Icon, offeringSet }) => (
+                  <div key={id} className="col-md-6 col-lg-4">
+                    <div className="d-flex flex-row">
+                      {Icon && (
+                        <div>
+                          <Icon className="icon-svg-sm text-primary me-4" />
+                        </div>
+                      )}
+                      <div>
+                        {title && <h4 className="mb-1">{title}</h4>}
+                        <ul className="mb-0">
+                          {offeringSet?.map((offering, index) => (
+                            <li key={index}>{offering}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="mb-1">Data Protection</h4>
-                    <ul className="mb-0">
-                      <li>GDPR-compliant and US privacy-aligned data handling</li>
-                      <li>Role-based access and audit logs</li>
-                      <li>Secure client portals</li>
-                    </ul>
-                  </div>
-                </div>
+                ))}
               </div>
-              <div className="col-md-6 col-lg-4">
-                <div className="d-flex flex-row">
-                  <div>
-                    <Analytics className="icon-svg-sm text-primary me-4" />
-                  </div>
-                  <div>
-                    <h4 className="mb-1">Information Security</h4>
-                    <ul className="mb-0">
-                      <li>ISO-aligned security principles</li>
-                      <li>Encrypted data transfer and storage</li>
-                      <li>Multi-factor authentication and monitoring</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-4">
-                <div className="d-flex flex-row">
-                  <div>
-                    <Savings className="icon-svg-sm text-primary me-4" />
-                  </div>
-                  <div>
-                    <h4 className="mb-1">Governance and Internal Controls</h4>
-                    <ul className="mb-0">
-                      <li>Segregation of duties</li>
-                      <li>Partner review and sign-off</li>
-                      <li>Statutory compliance checklists</li>
-                      <li>Audit-ready documentation</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            )}
           </div>
         </section>
         {/* Why long-term Client Stay with ambit */}
@@ -130,7 +113,7 @@ const HomeUS: NextPage = () => {
 
       {/* ========== footer section ========== */}
       <Footer />
-    </Fragment>
+    </>
   )
 }
 

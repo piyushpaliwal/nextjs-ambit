@@ -8,19 +8,148 @@ import type { Faq2Item } from 'components/blocks/faq/FAQ2'
 import type { CtaProps } from 'components/common/cta'
 import TeleMarketer from 'icons/lineal/TeleMarketer'
 import type { ProcessListItem } from 'components/reuseable/process/ProcessSection'
-import Megaphone from 'icons/lineal/Megaphone'
-import Target from 'icons/solid-mono/Target'
 import SettingsThree from 'icons/lineal/SettingsThree'
-import BarChart from 'icons/lineal/BarChart'
 import type { Service11Props, Service11Services } from 'components/blocks/services/Services11'
-import Server from 'icons/solid-duo/Server'
+import type { GovernanceProperty } from 'components/home/HomeUS'
+import Balance from 'icons/lineal/Balance'
+import Invoice from 'icons/lineal/Invoice'
+import BriefcaseTwo from 'icons/lineal/BriefcaseTwo'
+import Clipboard from 'icons/lineal/Clipboard'
+import Handshake from 'icons/lineal/Handshake'
+import Workflow from 'icons/lineal/Workflow'
+import Calculator from 'icons/lineal/Calculator'
+import Calendar from 'icons/lineal/Calendar'
+import Earth from 'icons/lineal/Earth'
+import Coin from 'icons/lineal/Coin'
+import Rocket from 'icons/lineal/Rocket'
+import Browser from 'icons/lineal/Browser'
+import PriceTag from 'icons/lineal/PriceTag'
+import Show from 'icons/lineal/Show'
+import LightBulb from 'icons/lineal/LightBulb'
+import ShoppingCart from 'icons/lineal/ShoppingCart'
+import CoffeeCup from 'icons/lineal/CoffeeCup'
+import Adjust from 'icons/lineal/Adjust'
+import House from 'icons/lineal/House'
+import Laptop from 'icons/lineal/Laptop'
+import Heart from 'icons/lineal/Heart'
+import Truck from 'icons/lineal/Truck'
+import Lock from 'icons/lineal/Lock'
+import CheckList from 'icons/lineal/CheckList'
+import Shield from 'icons/lineal/Shield'
+import Profits from 'icons/lineal/Profits'
+import Medal from 'icons/lineal/Medal'
+import Puzzle from 'icons/lineal/Puzzle'
 
-export const heroProps: HeroProps = {
+const headerProps: HeaderProps = {
+  title: 'US Tax & Accounting Services for Businesses | Ambit Tax & Accounting',
+  description:
+    'Ambit Tax & Accounting Services LLP provides US tax, accounting, payroll, and advisory services for startups, businesses, and international companies. Partner-led, compliant, and scalable solutions.',
+  language: true
+}
+
+const heroProps: HeroProps = {
   subtitle: 'US Tax, Accounting & Business Advisory Services',
   description:
     'Ambit Tax and Accounting Services LLP is a US-focused tax, accounting, and business advisory firm supporting domestic and international businesses across the full business lifecycle.\n With 100+ professionals and 350+ active clients, we advise founders, owner-managed businesses, professional firms, start-ups, and growing companies on business formation, accounting, taxation, payroll, governance, outsourcing, and long-term structuring.'
 }
+// ------ Who we Support ------
+const homeSupportList: string[][] = [
+  ['US residents and domestic businesses', 'Non-resident founders and entrepreneurs'],
+  ['Foreign-owned US entities', 'International groups entering or operating in the US']
+]
 
+const supportProps: About8Props = {
+  title: 'Who We Support',
+  subtitle:
+    'Ambit partners with businesses across industries and growth stages, delivering reliable finance and compliance support without internal overhead.',
+  aboutList: homeSupportList
+}
+
+// ------ Why Ambit ------
+
+const whyAmbitSet: AmbitService[] = [
+  {
+    id: 1,
+    title: 'Governance-focused, compliance-first approach',
+    Icon: Balance
+  },
+  {
+    id: 2,
+    title: 'Partner-led advisory with senior oversight',
+    Icon: User
+  },
+  {
+    id: 3,
+    title: 'Transparent pricing and clearly defined scopes',
+    Icon: Invoice
+  },
+  {
+    id: 4,
+    title: 'Secure systems and confidential execution',
+    Icon: BriefcaseTwo
+  },
+  {
+    id: 5,
+    title: 'Audit-ready processes and documentation',
+    Icon: Clipboard
+  },
+  {
+    id: 6,
+    title: 'Long-term partnership mindset',
+    Icon: Handshake
+  }
+]
+
+const whyUsProps: ServiceCallOutProps = {
+  title: 'Why Ambit',
+  description:
+    'Businesses choose Ambit for disciplined execution, governance-led delivery, and long-term advisory support.',
+  ambitServiceSet: whyAmbitSet
+}
+
+// ------ Our Core Services ------
+const services: Service11Services[] = [
+  {
+    id: 1,
+    Icon: Workflow,
+    title: 'US business formation and structuring'
+  },
+  {
+    id: 2,
+    Icon: Calculator,
+    title: 'Accounting and bookkeeping services'
+  },
+  {
+    id: 3,
+    Icon: Invoice,
+    title: 'Federal and state tax advisory and compliance'
+  },
+  {
+    id: 4,
+    Icon: Coin,
+    title: 'Payroll and employment tax services'
+  },
+  {
+    id: 5,
+    Icon: Calendar,
+    title: 'Monthly retainer and ongoing support'
+  },
+  {
+    id: 6,
+    Icon: Earth,
+    title: 'Remote staffing and outsourcing solutions'
+  }
+]
+
+const coreServiceProps: Service11Props = {
+  title: 'Our Core Services',
+  description: 'Ambit delivers integrated advisory and execution services tailored to your business requirements.',
+  serviceSet: services,
+  ctaHref: '/services',
+  ctaText: 'Explore Our Services'
+}
+
+// ------ How we Work ------
 const approachUS: Array<ProcessListItem> = [
   {
     id: 1,
@@ -31,42 +160,42 @@ const approachUS: Array<ProcessListItem> = [
   {
     id: 2,
     title: 'Onboarding',
-    Icon: TeleMarketer,
+    Icon: Rocket,
     description: 'Structured onboarding and scope definition'
   },
   {
     id: 3,
     title: 'Oversight',
-    Icon: TeleMarketer,
+    Icon: Show,
     description: 'Dedicated engagement teams with senior oversight'
   },
   {
     id: 4,
     title: 'Pricing',
-    Icon: TeleMarketer,
+    Icon: PriceTag,
     description: 'Transparent pricing and defined service levels'
   },
   {
     id: 5,
     title: 'Execution',
-    Icon: TeleMarketer,
+    Icon: SettingsThree,
     description: 'Governance-led, confidential execution'
   },
   {
     id: 6,
     title: 'Client Portal',
-    Icon: TeleMarketer,
+    Icon: Browser,
     description: 'Secure systems and client portals'
   },
   {
     id: 7,
     title: 'Advisory',
-    Icon: TeleMarketer,
+    Icon: LightBulb,
     description: 'Proactive advisory, not reactive compliance'
   }
 ]
 
-export const processProps: ProcessProps = {
+const processProps: ProcessProps = {
   title: 'How We Work',
   subtitle:
     'Ambit follows a structured and disciplined engagement framework to ensure accountability, governance, and clarity at every stage.',
@@ -80,100 +209,131 @@ export const processProps: ProcessProps = {
   ]
 }
 
-export const headerProps: HeaderProps = {
-  title: 'US Tax & Accounting Services for Businesses | Ambit Tax & Accounting',
-  description:
-    'Ambit Tax & Accounting Services LLP provides US tax, accounting, payroll, and advisory services for startups, businesses, and international companies. Partner-led, compliant, and scalable solutions.',
-  language: true
-}
-
-const homeSupportList: string[][] = [
-  ['US residents and domestic businesses', 'Non-resident founders and entrepreneurs'],
-  ['Foreign-owned US entities', 'International groups entering or operating in the US']
-]
-
-export const supportProps: About8Props = {
-  title: 'Who We Support',
-  subtitle:
-    'Ambit partners with businesses across industries and growth stages, delivering reliable finance and compliance support without internal overhead.',
-  aboutList: homeSupportList
-}
-
-const whyAmbitSet: AmbitService[] = [
+// ------ Industries we serve ------
+const industries: Service11Services[] = [
   {
     id: 1,
-    title: 'Governance-focused, compliance-first approach',
-    Icon: User
+    Icon: ShoppingCart,
+    title: 'E-Commerce and Direct-to-Consumer'
   },
   {
     id: 2,
-    title: 'Partner-led advisory with senior oversight',
-    Icon: User
+    Icon: Adjust,
+    title: 'Construction and Contractors'
   },
   {
     id: 3,
-    title: 'Transparent pricing and clearly defined scopes',
-    Icon: User
+    Icon: CoffeeCup,
+    title: 'Hospitality (Hotels, Restaurants, Cafes)'
   },
   {
     id: 4,
-    title: 'Secure systems and confidential execution',
-    Icon: Server
+    Icon: House,
+    title: 'Real Estate and Property Management'
   },
   {
     id: 5,
-    title: 'Audit-ready processes and documentation',
-    Icon: User
+    Icon: Laptop,
+    title: 'IT and Professional Services'
   },
   {
     id: 6,
-    title: 'Long-term partnership mindset',
-    Icon: User
+    Icon: Heart,
+    title: 'Healthcare and Medical Practices'
+  },
+  {
+    id: 7,
+    Icon: Truck,
+    title: 'Logistics and Transportation'
+  },
+  {
+    id: 8,
+    Icon: Rocket,
+    title: 'Startups and Venture-Backed Companies'
   }
 ]
 
-export const whyUsProps: ServiceCallOutProps = {
-  title: 'Why Ambit',
+const industriesProps: Service11Props = {
+  title: 'Industries We Serve',
   description:
-    'Businesses choose Ambit for disciplined execution, governance-led delivery, and long-term advisory support.',
-  ambitServiceSet: whyAmbitSet
+    'We provide industry-specific accounting, tax, and compliance solutions tailored to operational realities.',
+  serviceSet: industries,
+  ctaHref: '/industries',
+  ctaText: 'View Industries We Serve'
 }
 
+// ------ Governance, Data Security and Compliance ------
+const governanceSet: GovernanceProperty[] = [
+  {
+    id: 1,
+    Icon: CheckList,
+    title: 'Data Protection',
+    offeringSet: [
+      'GDPR-compliant and US privacy-aligned data handling',
+      'Role-based access and audit logs',
+      'Secure client portals'
+    ]
+  },
+  {
+    id: 2,
+    Icon: Lock,
+    title: 'Information Security',
+    offeringSet: [
+      'ISO-aligned security principles',
+      'Encrypted data transfer and storage',
+      'Multi-factor authentication and monitoring'
+    ]
+  },
+  {
+    id: 3,
+    Icon: Balance,
+    title: 'Governance and Internal Controls',
+    offeringSet: [
+      'Segregation of duties',
+      'Partner review and sign-off',
+      'Statutory compliance checklists',
+      'Audit-ready documentation'
+    ]
+  }
+]
+
+// ------ Why Long-term clients stay with ambit ------
 const whyStayWithUsSet: AmbitService[] = [
   {
     id: 1,
     title: 'Consistent delivery through structured teams',
-    Icon: User
+    Icon: Puzzle
   },
   {
     id: 2,
     title: 'Senior review and partner oversight',
-    Icon: User
+    Icon: Medal
   },
   {
     id: 3,
     title: 'Reduced compliance risk',
-    Icon: User
+    Icon: Shield
   },
   {
     id: 4,
     title: 'Scalable support as the business grows',
-    Icon: User
+    Icon: Profits
   },
   {
     id: 5,
     title: 'Clear communication and reporting',
-    Icon: User
+    Icon: CheckList
   }
 ]
 
-export const whyStayWithUsProps: ServiceCallOutProps = {
+const whyStayWithUsProps: ServiceCallOutProps = {
   title: 'Why Long-Term Clients Stay with Ambit',
   description: 'Our clients value predictability, accountability, and continuity.',
   ambitServiceSet: whyStayWithUsSet
 }
 
-export const usHomeFaqSet: Faq2Item[] = [
+// ------ FAQ ------
+const usHomeFaqSet: Faq2Item[] = [
   {
     no: 'One',
     expand: false,
@@ -212,53 +372,23 @@ export const usHomeFaqSet: Faq2Item[] = [
   }
 ]
 
-export const ctaProps: CtaProps = {
+// ------ CTA ------
+const ctaProps: CtaProps = {
   title: 'Start a Conversation',
   description:
     'Whether you are forming a US entity, managing ongoing compliance, or seeking long-term advisory support, Ambit is here to help. Schedule a consultation to discuss your business needs and next steps.'
 }
 
-const services: Service11Services[] = [
-  { id: 1, Icon: Megaphone, title: 'US business formation and structuring' },
-  {
-    id: 2,
-    Icon: Target,
-    title: 'Accounting and bookkeeping services'
-  },
-  { id: 3, Icon: SettingsThree, title: 'Federal and state tax advisory and compliance' },
-  { id: 4, Icon: BarChart, title: 'Payroll and employment tax services' },
-  { id: 5, Icon: Megaphone, title: 'Monthly retainer and ongoing support' },
-  { id: 6, Icon: Megaphone, title: 'Remote staffing and outsourcing solutions' }
-]
-
-export const coreServiceProps: Service11Props = {
-  title: 'Our Core Services',
-  description: 'Ambit delivers integrated advisory and execution services tailored to your business requirements.',
-  serviceSet: services,
-  ctaHref: '/services',
-  ctaText: 'Explore Our Services'
-}
-
-const industries: Service11Services[] = [
-  { id: 1, Icon: Megaphone, title: 'E-Commerce and Direct-to-Consumer' },
-  {
-    id: 2,
-    Icon: Target,
-    title: 'Construction and Contractors'
-  },
-  { id: 3, Icon: SettingsThree, title: 'Hospitality (Hotels, Restaurants, Cafes)' },
-  { id: 4, Icon: BarChart, title: 'Real Estate and Property Management' },
-  { id: 5, Icon: Megaphone, title: 'IT and Professional Services' },
-  { id: 6, Icon: Megaphone, title: 'Healthcare and Medical Practices' },
-  { id: 7, Icon: Megaphone, title: 'Logistics and Transportation' },
-  { id: 8, Icon: Megaphone, title: 'Startups and Venture-Backed Companies' }
-]
-
-export const industriesProps: Service11Props = {
-  title: 'Industries We Serve',
-  description:
-    'We provide industry-specific accounting, tax, and compliance solutions tailored to operational realities.',
-  serviceSet: industries,
-  ctaHref: '/industries',
-  ctaText: 'View Industries We Serve'
+export {
+  heroProps,
+  headerProps,
+  processProps,
+  industriesProps,
+  coreServiceProps,
+  ctaProps,
+  supportProps,
+  usHomeFaqSet,
+  whyStayWithUsProps,
+  whyUsProps,
+  governanceSet
 }
