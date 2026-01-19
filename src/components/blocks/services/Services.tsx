@@ -1,5 +1,5 @@
 import { workingSteps } from 'data/working-steps'
-import { FC, Fragment } from 'react'
+import { type FC, Fragment } from 'react'
 
 type ServiceProps = {
   icon: FC<{ className?: string }>
