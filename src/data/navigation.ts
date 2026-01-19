@@ -70,7 +70,7 @@ const services: NavItem[] = [
     allowedLocales: [LocaleEnum.US],
     children: [
       { id: 41, url: '/services/formation-setup', title: 'Company Formation & Business Setup' },
-      { id: 42, url: '/services/accounting-bookkeeping', title: 'Accounting & Bookkeeping' },
+      { id: 42, url: '/services/accounting-bookkeeping-execution', title: 'Accounting & Bookkeeping' },
       { id: 43, url: '/services/tax-advisory', title: 'Tax Advisory & Compliance' },
       { id: 44, url: '/services/specialized-tax', title: 'Specialized Tax Services' },
       { id: 45, url: '/services/payroll-employment-tax', title: 'Payroll & Employment Tax' },

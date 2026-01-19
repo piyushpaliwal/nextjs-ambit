@@ -39,6 +39,7 @@ const BookkeepingPage: NextPage = () => {
       <header className="wrapper bg-soft-primary">
         <Navbar
           stickyBox={false}
+          language
           logoAlt="logo"
           navOtherClass="navbar-other ms-xl-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
