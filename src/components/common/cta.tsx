@@ -6,11 +6,12 @@ export type CtaProps = {
   description?: string
   buttonTitle?: string
   buttonHref?: string
+  bgColor?: string
 }
 
-const Cta: FC<CtaProps> = ({ title, description, buttonTitle, buttonHref }: CtaProps) => {
+const Cta: FC<CtaProps> = ({ title, description, buttonTitle, buttonHref, bgColor = 'bg-light' }: CtaProps) => {
   return (
-    <section className="wrapper bg-light">
+    <section className={`wrapper ${bgColor}`}>
       <div className="container py-14 py-md-14">
         <div className="row">
           <div className="col-md-9 col-lg-7 col-xl-7 mx-auto text-center">
