@@ -69,7 +69,7 @@ const services: NavItem[] = [
     title: 'Execution',
     allowedLocales: [LocaleEnum.US],
     children: [
-      { id: 41, url: '/services/formation-and-setup', title: 'Company Formation & Business Setup' },
+      { id: 41, url: '/services/formation-setup', title: 'Company Formation & Business Setup' },
       { id: 42, url: '/services/accounting-bookkeeping', title: 'Accounting & Bookkeeping' },
       { id: 43, url: '/services/tax-advisory', title: 'Tax Advisory & Compliance' },
       { id: 44, url: '/services/specialized-tax', title: 'Specialized Tax Services' },

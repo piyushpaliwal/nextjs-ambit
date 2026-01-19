@@ -4,7 +4,7 @@ import Cta from 'components/common/cta'
 import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
 import ServicesHero from 'components/blocks/services/ServicesHero'
 import Header from 'components/blocks/header/Header'
-import { ctaProps, headerProps, serviceCallOutProps, serviceHeroProps, whoWeServeProps } from 'data/formation-and-setup'
+import { ctaProps, headerProps, serviceCallOutProps, serviceHeroProps, whoWeServeProps } from 'data/formation-setup'
 
 const FormationAndSetup: NextPage = () => {
   return (

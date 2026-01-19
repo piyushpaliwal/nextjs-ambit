@@ -73,13 +73,12 @@ const clientSet: AmbitService[] = [
 
 const serviceHeroProps: ServiceHeroProps = {
   title: 'Beyond Registration: Build a Foundation for Scale',
-  description:
-    'Company formation is more than registration; it defines governance, tax efficiency, and scalability. Ambit provides end-to-end US company formation with ongoing compliance and operational support.',
+  description: 'Ambit provides end-to-end US company formation with ongoing compliance and operational support.',
   imageSrc: i8
 }
 
 const headerProps: HeaderProps = {
-  title: 'Company Formation & Setup Services | Ambit Accounting - Ambit',
+  title: 'Company Formation & Setup Services | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
     'Ambit offers comprehensive company formation and setup services in the US, ensuring legal compliance and operational readiness for startups and businesses.',
   keywords: 'company formation, business setup, legal compliance, US company registration, startup services',
