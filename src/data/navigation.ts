@@ -75,7 +75,7 @@ const services: NavItem[] = [
       { id: 44, url: '/services/specialized-tax', title: 'Specialized Tax Services' },
       { id: 45, url: '/services/payroll-employment-tax', title: 'Payroll & Employment Tax' },
       { id: 46, url: '/services/monthly-retainer', title: 'Monthly Retainer Services' },
-      { id: 47, url: '/services/remote-staffing', title: 'Remote Staffing & Outsourcing' },
+      { id: 47, url: '/services/remote-staffing-outsourcing', title: 'Remote Staffing & Outsourcing' },
       { id: 48, url: '/services/systems-integration-tech-support', title: 'Systems Integration & Technology Support' },
       { id: 49, url: '/services/international-cross-border-advisory', title: 'International / Cross-Border Advisory' }
     ]
