@@ -3,10 +3,10 @@ import Header from 'components/blocks/header/Header'
 import { HeroInnerPages } from 'components/blocks/hero'
 import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
 import Cta from 'components/common/cta'
-import { ctaProps, headerProps, heroProps, serviceProps } from 'data/systems-integration-tech-support-services'
+import { ctaProps, headerProps, heroProps, serviceProps } from 'data/international-cross-border-advisory'
 import type { NextPage } from 'next'
 
-const SystemsIntegrationTechSupport: NextPage = () => {
+const InternationalCrossBorderAdvisory: NextPage = () => {
   return (
     <>
       <Header {...headerProps} />
@@ -20,4 +20,4 @@ const SystemsIntegrationTechSupport: NextPage = () => {
   )
 }
 
-export default SystemsIntegrationTechSupport
+export default InternationalCrossBorderAdvisory

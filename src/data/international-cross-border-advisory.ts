@@ -6,16 +6,16 @@ import User from 'icons/lineal/User'
 import i8 from '../../public/img/illustrations/i8.png'
 
 const headerProps: HeaderProps = {
-  title: 'Systems Integration & Technology Support | US Execution Services – Accounting, Tax & Payroll | Ambit',
+  title: 'International / Cross-Border Advisory | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Connect QuickBooks and Xero with Shopify, Amazon, and Stripe. Ambit provides expert system integration, data migration, and automation for seamless financial ops',
+    'Ambit advises foreign-owned US entities, global investors, and international groups on US inbound tax, compliance, and cross-border operations.',
   language: true
 }
 
 const heroProps: HeroInnerPagesProps = {
-  title: 'Connected Systems. Trusted Data.',
+  title: 'Enter the US Market with Confidence.',
   description:
-    'From API-led integrations to complex data migrations, we unify your financial stack. Get a single source of truth across your payments, marketplaces, and accounting ledgers.',
+    'Ambit advises foreign-owned US entities, global investors, and international groups on US inbound tax, compliance, and cross-border operations.',
   imgAlt: 'Illustration of a person working on a laptop',
   imgSrc: i8,
   buttonTitle: 'Schedule a 15 Minute Consultation',
@@ -25,27 +25,27 @@ const heroProps: HeroInnerPagesProps = {
 const serviceSet: AmbitService[] = [
   {
     id: 1,
-    title: 'QuickBooks, Xero',
+    title: 'Transfer pricing compliance and documentation',
     Icon: User
   },
   {
     id: 2,
-    title: 'Payment and marketplace integrations (Shopify, Amazon, Stripe, PayPal)',
+    title: 'US inbound tax planning for foreign entities',
     Icon: User
   },
   {
     id: 3,
-    title: 'Automation, reconciliations, and reporting dashboards',
+    title: 'Foreign entity registration and reporting obligations',
     Icon: User
   },
   {
     id: 4,
-    title: 'Data migration and system clean-ups',
+    title: 'Multi-jurisdictional tax advisory and mitigation strategies',
     Icon: User
   },
   {
     id: 5,
-    title: 'API-led integrations',
+    title: 'Cross-border corporate structuring',
     Icon: User
   }
 ]
@@ -56,9 +56,9 @@ const serviceProps: ServiceCallOutProps = {
 }
 
 const ctaProps: CtaProps = {
-  title: 'Optimize your accounting systems',
+  title: 'Discuss International Advisory',
   description:
-    'Clean up your historical data and synchronize your current tools for clear, audit-ready financial reporting.'
+    'Navigate the complexities of cross-border taxation with a clear roadmap tailored to your specific US expansion goals.'
 }
 
 export { headerProps, heroProps, serviceProps, ctaProps }
