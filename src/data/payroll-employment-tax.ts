@@ -2,6 +2,9 @@ import type { HeaderProps } from 'components/blocks/header/Header'
 import type { HeroInnerPagesProps } from 'components/blocks/hero'
 import type { AmbitService, ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
 import type { CtaProps } from 'components/common/cta'
+import Calendar from 'icons/lineal/Calendar'
+import CheckList from 'icons/lineal/CheckList'
+import Coin from 'icons/lineal/Coin'
 import User from 'icons/lineal/User'
 import i8 from '../../public/img/illustrations/i8.png'
 
@@ -25,12 +28,12 @@ const serviceSet: AmbitService[] = [
   {
     id: 1,
     title: 'Payroll processing and tax filings',
-    Icon: User
+    Icon: Coin
   },
   {
     id: 2,
     title: 'Federal and state employment tax compliance',
-    Icon: User
+    Icon: CheckList
   },
   {
     id: 3,
@@ -40,7 +43,7 @@ const serviceSet: AmbitService[] = [
   {
     id: 4,
     title: 'Year-end reporting and reconciliations',
-    Icon: User
+    Icon: Calendar
   }
 ]
 

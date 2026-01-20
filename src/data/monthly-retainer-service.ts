@@ -3,7 +3,15 @@ import type { HeroInnerPagesProps } from 'components/blocks/hero'
 import type { CallOut2Services, ServicesCallOut2Props } from 'components/blocks/services'
 import type { AmbitService, ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
 import type { CtaProps } from 'components/common/cta'
-import Analytics from 'icons/lineal/Analytics'
+import Balance from 'icons/lineal/Balance'
+import BarChart from 'icons/lineal/BarChart'
+import Calculator from 'icons/lineal/Calculator'
+import Calendar from 'icons/lineal/Calendar'
+import Clipboard from 'icons/lineal/Clipboard'
+import Coin from 'icons/lineal/Coin'
+import Earth from 'icons/lineal/Earth'
+import Handshake from 'icons/lineal/Handshake'
+import Rocket from 'icons/lineal/Rocket'
 import User from 'icons/lineal/User'
 import i8 from '../../public/img/illustrations/i8.png'
 
@@ -28,22 +36,22 @@ const serviceSet: AmbitService[] = [
   {
     id: 1,
     title: 'Bookkeeping, reconciliations, and management reporting',
-    Icon: User
+    Icon: Clipboard
   },
   {
     id: 2,
     title: 'Payroll and sales tax processing',
-    Icon: User
+    Icon: Coin
   },
   {
     id: 3,
     title: 'Tax provisioning and planning',
-    Icon: User
+    Icon: Calculator
   },
   {
     id: 4,
     title: 'Compliance filings and statutory submissions',
-    Icon: User
+    Icon: Balance
   },
   {
     id: 5,
@@ -53,7 +61,7 @@ const serviceSet: AmbitService[] = [
   {
     id: 6,
     title: 'Predictable monthly cost structure',
-    Icon: User
+    Icon: Calendar
   }
 ]
 
@@ -66,22 +74,22 @@ const partnerSet: CallOut2Services[] = [
   {
     id: 1,
     title: 'Businesses requiring ongoing finance support',
-    Icon: Analytics
+    Icon: BarChart
   },
   {
     id: 2,
     title: 'Accounting firms seeking reliable delivery partners',
-    Icon: Analytics
+    Icon: Handshake
   },
   {
     id: 3,
     title: 'Founder-led and high-growth businesses',
-    Icon: Analytics
+    Icon: Rocket
   },
   {
     id: 4,
     title: 'International companies operating in the US',
-    Icon: Analytics
+    Icon: Earth
   }
 ]
 

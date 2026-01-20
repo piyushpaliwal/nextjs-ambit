@@ -2,38 +2,38 @@ import type { HeaderProps } from 'components/blocks/header/Header'
 import type { AmbitService, ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
 import type { ServiceHeroProps } from 'components/blocks/services/ServicesHero'
 import type { CtaProps } from 'components/common/cta'
-import Analytics from 'icons/lineal/Analytics'
-import Invoice from 'icons/lineal/Invoice'
-import Shield from 'icons/lineal/Shield'
-import SmartphoneTwo from 'icons/lineal/SmartphoneTwo'
-import User from 'icons/lineal/User'
+import AwardTwo from 'icons/lineal/AwardTwo'
+import Laptop from 'icons/lineal/Laptop'
+import NetworkingTwo from 'icons/lineal/NetworkingTwo'
+import Puzzle from 'icons/lineal/Puzzle'
+import Search from 'icons/lineal/Search'
 import i8 from '../../public/img/illustrations/i8.png'
 
 const servicesSet: AmbitService[] = [
   {
     id: 1,
     title: 'R&D Tax Credit Advisory',
-    Icon: SmartphoneTwo
+    Icon: Laptop
   },
   {
     id: 2,
     title: 'State-specific tax incentives and credits',
-    Icon: Invoice
+    Icon: AwardTwo
   },
   {
     id: 3,
     title: 'Multi-state compliance and nexus advisory',
-    Icon: User
+    Icon: NetworkingTwo
   },
   {
     id: 4,
     title: 'Tax planning for complex entity structures',
-    Icon: Shield
+    Icon: Puzzle
   },
   {
     id: 5,
     title: 'IRS and state audit support for specialized claims',
-    Icon: Analytics
+    Icon: Search
   }
 ]
 

@@ -2,7 +2,11 @@ import type { HeaderProps } from 'components/blocks/header/Header'
 import type { HeroInnerPagesProps } from 'components/blocks/hero'
 import type { AmbitService, ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
 import type { CtaProps } from 'components/common/cta'
-import User from 'icons/lineal/User'
+import Analytics from 'icons/lineal/Analytics'
+import Balance from 'icons/lineal/Balance'
+import BarChart from 'icons/lineal/BarChart'
+import Certificate from 'icons/lineal/Certificate'
+import CheckList from 'icons/lineal/CheckList'
 import i8 from '../../public/img/illustrations/i8.png'
 
 const headerProps: HeaderProps = {
@@ -26,27 +30,27 @@ const serviceSet: AmbitService[] = [
   {
     id: 1,
     title: 'Monthly or quarterly bookkeeping',
-    Icon: User
+    Icon: CheckList
   },
   {
     id: 2,
     title: 'Management accounts preparation',
-    Icon: User
+    Icon: BarChart
   },
   {
     id: 3,
     title: 'Balance sheet reconciliation and review controls',
-    Icon: User
+    Icon: Balance
   },
   {
     id: 4,
     title: 'Cashflow monitoring and variance analysis',
-    Icon: User
+    Icon: Analytics
   },
   {
     id: 5,
     title: 'Audit-ready documentation and reporting',
-    Icon: User
+    Icon: Certificate
   }
 ]
 

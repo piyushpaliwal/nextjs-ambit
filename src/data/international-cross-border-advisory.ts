@@ -2,7 +2,11 @@ import type { HeaderProps } from 'components/blocks/header/Header'
 import type { HeroInnerPagesProps } from 'components/blocks/hero'
 import type { AmbitService, ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
 import type { CtaProps } from 'components/common/cta'
-import User from 'icons/lineal/User'
+import Download from 'icons/lineal/Download'
+import Earth from 'icons/lineal/Earth'
+import LinkIcon from 'icons/lineal/LinkIcon'
+import Refresh from 'icons/lineal/Refresh'
+import Workflow from 'icons/lineal/Workflow'
 import i8 from '../../public/img/illustrations/i8.png'
 
 const headerProps: HeaderProps = {
@@ -26,27 +30,27 @@ const serviceSet: AmbitService[] = [
   {
     id: 1,
     title: 'Transfer pricing compliance and documentation',
-    Icon: User
+    Icon: Refresh
   },
   {
     id: 2,
     title: 'US inbound tax planning for foreign entities',
-    Icon: User
+    Icon: Download
   },
   {
     id: 3,
     title: 'Foreign entity registration and reporting obligations',
-    Icon: User
+    Icon: Earth
   },
   {
     id: 4,
     title: 'Multi-jurisdictional tax advisory and mitigation strategies',
-    Icon: User
+    Icon: LinkIcon
   },
   {
     id: 5,
     title: 'Cross-border corporate structuring',
-    Icon: User
+    Icon: Workflow
   }
 ]
 

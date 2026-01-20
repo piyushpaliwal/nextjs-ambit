@@ -2,7 +2,11 @@ import type { HeaderProps } from 'components/blocks/header/Header'
 import type { HeroInnerPagesProps } from 'components/blocks/hero'
 import type { AmbitService, ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
 import type { CtaProps } from 'components/common/cta'
-import User from 'icons/lineal/User'
+import CloudComputing from 'icons/lineal/CloudComputing'
+import Puzzle from 'icons/lineal/Puzzle'
+import Server from 'icons/lineal/Server'
+import ShoppingCart from 'icons/lineal/ShoppingCart'
+import Workflow from 'icons/lineal/Workflow'
 import i8 from '../../public/img/illustrations/i8.png'
 
 const headerProps: HeaderProps = {
@@ -26,27 +30,27 @@ const serviceSet: AmbitService[] = [
   {
     id: 1,
     title: 'QuickBooks, Xero',
-    Icon: User
+    Icon: CloudComputing
   },
   {
     id: 2,
     title: 'Payment and marketplace integrations (Shopify, Amazon, Stripe, PayPal)',
-    Icon: User
+    Icon: ShoppingCart
   },
   {
     id: 3,
     title: 'Automation, reconciliations, and reporting dashboards',
-    Icon: User
+    Icon: Workflow
   },
   {
     id: 4,
     title: 'Data migration and system clean-ups',
-    Icon: User
+    Icon: Server
   },
   {
     id: 5,
     title: 'API-led integrations',
-    Icon: User
+    Icon: Puzzle
   }
 ]
 

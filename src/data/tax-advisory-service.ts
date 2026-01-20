@@ -2,44 +2,44 @@ import type { HeaderProps } from 'components/blocks/header/Header'
 import type { AmbitService, ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
 import type { ServiceHeroProps } from 'components/blocks/services/ServicesHero'
 import type { CtaProps } from 'components/common/cta'
-import Analytics from 'icons/lineal/Analytics'
-import CloudComputing from 'icons/lineal/CloudComputing'
-import Invoice from 'icons/lineal/Invoice'
-import Shield from 'icons/lineal/Shield'
-import SmartphoneTwo from 'icons/lineal/SmartphoneTwo'
-import User from 'icons/lineal/User'
+import BriefcaseTwo from 'icons/lineal/BriefcaseTwo'
+import Email3 from 'icons/lineal/Email3'
+import MapIcon from 'icons/lineal/MapIcon'
+import PieChartTwo from 'icons/lineal/PieChartTwo'
+import PriceTag from 'icons/lineal/PriceTag'
+import Profits from 'icons/lineal/Profits'
 import i8 from '../../public/img/illustrations/i8.png'
 
 const servicesSet: AmbitService[] = [
   {
     id: 1,
     title: 'Federal, state, and local tax returns',
-    Icon: SmartphoneTwo
+    Icon: MapIcon
   },
   {
     id: 2,
     title: 'Sales and use tax compliance',
-    Icon: Invoice
+    Icon: PriceTag
   },
   {
     id: 3,
     title: 'Partnership, corporate, and individual filings',
-    Icon: User
+    Icon: BriefcaseTwo
   },
   {
     id: 4,
     title: 'Owner compensation planning',
-    Icon: Shield
+    Icon: PieChartTwo
   },
   {
     id: 5,
     title: 'Capital gains and dividend strategy',
-    Icon: Analytics
+    Icon: Profits
   },
   {
     id: 6,
     title: 'IRS correspondence and audit support',
-    Icon: CloudComputing
+    Icon: Email3
   }
 ]
 

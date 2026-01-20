@@ -2,7 +2,12 @@ import type { HeaderProps } from 'components/blocks/header/Header'
 import type { HeroInnerPagesProps } from 'components/blocks/hero'
 import type { CallOut2Services, ServicesCallOut2Props } from 'components/blocks/services'
 import type { CtaProps } from 'components/common/cta'
-import Analytics from 'icons/lineal/Analytics'
+import BriefcaseTwo from 'icons/lineal/BriefcaseTwo'
+import Clipboard from 'icons/lineal/Clipboard'
+import ClockThree from 'icons/lineal/ClockThree'
+import IdCard from 'icons/lineal/IdCard'
+import Puzzle from 'icons/lineal/Puzzle'
+import Shield from 'icons/lineal/Shield'
 import User from 'icons/lineal/User'
 import i8 from '../../public/img/illustrations/i8.png'
 
@@ -27,22 +32,22 @@ const serviceSet: CallOut2Services[] = [
   {
     id: 1,
     title: 'Accountants, bookkeepers, tax preparers, finance managers',
-    Icon: User
+    Icon: BriefcaseTwo
   },
   {
     id: 2,
     title: 'Full-time or part-time engagement',
-    Icon: User
+    Icon: ClockThree
   },
   {
     id: 3,
     title: 'Training and integration into client systems',
-    Icon: User
+    Icon: Puzzle
   },
   {
     id: 4,
     title: 'Daily or weekly reporting',
-    Icon: User
+    Icon: Clipboard
   }
 ]
 
@@ -55,22 +60,22 @@ const governanceSet: CallOut2Services[] = [
   {
     id: 1,
     title: 'Role-based access and audit logs',
-    Icon: Analytics
+    Icon: IdCard
   },
   {
     id: 2,
     title: 'Senior management review and supervision',
-    Icon: Analytics
+    Icon: User
   },
   {
     id: 3,
     title: 'SLA-driven delivery',
-    Icon: Analytics
+    Icon: ClockThree
   },
   {
     id: 4,
     title: 'Secure data handling and audit-ready output',
-    Icon: Analytics
+    Icon: Shield
   }
 ]
 
