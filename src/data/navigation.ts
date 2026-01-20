@@ -97,7 +97,13 @@ const industries: NavItem[] = [
     children: [],
     allowedLocales: [LocaleEnum.US]
   },
-  { id: 3, url: '/industries/hospitality', title: 'Hospitality', children: [], allowedLocales: [LocaleEnum.US] },
+  {
+    id: 3,
+    url: '/industries/hospitality',
+    title: 'Hospitality (Hotels, Restaurants, Cafes)',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
   {
     id: 4,
     url: '/industries/real-estate',
