@@ -6,12 +6,12 @@ import { Footer } from 'components/blocks/footer'
 import { FAQ2 } from 'components/blocks/faq'
 import { businessStructureAdvisoryFaqSet } from 'data/faq'
 import Cta, { type CtaProps } from 'components/common/cta'
-import Savings from 'icons/lineal/Savings'
-import Analytics from 'icons/lineal/Analytics'
-import Target from 'icons/lineal/Target'
 import type { FC } from 'react'
 import type IconProps from 'types/icon'
 import BriefcaseTwo from 'icons/lineal/BriefcaseTwo'
+import User from 'icons/lineal/User'
+import Shop from 'icons/lineal/Shop'
+import NetworkingTwo from 'icons/lineal/NetworkingTwo'
 
 type AdvisoryStructure = {
   id: number
@@ -32,7 +32,7 @@ const advisoryStructureSet: AdvisoryStructure[] = [
       'Federal and state tax exposure',
       'Transition planning to LLC or corporate structures'
     ],
-    Icon: Savings
+    Icon: User
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const advisoryStructureSet: AdvisoryStructure[] = [
       'Operating agreements and governance',
       'Suitability versus S Corporation or C Corporation'
     ],
-    Icon: Analytics
+    Icon: BriefcaseTwo
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ const advisoryStructureSet: AdvisoryStructure[] = [
       'Multi-state tax planning',
       'Ongoing IRS compliance management'
     ],
-    Icon: Target
+    Icon: Shop
   },
   {
     id: 4,
@@ -69,7 +69,7 @@ const advisoryStructureSet: AdvisoryStructure[] = [
       'Investor readiness and compliance',
       'Holding company and group structuring'
     ],
-    Icon: BriefcaseTwo
+    Icon: NetworkingTwo
   }
 ]
 
