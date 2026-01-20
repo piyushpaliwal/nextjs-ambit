@@ -113,7 +113,7 @@ const industries: NavItem[] = [
   },
   {
     id: 5,
-    url: '/industries/it',
+    url: '/industries/it-professional',
     title: 'IT Contractors & Professional Services',
     children: [],
     allowedLocales: [LocaleEnum.US]
