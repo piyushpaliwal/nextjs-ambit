@@ -83,11 +83,17 @@ const services: NavItem[] = [
 ]
 
 const industries: NavItem[] = [
-  { id: 1, url: '/industries/ecommerce', title: 'E-Commerce & DTC', children: [], allowedLocales: [LocaleEnum.US] },
+  {
+    id: 1,
+    url: '/industries/ecommerce',
+    title: 'E-Commerce & Direct-to-Consumer',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
   {
     id: 2,
     url: '/industries/construction',
-    title: 'Construction & Contractors',
+    title: 'Construction, Trades, and Contractors',
     children: [],
     allowedLocales: [LocaleEnum.US]
   },
