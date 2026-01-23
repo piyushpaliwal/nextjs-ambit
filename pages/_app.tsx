@@ -82,13 +82,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Ambit offers outsourced bookkeeping and accounting services for CPA and accounting firms in the USA. Hire highly qualified and dedicated offshore bookkeepers"
         />
       </Head>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16680549895"></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11267136386" />
       <Script id="google-tag-manager" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config','AW-16680549895');
+          gtag('config','AW-11267136386');
         `}
       </Script>
       {/* Facebook Pixel Code */}
