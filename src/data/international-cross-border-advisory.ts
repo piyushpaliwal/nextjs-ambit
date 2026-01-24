@@ -12,8 +12,7 @@ import i8 from '../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'International / Cross-Border Advisory | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Ambit advises foreign-owned US entities, global investors, and international groups on US inbound tax, compliance, and cross-border operations.',
-  language: true
+    'Ambit advises foreign-owned US entities, global investors, and international groups on US inbound tax, compliance, and cross-border operations.'
 }
 
 const heroProps: HeroInnerPagesProps = {

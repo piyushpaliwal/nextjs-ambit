@@ -43,8 +43,7 @@ const processProps: ProcessProps = {
 const headerProps: HeaderProps = {
   title: 'Online Bookkeeping and Accounting Services | Ambit Tax & Accounting',
   description:
-    'Let Ambit handle all of your online bookkeeping and accounting needs including weekly bookkeeping, month-end financials, tax prep, and more.',
-  language: true
+    'Let Ambit handle all of your online bookkeeping and accounting needs including weekly bookkeeping, month-end financials, tax prep, and more.'
 }
 
 const HomeDefault: NextPage = () => {

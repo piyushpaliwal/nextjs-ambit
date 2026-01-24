@@ -15,8 +15,7 @@ import i8 from '../../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Construction & Contractor Accounting Services | Ambit',
   description:
-    'Ambit offers project-based accounting, payroll compliance, and multi-state tax advisory for construction firms and contractors. Ensure accurate costing and reporting.',
-  language: true
+    'Ambit offers project-based accounting, payroll compliance, and multi-state tax advisory for construction firms and contractors. Ensure accurate costing and reporting.'
 }
 
 const heroProps: HeroInnerPagesProps = {

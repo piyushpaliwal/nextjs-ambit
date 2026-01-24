@@ -15,8 +15,7 @@ import i8 from '../../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'IT & Professional Services Accounting | Ambit',
   description:
-    'Ambit delivers accounting, partner compensation planning, and multi-state tax advisory for IT and professional services firms. Ensure accurate reporting and compliance.',
-  language: true
+    'Ambit delivers accounting, partner compensation planning, and multi-state tax advisory for IT and professional services firms. Ensure accurate reporting and compliance.'
 }
 
 const heroProps: HeroInnerPagesProps = {

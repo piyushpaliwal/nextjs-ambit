@@ -40,8 +40,7 @@ const servicesSet: AmbitService[] = [
 const headerProps: HeaderProps = {
   title: 'Specialized Tax Services | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Ambit offers high-value, proactive tax advisory beyond standard filings to optimize incentives, minimize liabilities, and ensure compliance.',
-  language: true
+    'Ambit offers high-value, proactive tax advisory beyond standard filings to optimize incentives, minimize liabilities, and ensure compliance.'
 }
 
 const servicesHeroProps: ServiceHeroProps = {

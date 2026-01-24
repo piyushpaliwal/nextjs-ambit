@@ -46,8 +46,7 @@ const servicesSet: AmbitService[] = [
 const headerProps: HeaderProps = {
   title: 'Tax Advisory and Compliance | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Ambit provides proactive, timely, and defensible federal and state tax advisory and compliance services.',
-  language: true
+    'Ambit provides proactive, timely, and defensible federal and state tax advisory and compliance services.'
 }
 
 const servicesHeroProps: ServiceHeroProps = {

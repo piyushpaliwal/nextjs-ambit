@@ -12,8 +12,7 @@ import i8 from '../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Accounting & Bookkeeping Services | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Accurate accounting is the foundation of compliance, decision-making, and business growth. Ambit delivers structured accounting services aligned with US GAAP and state requirements.',
-  language: true
+    'Accurate accounting is the foundation of compliance, decision-making, and business growth. Ambit delivers structured accounting services aligned with US GAAP and state requirements.'
 }
 
 const heroProps: HeroInnerPagesProps = {

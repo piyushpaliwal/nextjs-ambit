@@ -14,8 +14,7 @@ import i8 from '../../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Hospitality Accounting & Payroll Services | Ambit',
   description:
-    'Ambit delivers accounting, payroll, and compliance solutions for hotels, restaurants, and cafes. Manage multi-location finances and high-volume operations efficiently.',
-  language: true
+    'Ambit delivers accounting, payroll, and compliance solutions for hotels, restaurants, and cafes. Manage multi-location finances and high-volume operations efficiently.'
 }
 
 const heroProps: HeroInnerPagesProps = {

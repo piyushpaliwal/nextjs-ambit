@@ -15,8 +15,7 @@ import i8 from '../../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Startup & Venture-Backed Accounting Services | Ambit',
   description:
-    'Ambit provides accounting, tax, and compliance solutions for startups and venture-backed companies. Achieve investor-ready reporting and scalable growth.',
-  language: true
+    'Ambit provides accounting, tax, and compliance solutions for startups and venture-backed companies. Achieve investor-ready reporting and scalable growth.'
 }
 
 const heroProps: HeroInnerPagesProps = {

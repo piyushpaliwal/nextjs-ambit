@@ -18,8 +18,7 @@ import i8 from '../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Monthly Retainer Services | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Ambit’s monthly retainer model provides ongoing finance, tax, and compliance support without internal headcount overhead.',
-  language: true
+    'Ambit’s monthly retainer model provides ongoing finance, tax, and compliance support without internal headcount overhead.'
 }
 
 const heroProps: HeroInnerPagesProps = {

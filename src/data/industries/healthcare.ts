@@ -15,8 +15,7 @@ import i8 from '../../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Healthcare Accounting & Payroll Services | Ambit',
   description:
-    'Ambit provides accounting, payroll, and regulatory compliance solutions for healthcare practices and medical offices. Maintain accurate reporting and streamline operations.',
-  language: true
+    'Ambit provides accounting, payroll, and regulatory compliance solutions for healthcare practices and medical offices. Maintain accurate reporting and streamline operations.'
 }
 
 const heroProps: HeroInnerPagesProps = {

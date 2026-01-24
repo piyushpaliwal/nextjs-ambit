@@ -15,8 +15,7 @@ import i8 from '../../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'E-Commerce & DTC Accounting Services | Ambit',
   description:
-    'Ambit provides accounting, multi-state sales tax compliance, and financial management for e-commerce and direct-to-consumer businesses. Optimize operations and reporting.',
-  language: true
+    'Ambit provides accounting, multi-state sales tax compliance, and financial management for e-commerce and direct-to-consumer businesses. Optimize operations and reporting.'
 }
 
 const heroProps: HeroInnerPagesProps = {

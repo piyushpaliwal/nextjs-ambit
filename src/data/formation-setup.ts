@@ -86,8 +86,7 @@ const headerProps: HeaderProps = {
   title: 'Company Formation & Setup Services | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
     'Ambit offers comprehensive company formation and setup services in the US, ensuring legal compliance and operational readiness for startups and businesses.',
-  keywords: 'company formation, business setup, legal compliance, US company registration, startup services',
-  language: true
+  keywords: 'company formation, business setup, legal compliance, US company registration, startup services'
 }
 
 const serviceCallOutProps: ServiceCallOutProps = {

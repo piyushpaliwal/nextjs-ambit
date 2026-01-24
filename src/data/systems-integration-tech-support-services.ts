@@ -12,8 +12,7 @@ import i8 from '../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Systems Integration & Technology Support | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Connect QuickBooks and Xero with Shopify, Amazon, and Stripe. Ambit provides expert system integration, data migration, and automation for seamless financial ops',
-  language: true
+    'Connect QuickBooks and Xero with Shopify, Amazon, and Stripe. Ambit provides expert system integration, data migration, and automation for seamless financial ops'
 }
 
 const heroProps: HeroInnerPagesProps = {

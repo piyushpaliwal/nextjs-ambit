@@ -11,8 +11,7 @@ import i8 from '../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Payroll & Employment Tax Services | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Ambit provide comprehensive payroll and employment tax services to help you stay compliant and manage your finances effectively.',
-  language: true
+    'Ambit provide comprehensive payroll and employment tax services to help you stay compliant and manage your finances effectively.'
 }
 
 const heroProps: HeroInnerPagesProps = {

@@ -43,8 +43,7 @@ import Puzzle from 'icons/lineal/Puzzle'
 const headerProps: HeaderProps = {
   title: 'US Tax & Accounting Services for Businesses | Ambit Tax & Accounting',
   description:
-    'Ambit Tax & Accounting Services LLP provides US tax, accounting, payroll, and advisory services for startups, businesses, and international companies. Partner-led, compliant, and scalable solutions.',
-  language: true
+    'Ambit Tax & Accounting Services LLP provides US tax, accounting, payroll, and advisory services for startups, businesses, and international companies. Partner-led, compliant, and scalable solutions.'
 }
 
 const heroProps: HeroProps = {

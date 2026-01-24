@@ -15,8 +15,7 @@ import i8 from '../../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Real Estate & Property Accounting Services | Ambit',
   description:
-    'Ambit provides property-wise bookkeeping, cashflow reporting, and tax compliance for real estate owners, managers, and developers. Maximize ROI and efficiency.',
-  language: true
+    'Ambit provides property-wise bookkeeping, cashflow reporting, and tax compliance for real estate owners, managers, and developers. Maximize ROI and efficiency.'
 }
 
 const heroProps: HeroInnerPagesProps = {

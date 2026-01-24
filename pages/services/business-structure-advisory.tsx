@@ -76,8 +76,7 @@ const advisoryStructureSet: AdvisoryStructure[] = [
 const headerProps: HeaderProps = {
   title: 'US Business Structure & Company Formation Advisory | Ambit',
   description:
-    'Ambit provides US business structure and company formation advisory for startups, owner-managed businesses, and international companies, ensuring IRS compliance and scalable growth.',
-  language: true
+    'Ambit provides US business structure and company formation advisory for startups, owner-managed businesses, and international companies, ensuring IRS compliance and scalable growth.'
 }
 
 const heroProps: HeroInnerPagesProps = {

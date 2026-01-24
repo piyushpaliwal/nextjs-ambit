@@ -60,10 +60,14 @@ const findNavItemByUrl = (item: NavItem | NavItem[], url: string): NavItem | nul
   for (const item of itemSet) {
     if (item.url === url) return item
 
-    if (item.children && item.children.length > 0) {
-      const foundInChildren = findNavItemByUrl(item.children, url)
+    if (item.children?.length) {
+      const found = findNavItemByUrl(item.children, url)
 
-      if (foundInChildren) return foundInChildren
+      if (found) {
+        const inheritedLocales = [...(item.allowedLocales || []), ...(found.allowedLocales || [])]
+        const mergedLocales = inheritedLocales.filter((value, index, self) => self.indexOf(value) === index)
+        return { ...found, allowedLocales: mergedLocales } as NavItem
+      }
     }
   }
   return null

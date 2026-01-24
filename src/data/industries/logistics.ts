@@ -14,8 +14,7 @@ import i8 from '../../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Logistics & Transportation Accounting Services | Ambit',
   description:
-    'Ambit offers accounting, payroll, and multi-state tax advisory services for logistics and transportation businesses. Optimize compliance and operational efficiency.',
-  language: true
+    'Ambit offers accounting, payroll, and multi-state tax advisory services for logistics and transportation businesses. Optimize compliance and operational efficiency.'
 }
 
 const heroProps: HeroInnerPagesProps = {

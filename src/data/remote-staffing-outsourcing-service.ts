@@ -14,8 +14,7 @@ import i8 from '../../public/img/illustrations/i8.png'
 const headerProps: HeaderProps = {
   title: 'Remote Staffing & Outsourcing Solutions | US Execution Services – Accounting, Tax & Payroll | Ambit',
   description:
-    'Ambit provides dedicated, experienced finance, accounting, and administrative professionals who work as an extension of your team',
-  language: true
+    'Ambit provides dedicated, experienced finance, accounting, and administrative professionals who work as an extension of your team'
 }
 
 const heroProps: HeroInnerPagesProps = {

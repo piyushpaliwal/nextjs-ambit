@@ -220,7 +220,7 @@ Navbar.defaultProps = {
   info: false,
   social: false,
   search: false,
-  language: false,
+  language: true,
   stickyBox: true,
   navOtherClass: 'navbar-other w-100 d-flex ms-auto',
   navClassName: 'navbar navbar-expand-lg center-nav transparent navbar-light'
