@@ -16,7 +16,7 @@ export default function About8(props: About8Props) {
             <figure>
               <img
                 className="w-auto"
-                src={props.imgSrc || `/img/illustrations/i9.png`}
+                src={typeof props.imgSrc === 'string' ? props.imgSrc : `/img/illustrations/i9.png`}
                 srcSet={props.imgSrcSet?.join(', ') || '/img/illustrations/i9@2x.png 2x'}
                 alt={props.imgAlt || ''}
               />
