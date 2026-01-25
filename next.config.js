@@ -28,6 +28,11 @@ const nextConfig = {
         source: '/job-openings.php',
         destination: '/contact',
         permanent: true
+      },
+      {
+        source: '/admin',
+        destination: '/admin/index.html',
+        permanent: true,
       }
     ]
   }
