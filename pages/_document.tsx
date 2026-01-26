@@ -4,8 +4,10 @@ import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/do
 // const src = `https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}`
 export default class AmbitWeb extends Document {
   render() {
+    const { locale } = this.props.__NEXT_DATA__
+
     return (
-      <Html lang="en">
+      <Html lang={locale}>
         <Head>
           <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
         </Head>
