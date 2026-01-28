@@ -64,7 +64,8 @@ const findNavItemByUrl = (item: NavItem | NavItem[], url: string): NavItem | nul
       const found = findNavItemByUrl(item.children, url)
 
       if (found) {
-        const inheritedLocales = [...(item.allowedLocales || []), ...(found.allowedLocales || [])]
+        const inheritedLocales =
+          found.allowedLocales && found.allowedLocales.length > 0 ? found.allowedLocales : item.allowedLocales || []
         const mergedLocales = inheritedLocales.filter((value, index, self) => self.indexOf(value) === index)
         return { ...found, allowedLocales: mergedLocales } as NavItem
       }

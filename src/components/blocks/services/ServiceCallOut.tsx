@@ -5,7 +5,7 @@ export type AmbitService = {
   id: number
   title: string
   description?: string
-  Icon: FC<IconProps>
+  Icon?: FC<IconProps>
   why?: string
 }
 
@@ -35,7 +35,7 @@ const ServiceCallOut: FC<ServiceCallOutProps> = ({
           <div className="row gx-lg-8 gx-xl-12 process-wrapper text-center justify-content-center">
             {ambitServiceSet.map(({ id, Icon, title, description, why }) => (
               <div key={id} className="col-md-4 mb-4">
-                <Icon className="icon-svg-sm text-primary mb-4 w-100" />
+                <div>{Icon && <Icon className="icon-svg-sm text-primary mb-4 w-100" />}</div>
                 <h4 className="mb-1">{title}</h4>
                 {description && <p className="mb-0">{description}</p>}
                 {why && (

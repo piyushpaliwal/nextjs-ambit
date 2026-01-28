@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { Navbar } from '../navbar'
-import { FC } from 'react'
-import { NavbarProps } from '../navbar/Navbar'
+import type { FC } from 'react'
+import type { NavbarProps } from '../navbar/Navbar'
 
 export type HeaderProps = {
-  title: string
-  description: string
+  title?: string
+  description?: string
   keywords?: string
 } & NavbarProps
 
@@ -15,8 +15,8 @@ const Header: FC<HeaderProps> = ({ title, description, keywords, ...props }) => 
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        {title && <title>{title}</title>}
+        {description && <meta name="description" content={description} />}
         {keywords && <meta name="keywords" content={keywords} />}
       </Head>
       <header className="wrapper bg-soft-primary">

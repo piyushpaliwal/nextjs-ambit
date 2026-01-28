@@ -1,0 +1,175 @@
+{
+  "header": {
+    "title": "UK Tax, Accounting & Business Advisory Services | Ambit",
+    "description": "Ambit Tax and Accounting Services LLP is a UK-based firm providing tax, accounting, payroll, and advisory services to domestic and international businesses. Governance-led and compliance-first."
+  },
+  "hero": {
+    "subtitle": "UK Tax, Accounting & Business Advisory Services",
+    "description": "Ambit Tax and Accounting Services LLP is a UK-based tax, accounting, and business advisory firm supporting domestic and international businesses across the full business lifecycle. \n We advise founders, owner-managed businesses, professional firms, and growing companies on company formation, accounting, taxation, payroll, governance, and long-term structuring. \n Our work is grounded in compliance, data security, and audit-ready execution. Ambit combines partner-led advisory with structured delivery models, ensuring clarity, consistency, and reliable outcomes."
+  },
+  "support": {
+    "title": "Who We Support",
+    "subtitle": "Ambit works with businesses across growth stages, providing reliable finance, tax, and compliance support without unnecessary internal overhead.",
+    "aboutList": {
+      "list1": { "item1": "UK residents and domestic businesses", "item2": "Expatriates and non-resident individuals" },
+      "list2": { "item1": "Foreign-owned UK entities", "item2": "International groups operating in or entering the UK" }
+    }
+  },
+  "whyUs": {
+    "title": "Why Ambit",
+    "description": "Businesses choose Ambit for disciplined execution, strong governance, and long-term advisory alignment.",
+    "ambitServiceSet": {
+      "id1": {
+        "title": "Governance-focused, compliance-first approach"
+      },
+      "id2": {
+        "title": "Partner-led advisory with senior oversight"
+      },
+      "id3": {
+        "title": "Transparent pricing and clearly defined scopes"
+      },
+      "id4": {
+        "title": "Secure systems and confidential execution"
+      },
+      "id5": {
+        "title": "Audit-ready processes and documentation"
+      },
+      "id6": {
+        "title": "Long-term partnership mindset"
+      }
+    }
+  },
+  "coreServices": {
+    "title": "Our Core Services",
+    "description": "Ambit delivers integrated advisory and execution services aligned with UK regulatory and commercial requirements.",
+    "ctaText": "Explore Our Services",
+    "serviceSet": {
+      "id1": {
+        "title": "UK company incorporation and structuring"
+      },
+      "id2": {
+        "title": "Accounting and bookkeeping services"
+      },
+      "id3": {
+        "title": "Corporation tax, personal tax, and VAT compliance"
+      },
+      "id4": {
+        "title": "Payroll, PAYE, and employment tax services"
+      },
+      "id5": {
+        "title": "Governance and statutory compliance"
+      },
+      "id6": {
+        "title": "Ongoing advisory and retainer-based support"
+      }
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "Ambit follows a structured and disciplined engagement framework to ensure accountability, governance, and clarity at every stage.",
+    "processSectionList": {
+      "item1": {
+        "subtitle": "Ambit operates as a trusted extension of your business, providing senior-level oversight without the need for full-time internal resources.",
+        "processList": {
+          "item1": { "title": "Consultation", "description": "Free initial consultation and diagnostic review" },
+          "item2": { "title": "Delivery", "description": "Structured delivery with dedicated engagement teams" },
+          "item3": { "title": "Pricing", "description": "Transparent pricing and defined service levels" },
+          "item4": { "title": "Execution", "description": "Governance-led, confidential execution" },
+          "item5": { "title": "Client Portal", "description": "Secure systems and client portals" },
+          "item6": { "title": "Advisory", "description": "Ongoing reporting and proactive advisory​" }
+        }
+      }
+    }
+  },
+  "governance": {
+    "title": "Governance, GDPR & Data Security",
+    "governanceSet": {
+      "item1": {
+        "title": "Data Protection & GDPR",
+        "serviceSet": {
+          "item1": "GDPR-compliant data handling and retention",
+          "item2": "Role-based access controls and audit logs"
+        }
+      },
+      "item2": {
+        "title": "Information Security",
+        "serviceSet": {
+          "item1": "ISO 27001–aligned security principles",
+          "item2": "Encrypted data transfer and secure storage",
+          "item3": "Multi-factor authentication and continuous monitoring"
+        }
+      },
+      "item3": {
+        "title": "Governance & Internal Controls",
+        "serviceSet": {
+          "item1": "Segregation of duties across delivery teams",
+          "item2": "Statutory compliance checklists",
+          "item3": "Partner review and sign-off",
+          "item4": "Audit-ready documentation and reporting"
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "Who We Are?",
+    "subtitle": "Ambit Tax and Accounting Services LLP is a governance-focused accounting and advisory firm based in London.",
+    "description": "We support UK residents, expatriates, non-residents, and international businesses operating in or entering the UK. Our approach is practical, transparent, and compliance-first. \n We do not offer templated solutions. Every engagement is structured around the client’s business model, risk profile, and growth objectives. \n Ambit acts as a long-term partner, supporting clients from incorporation through growth, maturity, restructuring, and exit."
+  },
+  "whyStayWithUs": {
+    "title": "Why Long-Term Clients Stay with Ambit",
+    "description": "Our clients value predictability, accountability, and continuity.",
+    "serviceSet": {
+      "item1": {
+        "title": "Consistent delivery through structured teams"
+      },
+      "item2": {
+        "title": "Senior review and partner oversight"
+      },
+      "item3": {
+        "title": "Reduced compliance and regulatory risk"
+      },
+      "item4": {
+        "title": "Scalable support as the business grows"
+      },
+      "item5": {
+        "title": "Clear communication and reporting"
+      }
+    }
+  },
+  "faq": {
+    "faqSet": {
+      "item1": {
+        "heading": "Who does Ambit Tax and Accounting Services LLP work with?",
+        "body": "Ambit works with founders, owner-managed businesses, professional firms, expatriates, and international companies operating in or entering the UK."
+      },
+      "item2": {
+        "heading": "Do you support non-UK residents and foreign-owned UK companies?",
+        "body": "Yes. We support non-residents, expatriates, and foreign-owned UK entities with accounting, tax compliance, payroll, and governance requirements."
+      },
+      "item3": {
+        "heading": "Do you only provide tax filing services?",
+        "body": "No. Ambit provides end-to-end advisory and execution services, including accounting, payroll, tax compliance, company formation, governance, and ongoing advisory support."
+      },
+      "item4": {
+        "heading": "How does your engagement process work?",
+        "body": "We begin with a free consultation and diagnostic review, followed by scope definition, onboarding, and assignment of a dedicated engagement team with partner oversight."
+      },
+      "item5": {
+        "heading": "How do you ensure GDPR compliance and data security?",
+        "body": "We operate GDPR-compliant data handling processes, secure client portals, role-based access controls, encryption, and ISO 27001–aligned security practices."
+      },
+      "item6": {
+        "heading": "Can Ambit act as our extended finance and compliance team?",
+        "body": "Yes. Through our retainer-based and advisory models, Ambit works as an extension of your internal finance, accounting, and compliance function."
+      },
+      "item7": {
+        "heading": "How do we get started?",
+        "body": "You can start by booking a consultation. We will assess your requirements and outline a clear engagement structure aligned with your business objectives."
+      }
+    }
+  },
+  "cta": {
+    "title": "Book a Consultation",
+    "description": "Whether you are forming a US entity, managing ongoing compliance, or seeking long-term advisory support, Ambit is here to help. Schedule a consultation to discuss your business needs and next steps."
+  }
+}

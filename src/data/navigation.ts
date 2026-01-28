@@ -5,6 +5,8 @@ const home: NavItem = { id: 1, url: '/', title: 'Home' }
 const price: NavItem = { id: 1, url: '/price', title: 'Price', allowedLocales: [LocaleEnum.Global] }
 const blog: NavItem = { id: 1, url: '/blogs', title: 'Blog', allowedLocales: [LocaleEnum.Global] }
 const contact: NavItem = { id: 1, url: '/contact', title: 'Contact' }
+// todo: fix navigation
+const industry: NavItem = { id: 1, url: '/industries', title: 'Industries', allowedLocales: [LocaleEnum.GB] }
 
 const services: NavItem[] = [
   {
@@ -58,7 +60,7 @@ const services: NavItem[] = [
     id: 3,
     url: '#',
     title: 'Advisory',
-    allowedLocales: [LocaleEnum.US],
+    allowedLocales: [LocaleEnum.US, LocaleEnum.GB],
     children: [
       { id: 31, url: '/services/business-structure-advisory', title: 'Business Structure & Company Formation' }
     ]
@@ -67,17 +69,34 @@ const services: NavItem[] = [
     id: 4,
     url: '#',
     title: 'Execution',
-    allowedLocales: [LocaleEnum.US],
+    allowedLocales: [LocaleEnum.US, LocaleEnum.GB],
     children: [
       { id: 41, url: '/services/formation-setup', title: 'Company Formation & Business Setup' },
       { id: 42, url: '/services/accounting-bookkeeping-execution', title: 'Accounting & Bookkeeping' },
       { id: 43, url: '/services/tax-advisory', title: 'Tax Advisory & Compliance' },
-      { id: 44, url: '/services/specialized-tax', title: 'Specialized Tax Services' },
-      { id: 45, url: '/services/payroll-employment-tax', title: 'Payroll & Employment Tax' },
-      { id: 46, url: '/services/monthly-retainer', title: 'Monthly Retainer Services' },
-      { id: 47, url: '/services/remote-staffing-outsourcing', title: 'Remote Staffing & Outsourcing' },
-      { id: 48, url: '/services/systems-integration-tech-support', title: 'Systems Integration & Technology Support' },
-      { id: 49, url: '/services/international-cross-border-advisory', title: 'International / Cross-Border Advisory' }
+      { id: 44, url: '/services/specialized-tax', title: 'Specialized Tax Services', allowedLocales: [LocaleEnum.US] },
+      {
+        id: 45,
+        url: '/services/payroll-employment-tax',
+        title: 'Payroll & Employment Tax',
+        allowedLocales: [LocaleEnum.US]
+      },
+      {
+        id: 46,
+        url: '/services/payroll-execution',
+        title: 'Payroll,PAYE and CIS Services',
+        allowedLocales: [LocaleEnum.GB]
+      },
+      { id: 47, url: '/services/monthly-retainer', title: 'Monthly Retainer Services' },
+      { id: 48, url: '/services/remote-staffing-outsourcing', title: 'Remote Staffing & Outsourcing' },
+      { id: 49, url: '/services/systems-integration-tech-support', title: 'Systems Integration & Technology Support' },
+      {
+        id: 50,
+        url: '/services/international-cross-border-advisory',
+        title: 'International / Cross-Border Advisory',
+        allowedLocales: [LocaleEnum.US]
+      },
+      { id: 51, url: '/services/business-lifecycle-advisory', title: 'Business Lifecycle Advisory' }
     ]
   }
 ]
@@ -144,15 +163,15 @@ const industries: NavItem[] = [
 const company: NavItem[] = [
   { id: 1, url: '/about-us', title: 'About Us', children: [] },
   { id: 2, url: '/faq', title: 'FAQ', children: [], allowedLocales: [LocaleEnum.Global] },
-  { id: 3, url: '/privacy-policy', title: 'Privacy Policy', children: [], allowedLocales: [LocaleEnum.Global] },
-  { id: 4, url: '/approach', title: 'Our Approach', children: [], allowedLocales: [LocaleEnum.US] },
+  { id: 3, url: '/privacy-policy', title: 'Privacy Policy', children: [] },
+  { id: 4, url: '/approach', title: 'Our Approach', children: [], allowedLocales: [LocaleEnum.US, LocaleEnum.GB] },
   {
     id: 5,
     url: '/governance-security',
     title: 'Governance, Data Security & Compliance',
     children: [],
-    allowedLocales: [LocaleEnum.US]
+    allowedLocales: [LocaleEnum.US, LocaleEnum.GB]
   }
 ]
 
-export const navigationItemList: NavRecord = { home, services, price, blog, industries, company, contact }
+export const navigationItemList: NavRecord = { home, services, price, blog, industries, industry, company, contact }

@@ -9,17 +9,13 @@ import { Services } from 'components/blocks/services'
 import { Process } from 'components/blocks/process'
 import Services1 from 'components/blocks/services/Services1'
 import ContactPopup from 'components/common/ContactPopup'
-import type { HeroProps } from 'components/blocks/hero/Hero'
 import type { ProcessProps } from 'components/blocks/process/Process'
 import { processOutsourcingList } from 'data/process-outsourcing'
 import { processStaffingList } from 'data/process-staffing'
-import Header, { type HeaderProps } from 'components/blocks/header/Header'
-
-const heroProps: HeroProps = {
-  subtitle: 'Your One-Stop Solution for All Accounting Needs!',
-  description:
-    'Join 280+ clients across the country who trust in us for top-notch, budget-friendly outsource accounting, bookkeeping, tax planning, and tax preparation services. \n Choose from full-time, part-time, or on-demand staff, and test candidates before committing—at no cost to you.'
-}
+import Header from 'components/blocks/header/Header'
+import { usePageData } from 'hooks/usePageData'
+import { homeRegistryMap } from 'data/registries/home'
+import type { HomePageData } from 'types/pages'
 
 const processProps: ProcessProps = {
   title: 'Our Working Process',
@@ -40,20 +36,16 @@ const processProps: ProcessProps = {
   ]
 }
 
-const headerProps: HeaderProps = {
-  title: 'Online Bookkeeping and Accounting Services | Ambit Tax & Accounting',
-  description:
-    'Let Ambit handle all of your online bookkeeping and accounting needs including weekly bookkeeping, month-end financials, tax prep, and more.'
-}
-
 const HomeDefault: NextPage = () => {
+  const { headerProps, heroProps } = usePageData<HomePageData>(homeRegistryMap, 'home')
+
   return (
     <Fragment>
       <Header {...headerProps} />
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <Hero {...heroProps} />
+        {heroProps && <Hero {...heroProps} />}
         <ContactPopup />
 
         <section className="wrapper bg-light">
