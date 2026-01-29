@@ -248,6 +248,8 @@ const governanceProps: RegistryFor<ServiceWithListProps, 'home'> = {
 
 const whyStayWithUsProps: RegistryFor<ServiceCallOutProps, 'home'> = {
   ...commonWhyStayWithUsProps,
+  serviceClassName: 'gap-4',
+  serviceCardClassName: 'shadow-sm shadow-gray',
   ambitServiceSetKey: [
     {
       id: 1,

@@ -21,7 +21,7 @@ export const heroProps: RegistryFor<HeroProps, 'home'> = {
 
 export const ctaProps: RegistryFor<CtaProps, 'home'> = {
   titleKey: 'cta.title',
-  descriptionKey: 'cta.description'
+  buttonTitle: 'Get Started'
 }
 
 // ------ FAQ ------
@@ -62,6 +62,12 @@ export const commonFaqItems: RegistryFor<Faq2Item, 'home'>[] = [
     expand: false,
     headingKey: 'faq.faqSet.item6.heading',
     bodyKey: 'faq.faqSet.item6.body'
+  },
+  {
+    no: 'Seven',
+    expand: false,
+    headingKey: 'faq.faqSet.item7.heading',
+    bodyKey: 'faq.faqSet.item7.body'
   }
 ]
 

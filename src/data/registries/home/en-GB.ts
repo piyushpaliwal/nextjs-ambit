@@ -21,8 +21,8 @@ import {
 } from './shared'
 import type { HeaderProps } from 'components/blocks/header/Header'
 import type { HeroProps } from 'components/blocks/hero/Hero'
-import { About9Props } from 'components/blocks/about/About9'
-import { CtaProps } from 'components/common/cta'
+import type { About9Props } from 'components/blocks/about/About9'
+import type { CtaProps } from 'components/common/cta'
 
 // ------ Why Ambit ------
 
@@ -202,6 +202,8 @@ export const aboutUsProps: RegistryFor<About9Props, 'home'> = {
 const whyStayWithUsProps: RegistryFor<ServiceCallOutProps, 'home'> = {
   ...commonWhyStayWithUsProps,
   bgColor: 'bg-gray',
+  serviceClassName: 'gap-2',
+  serviceCardClassName: 'bg-light py-4 rounded',
   ambitServiceSetKey: [
     {
       id: 1,
@@ -231,19 +233,6 @@ const whyStayWithUsProps: RegistryFor<ServiceCallOutProps, 'home'> = {
   ]
 }
 
-// ------ FAQ ------
-const faqPropsGB: RegistryFor<Faq2Props, 'home'> = {
-  faqSetKey: [
-    ...commonFaqItems,
-    {
-      no: 'Seven',
-      expand: false,
-      headingKey: 'faq.faqSet.item7.heading',
-      bodyKey: 'faq.faqSet.item7.body'
-    }
-  ]
-}
-
 export const gbHomeRegistry: HomePageData = {
   headerProps: headerProps as unknown as HeaderProps,
   heroProps: heroProps as unknown as HeroProps,
@@ -254,6 +243,6 @@ export const gbHomeRegistry: HomePageData = {
   governanceProps: governanceProps as unknown as ServiceWithListProps,
   aboutUsProps: aboutUsProps as unknown as About8Props,
   whyStayWithUsProps: whyStayWithUsProps as unknown as ServiceCallOutProps,
-  faqProps: faqPropsGB as unknown as Faq2Props,
+  faqProps: commonFaqProps as unknown as Faq2Props,
   ctaProps: ctaProps as unknown as CtaProps
 }

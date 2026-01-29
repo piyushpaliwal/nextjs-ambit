@@ -27,7 +27,14 @@ const HomeLocale: NextPage = () => {
         {data.heroProps && <Hero {...data.heroProps} />}
         <ContactPopup />
         {data.supportProps && <About8 {...data.supportProps} />}
-        {data.whyUsProps && <ServiceCallOut {...data.whyUsProps} bgColor="bg-gray" />}
+        {data.whyUsProps && (
+          <ServiceCallOut
+            {...data.whyUsProps}
+            bgColor="bg-gray"
+            serviceClassName="gap-2"
+            serviceCardClassName="bg-light py-6 rounded"
+          />
+        )}
         {data.coreServiceProps && <Services11 {...data.coreServiceProps} />}
         {data.processProps && (
           <section className="wrapper bg-soft-primary">
@@ -41,7 +48,7 @@ const HomeLocale: NextPage = () => {
         {data.aboutUsProps && <About9 {...data.aboutUsProps} />}
         {data.whyStayWithUsProps && <ServiceCallOut {...data.whyStayWithUsProps} />}
         {data.faqProps && <FAQ2 {...data.faqProps} />}
-        {data.ctaProps && <Cta {...data.ctaProps} />}
+        {data.ctaProps && <Cta {...data.ctaProps} bgColor="bg-soft-primary" />}
       </main>
       <Footer />
     </>

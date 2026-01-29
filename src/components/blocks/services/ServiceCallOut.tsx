@@ -14,13 +14,17 @@ export type ServiceCallOutProps = {
   description?: string
   ambitServiceSet?: AmbitService[]
   bgColor?: string
+  serviceClassName?: string
+  serviceCardClassName?: string
 }
 
 const ServiceCallOut: FC<ServiceCallOutProps> = ({
   ambitServiceSet,
   title,
   description,
-  bgColor = 'bg-light'
+  bgColor = 'bg-light',
+  serviceClassName = '',
+  serviceCardClassName = ''
 }: ServiceCallOutProps) => {
   return (
     <section className={`wrapper ${bgColor}`}>
@@ -32,9 +36,11 @@ const ServiceCallOut: FC<ServiceCallOutProps> = ({
           </div>
         </div>
         {ambitServiceSet && (
-          <div className="row gx-lg-8 gx-xl-12 process-wrapper text-center justify-content-center">
+          <div
+            className={`row gx-lg-8 gx-xl-12 process-wrapper text-center justify-content-center ${serviceClassName}`}
+          >
             {ambitServiceSet.map(({ id, Icon, title, description, why }) => (
-              <div key={id} className="col-md-4 mb-4">
+              <div key={id} className={`col-md-4 mb-4 ${serviceCardClassName}`}>
                 <div>{Icon && <Icon className="icon-svg-sm text-primary mb-4 w-100" />}</div>
                 <h4 className="mb-1">{title}</h4>
                 {description && <p className="mb-0">{description}</p>}
