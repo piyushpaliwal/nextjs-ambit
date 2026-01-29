@@ -10,6 +10,7 @@ import type { HomePageData } from 'types/pages'
 import {
   commonCoreServiceProps,
   commonFaqItems,
+  commonFaqProps,
   commonGovernanceProps,
   commonProcessProps,
   commonWhyStayWithUsProps,
