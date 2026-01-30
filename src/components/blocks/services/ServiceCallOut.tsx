@@ -16,6 +16,7 @@ export type ServiceCallOutProps = {
   bgColor?: string
   serviceClassName?: string
   serviceCardClassName?: string
+  canHover?: boolean
 }
 
 const ServiceCallOut: FC<ServiceCallOutProps> = ({
@@ -24,7 +25,8 @@ const ServiceCallOut: FC<ServiceCallOutProps> = ({
   description,
   bgColor = 'bg-light',
   serviceClassName = '',
-  serviceCardClassName = ''
+  serviceCardClassName = '',
+  canHover = false
 }: ServiceCallOutProps) => {
   return (
     <section className={`wrapper ${bgColor}`}>
@@ -37,18 +39,20 @@ const ServiceCallOut: FC<ServiceCallOutProps> = ({
         </div>
         {ambitServiceSet && (
           <div
-            className={`row gx-lg-8 gx-xl-12 process-wrapper text-center justify-content-center ${serviceClassName}`}
+            className={`${canHover ? 'nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg' : ''}  row gx-lg-8 gx-xl-12 process-wrapper text-center justify-content-center ${serviceClassName}`}
           >
             {ambitServiceSet.map(({ id, Icon, title, description, why }) => (
-              <div key={id} className={`col-md-4 mb-4 ${serviceCardClassName}`}>
-                <div>{Icon && <Icon className="icon-svg-sm text-primary mb-4 w-100" />}</div>
-                <h4 className="mb-1">{title}</h4>
-                {description && <p className="mb-0">{description}</p>}
-                {why && (
-                  <p>
-                    <span className="fst-italic">Why it matters:</span> {why}
-                  </p>
-                )}
+              <div key={id} className={`${canHover ? 'nav-item' : ''} col-md-4 mb-4`}>
+                <div className={`${canHover ? 'nav-link' : ''} ${serviceCardClassName}`}>
+                  <div>{Icon && <Icon className="icon-svg-sm text-primary mb-4 w-100" />}</div>
+                  <h4 className="mb-1">{title}</h4>
+                  {description && <p className="mb-0">{description}</p>}
+                  {why && (
+                    <p>
+                      <span className="fst-italic">Why it matters:</span> {why}
+                    </p>
+                  )}
+                </div>
               </div>
             ))}
           </div>

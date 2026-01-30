@@ -1,4 +1,4 @@
-import type { Namespace, ParseKeys } from 'i18next'
+import type { Namespace } from 'i18next'
 import type { ComponentType, ReactElement } from 'react'
 
 type StripNodeKey<K> = K extends `${infer P}Key` ? P : K
@@ -21,7 +21,7 @@ type IsObject<T> = T extends object ? (T extends Function ? false : T extends Ar
 
 type MapToKey<T, NS extends Namespace> =
   NonNullable<T> extends string
-    ? ParseKeys<NS>
+    ? string
     : NonNullable<T> extends Array<infer U>
       ? Array<MapToKey<U, NS>>
       : IsObject<NonNullable<T>> extends true

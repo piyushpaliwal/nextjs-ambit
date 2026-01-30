@@ -1,9 +1,10 @@
-import type { FC, ReactNode } from 'react'
+import { FC, Fragment, ReactNode } from 'react'
 import NextLink from 'components/reuseable/links/NextLink'
 import type { WithImg } from 'types/common'
 import Breadcrumbs, { type BreadcrumbItem } from 'components/common/Breadcrumbs'
+import { splitPara } from 'utils/helpers'
 
-export type HeroProps = {
+export type Hero4Props = {
   title?: ReactNode
   subtitle?: string
   primaryBtnText?: string
@@ -11,19 +12,17 @@ export type HeroProps = {
   breadcrumbs?: BreadcrumbItem[]
 } & Omit<WithImg, 'imgSrcSet'>
 
-const Hero4: FC<HeroProps> = ({
-  title = (
-    <>
-      Elevate your digital presence with <span className="text-primary">precision.</span>
-    </>
-  ),
-  subtitle = 'We combine data-driven insights with world-class design to help your brand scale effectively in a competitive global market.',
+const Hero4: FC<Hero4Props> = ({
+  title,
+  subtitle,
   imgSrc = '/img/photos/about10.jpg',
   imgAlt = 'Hero Visual',
   primaryBtnText = 'Start Consultation',
   primaryHref = '/contact',
   breadcrumbs
 }) => {
+  const paragraphs = splitPara(subtitle || '')
+  const validImgSrc = typeof imgSrc === 'string' ? imgSrc : imgSrc?.src || ''
   return (
     <section className="wrapper bg-ambit image-wrapper bg-image bg-overlay bg-overlay-400 bg-content text-white">
       <div className="container pt-14 pb-12">
@@ -42,7 +41,12 @@ const Hero4: FC<HeroProps> = ({
 
             {subtitle && (
               <p className="lead fs-lg lh-sm mb-7 pe-xl-10 text-white-50 animate__animated animate__fadeInUp animate__delay-1s">
-                {subtitle}
+                {paragraphs.map((text, index) => (
+                  <Fragment key={`paragraph-${index}`}>
+                    {text}
+                    {index < paragraphs.length - 1 && <br />}
+                  </Fragment>
+                ))}
               </p>
             )}
 
@@ -55,7 +59,7 @@ const Hero4: FC<HeroProps> = ({
 
           <div className="col-lg-5 offset-lg-1 animate__animated animate__fadeInRight">
             <div className="hero-image-card shadow-lg">
-              {imgSrc && <img src={imgSrc} alt={imgAlt} className="hero-img" />} <div className="overlay" />
+              {imgSrc && <img src={validImgSrc} alt={imgAlt} className="hero-img" />} <div className="overlay" />
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Breadcrumbs: FC<BreadcrumbProps> = ({ items }) => {
       className="d-flex justify-content-center justify-content-lg-start align-items-center gap-2 mb-4 opacity-75 animate__animated animate__fadeInDown"
     >
       {items.map((item, index) => (
-        <Fragment key={index}>
+        <Fragment key={`breadcrumb-${index}`}>
           {index > 0 && <span className="small text-white-50">/</span>}
 
           {item.isActive ? (

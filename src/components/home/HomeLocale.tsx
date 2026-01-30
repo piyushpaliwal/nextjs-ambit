@@ -27,14 +27,7 @@ const HomeLocale: NextPage = () => {
         {data.heroProps && <Hero {...data.heroProps} />}
         <ContactPopup />
         {data.supportProps && <About8 {...data.supportProps} />}
-        {data.whyUsProps && (
-          <ServiceCallOut
-            {...data.whyUsProps}
-            bgColor="bg-gray"
-            serviceClassName="gap-2"
-            serviceCardClassName="bg-light py-6 rounded"
-          />
-        )}
+        {data.whyUsProps && <ServiceCallOut {...data.whyUsProps} bgColor="bg-gray" />}
         {data.coreServiceProps && <Services11 {...data.coreServiceProps} />}
         {data.processProps && (
           <section className="wrapper bg-soft-primary">

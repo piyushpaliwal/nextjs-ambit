@@ -204,7 +204,7 @@ const whyStayWithUsProps: RegistryFor<ServiceCallOutProps, 'home'> = {
   ...commonWhyStayWithUsProps,
   bgColor: 'bg-gray',
   serviceClassName: 'gap-2',
-  serviceCardClassName: 'bg-light py-4 rounded',
+
   ambitServiceSetKey: [
     {
       id: 1,

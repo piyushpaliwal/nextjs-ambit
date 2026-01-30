@@ -92,7 +92,8 @@ export const supportProps: RegistryFor<About8Props, 'home'> = {
 
 export const commonWhyUsProps: RegistryFor<ServiceCallOutProps, 'home'> = {
   titleKey: 'whyUs.title',
-  descriptionKey: 'whyUs.description'
+  descriptionKey: 'whyUs.description',
+  canHover: true
 }
 
 // ------ Our Core Services ------
@@ -120,5 +121,6 @@ export const commonGovernanceProps: RegistryFor<ServiceWithListProps, 'home'> = 
 
 export const commonWhyStayWithUsProps: RegistryFor<ServiceCallOutProps, 'home'> = {
   titleKey: 'whyStayWithUs.title',
-  descriptionKey: 'whyStayWithUs.description'
+  descriptionKey: 'whyStayWithUs.description',
+  canHover: true
 }

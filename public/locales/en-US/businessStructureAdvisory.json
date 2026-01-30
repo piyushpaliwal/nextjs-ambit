@@ -1,0 +1,100 @@
+{
+  "header": {
+    "title": "US Business Structure & Company Formation Advisory | Ambit",
+    "description": "Ambit provides US business structure and company formation advisory for startups, owner-managed businesses, and international companies, ensuring IRS compliance and scalable growth."
+  },
+  "hero": {
+    "subtitle": "Choosing the correct business structure in the United States is a foundational decision that impacts taxation, liability, ownership flexibility, reporting obligations, investor readiness, and long-term scalability."
+  },
+  "whatWeDo": {
+    "title": "What We Do?",
+    "description": "Ambit advises founders, owner-managed businesses, startups, and international groups on selecting and reviewing business structures aligned with commercial objectives, IRS regulations, and state compliance requirements. \n Our advisory focuses on operational substance, not just entity registration. We assess your business model, growth trajectory, and regulatory exposure to ensure the structure chosen is optimal today and scalable for tomorrow."
+  },
+  "structureAdvise": {
+    "title": "Structures We Advise On",
+    "serviceProperty": {
+      "item1": {
+        "title": "Sole Proprietorship",
+        "description": "Sole proprietorships are suitable for early-stage or low-risk activities. Income is reported on the individual tax return and subject to self-employment tax.",
+        "serviceSet": {
+          "item1": "Suitability based on income and risk profile",
+          "item2": "Federal and state tax exposure",
+          "item3": "Transition planning to LLC or corporate structures"
+        }
+      },
+      "item2": {
+        "title": "Limited Liability Company (LLC)",
+        "description": "LLCs provide liability protection and flexibility in taxation and management.",
+        "serviceSet": {
+          "item1": "Single-member and multi-member structures",
+          "item2": "Federal and state tax elections",
+          "item3": "Operating agreements and governance",
+          "item4": "Suitability versus S Corporation or C Corporation"
+        }
+      },
+      "item3": {
+        "title": "S Corporation",
+        "description": "S Corporations offer pass-through taxation with payroll optimization, subject to IRS eligibility rules.",
+        "serviceSet": {
+          "item1": "Reasonable compensation and dividend planning",
+          "item2": "Shareholder eligibility and compliance",
+          "item3": "Multi-state tax planning",
+          "item4": "Ongoing IRS compliance management"
+        }
+      },
+      "item4": {
+        "title": "C Corporation",
+        "description": "C Corporations are suitable for scalable, investor-backed, or high-growth companies.",
+        "serviceSet": {
+          "item1": "Corporate tax planning and optimization",
+          "item2": "Equity and share class structuring",
+          "item3": "Investor readiness and compliance",
+          "item4": "Holding company and group structuring"
+        }
+      }
+    }
+  },
+  "structureReview": {
+    "title": "Ongoing Structure Reviews",
+    "subtitle": "Periodic reviews help maintain tax efficiency, governance integrity, and long-term scalability.",
+    "description": "Business structures should evolve as your business grows. Ambit conducts periodic reviews to ensure alignment with:",
+    "aboutList": {
+      "list1": {
+        "item1": "Revenue growth and profitability",
+        "item2": "Multi-state or international operations"
+      },
+      "list2": {
+        "item1": "Investment or exit planning",
+        "item2": "Regulatory changes and compliance updates"
+      }
+    }
+  },
+  "faq": {
+    "faqSet": {
+      "item1": {
+        "heading": "What business structures does Ambit advise on?",
+        "body": "We provide advisory for Sole Proprietorship, LLC, S Corporation, and C Corporation structures."
+      },
+      "item2": {
+        "heading": "Does Ambit help with compliance for multi-state operations?",
+        "body": "Yes, we ensure your business structure aligns with federal and state regulations, including multi-state and international operations."
+      },
+      "item3": {
+        "heading": "Can Ambit review my existing business structure?",
+        "body": "Absolutely. We conduct periodic structure reviews to ensure compliance, tax efficiency, and scalability."
+      },
+      "item4": {
+        "heading": "Do you provide guidance for startups and international companies?",
+        "body": "Yes. We advise founders, startups, owner-managed businesses, and foreign-owned entities operating in the US."
+      },
+      "item5": {
+        "heading": "How do I request a business structure assessment?",
+        "body": "You can contact us directly via our consultation request form. Our team will provide a structured, compliance-focused assessment."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Assess Your Business Structure?",
+    "description": "Whether forming a new US entity or reviewing an existing structure, Ambit provides structured, compliant, and forward-looking advisory support."
+  }
+}

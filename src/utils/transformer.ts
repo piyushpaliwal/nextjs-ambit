@@ -9,7 +9,7 @@ const translateArray = <N extends Namespace>(arr: any[], t: TFunction<N, undefin
       return recursivelyTranslate(item, t)
     }
     if (Array.isArray(item)) return translateArray(item, t) // Recurse for string[][]
-    if (typeof item === 'string') return t(item as any) // Translate string
+    if (typeof item === 'string') return (t as any)(item) // Translate string
     return item
   })
 }
@@ -28,7 +28,7 @@ export const recursivelyTranslate = <T, N extends Namespace>(data: T, t: TFuncti
       if (key.endsWith('Key')) {
         const newKey = key.replace(/Key$/, '')
         if (typeof value === 'string') {
-          transformed[newKey] = t(value as any)
+          transformed[newKey] = (t as any)(value)
         } else if (Array.isArray(value)) {
           transformed[newKey] = translateArray(value, t)
         }

@@ -11,11 +11,15 @@ import type homeGB from '../public/locales/en-GB/home.json'
 
 import type footer from '../public/locales/en/footer.json'
 
+import type businessStructureAdvisoryUS from '../public/locales/en-US/business-structure-advisory.json'
+import type businessStructureAdvisoryGB from '../public/locales/en-GB/business-structure-advisory.json'
+
 // 2. Define the interface for your resources
 export interface I18nNamespaces {
   common: typeof commonUS & typeof commonGB
   home: typeof homeUS & typeof homeGB
   footer: typeof footer
+  businessStructureAdvisory: typeof businessStructureAdvisoryUS & typeof businessStructureAdvisoryGB
 }
 
 // 3. Augment the 'i18next' module
