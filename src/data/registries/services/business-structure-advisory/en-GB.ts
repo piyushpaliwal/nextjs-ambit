@@ -10,7 +10,7 @@ import type { Hero4Props } from 'components/blocks/hero/Hero4'
 import type { TrustBoxProps } from 'components/common/TrustBox'
 import type { About17Props } from 'components/blocks/about/About17'
 import { gbHeroTitle } from './components'
-import { ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
+import type { ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
 
 // -------- hero section ---------
 

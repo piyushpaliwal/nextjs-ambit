@@ -9,7 +9,6 @@ import loadIcon, { IconFolder } from 'utils/loadIcon'
 import type { HomePageData } from 'types/pages'
 import {
   commonCoreServiceProps,
-  commonFaqItems,
   commonFaqProps,
   commonGovernanceProps,
   commonProcessProps,

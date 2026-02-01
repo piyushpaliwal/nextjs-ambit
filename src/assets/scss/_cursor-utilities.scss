@@ -1,0 +1,26 @@
+// =========================================
+// Bootstrap Utility API - Cursor Utilities
+// =========================================
+
+// Add custom cursor utilities to Bootstrap's utility map
+$utilities: map-merge(
+  $utilities,
+  (
+    'cursor': (
+      property: cursor,
+      class: cursor,
+      values: (
+        default: default,
+        pointer: pointer,
+        text: text,
+        move: move,
+        not-allowed: not-allowed,
+        crosshair: crosshair,
+        wait: wait,
+        help: help,
+        grab: grab,
+        grabbing: grabbing
+      )
+    )
+  )
+);
