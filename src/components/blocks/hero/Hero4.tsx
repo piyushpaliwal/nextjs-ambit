@@ -1,9 +1,10 @@
-import { FC, Fragment } from 'react'
+import { type FC, Fragment } from 'react'
 import NextLink from 'components/reuseable/links/NextLink'
 import type { WithImg } from 'types/common'
 import Breadcrumbs, { type BreadcrumbItem } from 'components/common/Breadcrumbs'
 import { splitPara } from 'utils/helpers'
 import { Trans } from 'react-i18next'
+import SafeHydration from 'components/layouts/SafeHydration'
 
 export type Hero4Props = {
   title?: string
@@ -38,10 +39,9 @@ const Hero4: FC<Hero4Props> = ({
                 className="display-1 fw-bolder mb-5 text-white animate__animated animate__fadeInUp animate__delay-1s"
                 style={{ letterSpacing: '-0.04em', lineHeight: 1.1 }}
               >
-                <TransComponent
-                  defaults={title as string}
-                  components={{ highlight: <span className="text-primary" /> }}
-                />
+                <SafeHydration fallback={title}>
+                  <TransComponent defaults={title} components={{ highlight: <span className="text-primary" /> }} />
+                </SafeHydration>
               </h1>
             )}
 
