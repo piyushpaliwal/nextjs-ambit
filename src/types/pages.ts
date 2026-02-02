@@ -41,8 +41,15 @@ export type BusinessStructureAdvisoryData = {
 export type FormationSetupData = {
   headerProps: HeaderProps
   heroProps?: Hero4Props
-  serviceProps?: TrustBoxProps
+  serviceProps?: ServiceCallOutProps
   whoThisIsForProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
+
+export type AccountingBookkeepingExecutionData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  serviceProps?: ServiceCallOutProps
   ctaProps?: CtaProps
 }
 
