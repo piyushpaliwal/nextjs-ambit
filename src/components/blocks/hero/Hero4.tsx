@@ -23,8 +23,6 @@ const Hero4: FC<Hero4Props> = ({
   primaryHref = '/contact',
   breadcrumbs
 }) => {
-  const TransComponent = Trans as any
-
   const paragraphs = splitPara(subtitle || '')
   const validImgSrc = typeof imgSrc === 'string' ? imgSrc : imgSrc?.src || ''
   return (
@@ -40,7 +38,7 @@ const Hero4: FC<Hero4Props> = ({
                 style={{ letterSpacing: '-0.04em', lineHeight: 1.1 }}
               >
                 <SafeHydration fallback={title}>
-                  <TransComponent defaults={title} components={{ highlight: <span className="text-primary" /> }} />
+                  <Trans defaults={title} components={{ highlight: <span className="text-primary" /> }} />
                 </SafeHydration>
               </h1>
             )}
@@ -58,7 +56,12 @@ const Hero4: FC<Hero4Props> = ({
 
             {(primaryBtnText || primaryHref) && (
               <div className="d-flex justify-content-center justify-content-lg-start gap-3 animate__animated animate__fadeInUp animate__delay-2s">
-                <NextLink title={primaryBtnText} href={primaryHref} className="btn btn-lg btn-white rounded me-2" />
+                <NextLink
+                  title={primaryBtnText}
+                  href={primaryHref}
+                  className="btn btn-lg btn-white rounded me-2"
+                  target="_blank"
+                />
               </div>
             )}
           </div>

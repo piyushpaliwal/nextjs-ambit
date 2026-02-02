@@ -16,7 +16,6 @@ interface Props {
   rawData: BusinessStructureAdvisoryData
 }
 
-// Step 1: Use the DRY utility
 export const getStaticProps = getI18nStaticProps('services/business-structure-advisory', [
   'businessStructureAdvisory',
   'footer',

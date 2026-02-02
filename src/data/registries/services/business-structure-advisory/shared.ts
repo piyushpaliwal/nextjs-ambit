@@ -19,7 +19,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 
 export const commonHeroProps: RegistryFor<Hero4Props, 'businessStructureAdvisory'> = {
   subtitleKey: 'hero.subtitle',
-  primaryHref: '/contact',
+  primaryHref: 'https://calendly.com/ambit-accounting/15min',
   primaryBtnText: 'Schedule Consultation',
   breadcrumbs: breadcrumbs
 }

@@ -1,7 +1,7 @@
 import type { Faq2Props } from 'components/blocks/faq/FAQ2'
 import type { RegistryFor } from 'types/transformer'
 import type { ServiceListProperty, ServiceWithListProps } from 'components/blocks/services'
-import { BusinessStructureAdvisoryData, definePageData } from 'types/pages'
+import { type BusinessStructureAdvisoryData, definePageData } from 'types/pages'
 import { commonCtaProps, commonFaqProps, commonHeaderProps, commonHeroProps, commonWhatWeDoProps } from './shared'
 import type { HeaderProps } from 'components/blocks/header/Header'
 import type { CtaProps } from 'components/common/cta'

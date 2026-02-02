@@ -1,4 +1,3 @@
-// components/IconRenderer.tsx
 import dynamic from 'next/dynamic'
 import { useEffect, useMemo, useState } from 'react'
 import type IconProps from 'types/icon'
