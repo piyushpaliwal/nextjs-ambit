@@ -5,22 +5,19 @@ import Head from 'next/head'
 import i8 from '../../public/img/illustrations/i8.png'
 import whyAmbit from '../../public/img/illustrations/construction-accounting-why-ambit.png'
 import Footer from 'components/blocks/footer/Footer'
-import SmartphoneTwo from 'icons/lineal/SmartphoneTwo'
-import Shield from 'icons/lineal/Shield'
 import color from 'utils/color'
 import Invoice from 'icons/lineal/Invoice'
 import Savings from 'icons/lineal/Savings'
 import Certificate from 'icons/lineal/Certificate'
 import Balance from 'icons/lineal/Balance'
-import User from 'icons/lineal/User'
 import Cta from 'components/common/cta'
 import TrustBox from 'components/common/TrustBox'
 import ChallengeCallOut, { ProblemCallOut } from 'components/common/ChallengeCallOut'
 import ServiceCallOut, { AmbitService } from 'components/blocks/services/ServiceCallOut'
 import ServicesHero from 'components/blocks/services/ServicesHero'
-import CloudComputing from 'icons/lineal/CloudComputing'
 import { FAQ2 } from 'components/blocks/faq'
 import { constructionAccountingFaqSet } from 'data/faq'
+import { IconFolder } from 'types/icon'
 
 const trustSet = [
   [
@@ -85,42 +82,42 @@ const ambitServiceSet: AmbitService[] = [
     title: 'Work-In-Progress (WIP) Traking',
     description: 'We monitor your ongoing projects, costs, and revenue.',
     why: 'Faster project closing and better margin control.',
-    Icon: SmartphoneTwo
+    iconConfig: { icon: 'SmartphoneTwo', folder: IconFolder.LINEAL }
   },
   {
     id: 2,
     title: 'Job Costing & Budget Management',
     description: 'We help you plan, track, and manage costs for each project.',
     why: 'Avoid budget overruns and take smarter financial decisions.',
-    Icon: Invoice
+    iconConfig: { icon: 'Invoice', folder: IconFolder.LINEAL }
   },
   {
     id: 3,
     title: 'Payroll & Compliance Handling',
     description: ' We manage staff wages, contractor payments, and all compliance needs.',
     why: 'Ensures timely payments and prevents legal issues.',
-    Icon: User
+    iconConfig: { icon: 'User', folder: IconFolder.LINEAL }
   },
   {
     id: 4,
     title: 'Tax Planning & Filings',
     description: ' We take care of GST, Income Tax, TDS, and other returns.',
     why: 'Saves money and keeps your business fully compliant.',
-    Icon: Shield
+    iconConfig: { icon: 'Shield', folder: IconFolder.LINEAL }
   },
   {
     id: 5,
     title: 'Financial Reports & Performance Insights',
     description: ' We provide easy-to-understand reports on cash flow, profit, and project performance.',
     why: 'Helps you make quick, clear, and confident business decisions.',
-    Icon: Analytics
+    iconConfig: { icon: 'Analytics', folder: IconFolder.LINEAL }
   },
   {
     id: 6,
     title: 'Cloud Accounting & Audit Support',
     description: ' We maintain accurate cloud-based books and prepare all records for smooth audits.',
     why: 'Reduces errors, saves time, and gives you access from anywhere.',
-    Icon: CloudComputing
+    iconConfig: { icon: 'CloudComputing', folder: IconFolder.LINEAL }
   }
 ]
 

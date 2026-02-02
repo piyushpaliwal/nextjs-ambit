@@ -13,9 +13,8 @@ import type { ProcessProps } from 'components/blocks/process/Process'
 import { processOutsourcingList } from 'data/process-outsourcing'
 import { processStaffingList } from 'data/process-staffing'
 import Header from 'components/blocks/header/Header'
-import { usePageData } from 'hooks/usePageData'
-import { homeRegistryMap } from 'data/registries/home'
 import type { HomePageData } from 'types/pages'
+import { useTransformedData } from 'hooks/useTransformedData'
 
 const processProps: ProcessProps = {
   title: 'Our Working Process',
@@ -35,9 +34,11 @@ const processProps: ProcessProps = {
     }
   ]
 }
-
-const HomeDefault: NextPage = () => {
-  const { headerProps, heroProps } = usePageData<HomePageData>(homeRegistryMap, 'home')
+interface Props {
+  rawData: HomePageData
+}
+const HomeDefault: NextPage<Props> = ({ rawData }) => {
+  const { headerProps, heroProps } = useTransformedData(rawData, 'home')
 
   return (
     <Fragment>
@@ -71,12 +72,9 @@ const HomeDefault: NextPage = () => {
             <Pricing />
           </div>
         </section> */}
-        <section className="wrapper bg-gray">
-          <div className="container py-14 py-md-14">
-            {/* working process */}
-            <Process {...processProps} />
-          </div>
-        </section>
+        {/* working process */}
+        <Process {...processProps} bgColor="bg-gray" />
+
         <section
           className="wrapper image-wrapper bg-image bg-overlay"
           style={{ backgroundImage: 'url(/img/photos/bg-testimonial.jpg)' }}

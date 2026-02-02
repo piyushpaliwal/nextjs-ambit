@@ -5,12 +5,9 @@ import Head from 'next/head'
 import i13 from '../../public/img/illustrations/i13@2x.png'
 import whyAmbit from '../../public/img/illustrations/real-estate-accounting-why-ambit.png'
 import Footer from 'components/blocks/footer/Footer'
-import SmartphoneTwo from 'icons/lineal/SmartphoneTwo'
-import Shield from 'icons/lineal/Shield'
 import color from 'utils/color'
 import Invoice from 'icons/lineal/Invoice'
 import Certificate from 'icons/lineal/Certificate'
-import User from 'icons/lineal/User'
 import Cta from 'components/common/cta'
 import TrustBox from 'components/common/TrustBox'
 import ChallengeCallOut, { ProblemCallOut } from 'components/common/ChallengeCallOut'
@@ -19,6 +16,7 @@ import ServicesHero from 'components/blocks/services/ServicesHero'
 import Savings from 'icons/lineal/Savings'
 import { FAQ2 } from 'components/blocks/faq'
 import { realEstateAccountingFaqSet } from 'data/faq'
+import { IconFolder } from 'types/icon'
 
 const trustSet = [
   [
@@ -75,31 +73,31 @@ const ambitServiceSet: AmbitService[] = [
     id: 1,
     title: 'Bookkeeping & Job Costing',
     description: 'Rent & expense tracking, reconciliations, monthly reporting.',
-    Icon: SmartphoneTwo
+    iconConfig: { icon: 'SmartphoneTwo', folder: IconFolder.LINEAL }
   },
   {
     id: 2,
     title: 'Accounts Payable & Receivable',
     description: 'Accounts Payable & Receivable for tenants and vendors.',
-    Icon: Invoice
+    iconConfig: { icon: 'Invoice', folder: IconFolder.LINEAL }
   },
   {
     id: 3,
     title: 'Payroll Outsourcing',
     description: 'Payroll management for staff and maintenance.',
-    Icon: User
+    iconConfig: { icon: 'User', folder: IconFolder.LINEAL }
   },
   {
     id: 4,
     title: 'Financial Reporting',
     description: 'Dashboards for occupancy, revenue per sq. ft., expense ratios.',
-    Icon: Analytics
+    iconConfig: { icon: 'Analytics', folder: IconFolder.LINEAL }
   },
   {
     id: 5,
     title: 'Tax & Compliance',
     description: 'state/local property tax, 1031 exchange support.',
-    Icon: Shield
+    iconConfig: { icon: 'Shield', folder: IconFolder.LINEAL }
   }
 ]
 

@@ -1,11 +1,10 @@
+import IconRenderer, { type IconRendererProps } from 'components/common/IconRenderer'
 import NextLink from 'components/reuseable/links/NextLink'
 import { ServiceCard4 } from 'components/reuseable/service-cards'
-import type { FC } from 'react'
-import type IconProps from 'types/icon'
 
 export type Service11Services = {
   id: number
-  Icon?: FC<IconProps>
+  iconConfig?: IconRendererProps
   title?: string
   description?: string
 }
@@ -49,12 +48,12 @@ export default function Services11({
             <p className="lead fs-lg mb-8 pe-xxl-2">{description}</p>
 
             <div className="row gx-xl-10 gy-6">
-              {serviceSet.map(({ id, title, description, Icon }) => (
+              {serviceSet.map(({ id, title, description, iconConfig }) => (
                 <div className="col-md-6 col-lg-12 col-xl-6" key={id}>
                   <ServiceCard4
                     title={title}
                     description={description}
-                    Icon={Icon && <Icon className="icon-svg-sm text-primary me-5" />}
+                    Icon={iconConfig && <IconRenderer {...iconConfig} className="icon-svg-sm text-primary me-5" />}
                   />
                 </div>
               ))}

@@ -37,3 +37,6 @@ export type BusinessStructureAdvisoryData = {
   faqProps?: Faq2Props
   ctaProps?: CtaProps
 }
+
+// A helper that "checks" the type but returns the value as-is
+export const definePageData = <T>(data: T): T => data

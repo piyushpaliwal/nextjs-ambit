@@ -1,22 +1,21 @@
 import type { Faq2Props } from 'components/blocks/faq/FAQ2'
 import type { RegistryFor } from 'types/transformer'
 import type { ServiceListProperty, ServiceWithListProps } from 'components/blocks/services'
-import loadIcon, { IconFolder } from 'utils/loadIcon'
-import type { BusinessStructureAdvisoryData } from 'types/pages'
+import { type BusinessStructureAdvisoryData, definePageData } from 'types/pages'
 import { commonCtaProps, commonHeaderProps, commonHeroProps, commonFaqItems, commonWhatWeDoProps } from './shared'
 import type { HeaderProps } from 'components/blocks/header/Header'
 import type { CtaProps } from 'components/common/cta'
 import type { Hero4Props } from 'components/blocks/hero/Hero4'
 import type { TrustBoxProps } from 'components/common/TrustBox'
 import type { About17Props } from 'components/blocks/about/About17'
-import { gbHeroTitle } from './components'
 import type { ServiceCallOutProps } from 'components/blocks/services/ServiceCallOut'
+import { IconFolder } from 'types/icon'
 
 // -------- hero section ---------
 
 const heroProps: RegistryFor<Hero4Props, 'businessStructureAdvisory'> = {
   ...commonHeroProps,
-  title: gbHeroTitle
+  title: 'Business Structure <highlight>Advisory</highlight> Services'
 }
 
 // ---------- what we do ------------
@@ -36,22 +35,22 @@ const whoThisIsForProps: RegistryFor<ServiceCallOutProps, 'businessStructureAdvi
     {
       id: 1,
       titleKey: 'whoThisIsFor.list.item1.title',
-      Icon: loadIcon('Rocket', IconFolder.LINEAL)
+      iconConfig: { icon: 'Rocket', folder: IconFolder.LINEAL }
     },
     {
       id: 2,
       titleKey: 'whoThisIsFor.list.item2.title',
-      Icon: loadIcon('Analytics', IconFolder.LINEAL)
+      iconConfig: { icon: 'Analytics', folder: IconFolder.LINEAL }
     },
     {
       id: 3,
       titleKey: 'whoThisIsFor.list.item3.title',
-      Icon: loadIcon('Earth', IconFolder.LINEAL)
+      iconConfig: { icon: 'Earth', folder: IconFolder.LINEAL }
     },
     {
       id: 4,
       titleKey: 'whoThisIsFor.list.item4.title',
-      Icon: loadIcon('BriefcaseTwo', IconFolder.LINEAL)
+      iconConfig: { icon: 'BriefcaseTwo', folder: IconFolder.LINEAL }
     }
   ]
 }
@@ -65,27 +64,27 @@ const whyAmbitProps: RegistryFor<ServiceCallOutProps, 'businessStructureAdvisory
     {
       id: 1,
       titleKey: 'whyAmbit.list.item1.title',
-      Icon: loadIcon('Balance', IconFolder.LINEAL)
+      iconConfig: { icon: 'Balance', folder: IconFolder.LINEAL }
     },
     {
       id: 2,
       titleKey: 'whyAmbit.list.item2.title',
-      Icon: loadIcon('Invoice', IconFolder.LINEAL)
+      iconConfig: { icon: 'Invoice', folder: IconFolder.LINEAL }
     },
     {
       id: 3,
       titleKey: 'whyAmbit.list.item3.title',
-      Icon: loadIcon('User', IconFolder.LINEAL)
+      iconConfig: { icon: 'User', folder: IconFolder.LINEAL }
     },
     {
       id: 4,
       titleKey: 'whyAmbit.list.item4.title',
-      Icon: loadIcon('Shield', IconFolder.LINEAL)
+      iconConfig: { icon: 'Shield', folder: IconFolder.LINEAL }
     },
     {
       id: 5,
       titleKey: 'whyAmbit.list.item5.title',
-      Icon: loadIcon('Clipboard', IconFolder.LINEAL)
+      iconConfig: { icon: 'Clipboard', folder: IconFolder.LINEAL }
     }
   ]
 }
@@ -101,7 +100,7 @@ const advisoryStructureSet: RegistryFor<ServiceListProperty, 'businessStructureA
       'structureAdvise.serviceProperty.item1.serviceSet.item2',
       'structureAdvise.serviceProperty.item1.serviceSet.item3'
     ],
-    Icon: loadIcon('User', IconFolder.LINEAL)
+    iconConfig: { icon: 'User', folder: IconFolder.LINEAL }
   },
   {
     id: 2,
@@ -113,7 +112,7 @@ const advisoryStructureSet: RegistryFor<ServiceListProperty, 'businessStructureA
       'structureAdvise.serviceProperty.item2.serviceSet.item3',
       'structureAdvise.serviceProperty.item2.serviceSet.item4'
     ],
-    Icon: loadIcon('BriefcaseTwo', IconFolder.LINEAL)
+    iconConfig: { icon: 'BriefcaseTwo', folder: IconFolder.LINEAL }
   },
   {
     id: 3,
@@ -125,7 +124,7 @@ const advisoryStructureSet: RegistryFor<ServiceListProperty, 'businessStructureA
       'structureAdvise.serviceProperty.item3.serviceSet.item3',
       'structureAdvise.serviceProperty.item3.serviceSet.item4'
     ],
-    Icon: loadIcon('Shop', IconFolder.LINEAL)
+    iconConfig: { icon: 'Shop', folder: IconFolder.LINEAL }
   }
 ]
 
@@ -175,14 +174,17 @@ const faqProps: RegistryFor<Faq2Props, 'businessStructureAdvisory'> = {
 // ------ CTA ------
 const ctaProps: CtaProps = { ...commonCtaProps, bgColor: 'bg-gray' }
 
-export const gbBusinessStructureAdvisoryRegistry: BusinessStructureAdvisoryData = {
-  headerProps: commonHeaderProps as unknown as HeaderProps,
-  heroProps: heroProps as unknown as Hero4Props,
-  whatWeDoProps: whatWeDoProps as unknown as TrustBoxProps,
-  structureAdviseProps: structureAdviseProps as unknown as ServiceWithListProps,
-  structureReviewProps: structureReviewProps as unknown as About17Props,
-  whyAmbitProps: whyAmbitProps as unknown as ServiceCallOutProps,
-  whoThisIsForProps: whoThisIsForProps as unknown as ServiceCallOutProps,
-  faqProps: faqProps as unknown as Faq2Props,
-  ctaProps: ctaProps as unknown as CtaProps
-}
+export const gbBusinessStructureAdvisoryRegistry: BusinessStructureAdvisoryData =
+  definePageData<BusinessStructureAdvisoryData>({
+    headerProps: commonHeaderProps as unknown as HeaderProps,
+    heroProps: heroProps as unknown as Hero4Props,
+    whatWeDoProps: whatWeDoProps as unknown as TrustBoxProps,
+    structureAdviseProps: structureAdviseProps as unknown as ServiceWithListProps,
+    structureReviewProps: structureReviewProps as unknown as About17Props,
+    whyAmbitProps: whyAmbitProps as unknown as ServiceCallOutProps,
+    whoThisIsForProps: whoThisIsForProps as unknown as ServiceCallOutProps,
+    faqProps: faqProps as unknown as Faq2Props,
+    ctaProps: ctaProps as unknown as CtaProps
+  })
+
+export default gbBusinessStructureAdvisoryRegistry

@@ -1,10 +1,11 @@
+import IconRenderer, { type IconRendererProps } from 'components/common/IconRenderer'
 import type { FC } from 'react'
 
 export type ProcessListItem = {
   id: number
   title: string
-  description: string
-  Icon?: FC<{ className?: string }>
+  description?: string
+  iconConfig?: IconRendererProps
 }
 
 export type ProcessSectionProps = {
@@ -19,11 +20,11 @@ const ProcessSection: FC<ProcessSectionProps> = ({ title, subtitle, processList 
     {title && <h3 className="display-3 text-center text-primary mb-3">{title}</h3>}
     {subtitle && <p className="fs-15 text-navy text-center mb-5">{subtitle}</p>}
     <div className="row gx-lg-8 gx-xl-4 justify-content-center process-wrapper arrow text-center gap-5">
-      {processList.map(({ id, title, description, Icon }) => (
+      {processList.map(({ id, title, description, iconConfig }) => (
         <div className="col-md-2" key={id}>
-          {Icon && <Icon className="icon-svg-sm solid-duo text-purple-pink mb-4" />}
-          <h4 className="fs-21">{title}</h4>
-          <p className="fs-13">{description}</p>
+          {iconConfig && <IconRenderer {...iconConfig} className="icon-svg-sm solid-duo text-purple-pink mb-4" />}
+          {title && <h4 className="fs-21">{title}</h4>}
+          {description && <p className="fs-13">{description}</p>}
         </div>
       ))}
     </div>

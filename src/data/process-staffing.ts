@@ -1,40 +1,37 @@
-// -------- icons -------- //
-import Email from 'icons/lineal/Email'
-import List from 'icons/lineal/List'
-import IdCard from 'icons/lineal/IdCard'
-import Medal from 'icons/lineal/Medal'
-import Puzzle from 'icons/lineal/Puzzle'
+import type { ProcessListItem } from 'components/reuseable/process/ProcessSection'
+import { IconFolder } from 'types/icon'
 
 // used in the process block
-export const processStaffingList = [
+export const processStaffingList: ProcessListItem[] = [
   {
     id: 1,
-    Icon: Email,
+    iconConfig: { icon: 'Email', folder: IconFolder.LINEAL },
     title: 'Share Your Needs',
     description: 'Provide us with your detailed job description.'
   },
   {
     id: 2,
-    Icon: IdCard,
+    iconConfig: { icon: 'IdCard', folder: IconFolder.LINEAL },
     title: 'Receive Resumes',
     description: ' We’ll send you resumes of carefully selected candidates.'
   },
   {
     id: 3,
-    Icon: List,
+    iconConfig: { icon: 'List', folder: IconFolder.LINEAL },
     title: 'Shortlist & Interview',
     description: 'You review, shortlist, interview, and test candidates.'
   },
   {
     id: 4,
+    iconConfig: { icon: 'Medal', folder: IconFolder.LINEAL },
     title: 'Hire & Integrate',
-    Icon: Medal,
     description: 'Select the best fit and integrate them into your team seamlessly.'
   },
   {
     id: 5,
     title: 'Team Integration',
-    Icon: Puzzle,
-    description: 'Enjoy a smooth transition with your new offshore team member working as an integral part of your organization.'
+    iconConfig: { icon: 'Puzzle', folder: IconFolder.LINEAL },
+    description:
+      'Enjoy a smooth transition with your new offshore team member working as an integral part of your organization.'
   }
 ]

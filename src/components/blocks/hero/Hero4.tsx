@@ -1,11 +1,12 @@
-import { FC, Fragment, ReactNode } from 'react'
+import { FC, Fragment } from 'react'
 import NextLink from 'components/reuseable/links/NextLink'
 import type { WithImg } from 'types/common'
 import Breadcrumbs, { type BreadcrumbItem } from 'components/common/Breadcrumbs'
 import { splitPara } from 'utils/helpers'
+import { Trans } from 'react-i18next'
 
 export type Hero4Props = {
-  title?: ReactNode
+  title?: string
   subtitle?: string
   primaryBtnText?: string
   primaryHref?: string
@@ -21,6 +22,8 @@ const Hero4: FC<Hero4Props> = ({
   primaryHref = '/contact',
   breadcrumbs
 }) => {
+  const TransComponent = Trans as any
+
   const paragraphs = splitPara(subtitle || '')
   const validImgSrc = typeof imgSrc === 'string' ? imgSrc : imgSrc?.src || ''
   return (
@@ -35,7 +38,10 @@ const Hero4: FC<Hero4Props> = ({
                 className="display-1 fw-bolder mb-5 text-white animate__animated animate__fadeInUp animate__delay-1s"
                 style={{ letterSpacing: '-0.04em', lineHeight: 1.1 }}
               >
-                {title}
+                <TransComponent
+                  defaults={title as string}
+                  components={{ highlight: <span className="text-primary" /> }}
+                />
               </h1>
             )}
 

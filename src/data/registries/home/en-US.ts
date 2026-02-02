@@ -5,8 +5,8 @@ import type { Faq2Props } from 'components/blocks/faq/FAQ2'
 import type { Service11Props } from 'components/blocks/services/Services11'
 import type { RegistryFor } from 'types/transformer'
 import type { ServiceWithListProps } from 'components/blocks/services'
-import loadIcon, { IconFolder } from 'utils/loadIcon'
-import type { HomePageData } from 'types/pages'
+import { definePageData, type HomePageData } from 'types/pages'
+import { IconFolder } from 'types/icon'
 import {
   commonCoreServiceProps,
   commonFaqProps,
@@ -31,32 +31,32 @@ const whyUsProps: RegistryFor<ServiceCallOutProps, 'home'> = {
     {
       id: 1,
       titleKey: 'whyUs.ambitServiceSet.id1.title',
-      Icon: loadIcon('Balance', IconFolder.LINEAL)
+      iconConfig: { icon: 'Balance', folder: IconFolder.LINEAL }
     },
     {
       id: 2,
       titleKey: 'whyUs.ambitServiceSet.id2.title',
-      Icon: loadIcon('User', IconFolder.LINEAL)
+      iconConfig: { icon: 'User', folder: IconFolder.LINEAL }
     },
     {
       id: 3,
       titleKey: 'whyUs.ambitServiceSet.id3.title',
-      Icon: loadIcon('Invoice', IconFolder.LINEAL)
+      iconConfig: { icon: 'Invoice', folder: IconFolder.LINEAL }
     },
     {
       id: 4,
       titleKey: 'whyUs.ambitServiceSet.id4.title',
-      Icon: loadIcon('BriefcaseTwo', IconFolder.LINEAL)
+      iconConfig: { icon: 'BriefcaseTwo', folder: IconFolder.LINEAL }
     },
     {
       id: 5,
       titleKey: 'whyUs.ambitServiceSet.id5.title',
-      Icon: loadIcon('Clipboard', IconFolder.LINEAL)
+      iconConfig: { icon: 'Clipboard', folder: IconFolder.LINEAL }
     },
     {
       id: 6,
       titleKey: 'whyUs.ambitServiceSet.id6.title',
-      Icon: loadIcon('Handshake', IconFolder.LINEAL)
+      iconConfig: { icon: 'Handshake', folder: IconFolder.LINEAL }
     }
   ]
 }
@@ -67,32 +67,32 @@ const coreServiceProps: RegistryFor<Service11Props, 'home'> = {
   serviceSetKey: [
     {
       id: 1,
-      Icon: loadIcon('Workflow', IconFolder.LINEAL),
+      iconConfig: { icon: 'Workflow', folder: IconFolder.LINEAL },
       titleKey: 'coreServices.serviceSet.id1.title'
     },
     {
       id: 2,
-      Icon: loadIcon('Calculator', IconFolder.LINEAL),
+      iconConfig: { icon: 'Calculator', folder: IconFolder.LINEAL },
       titleKey: 'coreServices.serviceSet.id2.title'
     },
     {
       id: 3,
-      Icon: loadIcon('Invoice', IconFolder.LINEAL),
+      iconConfig: { icon: 'Invoice', folder: IconFolder.LINEAL },
       titleKey: 'coreServices.serviceSet.id3.title'
     },
     {
       id: 4,
-      Icon: loadIcon('Coin', IconFolder.LINEAL),
+      iconConfig: { icon: 'Coin', folder: IconFolder.LINEAL },
       titleKey: 'coreServices.serviceSet.id4.title'
     },
     {
       id: 5,
-      Icon: loadIcon('Calendar', IconFolder.LINEAL),
+      iconConfig: { icon: 'Calendar', folder: IconFolder.LINEAL },
       titleKey: 'coreServices.serviceSet.id5.title'
     },
     {
       id: 6,
-      Icon: loadIcon('Earth', IconFolder.LINEAL),
+      iconConfig: { icon: 'Earth', folder: IconFolder.LINEAL },
       titleKey: 'coreServices.serviceSet.id6.title'
     }
   ]
@@ -111,41 +111,41 @@ const processProps: RegistryFor<ProcessProps, 'home'> = {
           id: 1,
           titleKey: 'process.processSectionList.item1.processList.item1.title',
           descriptionKey: 'process.processSectionList.item1.processList.item1.description',
-          Icon: loadIcon('TeleMarketer', IconFolder.LINEAL)
+          iconConfig: { icon: 'TeleMarketer', folder: IconFolder.LINEAL }
         },
         {
           id: 2,
-          Icon: loadIcon('Rocket', IconFolder.LINEAL),
+          iconConfig: { icon: 'Rocket', folder: IconFolder.LINEAL },
           titleKey: 'process.processSectionList.item1.processList.item2.title',
           descriptionKey: 'process.processSectionList.item1.processList.item2.description'
         },
         {
           id: 3,
-          Icon: loadIcon('Show', IconFolder.LINEAL),
+          iconConfig: { icon: 'Show', folder: IconFolder.LINEAL },
           titleKey: 'process.processSectionList.item1.processList.item3.title',
           descriptionKey: 'process.processSectionList.item1.processList.item3.description'
         },
         {
           id: 4,
-          Icon: loadIcon('PriceTag', IconFolder.LINEAL),
+          iconConfig: { icon: 'PriceTag', folder: IconFolder.LINEAL },
           titleKey: 'process.processSectionList.item1.processList.item4.title',
           descriptionKey: 'process.processSectionList.item1.processList.item4.description'
         },
         {
           id: 5,
-          Icon: loadIcon('SettingsThree', IconFolder.LINEAL),
+          iconConfig: { icon: 'SettingsThree', folder: IconFolder.LINEAL },
           titleKey: 'process.processSectionList.item1.processList.item5.title',
           descriptionKey: 'process.processSectionList.item1.processList.item5.description'
         },
         {
           id: 6,
-          Icon: loadIcon('Browser', IconFolder.LINEAL),
+          iconConfig: { icon: 'Browser', folder: IconFolder.LINEAL },
           titleKey: 'process.processSectionList.item1.processList.item6.title',
           descriptionKey: 'process.processSectionList.item1.processList.item6.description'
         },
         {
           id: 7,
-          Icon: loadIcon('LightBulb', IconFolder.LINEAL),
+          iconConfig: { icon: 'LightBulb', folder: IconFolder.LINEAL },
           titleKey: 'process.processSectionList.item1.processList.item7.title',
           descriptionKey: 'process.processSectionList.item1.processList.item7.description'
         }
@@ -164,42 +164,42 @@ const industriesProps: RegistryFor<Service11Props, 'home'> = {
   serviceSetKey: [
     {
       id: 1,
-      Icon: loadIcon('ShoppingCart', IconFolder.LINEAL),
+      iconConfig: { icon: 'ShoppingCart', folder: IconFolder.LINEAL },
       titleKey: 'industries.serviceSet.item1.title'
     },
     {
       id: 2,
-      Icon: loadIcon('Adjust', IconFolder.LINEAL),
+      iconConfig: { icon: 'Adjust', folder: IconFolder.LINEAL },
       titleKey: 'industries.serviceSet.item2.title'
     },
     {
       id: 3,
-      Icon: loadIcon('CoffeeCup', IconFolder.LINEAL),
+      iconConfig: { icon: 'CoffeeCup', folder: IconFolder.LINEAL },
       titleKey: 'industries.serviceSet.item3.title'
     },
     {
       id: 4,
-      Icon: loadIcon('House', IconFolder.LINEAL),
+      iconConfig: { icon: 'House', folder: IconFolder.LINEAL },
       titleKey: 'industries.serviceSet.item4.title'
     },
     {
       id: 5,
-      Icon: loadIcon('Laptop', IconFolder.LINEAL),
+      iconConfig: { icon: 'Laptop', folder: IconFolder.LINEAL },
       titleKey: 'industries.serviceSet.item5.title'
     },
     {
       id: 6,
-      Icon: loadIcon('Heart', IconFolder.LINEAL),
+      iconConfig: { icon: 'Heart', folder: IconFolder.LINEAL },
       titleKey: 'industries.serviceSet.item6.title'
     },
     {
       id: 7,
-      Icon: loadIcon('Truck', IconFolder.LINEAL),
+      iconConfig: { icon: 'Truck', folder: IconFolder.LINEAL },
       titleKey: 'industries.serviceSet.item7.title'
     },
     {
       id: 8,
-      Icon: loadIcon('Rocket', IconFolder.LINEAL),
+      iconConfig: { icon: 'Rocket', folder: IconFolder.LINEAL },
       titleKey: 'industries.serviceSet.item8.title'
     }
   ]
@@ -212,7 +212,7 @@ const governanceProps: RegistryFor<ServiceWithListProps, 'home'> = {
   servicePropertySetKey: [
     {
       id: 1,
-      Icon: loadIcon('CheckList', IconFolder.LINEAL),
+      iconConfig: { icon: 'CheckList', folder: IconFolder.LINEAL },
       titleKey: 'governance.governanceSet.item1.title',
       serviceSetKey: [
         'governance.governanceSet.item1.serviceSet.item1',
@@ -222,7 +222,7 @@ const governanceProps: RegistryFor<ServiceWithListProps, 'home'> = {
     },
     {
       id: 2,
-      Icon: loadIcon('Lock', IconFolder.LINEAL),
+      iconConfig: { icon: 'Lock', folder: IconFolder.LINEAL },
       titleKey: 'governance.governanceSet.item2.title',
       serviceSetKey: [
         'governance.governanceSet.item2.serviceSet.item1',
@@ -232,7 +232,7 @@ const governanceProps: RegistryFor<ServiceWithListProps, 'home'> = {
     },
     {
       id: 3,
-      Icon: loadIcon('Balance', IconFolder.LINEAL),
+      iconConfig: { icon: 'Balance', folder: IconFolder.LINEAL },
       titleKey: 'governance.governanceSet.item3.title',
       serviceSetKey: [
         'governance.governanceSet.item3.serviceSet.item1',
@@ -252,35 +252,35 @@ const whyStayWithUsProps: RegistryFor<ServiceCallOutProps, 'home'> = {
   ambitServiceSetKey: [
     {
       id: 1,
-      titleKey: 'whyStayWithUs.serviceSet.item1.title',
-      Icon: loadIcon('Puzzle', IconFolder.LINEAL)
+      iconConfig: { icon: 'Puzzle', folder: IconFolder.LINEAL },
+      titleKey: 'whyStayWithUs.serviceSet.item1.title'
     },
     {
       id: 2,
       titleKey: 'whyStayWithUs.serviceSet.item2.title',
-      Icon: loadIcon('Medal', IconFolder.LINEAL)
+      iconConfig: { icon: 'Medal', folder: IconFolder.LINEAL }
     },
     {
       id: 3,
       titleKey: 'whyStayWithUs.serviceSet.item3.title',
-      Icon: loadIcon('Shield', IconFolder.LINEAL)
+      iconConfig: { icon: 'Shield', folder: IconFolder.LINEAL }
     },
     {
       id: 4,
       titleKey: 'whyStayWithUs.serviceSet.item4.title',
-      Icon: loadIcon('Profits', IconFolder.LINEAL)
+      iconConfig: { icon: 'Profits', folder: IconFolder.LINEAL }
     },
     {
       id: 5,
       titleKey: 'whyStayWithUs.serviceSet.item5.title',
-      Icon: loadIcon('CheckList', IconFolder.LINEAL)
+      iconConfig: { icon: 'CheckList', folder: IconFolder.LINEAL }
     }
   ]
 }
 
 // ------ CTA ------
 
-export const usHomeRegistry: HomePageData = {
+const usHomeRegistry: HomePageData = definePageData<HomePageData>({
   headerProps: headerProps as unknown as HeaderProps,
   heroProps: heroProps as unknown as HeroProps,
   supportProps: supportProps as unknown as About8Props,
@@ -292,4 +292,6 @@ export const usHomeRegistry: HomePageData = {
   whyStayWithUsProps: whyStayWithUsProps as unknown as ServiceCallOutProps,
   faqProps: commonFaqProps as unknown as Faq2Props,
   ctaProps: ctaProps as unknown as CtaProps
-}
+})
+
+export default usHomeRegistry

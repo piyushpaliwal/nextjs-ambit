@@ -1,11 +1,11 @@
+import IconRenderer, { type IconRendererProps } from 'components/common/IconRenderer'
 import type { FC } from 'react'
-import type IconProps from 'types/icon'
 
 export type AmbitService = {
   id: number
   title: string
   description?: string
-  Icon?: FC<IconProps>
+  iconConfig?: IconRendererProps
   why?: string
 }
 
@@ -41,10 +41,12 @@ const ServiceCallOut: FC<ServiceCallOutProps> = ({
           <div
             className={`${canHover ? 'nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg' : ''}  row gx-lg-8 gx-xl-12 process-wrapper text-center justify-content-center ${serviceClassName}`}
           >
-            {ambitServiceSet.map(({ id, Icon, title, description, why }) => (
+            {ambitServiceSet.map(({ id, iconConfig, title, description, why }) => (
               <div key={id} className={`${canHover ? 'nav-item' : ''} col-md-4 mb-4`}>
                 <div className={`${canHover ? 'nav-link' : ''} ${serviceCardClassName}`}>
-                  <div>{Icon && <Icon className="icon-svg-sm text-primary mb-4 w-100" />}</div>
+                  <div>
+                    {iconConfig && <IconRenderer {...iconConfig} className="icon-svg-sm text-primary mb-4 w-100" />}
+                  </div>
                   <h4 className="mb-1">{title}</h4>
                   {description && <p className="mb-0">{description}</p>}
                   {why && (

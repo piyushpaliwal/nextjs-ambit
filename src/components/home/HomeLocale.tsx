@@ -13,12 +13,15 @@ import Services11 from 'components/blocks/services/Services11'
 import { ServiceWithList } from 'components/blocks/services'
 import About9 from 'components/blocks/about/About9'
 // ------ data ------
-import { usePageData } from 'hooks/usePageData'
 import type { HomePageData } from 'types/pages'
-import { homeRegistryMap } from 'data/registries/home'
+import { useTransformedData } from 'hooks/useTransformedData'
 
-const HomeLocale: NextPage = () => {
-  const data = usePageData<HomePageData>(homeRegistryMap, 'home')
+interface Props {
+  rawData: HomePageData
+}
+
+const HomeLocale: NextPage<Props> = ({ rawData }) => {
+  const data = useTransformedData(rawData, 'home')
 
   return (
     <>
@@ -29,13 +32,7 @@ const HomeLocale: NextPage = () => {
         {data.supportProps && <About8 {...data.supportProps} />}
         {data.whyUsProps && <ServiceCallOut {...data.whyUsProps} bgColor="bg-gray" />}
         {data.coreServiceProps && <Services11 {...data.coreServiceProps} />}
-        {data.processProps && (
-          <section className="wrapper bg-soft-primary">
-            <div className="container py-14 py-md-14">
-              <Process {...data.processProps} />
-            </div>
-          </section>
-        )}
+        {data.processProps && <Process {...data.processProps} />}
         {data.industriesProps && <Services11 {...data.industriesProps} reverse />}
         {data.governanceProps && <ServiceWithList {...data.governanceProps} />}
         {data.aboutUsProps && <About9 {...data.aboutUsProps} />}

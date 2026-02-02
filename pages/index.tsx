@@ -1,31 +1,25 @@
 import HomeDefault from 'components/home/HomeDefault'
 import HomeLocale from 'components/home/HomeLocale'
-import type { GetStaticProps, NextPage } from 'next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { LocaleEnum } from 'types/locale'
-import type { I18nNamespaces } from '../@types/i18next'
+import type { HomePageData } from 'types/pages'
+import { getI18nStaticProps } from 'utils/i18n-ssr'
 
-// Import your different layouts
-
-const Index: NextPage = () => {
-  const { locale } = useRouter()
-
-  // ROUTING LOGIC: Switch component based on locale
-  switch (locale as LocaleEnum) {
-    case LocaleEnum.Global:
-      return <HomeDefault />
-    default:
-      return <HomeLocale />
-  }
+interface Props {
+  rawData: HomePageData
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const ns: (keyof I18nNamespaces)[] = ['common', 'home', 'footer']
-  return {
-    props: {
-      ...(await serverSideTranslations(locale ?? 'en', ns as unknown as 'common'[]))
-    }
+export const getStaticProps = getI18nStaticProps('home', ['home', 'footer', 'common'])
+
+const Index: NextPage<Props> = ({ rawData }) => {
+  const { locale } = useRouter()
+
+  switch (locale as LocaleEnum) {
+    case LocaleEnum.Global:
+      return <HomeDefault rawData={rawData} />
+    default:
+      return <HomeLocale rawData={rawData} />
   }
 }
 

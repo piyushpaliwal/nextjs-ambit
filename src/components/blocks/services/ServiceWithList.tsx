@@ -1,10 +1,9 @@
-import { FC, Fragment } from 'react'
-import type IconProps from 'types/icon'
-import { splitPara } from 'utils/helpers'
+import IconRenderer, { type IconRendererProps } from 'components/common/IconRenderer'
+import type { FC } from 'react'
 
 export type ServiceListProperty = {
   id: number
-  Icon?: FC<IconProps>
+  iconConfig?: IconRendererProps
   title?: string
   description?: string
   serviceSet?: string[]
@@ -35,12 +34,12 @@ const ServiceWithList: FC<ServiceWithListProps> = ({
         </div>
         {servicePropertySet && (
           <div className="row gx-lg-8 gx-xl-12 gy-8 mt-9">
-            {servicePropertySet.map(({ id, title, description, Icon, serviceSet }) => (
+            {servicePropertySet.map(({ id, title, description, iconConfig, serviceSet }) => (
               <div key={id} className={`col-md-6 ${!hasEvenColumns ? 'col-lg-4' : ''}`}>
                 <div className="d-flex flex-row">
-                  {Icon && (
+                  {iconConfig && (
                     <div>
-                      <Icon className="icon-svg-sm text-primary me-4" />
+                      <IconRenderer {...iconConfig} className="icon-svg-sm text-primary me-4" />
                     </div>
                   )}
                   <div>

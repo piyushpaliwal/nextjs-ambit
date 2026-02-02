@@ -1,5 +1,5 @@
 import Header from 'components/blocks/header/Header'
-import type { GetStaticProps, NextPage } from 'next'
+import type { NextPage } from 'next'
 import { Footer } from 'components/blocks/footer'
 import { FAQ2 } from 'components/blocks/faq'
 import Cta from 'components/common/cta'
@@ -7,19 +7,24 @@ import Hero4 from 'components/blocks/hero/Hero4'
 import { ServiceWithList } from 'components/blocks/services'
 import TrustBox from 'components/common/TrustBox'
 import About17 from 'components/blocks/about/About17'
-import { usePageData } from 'hooks/usePageData'
 import type { BusinessStructureAdvisoryData } from 'types/pages'
-import { businessStructureAdvisoryRegistryMap } from 'data/registries/services/business-structure-advisory'
-import type { I18nNamespaces } from '../../@types/i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { LocaleEnum } from 'types/locale'
 import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
+import { useTransformedData } from 'hooks/useTransformedData'
+import { getI18nStaticProps } from 'utils/i18n-ssr'
 
-const BusinessStructureAdvisory: NextPage = () => {
-  const data = usePageData<BusinessStructureAdvisoryData>(
-    businessStructureAdvisoryRegistryMap,
-    'businessStructureAdvisory'
-  )
+interface Props {
+  rawData: BusinessStructureAdvisoryData
+}
+
+// Step 1: Use the DRY utility
+export const getStaticProps = getI18nStaticProps('services/business-structure-advisory', [
+  'businessStructureAdvisory',
+  'footer',
+  'common'
+])
+
+const BusinessStructureAdvisory: NextPage<Props> = ({ rawData }) => {
+  const data = useTransformedData(rawData, 'businessStructureAdvisory')
 
   return (
     <>
@@ -46,24 +51,6 @@ const BusinessStructureAdvisory: NextPage = () => {
       <Footer />
     </>
   )
-}
-
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const ns: (keyof I18nNamespaces)[] = ['businessStructureAdvisory', 'footer']
-  const currentLocale = (locale as LocaleEnum) || LocaleEnum.Global
-  const pageDataExist = businessStructureAdvisoryRegistryMap[currentLocale]
-
-  if (!pageDataExist) {
-    return {
-      notFound: true
-    }
-  }
-
-  return {
-    props: {
-      ...(await serverSideTranslations(currentLocale, ns as unknown as 'common'[]))
-    }
-  }
 }
 
 export default BusinessStructureAdvisory
