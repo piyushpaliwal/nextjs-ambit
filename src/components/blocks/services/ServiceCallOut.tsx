@@ -39,22 +39,23 @@ const ServiceCallOut: FC<ServiceCallOutProps> = ({
         </div>
         {ambitServiceSet && (
           <div
-            className={`${canHover ? 'nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg' : ''}  row gx-lg-8 gx-xl-12 process-wrapper text-center justify-content-center ${serviceClassName}`}
+            className={`${canHover ? 'gap-6' : ''}  row gx-lg-8 gx-xl-12 process-wrapper text-center justify-content-center ${serviceClassName}`}
           >
             {ambitServiceSet.map(({ id, iconConfig, title, description, why }) => (
-              <div key={id} className={`${canHover ? 'nav-item' : ''} col-md-4 mb-4`}>
-                <div className={`${canHover ? 'nav-link' : ''} ${serviceCardClassName}`}>
-                  <div>
-                    {iconConfig && <IconRenderer {...iconConfig} className="icon-svg-sm text-primary mb-4 w-100" />}
-                  </div>
-                  <h4 className="mb-1">{title}</h4>
-                  {description && <p className="mb-0">{description}</p>}
-                  {why && (
-                    <p>
-                      <span className="fst-italic">Why it matters:</span> {why}
-                    </p>
-                  )}
+              <div
+                key={id}
+                className={`${canHover ? 'bg-transparent border border-3 border-primary rounded-3 w-22 h-auto cursor-default shadow-hover py-4' : ''} col-md-4 mb-6 ${serviceCardClassName}`}
+              >
+                <div>
+                  {iconConfig && <IconRenderer {...iconConfig} className="icon-svg-sm text-primary mb-4 w-100" />}
                 </div>
+                <h4 className="mb-1">{title}</h4>
+                {description && <p className="mb-0">{description}</p>}
+                {why && (
+                  <p>
+                    <span className="fst-italic">Why it matters:</span> {why}
+                  </p>
+                )}
               </div>
             ))}
           </div>

@@ -29,7 +29,7 @@ const TrustBox: FC<TrustBoxProps> = (props: TrustBoxProps) => {
           className={`row gx-lg-0 gx-xl-8 gy-10 gy-md-13 gy-lg-0 mb-7 mb-md-10 mb-lg-13 align-items-center ${reverse ? 'flex-lg-row-reverse' : ''}`}
         >
           <div
-            className={`offset-md-1 position-relative col-lg-5 ${reverse && 'ms-auto'}`}
+            className={`offset-lg-1 position-relative col-lg-5 ${reverse && 'ms-auto'}`}
             style={zoomInAnimate('0ms')}
           >
             <div className="shape bg-dot primary rellax w-17 h-19" style={{ top: '-1.7rem', left: '-1.5rem' }} />

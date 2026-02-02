@@ -47,3 +47,18 @@
     border-bottom-right-radius: 1.5rem;
   }
 }
+
+/* Add this to your stylesheet */
+.shadow-hover {
+  transition:
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.shadow-hover:hover {
+  /* This creates a soft, light-themed glow */
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.12),
+    0 4px 8px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px); /* Optional: lifts the card slightly */
+}

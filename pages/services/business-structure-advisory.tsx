@@ -35,13 +35,13 @@ const BusinessStructureAdvisory: NextPage<Props> = ({ rawData }) => {
         {/*what we do section*/}
         {data.whatWeDoProps && <TrustBox {...data.whatWeDoProps} />}
         {/*------ Structure we advice on ------*/}
-        {data.structureAdviseProps && <ServiceWithList {...data.structureAdviseProps} />}
+        {data.structureAdviseProps && <ServiceWithList {...data.structureAdviseProps} hasEvenColumns canHover />}
         {/*Ongoing structure review section- US/UK*/}
         {data.structureReviewProps && <About17 {...data.structureReviewProps} />}
         {/*who this is for-UK*/}
-        {data.whoThisIsForProps && <ServiceCallOut {...data.whoThisIsForProps} />}
+        {data.whoThisIsForProps && <ServiceCallOut {...data.whoThisIsForProps} canHover />}
         {/*why ambit-UK*/}
-        {data.whyAmbitProps && <ServiceCallOut {...data.whyAmbitProps} />}
+        {data.whyAmbitProps && <ServiceCallOut {...data.whyAmbitProps} canHover />}
         {/*------ CTA ------*/}
         {data.ctaProps && <Cta {...data.ctaProps} />}
         {/*------ FAQ ------*/}

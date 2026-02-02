@@ -14,13 +14,15 @@ export type ServiceWithListProps = {
   servicePropertySet?: ServiceListProperty[]
   className?: string
   hasEvenColumns?: boolean
+  canHover?: boolean
 }
 
 const ServiceWithList: FC<ServiceWithListProps> = ({
   title,
   servicePropertySet,
   className = 'bg-gray',
-  hasEvenColumns = false
+  hasEvenColumns = false,
+  canHover = false
 }) => {
   return (
     <section className={`wrapper ${className}`}>
@@ -33,10 +35,13 @@ const ServiceWithList: FC<ServiceWithListProps> = ({
           )}
         </div>
         {servicePropertySet && (
-          <div className="row gx-lg-8 gx-xl-12 gy-8 mt-9">
+          <div className="row gx-lg-8 gx-xl-12 gy-8 mt-9 gap-4 justify-content-center">
             {servicePropertySet.map(({ id, title, description, iconConfig, serviceSet }) => (
-              <div key={id} className={`col-md-6 ${!hasEvenColumns ? 'col-lg-4' : ''}`}>
-                <div className="d-flex flex-row">
+              <div
+                key={id}
+                className={`card bg-transparent border border-3 border-primary rounded-3 col-md-6 ${!hasEvenColumns ? 'col-lg-4' : ''} ${canHover ? 'shadow-hover' : ''}`}
+              >
+                <div className="d-flex flex-row card-body">
                   {iconConfig && (
                     <div>
                       <IconRenderer {...iconConfig} className="icon-svg-sm text-primary me-4" />
