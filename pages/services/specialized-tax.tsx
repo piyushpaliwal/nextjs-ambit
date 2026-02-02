@@ -1,19 +1,29 @@
 import { Footer } from 'components/blocks/footer'
 import Header from 'components/blocks/header/Header'
+import Hero4 from 'components/blocks/hero/Hero4'
 import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
-import ServicesHero from 'components/blocks/services/ServicesHero'
 import Cta from 'components/common/cta'
-import { ctaProps, headerProps, serviceCallOutProps, servicesHeroProps } from 'data/specialized-tax-services'
+import { useTransformedData } from 'hooks/useTransformedData'
 import type { NextPage } from 'next'
+import type { SpecializedTaxData } from 'types/pages'
+import { getI18nStaticProps } from 'utils/i18n-ssr'
 
-const SpecializedTax: NextPage = () => {
+interface Props {
+  rawData: SpecializedTaxData
+}
+
+export const getStaticProps = getI18nStaticProps('services/specialized-tax', ['specializedTax', 'footer', 'common'])
+
+const SpecializedTax: NextPage<Props> = ({ rawData }) => {
+  const { headerProps, heroProps, serviceProps, ctaProps } = useTransformedData(rawData, 'specializedTax')
+
   return (
     <>
       <Header {...headerProps} />
       <main className="content-wrapper">
-        <ServicesHero {...servicesHeroProps} />
-        <ServiceCallOut {...serviceCallOutProps} />
-        <Cta {...ctaProps} />
+        {heroProps && <Hero4 {...heroProps} />}
+        {serviceProps && <ServiceCallOut {...serviceProps} canHover />}
+        {ctaProps && <Cta {...ctaProps} bgColor="bg-soft-primary" />}
       </main>
       <Footer />
     </>
