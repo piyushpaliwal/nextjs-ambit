@@ -53,5 +53,12 @@ export type AccountingBookkeepingExecutionData = {
   ctaProps?: CtaProps
 }
 
+export type TaxAdvisoryData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  serviceProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
+
 // A helper that "checks" the type but returns the value as-is
 export const definePageData = <T>(data: T): T => data

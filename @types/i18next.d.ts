@@ -17,8 +17,11 @@ import type businessStructureAdvisoryGB from '../public/locales/en-GB/business-s
 import type formationAndSetupUS from '../public/locales/en-US/formationAndSetup.json'
 import type formationAndSetupGB from '../public/locales/en-GB/formationAndSetup.json'
 
-import type accountingBookkeepingUS from '../public/locales/en-US/accounting-bookkeeping.json'
-import type accountingBookkeepingGB from '../public/locales/en-GB/accounting-bookkeeping.json'
+import type accountingBookkeepingUS from '../public/locales/en-US/accountingBookkeeping.json'
+import type accountingBookkeepingGB from '../public/locales/en-GB/accountingBookkeeping.json'
+
+import type taxAdvisoryUS from '../public/locales/en-US/taxAdvisory.json'
+import type taxAdvisoryGB from '../public/locales/en-GB/taxAdvisory.json'
 
 // 2. Define the interface for your resources
 export interface I18nNamespaces {
@@ -28,6 +31,7 @@ export interface I18nNamespaces {
   businessStructureAdvisory: typeof businessStructureAdvisoryUS & typeof businessStructureAdvisoryGB
   formationAndSetup: typeof formationAndSetupUS & typeof formationAndSetupGB
   accountingBookkeeping: typeof accountingBookkeepingUS & typeof accountingBookkeepingGB
+  taxAdvisory: typeof taxAdvisoryUS & typeof taxAdvisoryGB
 }
 
 // 3. Augment the 'i18next' module
