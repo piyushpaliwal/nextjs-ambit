@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "Systems Integration & Technology Support | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit supports technology implementation and optimization to ensure modern accounting systems work efficiently."
+  },
+  "hero": {
+    "title": "Systems <highlight>Integration</highlight> & Technology <highlight>Support</highlight>",
+    "subtitle": "Ambit supports technology implementation and optimization to ensure modern accounting systems work efficiently."
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "QuickBooks, Xero"
+    },
+    "item2": {
+      "title": "Payment and marketplace integrations (Shopify, Amazon, Stripe, PayPal)"
+    },
+    "item3": {
+      "title": "Automation, reconciliations, and reporting dashboards"
+    },
+    "item4": {
+      "title": "Data migration and system clean-ups"
+    },
+    "item5": {
+      "title": "API-led integrations"
+    }
+  },
+  "cta": {
+    "title": "Optimize your accounting systems"
+  }
+}
