@@ -36,6 +36,8 @@ import type remoteStaffingGB from '../public/locales/en-GB/remoteStaffing.json'
 import type systemsIntegrationTechSupportUS from '../public/locales/en-US/systemsIntegrationTechSupport.json'
 import type systemsIntegrationTechSupportGB from '../public/locales/en-GB/systemsIntegrationTechSupport.json'
 
+import type internationalAdvisoryUS from '../public/locales/en-US/internationalAdvisory.json'
+
 // 2. Define the interface for your resources
 export interface I18nNamespaces {
   common: typeof commonUS & typeof commonGB
@@ -50,6 +52,7 @@ export interface I18nNamespaces {
   monthlyRetainer: typeof monthlyRetainerUS & typeof monthlyRetainerGB
   remoteStaffing: typeof remoteStaffingUS & typeof remoteStaffingGB
   systemsIntegrationTechSupport: typeof systemsIntegrationTechSupportUS & typeof systemsIntegrationTechSupportGB
+  internationalAdvisory: typeof internationalAdvisoryUS
 }
 
 // 3. Augment the 'i18next' module

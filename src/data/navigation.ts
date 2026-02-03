@@ -92,7 +92,7 @@ const services: NavItem[] = [
       { id: 49, url: '/services/systems-integration-tech-support', title: 'Systems Integration & Technology Support' },
       {
         id: 50,
-        url: '/services/international-cross-border-advisory',
+        url: '/services/international-advisory',
         title: 'International / Cross-Border Advisory',
         allowedLocales: [LocaleEnum.US]
       },
