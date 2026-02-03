@@ -1,0 +1,64 @@
+{
+  "header": {
+    "title": "Monthly Retainer Services | UK Business Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit’s monthly retainer model provides ongoing finance, tax, and compliance support without internal overhead."
+  },
+  "hero": {
+    "title": "Monthly <highlight>Retainer</highlight> Services",
+    "subtitle": "Ambit’s monthly retainer model provides ongoing finance, tax, and compliance support without internal overhead."
+  },
+  "services": {
+    "title": "What the Retainer Covers",
+    "item1": {
+      "title": "Ongoing bookkeeping and reconciliations"
+    },
+    "item2": {
+      "title": "Management reporting"
+    },
+    "item3": {
+      "title": "VAT return preparation and filing"
+    },
+    "item4": {
+      "title": "Payroll and CIS management"
+    },
+    "item5": {
+      "title": "Corporation Tax provisioning and planning"
+    },
+    "item6": {
+      "title": "Director advisory and compliance oversight"
+    },
+    "item7": {
+      "title": "HMRC and Companies House filing management"
+    },
+    "item8": {
+      "title": "Dedicated engagement manager and review cycles"
+    }
+  },
+  "whoThis": {
+    "title": "Who This Is For",
+    "item1": {
+      "title": "Accounting and advisory firms needing reliable delivery partners"
+    },
+    "item2": {
+      "title": "Businesses managing capacity peaks or seasonal demand"
+    },
+    "item3": {
+      "title": "UK limited companies requiring ongoing bookkeeping, VAT, and payroll"
+    },
+    "item4": {
+      "title": "Founder-led and owner-managed businesses"
+    },
+    "item5": {
+      "title": "Growing UK companies needing cashflow monitoring and proactive tax planning"
+    },
+    "item6": {
+      "title": "International founders operating UK entities"
+    },
+    "item7": {
+      "title": "E-commerce, construction, hospitality, or high-volume transaction businesses"
+    }
+  },
+  "cta": {
+    "title": "Request a monthly retainer proposal"
+  }
+}

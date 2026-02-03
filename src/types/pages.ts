@@ -74,5 +74,12 @@ export type PayrollEmploymentTaxData = {
   ctaProps?: CtaProps
 }
 
+export type MonthlyRetainerData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  serviceProps?: ServiceCallOutProps
+  whoThisIsForProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
 // A helper that "checks" the type but returns the value as-is
 export const definePageData = <T>(data: T): T => data
