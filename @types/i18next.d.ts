@@ -25,6 +25,8 @@ import type taxAdvisoryGB from '../public/locales/en-GB/taxAdvisory.json'
 
 import type specializedTaxUS from '../public/locales/en-US/specializedTax.json'
 
+import type payrollEmploymentTaxUS from '../public/locales/en-US/payrollEmploymentTax.json'
+
 // 2. Define the interface for your resources
 export interface I18nNamespaces {
   common: typeof commonUS & typeof commonGB
@@ -35,6 +37,7 @@ export interface I18nNamespaces {
   accountingBookkeeping: typeof accountingBookkeepingUS & typeof accountingBookkeepingGB
   taxAdvisory: typeof taxAdvisoryUS & typeof taxAdvisoryGB
   specializedTax: typeof specializedTaxUS
+  payrollEmploymentTax: typeof payrollEmploymentTaxUS
 }
 
 // 3. Augment the 'i18next' module

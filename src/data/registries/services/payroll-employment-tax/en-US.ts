@@ -4,10 +4,10 @@ import type { AmbitService, ServiceCallOutProps } from 'components/blocks/servic
 import type { BreadcrumbItem } from 'components/common/Breadcrumbs'
 import type { CtaProps } from 'components/common/cta'
 import { IconFolder } from 'types/icon'
-import { definePageData, type SpecializedTaxData } from 'types/pages'
+import { definePageData, type PayrollEmploymentTaxData } from 'types/pages'
 import type { RegistryFor } from 'types/transformer'
 
-export const headerProps: RegistryFor<HeaderProps, 'specializedTax'> = {
+export const headerProps: RegistryFor<HeaderProps, 'payrollEmploymentTax'> = {
   titleKey: 'header.title',
   descriptionKey: 'header.description'
 }
@@ -15,10 +15,10 @@ export const headerProps: RegistryFor<HeaderProps, 'specializedTax'> = {
 const breadcrumbs: BreadcrumbItem[] = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '#', isActive: true },
-  { label: 'Specialized Tax', href: 'services/specialized-tax', isActive: true }
+  { label: 'Payroll & Employment Tax', href: 'services/payroll-employment-tax', isActive: true }
 ]
 
-export const heroProps: RegistryFor<Hero4Props, 'specializedTax'> = {
+export const heroProps: RegistryFor<Hero4Props, 'payrollEmploymentTax'> = {
   titleKey: 'hero.title',
   subtitleKey: 'hero.subtitle',
   primaryHref: 'https://calendly.com/ambit-accounting/15min',
@@ -26,17 +26,17 @@ export const heroProps: RegistryFor<Hero4Props, 'specializedTax'> = {
   breadcrumbs: breadcrumbs
 }
 
-export const ctaProps: RegistryFor<CtaProps, 'specializedTax'> = {
+export const ctaProps: RegistryFor<CtaProps, 'payrollEmploymentTax'> = {
   titleKey: 'cta.title',
   buttonTitle: 'Request a Assessment'
 }
 
-const taxServiceSet: RegistryFor<AmbitService, 'specializedTax'>[] = [
+const taxServiceSet: RegistryFor<AmbitService, 'payrollEmploymentTax'>[] = [
   {
     id: 1,
     titleKey: 'services.item1.title',
     iconConfig: {
-      icon: 'LightBulb',
+      icon: 'Coin',
       folder: IconFolder.LINEAL
     }
   },
@@ -44,7 +44,7 @@ const taxServiceSet: RegistryFor<AmbitService, 'specializedTax'>[] = [
     id: 2,
     titleKey: 'services.item2.title',
     iconConfig: {
-      icon: 'Medal',
+      icon: 'CheckList',
       folder: IconFolder.LINEAL
     }
   },
@@ -52,7 +52,7 @@ const taxServiceSet: RegistryFor<AmbitService, 'specializedTax'>[] = [
     id: 3,
     titleKey: 'services.item3.title',
     iconConfig: {
-      icon: 'Earth',
+      icon: 'User',
       folder: IconFolder.LINEAL
     }
   },
@@ -60,30 +60,23 @@ const taxServiceSet: RegistryFor<AmbitService, 'specializedTax'>[] = [
     id: 4,
     titleKey: 'services.item4.title',
     iconConfig: {
-      icon: 'Puzzle',
-      folder: IconFolder.LINEAL
-    }
-  },
-  {
-    id: 5,
-    titleKey: 'services.item5.title',
-    iconConfig: {
-      icon: 'Shield',
+      icon: 'Calendar',
       folder: IconFolder.LINEAL
     }
   }
 ]
 
-const serviceProps: RegistryFor<ServiceCallOutProps, 'specializedTax'> = {
+const serviceProps: RegistryFor<ServiceCallOutProps, 'payrollEmploymentTax'> = {
   titleKey: 'services.title',
+  descriptionKey: 'services.description',
   ambitServiceSetKey: taxServiceSet
 }
 
-export const usSpecializedTaxData: SpecializedTaxData = definePageData<SpecializedTaxData>({
+export const usPayrollEmploymentTaxData: PayrollEmploymentTaxData = definePageData<PayrollEmploymentTaxData>({
   headerProps: headerProps as unknown as HeaderProps,
   heroProps: heroProps as unknown as Hero4Props,
   serviceProps: serviceProps as unknown as ServiceCallOutProps,
   ctaProps: ctaProps as unknown as CtaProps
 })
 
-export default usSpecializedTaxData
+export default usPayrollEmploymentTaxData
