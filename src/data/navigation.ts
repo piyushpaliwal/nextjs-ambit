@@ -88,7 +88,7 @@ const services: NavItem[] = [
         allowedLocales: [LocaleEnum.GB]
       },
       { id: 47, url: '/services/monthly-retainer', title: 'Monthly Retainer Services' },
-      { id: 48, url: '/services/remote-staffing-outsourcing', title: 'Remote Staffing & Outsourcing' },
+      { id: 48, url: '/services/remote-staffing', title: 'Remote Staffing & Outsourcing' },
       { id: 49, url: '/services/systems-integration-tech-support', title: 'Systems Integration & Technology Support' },
       {
         id: 50,
@@ -96,7 +96,12 @@ const services: NavItem[] = [
         title: 'International / Cross-Border Advisory',
         allowedLocales: [LocaleEnum.US]
       },
-      { id: 51, url: '/services/business-lifecycle-advisory', title: 'Business Lifecycle Advisory' }
+      {
+        id: 51,
+        url: '/services/business-lifecycle-advisory',
+        title: 'Business Lifecycle Advisory',
+        allowedLocales: [LocaleEnum.GB]
+      }
     ]
   }
 ]

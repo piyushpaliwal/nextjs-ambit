@@ -81,5 +81,16 @@ export type MonthlyRetainerData = {
   whoThisIsForProps?: ServiceCallOutProps
   ctaProps?: CtaProps
 }
+
+export type RemoteStaffingData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  serviceProps?: ServiceCallOutProps
+  serviceListProps?: ServiceWithListProps
+  governanceProps?: ServiceCallOutProps
+  whoThisProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+  processProps?: ProcessProps
+}
 // A helper that "checks" the type but returns the value as-is
 export const definePageData = <T>(data: T): T => data

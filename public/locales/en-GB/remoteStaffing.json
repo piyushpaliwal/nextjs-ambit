@@ -1,0 +1,78 @@
+{
+  "header": {
+    "title": "Remote Staffing Solutions | UK Business Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit provides experienced, qualified finance, accounting, and administrative professionals on a flexible, remote basis. Staff act as an extension of your team while maintaining governance, compliance, and quality."
+  },
+  "hero": {
+    "title": "Remote <highlight>Staffing</highlight> Solutions",
+    "subtitle": "Ambit provides experienced, qualified finance, accounting, and administrative professionals on a flexible, remote basis. Staff act as an extension of your team while maintaining governance, compliance, and quality."
+  },
+  "services": {
+    "title": "What We Provide",
+    "serviceSet": {
+      "item1": {
+        "title": "Dedicated Remote Professionals",
+        "serviceSet": {
+          "item1": "Accountants, bookkeepers, finance managers, administrative staff",
+          "item2": "UK-qualified ACCA, ACA professionals",
+          "item3": "Trained on client systems, processes, and reporting formats",
+          "item4": "Daily/weekly reporting to management"
+        }
+      },
+      "item2": {
+        "title": "Flexible Engagement Models",
+        "serviceSet": {
+          "item1": "Part-time or full-time resources",
+          "item2": "Short-term or long-term contracts",
+          "item3": "Scalable team expansion",
+          "item4": "Single resource or fully managed team"
+        }
+      },
+      "item3": {
+        "title": "Technology-Enabled Integration",
+        "serviceSet": {
+          "item1": "Integration with Xero, QuickBooks, Sage, SAP",
+          "item2": "Connectivity with payroll, VAT, and compliance workflows",
+          "item3": "Marketplace support: Shopify, Amazon, Stripe, PayPal",
+          "item4": "Secure remote access (ISO-aligned protocols)"
+        }
+      },
+      "item4": {
+        "title": "Governance and Quality Control",
+        "serviceSet": {
+          "item1": "Role-based access and audit logs",
+          "item2": "Internal controls & segregation of duties",
+          "item3": "Weekly review by senior managers",
+          "item4": "SLA-driven delivery with KPIs and dashboards"
+        }
+      }
+    }
+  },
+  "whoThis": {
+    "title": "Who This Is For",
+    "item1": { "title": "Accountancy firms needing co-sourcing or extra capacity" },
+    "item2": { "title": "UK & international businesses needing finance or accounting support" },
+    "item3": { "title": "Start-ups and high-growth companies" },
+    "item4": { "title": "Short-term project support without permanent hires" }
+  },
+  "process": {
+    "title": "How It Works",
+    "processSectionList": {
+      "item1": {
+        "processList": {
+          "item1": { "title": "Assessment", "description": "Assessment of operational needs and skill gaps" },
+          "item2": {
+            "title": "Staff Allocation",
+            "description": "Staff allocation based on experience & certification"
+          },
+          "item3": { "title": "Onboarding", "description": "Onboarding to client systems and processes" },
+          "item4": { "title": "Management", "description": "Management & workflow oversight" },
+          "item5": { "title": "Reporting", "description": "Reporting, KPI tracking, dashboards" }
+        }
+      }
+    }
+  },
+  "cta": {
+    "title": "Request a Remote Staffing Proposal"
+  }
+}

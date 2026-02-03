@@ -30,6 +30,9 @@ import type payrollEmploymentTaxUS from '../public/locales/en-US/payrollEmployme
 import type monthlyRetainerUS from '../public/locales/en-US/monthlyRetainer.json'
 import type monthlyRetainerGB from '../public/locales/en-GB/monthlyRetainer.json'
 
+import type remoteStaffingUS from '../public/locales/en-US/remoteStaffing.json'
+import type remoteStaffingGB from '../public/locales/en-GB/remoteStaffing.json'
+
 // 2. Define the interface for your resources
 export interface I18nNamespaces {
   common: typeof commonUS & typeof commonGB
@@ -42,6 +45,7 @@ export interface I18nNamespaces {
   specializedTax: typeof specializedTaxUS
   payrollEmploymentTax: typeof payrollEmploymentTaxUS
   monthlyRetainer: typeof monthlyRetainerUS & typeof monthlyRetainerGB
+  remoteStaffing: typeof remoteStaffingUS & typeof remoteStaffingGB
 }
 
 // 3. Augment the 'i18next' module
