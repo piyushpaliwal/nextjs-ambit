@@ -1,0 +1,50 @@
+{
+  "header": {
+    "title": "Business Lifecycle Advisory | UK Business Execution Services – Accounting, Tax & Payroll | Ambit"
+  },
+  "hero": {
+    "title": "Business Lifecycle <highlight>Advisory</highlight>"
+  },
+  "services": {
+    "title": "End-to-End Business Support",
+    "serviceSet": {
+      "item1": {
+        "title": "Startup Phase",
+        "serviceSet": {
+          "item1": "Incorporation, VAT, and PAYE setup",
+          "item2": "Accounting framework & compliance templates",
+          "item3": "Director tax registration & guidance"
+        }
+      },
+      "item2": {
+        "title": "Growth Phase",
+        "serviceSet": {
+          "item1": "Monthly accounting & reporting",
+          "item2": "Cashflow optimisation & tax planning",
+          "item3": "SEIS/EIS advisory",
+          "item4": "Investment readiness support"
+        }
+      },
+      "item3": {
+        "title": "Maturity Phase",
+        "serviceSet": {
+          "item1": "Group structuring & internal controls",
+          "item2": "Audit preparation",
+          "item3": "International expansion advisory",
+          "item4": "Succession and estate planning"
+        }
+      },
+      "item4": {
+        "title": "Exit or Closure",
+        "serviceSet": {
+          "item1": "Strike-off & voluntary liquidation",
+          "item2": "Capital gains & extraction planning",
+          "item3": "Final statutory filings & tax returns"
+        }
+      }
+    }
+  },
+  "cta": {
+    "title": "Plan your next phase with Ambit"
+  }
+}

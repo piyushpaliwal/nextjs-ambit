@@ -38,6 +38,8 @@ import type systemsIntegrationTechSupportGB from '../public/locales/en-GB/system
 
 import type internationalAdvisoryUS from '../public/locales/en-US/internationalAdvisory.json'
 
+import type businessLifecycleAdvisoryGB from '../public/locales/en-GB/businessLifecycleAdvisory.json'
+
 // 2. Define the interface for your resources
 export interface I18nNamespaces {
   common: typeof commonUS & typeof commonGB
@@ -53,6 +55,7 @@ export interface I18nNamespaces {
   remoteStaffing: typeof remoteStaffingUS & typeof remoteStaffingGB
   systemsIntegrationTechSupport: typeof systemsIntegrationTechSupportUS & typeof systemsIntegrationTechSupportGB
   internationalAdvisory: typeof internationalAdvisoryUS
+  businessLifecycleAdvisory: typeof businessLifecycleAdvisoryGB
 }
 
 // 3. Augment the 'i18next' module
