@@ -21,7 +21,7 @@ export const getI18nStaticProps = (folderName: string, namespaces: (keyof I18nNa
           ...translationData,
           rawData: {
             ...pageModule.default,
-            footerData: footerModule.default
+            footerData: footerModule.default || null
           }
         }
       }

@@ -1,0 +1,43 @@
+{
+  "header": {
+    "title": "E-Commerce & DTC Accounting Services | Ambit",
+    "description": "Ambit provides accounting, multi-state sales tax compliance, and financial management for e-commerce and direct-to-consumer businesses. Optimize operations and reporting."
+  },
+  "hero": {
+    "title": "E-Commerce & Direct-to-Consumer <highlight>Accounting</highlight> Services",
+    "subtitle": "Ambit supports e-commerce businesses with structured accounting, multi-state sales tax compliance, and operational finance management."
+  },
+  "challenges": {
+    "title": "Challenges Addressed",
+    "item1": {
+      "title": "Multi-channel transaction reconciliation"
+    },
+    "item2": {
+      "title": "Sales tax nexus compliance"
+    },
+    "item3": {
+      "title": "Inventory tracking and COGS"
+    },
+    "item4": {
+      "title": "High-volume revenue reporting"
+    }
+  },
+  "services": {
+    "title": "Services Provided",
+    "item1": {
+      "title": "Daily, weekly, or monthly bookkeeping"
+    },
+    "item2": {
+      "title": "Marketplace reconciliation (Shopify, Amazon, Stripe, PayPal)"
+    },
+    "item3": {
+      "title": "Cashflow and margin analysis"
+    },
+    "item4": {
+      "title": "Outsourced dedicated accounting professionals"
+    }
+  },
+  "cta": {
+    "title": "Speak to an e-commerce accounting specialist"
+  }
+}

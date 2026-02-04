@@ -1,22 +1,35 @@
 import { Footer } from 'components/blocks/footer'
+import type { FooterProps } from 'components/blocks/footer/Footer'
 import Header from 'components/blocks/header/Header'
-import { HeroInnerPages } from 'components/blocks/hero'
-import { ServicesCallOut2 } from 'components/blocks/services'
+import Hero4 from 'components/blocks/hero/Hero4'
+import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
 import Cta from 'components/common/cta'
-import { challengesProps, ctaProps, headerProps, heroProps, servicesProps } from 'data/industries/ecommerce'
+import { useTransformedData } from 'hooks/useTransformedData'
 import type { NextPage } from 'next'
+import type { ECommerceData } from 'types/pages'
+import { getI18nStaticProps } from 'utils/i18n-ssr'
 
-const Ecommerce: NextPage = () => {
+interface Props {
+  rawData: ECommerceData & { footerData: FooterProps }
+}
+
+export const getStaticProps = getI18nStaticProps('industries/ecommerce', ['ecommerce'])
+
+const Ecommerce: NextPage<Props> = ({ rawData }) => {
+  const { footerData, ...pageData } = rawData
+  const footerProps = useTransformedData(footerData, 'footer')
+  const { headerProps, heroProps, challengesProps, serviceProps, ctaProps } = useTransformedData(pageData, 'ecommerce')
+
   return (
     <>
       <Header {...headerProps} />
       <main className="content-wrapper">
-        <HeroInnerPages {...heroProps} />
-        <ServicesCallOut2 {...challengesProps} />
-        <ServicesCallOut2 {...servicesProps} bgColor="bg-gray" />
-        <Cta {...ctaProps} />
+        {heroProps && <Hero4 {...heroProps} />}
+        {challengesProps && <ServiceCallOut {...challengesProps} canHover />}
+        {serviceProps && <ServiceCallOut {...serviceProps} bgColor="bg-gray" canHover />}
+        {ctaProps && <Cta {...ctaProps} />}
       </main>
-      <Footer />
+      <Footer {...footerProps} />
     </>
   )
 }
