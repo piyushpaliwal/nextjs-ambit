@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Construction & Contractor Accounting Services | Ambit",
+    "description": "Ambit offers project-based accounting, payroll compliance, and multi-state tax advisory for construction firms and contractors. Ensure accurate costing and reporting."
+  },
+  "hero": {
+    "title": "<highlight>Construction</highlight> & Contractor <highlight>Accounting</highlight> Services",
+    "subtitle": "Construction firms and contractors require project-based accounting, payroll compliance, and multi-state tax advisory."
+  },
+  "challenges": {
+    "title": "Challenges Addressed",
+    "item1": {
+      "title": "Job costing and project profitability"
+    },
+    "item2": {
+      "title": "Payroll compliance including subcontractors"
+    },
+    "item3": {
+      "title": "Cashflow across projects"
+    }
+  },
+  "services": {
+    "title": "Services Provided",
+    "item1": {
+      "title": "Project accounting and job costing"
+    },
+    "item2": {
+      "title": "Contractor payroll and 1099 compliance"
+    },
+    "item3": {
+      "title": "Federal and state tax filings"
+    },
+    "item4": {
+      "title": "Outsourced accounting professionals"
+    }
+  },
+  "cta": {
+    "title": "Discuss construction accounting and compliance"
+  }
+}

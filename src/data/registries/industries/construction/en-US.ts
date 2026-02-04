@@ -4,10 +4,10 @@ import type { AmbitService, ServiceCallOutProps } from 'components/blocks/servic
 import type { BreadcrumbItem } from 'components/common/Breadcrumbs'
 import type { CtaProps } from 'components/common/cta'
 import { IconFolder } from 'types/icon'
-import { definePageData, type ECommerceData } from 'types/pages'
+import { type ConstructionData, definePageData } from 'types/pages'
 import type { RegistryFor } from 'types/transformer'
 
-export const headerProps: RegistryFor<HeaderProps, 'ecommerce'> = {
+export const headerProps: RegistryFor<HeaderProps, 'construction'> = {
   titleKey: 'header.title',
   descriptionKey: 'header.description'
 }
@@ -15,10 +15,10 @@ export const headerProps: RegistryFor<HeaderProps, 'ecommerce'> = {
 const breadcrumbs: BreadcrumbItem[] = [
   { label: 'Home', href: '/' },
   { label: 'Industries', href: '#', isActive: true },
-  { label: 'E-Commerce & Direct-to-Consumer', href: 'industries/ecommerce', isActive: true }
+  { label: 'Construction, Trades, and Contractors', href: 'industries/construction', isActive: true }
 ]
 
-export const heroProps: RegistryFor<Hero4Props, 'ecommerce'> = {
+export const heroProps: RegistryFor<Hero4Props, 'construction'> = {
   titleKey: 'hero.title',
   subtitleKey: 'hero.subtitle',
   primaryHref: 'https://calendly.com/ambit-accounting/15min',
@@ -26,18 +26,18 @@ export const heroProps: RegistryFor<Hero4Props, 'ecommerce'> = {
   breadcrumbs: breadcrumbs
 }
 
-export const ctaProps: RegistryFor<CtaProps, 'ecommerce'> = {
+export const ctaProps: RegistryFor<CtaProps, 'construction'> = {
   titleKey: 'cta.title',
   buttonTitle: 'Request a Consultation'
 }
 
 // Challenge props
-const challengeSet: RegistryFor<AmbitService, 'ecommerce'>[] = [
+const challengeSet: RegistryFor<AmbitService, 'construction'>[] = [
   {
     id: 1,
     titleKey: 'challenges.item1.title',
     iconConfig: {
-      icon: 'LinkIcon',
+      icon: 'Profits',
       folder: IconFolder.LINEAL
     }
   },
@@ -45,7 +45,7 @@ const challengeSet: RegistryFor<AmbitService, 'ecommerce'>[] = [
     id: 2,
     titleKey: 'challenges.item2.title',
     iconConfig: {
-      icon: 'MapPin',
+      icon: 'Coin',
       folder: IconFolder.LINEAL
     }
   },
@@ -53,32 +53,24 @@ const challengeSet: RegistryFor<AmbitService, 'ecommerce'>[] = [
     id: 3,
     titleKey: 'challenges.item3.title',
     iconConfig: {
-      icon: 'PriceTag',
-      folder: IconFolder.LINEAL
-    }
-  },
-  {
-    id: 4,
-    titleKey: 'challenges.item4.title',
-    iconConfig: {
-      icon: 'Analytics',
+      icon: 'Money',
       folder: IconFolder.LINEAL
     }
   }
 ]
 
-const challengesProps: RegistryFor<ServiceCallOutProps, 'ecommerce'> = {
+const challengesProps: RegistryFor<ServiceCallOutProps, 'construction'> = {
   titleKey: 'challenges.title',
   ambitServiceSetKey: challengeSet
 }
 
 // services props
-const serviceSet: RegistryFor<AmbitService, 'ecommerce'>[] = [
+const serviceSet: RegistryFor<AmbitService, 'construction'>[] = [
   {
     id: 1,
     titleKey: 'services.item1.title',
     iconConfig: {
-      icon: 'Calendar',
+      icon: 'Analytics',
       folder: IconFolder.LINEAL
     }
   },
@@ -86,7 +78,7 @@ const serviceSet: RegistryFor<AmbitService, 'ecommerce'>[] = [
     id: 2,
     titleKey: 'services.item2.title',
     iconConfig: {
-      icon: 'Shop',
+      icon: 'Clipboard',
       folder: IconFolder.LINEAL
     }
   },
@@ -94,7 +86,7 @@ const serviceSet: RegistryFor<AmbitService, 'ecommerce'>[] = [
     id: 3,
     titleKey: 'services.item3.title',
     iconConfig: {
-      icon: 'Profits',
+      icon: 'Balance',
       folder: IconFolder.LINEAL
     }
   },
@@ -108,12 +100,12 @@ const serviceSet: RegistryFor<AmbitService, 'ecommerce'>[] = [
   }
 ]
 
-const serviceProps: RegistryFor<ServiceCallOutProps, 'ecommerce'> = {
+const serviceProps: RegistryFor<ServiceCallOutProps, 'construction'> = {
   titleKey: 'services.title',
   ambitServiceSetKey: serviceSet
 }
 
-export const usECommerceData: ECommerceData = definePageData<ECommerceData>({
+export const usConstructionData: ConstructionData = definePageData<ConstructionData>({
   headerProps: headerProps as unknown as HeaderProps,
   heroProps: heroProps as unknown as Hero4Props,
   challengesProps: challengesProps as unknown as ServiceCallOutProps,
@@ -121,4 +113,4 @@ export const usECommerceData: ECommerceData = definePageData<ECommerceData>({
   ctaProps: ctaProps as unknown as CtaProps
 })
 
-export default usECommerceData
+export default usConstructionData
