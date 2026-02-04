@@ -114,5 +114,12 @@ export type BusinessLifecycleAdvisoryData = {
   ctaProps?: CtaProps
 }
 
+export type PayrollExecutionData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  serviceProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
+
 // A helper that "checks" the type but returns the value as-is
 export const definePageData = <T>(data: T): T => data
