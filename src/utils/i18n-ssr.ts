@@ -8,13 +8,20 @@ export const getI18nStaticProps = (folderName: string, namespaces: (keyof I18nNa
     const activeLocale = (locale as LocaleEnum) || LocaleEnum.Global
 
     try {
-      const pageModule = await import(`data/registries/${folderName}/${activeLocale}`)
+      const allNamespaces = Array.from(new Set([...namespaces, 'common', 'footer']))
+
+      const [pageModule, footerModule, translationData] = await Promise.all([
+        import(`data/registries/${folderName}/${activeLocale}`),
+        import(`data/registries/common/footer/${activeLocale}`).catch(() => ({ default: null })),
+        serverSideTranslations(activeLocale, allNamespaces as unknown as 'common'[])
+      ])
 
       return {
         props: {
-          ...(await serverSideTranslations(activeLocale, namespaces as unknown as 'common'[])),
+          ...translationData,
           rawData: {
-            ...pageModule.default
+            ...pageModule.default,
+            footerData: footerModule.default
           }
         }
       }

@@ -1,4 +1,5 @@
 import { Footer } from 'components/blocks/footer'
+import type { FooterProps } from 'components/blocks/footer/Footer'
 import Header from 'components/blocks/header/Header'
 import Hero4 from 'components/blocks/hero/Hero4'
 import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
@@ -9,13 +10,15 @@ import type { TaxAdvisoryData } from 'types/pages'
 import { getI18nStaticProps } from 'utils/i18n-ssr'
 
 interface Props {
-  rawData: TaxAdvisoryData
+  rawData: TaxAdvisoryData & { footerData: FooterProps }
 }
 
-export const getStaticProps = getI18nStaticProps('services/tax-advisory', ['taxAdvisory', 'footer', 'common'])
+export const getStaticProps = getI18nStaticProps('services/tax-advisory', ['taxAdvisory'])
 
 const TaxAdvisory: NextPage<Props> = ({ rawData }) => {
-  const { headerProps, heroProps, serviceProps, ctaProps } = useTransformedData(rawData, 'taxAdvisory')
+  const { footerData, ...pageData } = rawData
+  const footerProps = useTransformedData(footerData, 'footer')
+  const { headerProps, heroProps, serviceProps, ctaProps } = useTransformedData(pageData, 'taxAdvisory')
   return (
     <>
       <Header {...headerProps} />
@@ -24,7 +27,7 @@ const TaxAdvisory: NextPage<Props> = ({ rawData }) => {
         {serviceProps && <ServiceCallOut {...serviceProps} canHover />}
         {ctaProps && <Cta {...ctaProps} bgColor="bg-soft-primary" />}
       </main>
-      <Footer />
+      <Footer {...footerProps} />
     </>
   )
 }

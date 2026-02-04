@@ -15,13 +15,16 @@ import About9 from 'components/blocks/about/About9'
 // ------ data ------
 import type { HomePageData } from 'types/pages'
 import { useTransformedData } from 'hooks/useTransformedData'
+import type { FooterProps } from 'components/blocks/footer/Footer'
 
 interface Props {
-  rawData: HomePageData
+  rawData: HomePageData & { footerData: FooterProps }
 }
 
 const HomeLocale: NextPage<Props> = ({ rawData }) => {
-  const data = useTransformedData(rawData, 'home')
+  const { footerData, ...pageData } = rawData
+  const footerProps = useTransformedData(footerData, 'footer')
+  const data = useTransformedData(pageData, 'home')
 
   return (
     <>
@@ -40,7 +43,7 @@ const HomeLocale: NextPage<Props> = ({ rawData }) => {
         {data.faqProps && <FAQ2 {...data.faqProps} />}
         {data.ctaProps && <Cta {...data.ctaProps} bgColor="bg-soft-primary" />}
       </main>
-      <Footer />
+      <Footer {...footerProps} />
     </>
   )
 }

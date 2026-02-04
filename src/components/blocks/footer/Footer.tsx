@@ -5,13 +5,29 @@ import NextLink from 'components/reuseable/links/NextLink'
 // -------- data -------- //
 import footerNav from 'data/footer'
 
-type FooterProps = {
+export type FooterContact = {
+  title: string
+  address: string
+  phone: string
+  phoneRef: string
+  email: string
+}
+
+export type FooterProps = {
   tagline?: string
   button?: ReactElement
+  contact?: FooterContact
 }
 
 const Footer: FC<FooterProps> = (props) => {
-  const { tagline, button } = props
+  const { tagline, button, contact } = props
+  const { title, address, phone, phoneRef, email } = contact || {
+    title: 'US Office',
+    address: '3133 Little Bear Ln, Buford, GA 30519',
+    phone: '(+1) 706 403 8982',
+    phoneRef: '+17064038982',
+    email: 'info@ambitkpo.com'
+  }
   const hasConsultBlock = (tagline || button) != undefined
 
   return (
@@ -33,11 +49,11 @@ const Footer: FC<FooterProps> = (props) => {
 
           <div className={hasConsultBlock ? 'col-md-3 col-lg-3' : 'col-md-6 col-lg-6'}>
             <div className="widget">
-              <h4 className="widget-title text-white mb-3">US Office</h4>
-              <address className="pe-xl-15 pe-xxl-17">3133 Little Bear Ln, Buford, GA 30519</address>
-              <NextLink title="(+1) 706 403 8982" href="tel:+17064038982" />
+              <h4 className="widget-title text-white mb-3">{title}</h4>
+              <address className="pe-xl-15 pe-xxl-17">{address}</address>
+              <NextLink title={phone} href={`tel:${phoneRef}`} />
               <br />
-              <NextLink title="info@ambitkpo.com" href="mailto:info@ambitkpo.com" />
+              <NextLink title={email} href={`mailto:${email}`} />
             </div>
           </div>
 

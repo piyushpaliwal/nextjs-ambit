@@ -1,4 +1,5 @@
 import { Footer } from 'components/blocks/footer'
+import type { FooterProps } from 'components/blocks/footer/Footer'
 import Header from 'components/blocks/header/Header'
 import Hero4 from 'components/blocks/hero/Hero4'
 import { Process } from 'components/blocks/process'
@@ -11,12 +12,14 @@ import type { RemoteStaffingData } from 'types/pages'
 import { getI18nStaticProps } from 'utils/i18n-ssr'
 
 interface Props {
-  rawData: RemoteStaffingData
+  rawData: RemoteStaffingData & { footerData: FooterProps }
 }
 
-export const getStaticProps = getI18nStaticProps('services/remote-staffing', ['common', 'footer', 'remoteStaffing'])
+export const getStaticProps = getI18nStaticProps('services/remote-staffing', ['remoteStaffing'])
 
 const RemoteStaffingOutsourcing: NextPage<Props> = ({ rawData }) => {
+  const { footerData, ...pageData } = rawData
+  const footerProps = useTransformedData(footerData, 'footer')
   const {
     headerProps,
     heroProps,
@@ -26,7 +29,7 @@ const RemoteStaffingOutsourcing: NextPage<Props> = ({ rawData }) => {
     whoThisProps,
     ctaProps,
     processProps
-  } = useTransformedData(rawData, 'remoteStaffing')
+  } = useTransformedData(pageData, 'remoteStaffing')
 
   return (
     <>
@@ -40,7 +43,7 @@ const RemoteStaffingOutsourcing: NextPage<Props> = ({ rawData }) => {
         {processProps && <Process {...processProps} bgColor="bg-gray" />}
         {ctaProps && <Cta {...ctaProps} bgColor="bg-soft-primary" />}
       </main>
-      <Footer />
+      <Footer {...footerProps} />
     </>
   )
 }

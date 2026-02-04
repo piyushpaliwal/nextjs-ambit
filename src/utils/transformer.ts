@@ -31,6 +31,8 @@ export const recursivelyTranslate = <T, N extends Namespace>(data: T, t: TFuncti
           transformed[newKey] = (t as any)(value)
         } else if (Array.isArray(value)) {
           transformed[newKey] = translateArray(value, t)
+        } else {
+          transformed[newKey] = recursivelyTranslate(value, t)
         }
       } else {
         transformed[key] = recursivelyTranslate(value, t)

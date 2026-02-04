@@ -11,20 +11,18 @@ import type { BusinessStructureAdvisoryData } from 'types/pages'
 import ServiceCallOut from 'components/blocks/services/ServiceCallOut'
 import { useTransformedData } from 'hooks/useTransformedData'
 import { getI18nStaticProps } from 'utils/i18n-ssr'
+import type { FooterProps } from 'components/blocks/footer/Footer'
 
 interface Props {
-  rawData: BusinessStructureAdvisoryData
+  rawData: BusinessStructureAdvisoryData & { footerData: FooterProps }
 }
 
-export const getStaticProps = getI18nStaticProps('services/business-structure-advisory', [
-  'businessStructureAdvisory',
-  'footer',
-  'common'
-])
+export const getStaticProps = getI18nStaticProps('services/business-structure-advisory', ['businessStructureAdvisory'])
 
 const BusinessStructureAdvisory: NextPage<Props> = ({ rawData }) => {
-  const data = useTransformedData(rawData, 'businessStructureAdvisory')
-
+  const { footerData, ...pageData } = rawData
+  const data = useTransformedData(pageData, 'businessStructureAdvisory')
+  const footerProps = useTransformedData(footerData, 'footer')
   return (
     <>
       <Header {...data.headerProps} />
@@ -47,7 +45,7 @@ const BusinessStructureAdvisory: NextPage<Props> = ({ rawData }) => {
         {data.faqProps && <FAQ2 {...data.faqProps} />}
       </main>
       {/*------ Footer ------*/}
-      <Footer />
+      <Footer {...footerProps} />
     </>
   )
 }
