@@ -185,5 +185,11 @@ export type StartupsData = {
   ctaProps?: CtaProps
 }
 
+export type IndustriesData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  industriesProps?: ServiceCallOutProps
+}
+
 // A helper that "checks" the type but returns the value as-is
 export const definePageData = <T>(data: T): T => data

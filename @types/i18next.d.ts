@@ -58,6 +58,8 @@ import type itProfessionalUS from '../public/locales/en-US/it-professional.json'
 
 import type healthcareUS from '../public/locales/en-US/healthcare.json'
 
+import type industriesGB from '../public/locales/en-GB/industries.json'
+
 // 2. Define the interface for your resources
 export interface I18nNamespaces {
   common: typeof commonUS & typeof commonGB
@@ -83,6 +85,7 @@ export interface I18nNamespaces {
   logistics: typeof logisticsUS
   'it-professional': typeof itProfessionalUS
   healthcare: typeof healthcareUS
+  industries: typeof industriesGB
 }
 
 // 3. Augment the 'i18next' module
