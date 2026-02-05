@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Hospitality Accounting & Payroll Services | Ambit",
+    "description": "Ambit delivers accounting, payroll, and compliance solutions for hotels, restaurants, and cafes. Manage multi-location finances and high-volume operations efficiently."
+  },
+  "hero": {
+    "title": "Hospitality <highlight>Accounting</highlight> & <highlight>Payroll</highlight> Services",
+    "subtitle": "Hospitality businesses operate with thin margins, multi-location complexities, and high-volume payroll and sales tax."
+  },
+  "challenges": {
+    "title": "Challenges Addressed",
+    "item1": {
+      "title": "Multi-location accounting"
+    },
+    "item2": {
+      "title": "Payroll compliance including tips"
+    },
+    "item3": {
+      "title": "Daily sales and cash reconciliation"
+    }
+  },
+  "services": {
+    "title": "Services Provided",
+    "item1": {
+      "title": "Daily/weekly bookkeeping"
+    },
+    "item2": {
+      "title": "Revenue tracking by location"
+    },
+    "item3": {
+      "title": "Payroll and sales tax compliance"
+    },
+    "item4": {
+      "title": "Outsourced hospitality accounting"
+    }
+  },
+  "cta": {
+    "title": "Request hospitality accounting support"
+  }
+}

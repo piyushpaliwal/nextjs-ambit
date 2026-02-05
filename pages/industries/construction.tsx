@@ -32,7 +32,7 @@ const Construction: NextPage<Props> = ({ rawData }) => {
         {heroProps && <Hero4 {...heroProps} />}
         {challengesProps && <ServiceCallOut {...challengesProps} canHover />}
         {serviceProps && <ServiceCallOut {...serviceProps} bgColor="bg-gray" canHover />}
-        {ctaProps && <Cta {...ctaProps} />}
+        {ctaProps && <Cta {...ctaProps} bgColor="bg-soft-primary" />}
       </main>
       <Footer {...footerProps} />
     </>
