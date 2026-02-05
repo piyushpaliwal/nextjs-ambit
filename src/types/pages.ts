@@ -152,5 +152,38 @@ export type RealEstateData = {
   serviceProps?: ServiceCallOutProps
   ctaProps?: CtaProps
 }
+
+export type HealthcareData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  challengesProps?: ServiceCallOutProps
+  serviceProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
+
+export type ItProfessionalData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  challengesProps?: ServiceCallOutProps
+  serviceProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
+
+export type LogisticsData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  challengesProps?: ServiceCallOutProps
+  serviceProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
+
+export type StartupsData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  challengesProps?: ServiceCallOutProps
+  serviceProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
+
 // A helper that "checks" the type but returns the value as-is
 export const definePageData = <T>(data: T): T => data

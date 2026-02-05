@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Logistics & Transportation Accounting Services | Ambit",
+    "description": "Ambit offers accounting, payroll, and multi-state tax advisory services for logistics and transportation businesses. Optimize compliance and operational efficiency."
+  },
+  "hero": {
+    "title": "Logistics & Transportation <highlight>Accounting</highlight>",
+    "subtitle": "Logistics and transportation businesses require multi-state compliance, fuel tax tracking, and payroll oversight."
+  },
+  "challenges": {
+    "title": "Challenges Addressed",
+    "item1": {
+      "title": "Multi-state reporting"
+    },
+    "item2": {
+      "title": "Payroll and contractor compliance"
+    },
+    "item3": {
+      "title": "Fuel tax exposure and deductions"
+    }
+  },
+  "services": {
+    "title": "Services Provided",
+    "item1": {
+      "title": "Accounting and financial reporting"
+    },
+    "item2": {
+      "title": "Payroll processing"
+    },
+    "item3": {
+      "title": "Tax compliance and advisory"
+    },
+    "item4": {
+      "title": "Outsourced finance professionals"
+    }
+  },
+  "cta": {
+    "title": "Speak to a logistics accounting advisor"
+  }
+}

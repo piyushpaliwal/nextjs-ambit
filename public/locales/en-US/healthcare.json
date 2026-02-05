@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Healthcare Accounting & Payroll Services | Ambit",
+    "description": "Ambit provides accounting, payroll, and regulatory compliance solutions for healthcare practices and medical offices. Maintain accurate reporting and streamline operations."
+  },
+  "hero": {
+    "title": "Healthcare & Medical Practice <highlight>Accounting</highlight>",
+    "subtitle": "Healthcare practices face compliance requirements, payroll complexity, and regulatory reporting."
+  },
+  "challenges": {
+    "title": "Challenges Addressed",
+    "item1": {
+      "title": "Payroll and employment tax"
+    },
+    "item2": {
+      "title": "Regulatory compliance"
+    },
+    "item3": {
+      "title": "Multi-location operations"
+    }
+  },
+  "services": {
+    "title": "Services Provided",
+    "item1": {
+      "title": "Accounting and reporting"
+    },
+    "item2": {
+      "title": "Payroll processing and filings"
+    },
+    "item3": {
+      "title": "Entity structuring and governance"
+    },
+    "item4": {
+      "title": "Outsourced healthcare accounting"
+    }
+  },
+  "cta": {
+    "title": "Discuss healthcare accounting needs"
+  }
+}

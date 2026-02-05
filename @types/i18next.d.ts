@@ -50,6 +50,14 @@ import type hospitalityUS from '../public/locales/en-US/hospitality.json'
 
 import type realEstateUS from '../public/locales/en-US/real-estate.json'
 
+import type startupsUS from '../public/locales/en-US/startups.json'
+
+import type logisticsUS from '../public/locales/en-US/logistics.json'
+
+import type itProfessionalUS from '../public/locales/en-US/it-professional.json'
+
+import type healthcareUS from '../public/locales/en-US/healthcare.json'
+
 // 2. Define the interface for your resources
 export interface I18nNamespaces {
   common: typeof commonUS & typeof commonGB
@@ -71,6 +79,10 @@ export interface I18nNamespaces {
   construction: typeof constructionUS
   hospitality: typeof hospitalityUS
   'real-estate': typeof realEstateUS
+  startups: typeof startupsUS
+  logistics: typeof logisticsUS
+  'it-professional': typeof itProfessionalUS
+  healthcare: typeof healthcareUS
 }
 
 // 3. Augment the 'i18next' module
