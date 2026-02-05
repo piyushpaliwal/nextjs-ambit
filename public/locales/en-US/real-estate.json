@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Real Estate & Property Accounting Services | Ambit",
+    "description": "Ambit provides property-wise bookkeeping, cashflow reporting, and tax compliance for real estate owners, managers, and developers. Maximize ROI and efficiency."
+  },
+  "hero": {
+    "title": "Real Estate & Property <highlight>Accounting</highlight> Services",
+    "subtitle": "Property owners, managers, and developers require accurate accounting, entity structuring, and federal/state tax planning."
+  },
+  "challenges": {
+    "title": "Challenges Addressed",
+    "item1": {
+      "title": "Multi-property accounting"
+    },
+    "item2": {
+      "title": "Rental income and expense allocation"
+    },
+    "item3": {
+      "title": "Entity structuring for tax efficiency"
+    }
+  },
+  "services": {
+    "title": "Services Provided",
+    "item1": {
+      "title": "Property-wise bookkeeping"
+    },
+    "item2": {
+      "title": "Cashflow and ROI reporting"
+    },
+    "item3": {
+      "title": "Federal/state tax compliance"
+    },
+    "item4": {
+      "title": "Outsourced accounting resources"
+    }
+  },
+  "cta": {
+    "title": "Speak to a real estate accounting advisor"
+  }
+}

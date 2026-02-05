@@ -144,5 +144,13 @@ export type HospitalityData = {
   serviceProps?: ServiceCallOutProps
   ctaProps?: CtaProps
 }
+
+export type RealEstateData = {
+  headerProps: HeaderProps
+  heroProps?: Hero4Props
+  challengesProps?: ServiceCallOutProps
+  serviceProps?: ServiceCallOutProps
+  ctaProps?: CtaProps
+}
 // A helper that "checks" the type but returns the value as-is
 export const definePageData = <T>(data: T): T => data
