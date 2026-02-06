@@ -23,6 +23,8 @@ const Hero4: FC<Hero4Props> = ({
   primaryHref = '/contact',
   breadcrumbs
 }) => {
+  // Cast Trans to 'any' to bypass TS 4.9 "excessively deep" type instantiation error, This should be fixed after we upgrade the app to TypeScript 5.0 or later.
+  const TransAny = Trans as any
   const paragraphs = splitPara(subtitle || '')
   const validImgSrc = typeof imgSrc === 'string' ? imgSrc : imgSrc?.src || ''
   return (
@@ -38,7 +40,7 @@ const Hero4: FC<Hero4Props> = ({
                 style={{ letterSpacing: '-0.04em', lineHeight: 1.1 }}
               >
                 <SafeHydration fallback={title}>
-                  <Trans defaults={title} components={{ highlight: <span className="text-primary" /> }} />
+                  <TransAny defaults={title} components={{ highlight: <span className="text-primary" /> }} />
                 </SafeHydration>
               </h1>
             )}
