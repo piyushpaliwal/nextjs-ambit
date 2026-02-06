@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Startup & Venture-Backed Accounting Services | Ambit",
+    "description": "Ambit provides accounting, tax, and compliance solutions for startups and venture-backed companies. Achieve investor-ready reporting and scalable growth."
+  },
+  "hero": {
+    "title": "Startup & Venture-Backed Company <highlight>Accounting</highlight>",
+    "subtitle": "Startups need investor-ready reporting, scalable systems, and tax planning."
+  },
+  "challenges": {
+    "title": "Challenges Addressed",
+    "item1": {
+      "title": "Investor-ready financial statements"
+    },
+    "item2": {
+      "title": "Multi-state compliance"
+    },
+    "item3": {
+      "title": "Tax planning and growth advisory"
+    }
+  },
+  "services": {
+    "title": "Services Provided",
+    "item1": {
+      "title": "Entity structuring"
+    },
+    "item2": {
+      "title": "Accounting setup and reporting"
+    },
+    "item3": {
+      "title": "Tax and compliance advisory"
+    },
+    "item4": {
+      "title": "Outsourced finance support"
+    }
+  },
+  "cta": {
+    "title": "Start your growth journey with Ambit"
+  }
+}

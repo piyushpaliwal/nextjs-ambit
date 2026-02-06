@@ -5,12 +5,10 @@ import Head from 'next/head'
 import heroImg from '../../public/img/illustrations/3d5@2x.png'
 import whyAmbit from '../../public/img/illustrations/hospitality-accounting-why-ambit.png'
 import Footer from 'components/blocks/footer/Footer'
-import SmartphoneTwo from 'icons/lineal/SmartphoneTwo'
 import Shield from 'icons/lineal/Shield'
 import color from 'utils/color'
 import Invoice from 'icons/lineal/Invoice'
 import Certificate from 'icons/lineal/Certificate'
-import User from 'icons/lineal/User'
 import ServiceCallOut, { AmbitService } from 'components/blocks/services/ServiceCallOut'
 import ServicesHero from 'components/blocks/services/ServicesHero'
 import ChallengeCallOut from 'components/common/ChallengeCallOut'
@@ -19,6 +17,7 @@ import Cta from 'components/common/cta'
 import Wallet from 'icons/lineal/Wallet'
 import { FAQ2 } from 'components/blocks/faq'
 import { hospitalityAccountingFaqSet } from 'data/faq'
+import { IconFolder } from 'types/icon'
 
 const trustSet = [
   [
@@ -82,31 +81,31 @@ const ambitServiceSet: AmbitService[] = [
     id: 1,
     title: 'Daily POS & Sales Reconciliation',
     description: 'Daily sales reconciliation, vendor invoice tracking, expense categorization.',
-    Icon: SmartphoneTwo
+    iconConfig: { icon: 'SmartphoneTwo', folder: IconFolder.LINEAL }
   },
   {
     id: 2,
     title: 'Vendor Invoice Management',
     description: 'Group billing, vendor payments, dispute resolution.',
-    Icon: Invoice
+    iconConfig: { icon: 'Invoice', folder: IconFolder.LINEAL }
   },
   {
     id: 3,
     title: 'Payroll for Hourly/Tipped Staff',
     description: 'Multi-state compliance, tipped wage calculations, seasonal workforce management.',
-    Icon: User
+    iconConfig: { icon: 'User', folder: IconFolder.LINEAL }
   },
   {
     id: 4,
     title: 'Weekly P&L Dashboards',
     description: 'Daily/weekly P & L, food/beverage cost ratios, occupancy dashboards.',
-    Icon: Analytics
+    iconConfig: { icon: 'Analytics', folder: IconFolder.LINEAL }
   },
   {
     id: 5,
     title: 'Occupancy Tax & Compliance',
     description: 'Payroll tax, FICA tip credit claims, occupancy tax compliance, annual returns.',
-    Icon: Shield
+    iconConfig: { icon: 'Shield', folder: IconFolder.LINEAL }
   }
 ]
 

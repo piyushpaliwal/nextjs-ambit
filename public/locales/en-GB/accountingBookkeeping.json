@@ -1,0 +1,34 @@
+{
+  "header": {
+    "title": "Accounting & Bookkeeping Services | UK Business Execution Services – Accounting, Tax, Payroll | Ambit",
+    "description": "Accurate accounting is the foundation of compliance, decision-making, and growth. Ambit delivers structured accounting services aligned with UK statutory requirements and commercial needs"
+  },
+  "hero": {
+    "title": "<highlight>Accounting</highlight> & <highlight>Bookkeeping</highlight> Services",
+    "subtitle": "Accurate accounting is the foundation of compliance, decision-making, and growth. Ambit delivers structured accounting services aligned with UK statutory requirements and commercial needs"
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Monthly or quarterly bookkeeping"
+    },
+    "item2": {
+      "title": "Management accounts preparation"
+    },
+    "item3": {
+      "title": "Statutory accounts under UK GAAP"
+    },
+    "item4": {
+      "title": "Balance sheet reconciliations and review controls"
+    },
+    "item5": {
+      "title": "Cashflow monitoring and variance analysis"
+    },
+    "item6": {
+      "title": "Audit-ready working paper files"
+    }
+  },
+  "cta": {
+    "title": "Outsource your accounting to Ambit"
+  }
+}

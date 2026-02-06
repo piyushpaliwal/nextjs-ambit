@@ -1,0 +1,29 @@
+{
+  "header": {
+    "title": "Payroll & Employment Tax Services | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit provide comprehensive payroll and employment tax services to help you stay compliant and manage your finances effectively."
+  },
+  "hero": {
+    "title": "<highlight>Payroll</highlight> & Employment <highlight>Tax</highlight> Services",
+    "subtitle": "Payroll compliance is critical to avoid penalties and maintain employee satisfaction."
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a range of payroll and employment tax services to help you stay compliant and manage your finances effectively.",
+    "item1": {
+      "title": "Payroll processing and tax filings"
+    },
+    "item2": {
+      "title": "Federal and state employment tax compliance"
+    },
+    "item3": {
+      "title": "Contractor classification and 1099 reporting"
+    },
+    "item4": {
+      "title": "Year-end reporting and reconciliations"
+    }
+  },
+  "cta": {
+    "title": "Move your payroll to Ambit"
+  }
+}

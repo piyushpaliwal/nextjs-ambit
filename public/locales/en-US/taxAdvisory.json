@@ -1,0 +1,34 @@
+{
+  "header": {
+    "title": "Tax Advisory & Compliance | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit provides proactive, timely, and defensible federal and state tax advisory and compliance services."
+  },
+  "hero": {
+    "title": "Tax <highlight>Advisory</highlight> & Compliance",
+    "subtitle": "Ambit provides proactive, timely, and defensible federal and state tax advisory and compliance services."
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Federal, state, and local tax returns"
+    },
+    "item2": {
+      "title": "Sales and use tax compliance"
+    },
+    "item3": {
+      "title": "Partnership, corporate, and individual filings"
+    },
+    "item4": {
+      "title": "Owner compensation planning"
+    },
+    "item5": {
+      "title": "Capital gains and dividend strategy"
+    },
+    "item6": {
+      "title": "IRS correspondence and audit support"
+    }
+  },
+  "cta": {
+    "title": "Speak to a US tax advisor"
+  }
+}

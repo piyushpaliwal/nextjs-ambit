@@ -1,0 +1,46 @@
+{
+  "header": {
+    "title": "Company Formation & Setup Services | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit offers comprehensive company formation and setup services in the US, ensuring legal compliance and operational readiness for startups and businesses."
+  },
+  "hero": {
+    "title": "Company <highlight>Formation</highlight> & Business <highlight>Setup</highlight>",
+    "subtitle": "Company formation is more than registration; it defines governance, tax efficiency, and scalability. Ambit provides end-to-end US company formation with ongoing compliance and operational support."
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Federal and state entity registration"
+    },
+    "item2": {
+      "title": "EIN and IRS registrations"
+    },
+    "item3": {
+      "title": "Operating agreements and corporate bylaws"
+    },
+    "item4": {
+      "title": "State tax and sales tax setup"
+    },
+    "item5": {
+      "title": "Payroll registrations and compliance"
+    },
+    "item6": {
+      "title": "Accounting system setup and configuration"
+    },
+    "item7": {
+      "title": "Ownership and equity structuring"
+    },
+    "item8": {
+      "title": "Governance frameworks and statutory compliance"
+    }
+  },
+  "whoThis": {
+    "title": "Who This Is For",
+    "item1": { "title": "Startups and small businesses" },
+    "item2": { "title": "International groups establishing US presence" },
+    "item3": { "title": "Owner-managed businesses formalizing operations" }
+  },
+  "cta": {
+    "title": "Start your US company with Ambit"
+  }
+}

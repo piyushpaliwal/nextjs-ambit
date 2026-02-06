@@ -1,0 +1,121 @@
+{
+  "header": {
+    "title": "UK Business Structure Advisory | Sole Trader, Ltd & LLP | Ambit",
+    "description": "Ambit provides UK business structure advisory for sole traders, limited companies, and LLPs. Choose the right structure for tax efficiency, compliance, and long-term growth."
+  },
+  "hero": {
+    "subtitle": "Selecting the correct business structure is a foundational decision that impacts taxation, liability, reporting obligations, funding options, and long-term scalability."
+  },
+  "whatWeDo": {
+    "title": "What We Do?",
+    "description": "Ambit advises founders, owner-managed businesses, and international groups on choosing and reviewing business structures aligned with commercial objectives, UK regulatory requirements, and tax efficiency. \n Our advisory focuses on substance, not just registration. We assess how a business operates today, how it intends to grow, and the compliance exposure that arises from each structural option."
+  },
+  "structureAdvise": {
+    "title": "Structures We Advise On",
+    "serviceProperty": {
+      "item1": {
+        "title": "Sole Trader",
+        "description": "A sole trader structure is often suitable for early-stage or low-risk activities. Profits are taxed under Self Assessment, with National Insurance obligations applying directly to the individual. While simple to operate, sole traders carry unlimited personal liability and limited tax planning flexibility as profits increase.",
+        "serviceSet": {
+          "item1": "Suitability of sole trader status based on income levels and risk profile",
+          "item2": "Transition planning from sole trader to limited company",
+          "item3": "Ongoing compliance and tax optimisation within Self Assessment"
+        }
+      },
+      "item2": {
+        "title": "Limited Liability Partnership (LLP)",
+        "description": "LLPs provide flexibility in profit allocation while offering limited liability protection. They are commonly used by professional practices, advisory firms, and joint ventures where commercial arrangements vary between members.",
+        "serviceSet": {
+          "item1": "Profit-sharing and member remuneration structuring",
+          "item2": "Tax treatment of members and drawings",
+          "item3": "LLP agreements and governance considerations",
+          "item4": "Suitability versus limited company structures"
+        }
+      },
+      "item3": {
+        "title": "Limited Company (Ltd)",
+        "description": "A limited company is a separate legal entity offering limited liability, structured governance, and advanced tax planning opportunities. It is suitable for growth-led businesses, contractors, property ventures, e-commerce operations, and investor-backed companies.",
+        "serviceSet": {
+          "item1": "Director remuneration strategies combining salary and dividends",
+          "item2": "Corporation Tax planning and profit extraction",
+          "item3": "Share structures for founders, investors, and employees",
+          "item4": "Group structures and holding company arrangements"
+        }
+      }
+    }
+  },
+  "structureReview": {
+    "title": "Ongoing Structure Reviews",
+    "subtitle": "Periodic reviews help maintain tax efficiency, governance integrity, and long-term scalability.",
+    "description": "Business structures should not remain static. Ambit conducts periodic structure reviews to ensure continued alignment with:",
+    "aboutList": {
+      "list1": {
+        "item1": "Revenue growth and profitability",
+        "item2": "International expansion plans"
+      },
+      "list2": {
+        "item1": "Regulatory and tax law changes",
+        "item2": "Investment, succession, or exit planning"
+      }
+    }
+  },
+  "whoThisIsFor": {
+    "title": "Who This Advisory Is For",
+    "list": {
+      "item1": { "title": "UK start-ups selecting their initial business structure" },
+      "item2": { "title": "Established businesses reviewing or restructuring operations" },
+      "item3": { "title": "International founders entering the UK market" },
+      "item4": { "title": "Professional firms requiring partnership or LLP advisory" }
+    }
+  },
+  "whyAmbit": {
+    "title": "Why Ambit for Business Structure Advisory",
+    "list": {
+      "item1": { "title": "Governance-focused and compliance-first approach" },
+      "item2": { "title": "Practical, non-templated structuring advice" },
+      "item3": { "title": "Partner-led advisory with senior oversight" },
+      "item4": { "title": "Alignment with tax efficiency and long-term scalability" },
+      "item5": { "title": "Clear documentation and audit-ready outcomes" }
+    }
+  },
+  "faq": {
+    "faqSet": {
+      "item1": {
+        "heading": "Why is choosing the right business structure important in the UK?",
+        "body": "The choice of business structure affects taxation, personal liability, reporting obligations, funding options, and long-term scalability. An incorrect structure can lead to higher tax exposure, compliance risks, and operational limitations as the business grows."
+      },
+      "item2": {
+        "heading": "Can I change my business structure later?",
+        "body": "Yes. Many businesses start as sole traders and later transition to a limited company or LLP. Ambit advises on when and how to restructure to minimise tax exposure, manage compliance, and align with growth objectives."
+      },
+      "item3": {
+        "heading": "How do I know whether a sole trader or limited company is right for me?",
+        "body": "This depends on factors such as income level, risk profile, growth plans, and tax efficiency. Ambit reviews your current operations and future plans before recommending the most suitable structure."
+      },
+      "item4": {
+        "heading": "When is an LLP more suitable than a limited company?",
+        "body": "LLPs are commonly suitable for professional practices, advisory firms, and joint ventures where flexible profit-sharing and member arrangements are required. We assess whether an LLP or limited company best aligns with your commercial and tax objectives."
+      },
+      "item5": {
+        "heading": "Do you advise international founders setting up businesses in the UK?",
+        "body": "Yes. Ambit advises international founders and overseas groups on UK business structures, regulatory requirements, tax exposure, and ongoing compliance obligations."
+      },
+      "item6": {
+        "heading": "Do you provide only advisory, or also implementation?",
+        "body": "This page focuses on advisory services. However, Ambit also provides execution support, including company incorporation, registrations, accounting, tax compliance, and ongoing governance services."
+      },
+      "item7": {
+        "heading": "How often should a business structure be reviewed?",
+        "body": "We recommend reviewing your business structure periodically, especially when there is revenue growth, international expansion, regulatory change, new investment, or exit planning."
+      },
+      "item8": {
+        "heading": "How do I start a business structure review with Ambit?",
+        "body": "You can begin by requesting a business structure assessment. We will review your current setup, identify risks and opportunities, and provide clear recommendations."
+      }
+    }
+  },
+  "cta": {
+    "title": "Start with a Structure Assessment",
+    "description": "Choosing the wrong structure can create unnecessary tax exposure, compliance risk, and operational limitations. A structured review ensures your business is aligned for both today and future growth."
+  }
+}

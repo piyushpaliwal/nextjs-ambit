@@ -1,0 +1,34 @@
+{
+  "header": {
+    "title": "Tax Advisory & Compliance | UK Business Execution Services – Accounting, Tax, Payroll | Ambit",
+    "description": "Tax compliance and planning must be accurate, timely, and defensible. Ambit provides proactive tax advisory with full statutory compliance."
+  },
+  "hero": {
+    "title": "Tax <highlight>Advisory</highlight> & Compliance",
+    "subtitle": "Tax compliance and planning must be accurate, timely, and defensible. Ambit provides proactive tax advisory with full statutory compliance"
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Corporation Tax computation and CT600 filing"
+    },
+    "item2": {
+      "title": "VAT registration, returns, and advisory"
+    },
+    "item3": {
+      "title": "Self Assessment for directors, partners, and individuals"
+    },
+    "item4": {
+      "title": "Capital gains tax planning and reporting"
+    },
+    "item5": {
+      "title": "Dividend planning and extraction strategies"
+    },
+    "item6": {
+      "title": "HMRC correspondence and enquiry support"
+    }
+  },
+  "cta": {
+    "title": "Speak to a UK tax advisor"
+  }
+}

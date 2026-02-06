@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "IT & Professional Services Accounting | Ambit",
+    "description": "Ambit delivers accounting, partner compensation planning, and multi-state tax advisory for IT and professional services firms. Ensure accurate reporting and compliance."
+  },
+  "hero": {
+    "title": "IT & Professional Services <highlight>Accounting</highlight>",
+    "subtitle": "IT and professional services firms need partner compensation planning, revenue recognition, and multi-state compliance."
+  },
+  "challenges": {
+    "title": "Challenges Addressed",
+    "item1": {
+      "title": "Revenue recognition and contract billing"
+    },
+    "item2": {
+      "title": "Payroll and contractor compliance"
+    },
+    "item3": {
+      "title": "State and federal tax filings"
+    }
+  },
+  "services": {
+    "title": "Services Provided",
+    "item1": {
+      "title": "Accounting and reporting"
+    },
+    "item2": {
+      "title": "Partner compensation planning"
+    },
+    "item3": {
+      "title": "Tax advisory"
+    },
+    "item4": {
+      "title": "Outsourced finance support"
+    }
+  },
+  "cta": {
+    "title": "Request professional services advisory"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "header": {
+    "title": "Industries We Support | Ambit",
+    "description": "Ambit delivers industry-specific reporting, tax planning, compliance frameworks, and operational support across multiple sectors"
+  },
+  "hero": {
+    "title": "Industries Specific <highlight>Accounting</highlight> Support",
+    "subtitle": "Ambit delivers industry-specific reporting, tax planning, compliance frameworks, and operational support across multiple sectors"
+  },
+  "industries": {
+    "title": "Industries We Support",
+    "subtitle": "Each engagement is aligned with UK regulatory and commercial standards.",
+    "item1": {
+      "title": "E-commerce & DTC brands"
+    },
+    "item2": {
+      "title": "Trades, construction, & CIS contractors"
+    },
+    "item3": {
+      "title": "Real estate & property management"
+    },
+    "item4": {
+      "title": "Hospitality (hotels, pubs, restaurants)"
+    },
+    "item5": {
+      "title": "IT contractors & digital businesses"
+    },
+    "item6": {
+      "title": "Healthcare providers & clinics"
+    },
+    "item7": {
+      "title": "Logistics & transportation"
+    },
+    "item8": {
+      "title": "Professional services firms"
+    }
+  }
+}

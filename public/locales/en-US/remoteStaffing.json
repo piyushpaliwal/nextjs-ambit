@@ -1,0 +1,35 @@
+{
+  "header": {
+    "title": "Remote Staffing & Outsourcing Solutions | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit provides dedicated, experienced finance, accounting, and administrative professionals who work as an extension of your team."
+  },
+  "hero": {
+    "title": "Remote <highlight>Staffing</highlight> & <highlight>Outsourcing</highlight> Solutions",
+    "subtitle": "Ambit provides dedicated, experienced finance, accounting, and administrative professionals who work as an extension of your team."
+  },
+  "services": {
+    "title": "We Provide",
+    "item1": {
+      "title": "Accountants, bookkeepers, tax preparers, finance managers"
+    },
+    "item2": {
+      "title": "Full-time or part-time engagement"
+    },
+    "item3": {
+      "title": "Training and integration into client systems"
+    },
+    "item4": {
+      "title": "Daily or weekly reporting"
+    }
+  },
+  "governance": {
+    "title": "Governance and Quality Control",
+    "item1": { "title": "Role-based access and audit logs" },
+    "item2": { "title": "Senior management review and supervision" },
+    "item3": { "title": "SLA-driven delivery" },
+    "item4": { "title": "Secure data handling and audit-ready output" }
+  },
+  "cta": {
+    "title": "Request a remote staffing proposal"
+  }
+}

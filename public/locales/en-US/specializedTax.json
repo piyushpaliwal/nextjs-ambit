@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "Specialized Tax Services | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit offers high-value, proactive tax advisory beyond standard filings to optimize incentives, minimize liabilities, and ensure compliance."
+  },
+  "hero": {
+    "title": "Specialized <highlight>Tax</highlight> Services",
+    "subtitle": "Ambit offers high-value, proactive tax advisory beyond standard filings to optimize incentives, minimize liabilities, and ensure compliance."
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "R&D Tax Credit Advisory"
+    },
+    "item2": {
+      "title": "State-specific tax incentives and credits"
+    },
+    "item3": {
+      "title": "Multi-state compliance and nexus advisory"
+    },
+    "item4": {
+      "title": "Tax planning for complex entity structures"
+    },
+    "item5": {
+      "title": "IRS and state audit support for specialized claims"
+    }
+  },
+  "cta": {
+    "title": "Speak to a Specialized Tax Advisor"
+  }
+}

@@ -1,5 +1,5 @@
-import LinkType from 'types/link'
-import { FC, Fragment, ReactElement, useRef } from 'react'
+import type LinkType from 'types/link'
+import { type FC, Fragment, type ReactElement, useRef } from 'react'
 // -------- custom hook -------- //
 import useSticky from 'hooks/useSticky'
 // -------- custom component -------- //
@@ -10,13 +10,15 @@ import ListItemLink from 'components/reuseable/links/ListItemLink'
 import DropdownToggleLink from 'components/reuseable/links/DropdownToggleLink'
 // -------- partial header component -------- //
 import Search from './partials/Search'
-import Social from './partials/Social'
 import Language from './partials/Language'
 // -------- data -------- //
-import { home, services, company } from 'data/navigation'
+import { navigationItemList } from 'data/navigation'
+import { filterNavByLocale } from 'utils/helpers'
+import { useRouter } from 'next/router'
+import type { LocaleEnum } from 'types/locale'
 
 // ===================================================================
-type NavbarProps = {
+export type NavbarProps = {
   info?: boolean
   cart?: boolean
   fancy?: boolean
@@ -29,16 +31,29 @@ type NavbarProps = {
   button?: ReactElement
   navOtherClass?: string
 }
+
+export type NavItem = {
+  id: number
+  title: string
+  url: string
+  allowedLocales?: LocaleEnum[]
+  children?: NavItem[]
+}
+
+export type NavRecord = Record<string, NavItem | NavItem[]>
 // ===================================================================
 
 const Navbar: FC<NavbarProps> = (props) => {
+  const router = useRouter()
   const { navClassName, info, search, social, language, button, fancy, navOtherClass, stickyBox, logoAlt } = props
+  const { locale } = router
 
   const sticky = useSticky(350)
   const navbarRef = useRef<HTMLElement | null>(null)
+  const navList = filterNavByLocale(navigationItemList, locale as LocaleEnum)
 
   // dynamically render the logo
-  const logo = sticky ? 'logo-dark' : logoAlt ?? 'logo-dark'
+  const logo = sticky ? 'logo-dark' : (logoAlt ?? 'logo-dark')
   // dynamically added navbar classname
   const fixedClassName = 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed'
 
@@ -72,49 +87,50 @@ const Navbar: FC<NavbarProps> = (props) => {
         </div>
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+          {/* ===================== nav item ===================== */}
           <ul className="navbar-nav">
-            <ListItemLink href="/" title="Home" liClassName="nav-item  fs-6" />
-            {/* ===================== services nav item ===================== */}
-            <li className="nav-item dropdown">
-              <DropdownToggleLink title="Services" className="nav-link dropdown-toggle" />
+            {Object.entries(navList).map(([key, navItem], index) => {
+              if (Array.isArray(navItem)) {
+                const title = key.charAt(0).toUpperCase() + key.slice(1)
+                return (
+                  <li key={index} className="nav-item dropdown">
+                    <DropdownToggleLink title={title} className="nav-link dropdown-toggle" />
 
-              <ul className="dropdown-menu">
-                {services.map(({ id, url, title, children }) => {
-                  if (children.length > 0) {
-                    return (
-                      <li className="dropdown dropdown-submenu dropend" key={id}>
-                        <DropdownToggleLink title={title} />
-                        <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                      </li>
-                    )
-                  }
-                  return <ListItemLink key={id} href={url} title={title} linkClassName="dropdown-item" />
-                })}
-              </ul>
-            </li>
-            <ListItemLink href="/price" title="Price" liClassName="nav-item" />
-            <ListItemLink href="/blogs" title="Blog" liClassName="nav-item" />
-            {/* ===================== company nav item ===================== */}
-            <li className="nav-item dropdown">
-              <DropdownToggleLink title="Company" className="nav-link dropdown-toggle" />
-
-              <ul className="dropdown-menu">
-                {company.map(({ id, url, title, children }) => {
-                  if (!url && children) {
-                    return (
-                      <li className="dropdown dropdown-submenu dropend" key={id}>
-                        <DropdownToggleLink title="Blog" />
-                        <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                      </li>
-                    )
-                  }
-                  return <ListItemLink key={id} href={url} title={title} linkClassName="dropdown-item" />
-                })}
-              </ul>
-            </li>
-            <ListItemLink href="/contact" title="Contact" liClassName="nav-item" />
+                    <ul className="dropdown-menu">
+                      {navItem.map((item) => {
+                        if (item.children && item.children.length > 0) {
+                          return (
+                            <li className="dropdown dropdown-submenu dropend" key={item.id}>
+                              <DropdownToggleLink title={item.title} />
+                              <ul className="dropdown-menu">{renderLinks(item.children)}</ul>
+                            </li>
+                          )
+                        }
+                        return (
+                          <ListItemLink
+                            key={item.id}
+                            href={item.url}
+                            title={item.title}
+                            linkClassName="dropdown-item"
+                          />
+                        )
+                      })}
+                    </ul>
+                  </li>
+                )
+              } else if (typeof navItem === 'object' && navItem !== null) {
+                return (
+                  <ListItemLink
+                    key={index}
+                    href={navItem.url}
+                    title={navItem.title}
+                    liClassName={`nav-item ${index === 0 ? 'fs-6' : ''}`}
+                  />
+                )
+              }
+              return null
+            })}
           </ul>
-
           {/* ============= show contact info in the small device sidebar ============= */}
           <div className="offcanvas-footer d-lg-none">
             <div>
@@ -157,7 +173,11 @@ const Navbar: FC<NavbarProps> = (props) => {
           )}
 
           {/* ============= social icons link ============= */}
-          {social && <li className='nav-item'><SocialLinks className='nav social social-muted justify-content-end text-end flex-nowrap d-none d-lg-block' /></li>}
+          {social && (
+            <li className="nav-item">
+              <SocialLinks className="nav social social-muted justify-content-end text-end flex-nowrap d-none d-lg-block" />
+            </li>
+          )}
 
           {/* ============= contact button ============= */}
           {button && <li className="nav-item d-none d-md-block">{button}</li>}
@@ -200,7 +220,7 @@ Navbar.defaultProps = {
   info: false,
   social: false,
   search: false,
-  language: false,
+  language: true,
   stickyBox: true,
   navOtherClass: 'navbar-other w-100 d-flex ms-auto',
   navClassName: 'navbar navbar-expand-lg center-nav transparent navbar-light'

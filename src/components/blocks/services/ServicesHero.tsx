@@ -1,9 +1,10 @@
 import NextLink from 'components/reuseable/links/NextLink'
-import { FC } from 'react'
+import { FC, Fragment } from 'react'
 import { slideInDownAnimate } from 'utils/animation'
 import Image, { StaticImageData } from 'next/image'
+import { splitPara } from 'utils/helpers'
 
-type ServiceHeroProps = {
+export type ServiceHeroProps = {
   title?: string
   description?: string
   valueLine?: string
@@ -11,6 +12,8 @@ type ServiceHeroProps = {
 }
 
 const ServicesHero: FC<ServiceHeroProps> = ({ title, description, valueLine, imageSrc }: ServiceHeroProps) => {
+  const splitDesc = splitPara(description || '')
+
   return (
     <section
       className="wrapper image-wrapper bg-image bg-overlay bg-overlay-400 bg-content text-white"
@@ -27,7 +30,12 @@ const ServicesHero: FC<ServiceHeroProps> = ({ title, description, valueLine, ima
 
             {description && (
               <p className="lead fs-lg lh-sm mb-7 pe-xl-10" style={slideInDownAnimate('900ms')}>
-                {description}
+                {splitDesc.map((text, index) => (
+                  <Fragment key={index}>
+                    {text}
+                    {index < splitDesc.length - 1 && <br />}
+                  </Fragment>
+                ))}
               </p>
             )}
 

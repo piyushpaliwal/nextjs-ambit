@@ -1,22 +1,25 @@
 import Link from 'next/link'
-import { FC } from 'react'
+import type { FC } from 'react'
 
-type CtaProps = {
+export type CtaProps = {
   title?: string
   description?: string
+  buttonTitle?: string
+  buttonHref?: string
+  bgColor?: string
 }
 
-const Cta: FC<CtaProps> = ({ title, description }: CtaProps) => {
+const Cta: FC<CtaProps> = ({ title, description, buttonTitle, buttonHref, bgColor = 'bg-light' }: CtaProps) => {
   return (
-    <section className="wrapper bg-light">
+    <section className={`wrapper ${bgColor}`}>
       <div className="container py-14 py-md-14">
         <div className="row">
           <div className="col-md-9 col-lg-7 col-xl-7 mx-auto text-center">
-            {title && <h2 className="display-4 mb-3">{title}</h2>}
+            {title && <h2 className="display-4 fs-64 mb-3">{title}</h2>}
             {description && <p className="lead fs-lg mb-6">{description}</p>}
-            <Link href="https://calendly.com/ambit-accounting/15min" passHref legacyBehavior>
+            <Link href={buttonHref || 'https://calendly.com/ambit-accounting/15min'} passHref legacyBehavior>
               <a target="_blank" className="btn btn-primary rounded mb-0 text-nowrap">
-                Schedule a Consultation
+                {buttonTitle || `Schedule a Consultation`}
               </a>
             </Link>
           </div>

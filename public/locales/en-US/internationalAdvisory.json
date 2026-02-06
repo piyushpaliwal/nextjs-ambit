@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "International / Cross-Border Advisory | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit advises foreign-owned US entities, global investors, and international groups on US inbound tax, compliance, and cross-border operations."
+  },
+  "hero": {
+    "title": "<highlight>International</highlight> / Cross-Border <highlight>Advisory</highlight>",
+    "subtitle": "Ambit advises foreign-owned US entities, global investors, and international groups on US inbound tax, compliance, and cross-border operations."
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Transfer pricing compliance and documentation"
+    },
+    "item2": {
+      "title": "US inbound tax planning for foreign entities"
+    },
+    "item3": {
+      "title": "Foreign entity registration and reporting obligations"
+    },
+    "item4": {
+      "title": "Multi-jurisdictional tax advisory and mitigation strategies"
+    },
+    "item5": {
+      "title": "Cross-border corporate structuring"
+    }
+  },
+  "cta": {
+    "title": "Discuss International Advisory"
+  }
+}

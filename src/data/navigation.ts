@@ -1,10 +1,19 @@
-const home = [{ id: 1, url: '/', title: 'Home' }]
+import type { NavItem, NavRecord } from 'components/blocks/navbar/Navbar'
+import { LocaleEnum } from 'types/locale'
 
-const services = [
+const home: NavItem = { id: 1, url: '/', title: 'Home' }
+const price: NavItem = { id: 1, url: '/price', title: 'Price', allowedLocales: [LocaleEnum.Global] }
+const blog: NavItem = { id: 1, url: '/blogs', title: 'Blog', allowedLocales: [LocaleEnum.Global] }
+const contact: NavItem = { id: 1, url: '/contact', title: 'Contact' }
+// todo: fix navigation
+const industry: NavItem = { id: 1, url: '/industries', title: 'Industries', allowedLocales: [LocaleEnum.GB] }
+
+const services: NavItem[] = [
   {
     id: 1,
     url: '#',
     title: 'For CPAs',
+    allowedLocales: [LocaleEnum.Global],
     children: [
       {
         id: 11,
@@ -37,6 +46,7 @@ const services = [
     id: 2,
     url: '#',
     title: 'For Businesses',
+    allowedLocales: [LocaleEnum.Global],
     children: [
       { id: 21, url: '/services/bookkeeping-and-accounting', title: 'Bookkeeping And Accounting' },
       { id: 22, url: '/services/tax-services', title: 'Tax Services' },
@@ -45,13 +55,128 @@ const services = [
       { id: 25, url: '/services/retail-accounting', title: 'Retail Accounting' },
       { id: 26, url: '/services/hospitality-accounting', title: 'Hospitality Accounting' }
     ]
+  },
+  {
+    id: 3,
+    url: '#',
+    title: 'Advisory',
+    allowedLocales: [LocaleEnum.US, LocaleEnum.GB],
+    children: [
+      { id: 31, url: '/services/business-structure-advisory', title: 'Business Structure & Company Formation' }
+    ]
+  },
+  {
+    id: 4,
+    url: '#',
+    title: 'Execution',
+    allowedLocales: [LocaleEnum.US, LocaleEnum.GB],
+    children: [
+      { id: 41, url: '/services/formation-setup', title: 'Company Formation & Business Setup' },
+      { id: 42, url: '/services/accounting-bookkeeping-execution', title: 'Accounting & Bookkeeping' },
+      { id: 43, url: '/services/tax-advisory', title: 'Tax Advisory & Compliance' },
+      { id: 44, url: '/services/specialized-tax', title: 'Specialized Tax Services', allowedLocales: [LocaleEnum.US] },
+      {
+        id: 45,
+        url: '/services/payroll-employment-tax',
+        title: 'Payroll & Employment Tax',
+        allowedLocales: [LocaleEnum.US]
+      },
+      {
+        id: 46,
+        url: '/services/payroll-execution',
+        title: 'Payroll,PAYE and CIS Services',
+        allowedLocales: [LocaleEnum.GB]
+      },
+      { id: 47, url: '/services/monthly-retainer', title: 'Monthly Retainer Services' },
+      { id: 48, url: '/services/remote-staffing', title: 'Remote Staffing & Outsourcing' },
+      { id: 49, url: '/services/systems-integration-tech-support', title: 'Systems Integration & Technology Support' },
+      {
+        id: 50,
+        url: '/services/international-advisory',
+        title: 'International / Cross-Border Advisory',
+        allowedLocales: [LocaleEnum.US]
+      },
+      {
+        id: 51,
+        url: '/services/business-lifecycle-advisory',
+        title: 'Business Lifecycle Advisory',
+        allowedLocales: [LocaleEnum.GB]
+      }
+    ]
   }
 ]
 
-const company = [
-  { id: 1, url: '/about-us', title: 'About Us', children: [] },
-  { id: 2, url: '/faq', title: 'FAQ', children: [] },
-  { id: 3, url: '/privacy-policy', title: 'Privacy Policy', children: [] }
+const industries: NavItem[] = [
+  {
+    id: 1,
+    url: '/industries/ecommerce',
+    title: 'E-Commerce & Direct-to-Consumer',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
+  {
+    id: 2,
+    url: '/industries/construction',
+    title: 'Construction, Trades, and Contractors',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
+  {
+    id: 3,
+    url: '/industries/hospitality',
+    title: 'Hospitality (Hotels, Restaurants, Cafes)',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
+  {
+    id: 4,
+    url: '/industries/real-estate',
+    title: 'Real Estate & Property Management',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
+  {
+    id: 5,
+    url: '/industries/it-professional',
+    title: 'IT Contractors & Professional Services',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
+  {
+    id: 6,
+    url: '/industries/healthcare',
+    title: 'Healthcare & Medical Practices',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
+  {
+    id: 7,
+    url: '/industries/logistics',
+    title: 'Logistics & Transportation',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  },
+  {
+    id: 8,
+    url: '/industries/startups',
+    title: 'Startups & Venture-Backed Companies',
+    children: [],
+    allowedLocales: [LocaleEnum.US]
+  }
 ]
 
-export { home, services, company }
+const company: NavItem[] = [
+  { id: 1, url: '/about-us', title: 'About Us', children: [] },
+  { id: 2, url: '/faq', title: 'FAQ', children: [], allowedLocales: [LocaleEnum.Global] },
+  { id: 3, url: '/privacy-policy', title: 'Privacy Policy', children: [] },
+  { id: 4, url: '/approach', title: 'Our Approach', children: [], allowedLocales: [LocaleEnum.US, LocaleEnum.GB] },
+  {
+    id: 5,
+    url: '/governance-security',
+    title: 'Governance, Data Security & Compliance',
+    children: [],
+    allowedLocales: [LocaleEnum.US, LocaleEnum.GB]
+  }
+]
+
+export const navigationItemList: NavRecord = { home, services, price, blog, industries, industry, company, contact }

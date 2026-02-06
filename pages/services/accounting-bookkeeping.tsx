@@ -1,4 +1,3 @@
-import HeroInnerPages from 'components/blocks/hero/HeroInnerPages'
 import { Navbar } from 'components/blocks/navbar'
 import { Services } from 'components/blocks/services'
 import FigureImage from 'components/reuseable/FigureImage'
@@ -6,13 +5,24 @@ import NextLink from 'components/reuseable/links/NextLink'
 import Analytics from 'icons/lineal/Analytics'
 import Savings from 'icons/lineal/Savings'
 import Target from 'icons/lineal/Target'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import i1 from '../../public/img/photos/one-on-one-expert.svg'
 import AccordionList from 'components/common/AccordionList'
 import { condensedSoftwareList } from 'data/client'
 import Footer from 'components/blocks/footer/Footer'
+import HeroImage from '../../public/img/photos/accounting-and-bookkeeping-banner.svg' //  /img/photos/carousel1.jpg';
+import { HeroInnerPages, type HeroInnerPagesProps } from 'components/blocks/hero'
+
+const heroProps: HeroInnerPagesProps = {
+  title: `Life's too short to worry about Bookkeeping`,
+  description: `We know you're pretty busy, so getting straight to the point. Bookkeeping sucks. Trying to find a good bookkeeper sucks even more!\n  We're here to help you with that.`,
+  buttonHref: '/contact',
+  buttonTitle: 'Talk to us',
+  imgAlt: 'Experts in your corner',
+  imgSrc: HeroImage
+}
 
 const BookkeepingPage: NextPage = () => {
   return (
@@ -29,6 +39,7 @@ const BookkeepingPage: NextPage = () => {
       <header className="wrapper bg-soft-primary">
         <Navbar
           stickyBox={false}
+          language
           logoAlt="logo"
           navOtherClass="navbar-other ms-xl-4"
           navClassName="navbar navbar-expand-lg classic transparent position-absolute navbar-dark"
@@ -48,7 +59,7 @@ const BookkeepingPage: NextPage = () => {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero ========== */}
-        <HeroInnerPages />
+        <HeroInnerPages {...heroProps} />
         {/* ========== services ========== */}'
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-14">

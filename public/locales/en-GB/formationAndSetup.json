@@ -1,0 +1,49 @@
+{
+  "header": {
+    "title": "Company Formation & Setup Services | UK Business Execution Services – Accounting, Tax, Payroll | Ambit",
+    "description": "Ambit provides UK business execution services including company formation, accounting, tax, payroll, remote staffing, and systems integration for start-ups, SMEs, and international founders."
+  },
+  "hero": {
+    "title": "Company <highlight>Formation</highlight> & Business <highlight>Setup</highlight>",
+    "subtitle": "Setting up a company is not just about registration. It determines tax efficiency, governance standards, and long-term scalability. Ambit provides end-to-end company formation services with long-term compliance in mind."
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Company registration with Companies House"
+    },
+    "item2": {
+      "title": "Articles of Association drafting and review"
+    },
+    "item3": {
+      "title": "Registered office and statutory address support"
+    },
+    "item4": {
+      "title": "VAT, PAYE, and Corporation Tax registration"
+    },
+    "item5": {
+      "title": "Accounting system setup using Xero, QuickBooks, or Sage"
+    },
+    "item6": {
+      "title": "Shareholding structure and shareholder agreement advisory"
+    },
+    "item7": {
+      "title": "Director remuneration, dividend strategy, and NI planning"
+    },
+    "item8": {
+      "title": "Compliance guidance for non-resident directors and visa holders"
+    },
+    "item9": {
+      "title": "Statutory registers, governance frameworks, and internal controls"
+    }
+  },
+  "whoThis": {
+    "title": "Who this is for",
+    "item1": { "title": "UK start-ups" },
+    "item2": { "title": "International founders establishing UK presence" },
+    "item3": { "title": "Businesses formalising or restructuring operations" }
+  },
+  "cta": {
+    "title": "Start your UK company with Ambit"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "header": {
+    "title": "Monthly Retainer Services | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Ambit’s monthly retainer model provides ongoing finance, tax, and compliance support without internal headcount overhead."
+  },
+  "hero": {
+    "title": "Monthly <highlight>Retainer</highlight> Services",
+    "subtitle": "Ambit’s monthly retainer model provides ongoing finance, tax, and compliance support without internal headcount overhead."
+  },
+  "services": {
+    "title": "What the Retainer Covers",
+    "item1": {
+      "title": "Bookkeeping, reconciliations, and management reporting"
+    },
+    "item2": {
+      "title": "Payroll and sales tax processing"
+    },
+    "item3": {
+      "title": "Tax provisioning and planning"
+    },
+    "item4": {
+      "title": "Compliance filings and statutory submissions"
+    },
+    "item5": {
+      "title": "Director-level advisory oversight"
+    },
+    "item6": {
+      "title": "Predictable monthly cost structure"
+    }
+  },
+  "whoThis": {
+    "title": "Who This Is For",
+    "item1": {
+      "title": "Businesses requiring ongoing finance support"
+    },
+    "item2": {
+      "title": "Accounting firms seeking reliable delivery partners"
+    },
+    "item3": {
+      "title": "Founder-led and high-growth businesses"
+    },
+    "item4": {
+      "title": "International companies operating in the US"
+    }
+  },
+  "cta": {
+    "title": "Request a monthly retainer proposal"
+  }
+}

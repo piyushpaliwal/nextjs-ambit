@@ -1,0 +1,34 @@
+{
+  "header": {
+    "title": "Payroll, PAYE & CIS Services | UK Business Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Payroll errors create compliance risk and employee dissatisfaction. Ambit delivers reliable payroll services aligned with HMRC regulations."
+  },
+  "hero": {
+    "title": "<highlight>Payroll</highlight>, PAYE & CIS <highlight>Services</highlight>",
+    "subtitle": "Payroll errors create compliance risk and employee dissatisfaction. Ambit delivers reliable payroll services aligned with HMRC regulations."
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Monthly and weekly payroll processing"
+    },
+    "item2": {
+      "title": "PAYE and National Insurance compliance"
+    },
+    "item3": {
+      "title": "Pension auto-enrolment administration"
+    },
+    "item4": {
+      "title": "CIS contractor and subcontractor compliance"
+    },
+    "item5": {
+      "title": "CIS returns and verification"
+    },
+    "item6": {
+      "title": "Year-end payroll reporting​"
+    }
+  },
+  "cta": {
+    "title": "Move your payroll to Ambit"
+  }
+}

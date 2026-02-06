@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "Accounting & Bookkeeping Services | US Execution Services – Accounting, Tax & Payroll | Ambit",
+    "description": "Accurate accounting is the foundation of compliance, decision-making, and business growth. Ambit delivers structured accounting services aligned with US GAAP and state requirements."
+  },
+  "hero": {
+    "title": "<highlight>Accounting</highlight> & <highlight>Bookkeeping</highlight> Services",
+    "subtitle": "Accurate accounting is the foundation of compliance, decision-making, and business growth. Ambit delivers structured accounting services aligned with US GAAP and state requirements."
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Monthly or quarterly bookkeeping"
+    },
+    "item2": {
+      "title": "Management accounts preparation"
+    },
+    "item3": {
+      "title": "Balance sheet reconciliation and review controls"
+    },
+    "item4": {
+      "title": "Cashflow monitoring and variance analysis"
+    },
+    "item5": {
+      "title": "Audit-ready documentation and reporting"
+    }
+  },
+  "cta": {
+    "title": "Outsource your accounting to Ambit"
+  }
+}

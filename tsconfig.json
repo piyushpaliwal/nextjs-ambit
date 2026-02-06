@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,6 +16,6 @@
     "incremental": true,
     "baseUrl": "./src"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/lib/headhesive.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/lib/headhesive.js", "@types/i18next.d.ts"],
   "exclude": ["node_modules"]
 }
