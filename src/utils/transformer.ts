@@ -15,32 +15,29 @@ const translateArray = <N extends Namespace>(arr: any[], t: TFunction<N, undefin
 }
 
 export const recursivelyTranslate = <T, N extends Namespace>(data: T, t: TFunction<N, undefined>): Translated<T> => {
+  if (!data || typeof data !== 'object') {
+    return data as unknown as Translated<T>
+  }
+
   if (Array.isArray(data)) {
     return data.map((item) => recursivelyTranslate(item, t)) as unknown as Translated<T>
   }
 
-  if (isObject(data)) {
-    const transformed: any = {}
+  const result: Record<string, any> = {}
 
-    Object.keys(data as object).forEach((key) => {
-      const value = (data as any)[key]
-
-      if (key.endsWith('Key')) {
-        const newKey = key.replace(/Key$/, '')
-        if (typeof value === 'string') {
-          transformed[newKey] = (t as any)(value)
-        } else if (Array.isArray(value)) {
-          transformed[newKey] = translateArray(value, t)
-        } else {
-          transformed[newKey] = recursivelyTranslate(value, t)
-        }
+  for (const [key, value] of Object.entries(data)) {
+    if (key.endsWith('Key')) {
+      const newKey = key.slice(0, -3)
+      if (typeof value === 'string') {
+        result[newKey] = (t as any)(value)
+      } else if (Array.isArray(value)) {
+        result[newKey] = translateArray(value, t)
       } else {
-        transformed[key] = recursivelyTranslate(value, t)
+        result[newKey] = recursivelyTranslate(value, t)
       }
-    })
-
-    return transformed as Translated<T>
+    } else {
+      result[key] = recursivelyTranslate(value, t)
+    }
   }
-
-  return data as unknown as Translated<T>
+  return result as Translated<T>
 }
